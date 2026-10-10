@@ -1,0 +1,35 @@
+{
+  "phase": "P0",
+  "platform": "win32",
+  "node": "v24.11.0",
+  "started_at": "2026-10-07T12:09:02.236Z",
+  "finished_at": "2026-10-07T12:09:24.781Z",
+  "control_root": "C:\\Users\\DANDAN~1\\AppData\\Local\\Temp\\engineering-cycle-p0-control-j7O0Qi",
+  "result": {
+    "passed": false,
+    "capability_receipt": null,
+    "fixture": "C:\\Users\\DANDAN~1\\AppData\\Local\\Temp\\engineering-cycle-p0-BA01An",
+    "sandbox_probe": {
+      "denied": true,
+      "raw_ref": {
+        "id": "p0-sandbox-22f1008880b860f9c296a888d8ac570fe2321275e48d6daf2be5b9037bb2ac86",
+        "digest": "22f1008880b860f9c296a888d8ac570fe2321275e48d6daf2be5b9037bb2ac86",
+        "kind": "p0-sandbox",
+        "schema_revision": 1
+      }
+    },
+    "live_probe": {
+      "passed": false,
+      "raw_ref": {
+        "id": "p0-live-qa-a85007e715b8fd33b492d7b8d9fb8f46013c720613e53554073298241e94af99",
+        "digest": "a85007e715b8fd33b492d7b8d9fb8f46013c720613e53554073298241e94af99",
+        "kind": "p0-live-qa",
+        "schema_revision": 1
+      }
+    },
+    "coverage_limits": "fresh CLI exec and fixed readonly filesystem probe; no hidden prompt/model identity or all-tool coverage proof"
+  },
+  "native_subagent": "not_attempted; no supported runtime observer implemented",
+  "host_plugin_install": "not_attempted; no global install",
+  "human_decision_channel": "interactive operator entry implemented; not authenticated human identity"
+}

@@ -1,0 +1,94 @@
+# 组件复用与上下文控制实施文档
+
+日期：2026-10-08。目标合同：[CRCTX-v1](component-reuse-context.md)，验收：[REUSE-01–12](acceptance.md#组件复用与上下文控制增量)。状态：**设计与源码现状已核对，新增运行时未实现、未验收**。本文把实际系统与待实施部分分开；不是把计划伪装成实现记录。本轮只写文档，不修改两个插件的源码、全局安装、版本或旧评分。
+
+## 1. 已有实现如何工作
+
+| 实际入口/函数 | 实现路径与依赖流向 | 当前边界 |
+| --- | --- | --- |
+| [createRuntime / handleHook](../../src/runtime.mjs) | workspaceRoot → LocalStore / WorkspaceAdapter / OperatorAuthority → CycleCore；Hook event → cycle_status → JSON.stringify(summary) | 每事件摘要，没有本文的 session/去重/2048 字节预算；Stop 返回 {} |
+| [TOOL_SCHEMAS / artifactHandle](../../src/core/contracts.mjs)、[CycleCore](../../src/core/cycle.mjs) | Zod 校验七工具参数；prepare 对路径清单/绑定计算 handle；attach 捕获原字节快照，归档工件并推进阶段 | artifact 仅 prepare/attach；D 无复用决定解析，I 的 notes 只在写后接入 |
+| CycleCore.preflight / perform | action grant + scope + expected_sha256 → WorkspaceAdapter.apply；效果写入 operation → basis 重算 → outcome/settle | 没有写前复用门禁；同 request 去重和 unknown 不重放已有实现 |
+| [inspectImplementationNotes](../../src/local/implementation-notes.mjs) | notes/source/related → Zod → Workspace.readSource → SHA 比较、行段摘录、完整字符分页 | 可查参数/包接口说明是否当前；不证明 symbol/语义/调用图 |
+| [config](../../src/local/config.mjs) / [server](../../src/server.mjs) | strict schema_revision=1 → checks/QA；MCP SDK server 注册原七工具，传入取消 signal | 无 provider/client/session bridge；依赖只有 MCP server 与 Zod |
+| [SoL ArchitectureIndex](../../../codex-sol/src/architecture/index.mjs) | root + declaration path → bounded JSON/Zod → Normify 编译及 Acorn import/export → versions/fresh → select | 可复用解析、静态事实和当前性；select 不含完整 versions；调用者须持锁，非全语言图 |
+| [SoL createSolServer](../../../codex-sol/src/server.mjs) | createSolRuntime → Store/Context/Session/Change → 多工具及 instructions；readObservation/recall 保留原字节 | 当前全量入口无法直接作为本文 provider-only；观测归档存在写副作用 |
+
+实际函数说明与限制沿[现有实施状态](../IMPLEMENTATION_STATE.md)、[实现说明](../implementation-notes.md)。本表只说明本次依赖的接口与实现，不复制全仓函数台账。67 个相关生产/分发/评分文件的当前 SHA 清单见[source-manifest](reviews/2026-10-08-reuse-context/source-manifest.json)；不能只用父仓 HEAD 表示这些未跟踪项目的身份。
+
+## 2. 实施归属与拟改文件
+
+路径为拟实施落点，新增路径目前不存在。实际开发先读入口、公共接口和调用方，不按清单盲生成；多人并行时各 owner 保留他人改动。
+
+| owner / 范围 | 复用与最小改动 | 直接消费者 / 验证 |
+| --- | --- | --- |
+| SoL provider owner | 新 `src/provider-server.mjs` 和独立打包目标；复用 architecture/index、read、recall、store、workspace-lock；只抽取两入口确实共享的查询捕获函数。Store 支持显式安全 cache 根，不复制索引或创建第二套决定状态 | 新 gateway、完整 SoL 原 server；原 Store/Context/打包测试及 provider-only 清单/路径/清理负例 |
+| Cycle core owner | contracts/config 加 rev2；新 `src/local/reuse-evidence.mjs` 负责 D 区块解析、来源重读与 lineage；CycleCore 的 basis/view/next/preflight/perform/QA 快照消费同一投影 | 七工具、CLI、runtime、QA worker、tests/helpers；v1 无 provider 路径与原恢复套件 |
+| Gateway owner | 新 `src/adapters/component-provider.mjs`，固定启动/协议能力、query/read/recall、完整输出 SHA、超时/取消/终态/缓存副作用归档 | cycle_artifact discover/read；使用已有 runner/进程清理与 Store 原语，不能把 check passed 字段当 provider 成功 |
+| Host/Skill owner | runtime/server/hook 传输观测 session；有界 emitter 与独立最小投递账本；插件 Skill 增加按需复用参考；packager 同步入口 | native package/TUI、Hook fixture；不复制 SoL ContextSessions，不改全局规则/安装源 |
+| Eval owner | 独立 blog-reuse-v2 映射/贡献判断/负控/报告，复用原 fixture 和外部检查入口 | benchmarks/blog、blog-score；blog-eval-v1 评分实现/报告冻结，先校准后模型调用 |
+
+主 Agent 拥有跨接口合同和最终裁决；adapter 不另造动作许可或 stage。MCP client 尚不在生产依赖中：P0 核实官方兼容 client/stdio 包和现有 runner 可复用边界，确有必要才添加一个实际 client 依赖及锁文件；不把测试里的简化 JSON-RPC helper 直接当生产协议栈，也不虚构已存在的 import/API。
+
+## 3. 分期、完成标准与失败门
+
+| 阶段 | 交付 | go / no-go |
+| --- | --- | --- |
+| P0 接线验证 | 隔离 slop 工作区：真实 provider-only 成品 tools/list + manifest、源/缓存写边界、取消清理；实测 Hook/MCP session 对应和 ack 有无；client 版本/协议 | 必要路径验证才开启对应能力。完整 SoL 混入、秘密读取、无法收齐源 manifest、终态不明均 no-go；无 ack 使用设计的 unknown/debounce，不假装送达 |
+| P1 证据与门禁 | rev2/v1 读取兼容；discover/read/D prepare/attach；目标分类、写前拒绝、D 与目标 lineage、同 request 恢复 | 缺/伪造/过期记录在 pending 前拒绝；有效 reuse/extend/new 可推进；自身受管修改不永久卡住；未知效果不重放 |
+| P2 Hook 与 QA | session 路由、预算与有限去重、Skill 最小入口、固定 checks 与冻结 QA 交接 | 未配置只读、双聊天不串线、Hook 丢失仍门禁、未知副作用优先、说明原文与 I 判词分离 |
+| P3 宿主与评测 | 隔离 CODEX_HOME/TUI 装配；v2 正/负控校准；预算与标准冻结后 off/on | 实际工具面/Hook 有事实；dummy/clone 不能通过；之后才跑八题重复对照，保存原 v1 分 |
+
+先做 P0，证据和合同可行后实现 P1/P2；不先启用两个全量插件。若无可用 provider，旧未启用项目继续原模式，启用且需查询的源码写入保留 blocked/unavailable。没有宿主 session 对应时只给通用 Hook 指针；不拿模型提供的 session_id 或 cwd 猜测任务。
+
+## 4. 关键实现步骤
+
+1. **发现**：验证操作者固定发行身份/协议 → 受控 peer → query 原字节+完整 manifest → Cycle 独立重读 SHA → 归档 immutable 证据。选定接口、实现、直接调用方按需读取；遗漏与动态关系显式标出。prepare/read 显示捕获、视图和未确认交付三种状态。
+2. **决定**：D 唯一 `cycle-reuse-v1` 区块 → 严格 JSON/Zod → 精确 targets/选择/理由/原始 evidence refs → prepared handle。attach 复核正文与 refs。只保存投影，不维护另一本 reuse.json；文本语义保持 reported。
+3. **写入**：原授权/绑定 → 真实目标分类 → D/来源/策略当前性 → expected_sha256 → pending → Workspace.apply → 已观察文件效果 → outcome/settle。shared/registry/已记录调用方修改标 needs_refresh；消费者目标依已知 cursor 继续；外部变化不能自动吸收。
+4. **提醒**：从本地状态生成枚举摘要 → semantic fingerprint → session/epoch 路由及有限 debounce → 按优先级移除字段 → 最终 UTF-8 序列化字节检查。账本独立短 lease，不复用长检查/写入租约；锁/缓存错误不使业务状态改变。Stop 仍空返回。
+5. **验证**：真实 source/调用方与 D 前后快照 → 项目固定 check_ids → 独立 QA 冻结输入。保留 I 实现说明供维护，但不将其判词交给 QA；新约束必须进入受影响 QA/checks basis，不能沿用旧 Q 宣告通过。
+
+禁止把“已捕获/已返回”写成“模型已读懂”，把静态 export/import 写成动态调用证明，或把 provider cache 归档成功写成产品任务完成。
+
+## 5. 最小验证矩阵
+
+下列是应新增/复用的检查，**本轮未运行新 runtime 用例**，文件名和函数入口在实施时核对。
+
+| 验收 | 判别输入 / 观察结果 | 验证层 |
+| --- | --- | --- |
+| REUSE-01 | 成品仅三 provider 工具，无 Flow/Write/Hook；全量 SoL 混入被标冲突 | 分发 + 实际内部 MCP + TUI |
+| REUSE-02 | unconfigured/status/Hook 不创建目录或进程；协议/发行漂移、超时返回 unavailable/真实终态 | 文件/进程观察 |
+| REUSE-03 | 缺 D/伪读/过期/未覆盖源目标/伪豁免，pending 与产品字节均未变化；合法三种决定成功 | Core 集成 |
+| REUSE-04 | 旧 v1/cycle 能恢复；rev2 策略不能中途降低；docs 路径不过度触发，未知类型按 source | 配置/授权 |
+| REUSE-05 | 修改 D/候选/登记/调用方使 stale；消费者受管写后 cursor 可继续；共享扩展后需 refresh | 真文件前后态 |
+| REUSE-06 | 归档后丢响应、部分写入、清理未知：原操作事实保留、同 request 不重放 | 故障切点 |
+| REUSE-07 | 同 cwd 两 session、缺字段、resume/compact、重复 4 次与语义变更 | Hook + 宿主观测 |
+| REUSE-08 | 中文/emoji/转义/最大 blocker、丢 Hook：JSON ≤2048 字节且可解析；后端门禁有效 | 字节/集成 |
+| REUSE-09 | 投毒描述/注释不进入 Hook，不可铸造 grant/decision；source alias/I 别名仍排除 | 边界/权限 |
+| REUSE-10 | 冻结 QA 收原始 R/D/来源/前后/checks；自身 I 判词不进入；旧检查/Q 不冒用 | 快照/QA |
+| REUSE-11 | 真复用通过、dummy/clone/行为回归负控不通过、未知动态贡献不计通过 | 评分器正负校准 |
+| REUSE-12 | 相同输入身份和样本计划的 off/on；固定 25 与 E 并报；旧报告/规则 SHA 不变 | 未来真实 benchmark |
+
+只针对该阶段跑项目既有相关检查，最终 `npm run check`；新必要依赖须同步锁文件与官方审计。TUI/client/数据流必须各自有真实证据，stub 与单位测试不证明宿主或模型效果；不能把基线 141 pass 作为上述新增能力验收。
+
+## 6. 升级、失败恢复与回退
+
+先配对交付 provider-only 与 cycle rev2 能力，显式启用项目配置，再在临时安装验证；不自动改现有全局插件或宿主信任。新产物包含原生成器的安全边界，版本仅在用户要求发布时调整。
+
+准备/查询失败：保留原 D/旧观测但标 stale/unavailable，不改产品。产品 partial/unknown：沿原 operation 检查实际前/后/第三态并显式恢复，不能重跑。Hook 账本损坏：给最小指针，不假造 ack；只在已配置辅助目录安全重建路由数据，工程证据不删除。
+
+关闭新能力须由操作者显式配置，并对启用中的 cycle 保留原固定策略；先按原授权结束/放弃后再开始旧模式。不能让模型通过关开配置获得绕过。回退不删除旧 source/operation/QA/benchmark 证据，也不以 git reset/clean 还原用户内容。
+
+## 7. 当前覆盖与恢复点
+
+| 内容 | 实现状态 | 本轮验证 |
+| --- | --- | --- |
+| 原工程循环 / 已安装 0.1.0 | 已有实现 | 引用原实施记录，未重复运行 |
+| provider-only 与 client | 未实现 | 只读源码审查，协议/宿主 P0 未运行 |
+| D 复用决定与写前门禁 / lineage | 未实现 | 四角色及主 Agent 设计审查，真实回归未运行 |
+| session/预算/去重 / Skill 增量 | 未实现 | 输出合同已定义，实际 Hook/ack 未验 |
+| blog-reuse-v2 / off-on 收益 | 未实现、未跑分 | 原 v1 分保留；没有新有效复用收益结论 |
+| 本轮设计与实施文档 | 已写入 | 文档检查及定向复核记录见评审历史 |
+
+最后已完成动作：真实四角色独立审查、主 Agent 裁决与本轮合同写入。没有新模型 benchmark、安装或代码执行任务在运行。下一安全动作：在单独 slop 夹具核对 provider-only 成品与 host session 能力；实施按 P0→P3 消费本文，遇到实际反例只修受影响合同。提交、推送、发布、全局规则和真实评分变更都不在本轮交付中。

@@ -1,0 +1,111 @@
+
+> agent-engineering-cycle@0.1.0 check
+> npm test && npm audit --audit-level=high --registry=https://registry.npmjs.org/
+
+
+> agent-engineering-cycle@0.1.0 test
+> node scripts/check.mjs
+
+✔ runCheck records a successful child and captures bounded stdout and stderr (73.2886ms)
+✔ runCheck delivers exact UTF-8 stdin and reports only its byte count and digest (73.1318ms)
+✔ runCheck rejects stdin above the UTF-8 byte limit before launching (1.3618ms)
+✔ runCheck records a closed-child stdin write failure without exposing input text (377.927ms)
+✔ runCheck records a nonzero exit as a completed failure (62.9245ms)
+✔ runCheck distinguishes a missing executable from a launched command (2.8963ms)
+✔ runCheck does not launch after an abort already requested (0.204ms)
+✔ runCheck cancels a running process tree and observes the child terminal state (732.2121ms)
+✔ runCheck enforces a timeout, kills the process, and keeps timeout separate from cancellation (409.6652ms)
+✔ runCheck caps combined stdout and stderr bytes and marks truncated output incomplete (66.6715ms)
+✔ runCheck retains a started fact when the onStarted callback fails (324.1426ms)
+✔ runCheck rejects shell command strings and empty or oversized argv entries (0.5665ms)
+✔ strict status inspection leaves a fresh workspace without persistent store state (14.462ms)
+▶ begin refuses user-sourced and missing grants without persisting a cycle
+  ✔ a user source cannot mint an accepted begin grant (62.095ms)
+  ✔ begin without any grant leaves no current cycle record (27.0022ms)
+✔ begin refuses user-sourced and missing grants without persisting a cycle (89.5695ms)
+✔ begin, R/D/I attach, managed write, and fixed verify form an active cycle, not completion (1731.0189ms)
+✔ the same request writes once, while changed parameters under that ID conflict (480.4911ms)
+▶ write permission rejects docs-mode code, cross-scope, and stale-binding attempts without file effects
+  ✔ docs permission cannot write a code file inside the declared scope (257.9782ms)
+  ✔ a target outside both exact path scopes is not created (260.5544ms)
+  ✔ a binding captured before an attach cannot write after the revision changes (632.2709ms)
+✔ write permission rejects docs-mode code, cross-scope, and stale-binding attempts without file effects (1151.8867ms)
+✔ saved outcomes recover without replay after the file effect already happened (659.6674ms)
+✔ a QA configuration change makes prior checks and Q non-current but retains their evidence (2229.5804ms)
+▶ Delta approval requires a verified decision for this exact cycle and digest, without widening docs access
+  ✔ a proposed Delta without a decision remains unapproved (545.283ms)
+  ✔ a decision for another cycle cannot approve this Delta (606.5702ms)
+  ✔ a decision for a different Delta digest cannot approve this revision (615.467ms)
+  ✔ an exact requirement decision approves only the Delta and does not grant code writes (849.4091ms)
+✔ Delta approval requires a verified decision for this exact cycle and digest, without widening docs access (2619.1525ms)
+✔ multi-file settle distinguishes before, after, and third states without overwriting external changes (2963.1438ms)
+✔ incorporated authority sync records that implementation is still unverified (2809.5862ms)
+▶ finish needs independent QA and external source drift cannot publish a current completion
+  ✔ fixed checks and R/D/I without Q cannot complete (2333.9607ms)
+  ✔ source drift before finish leaves no completion archive (2298.3602ms)
+  ✔ source drift after completion archival still prevents publication as complete (2496.4015ms)
+✔ finish needs independent QA and external source drift cannot publish a current completion (7130.2296ms)
+✔ implementation note returns its selected prose and source identities without claiming semantic verification (51.3982ms)
+▶ changing the source, selected prose, or a related source makes its note stale
+  ✔ src/subject.mjs (10.1278ms)
+  ✔ docs/compute-flow.md (14.577ms)
+  ✔ src/scaler.mjs (9.6941ms)
+✔ changing the source, selected prose, or a related source makes its note stale (66.4219ms)
+✔ missing files and out-of-bounds documentation ranges are distinguished (34.7487ms)
+✔ implementation notes inherit Workspace traversal, secret, and symlink protections (49.6978ms)
+✔ note paths and captured prose stay within their aggregate limits (177.2627ms)
+▶ prepared I handles bind note metadata and reject changed or expired notes without effects
+  ✔ changed note metadata (316.5103ms)
+  ✔ changed referenced prose expires the prepared note (324.578ms)
+✔ prepared I handles bind note metadata and reject changed or expired notes without effects (641.6188ms)
+✔ declared targets block finish and QA start until I is refreshed with current notes (5607.3053ms)
+✔ Hook reports only implementation-note counts and Stop never continues the turn (334.1608ms)
+✔ QA freezes implementation-note sources and context while excluding the I summary (2856.2036ms)
+✔ frozen QA source MCP exposes only read-only manifest reads and rejects drift (313.9715ms)
+✔ unknown QA outcome remains non-terminal, blocks abandon and new start, and cancellation preserves uncertainty (2531.3616ms)
+✔ finish archive recovery settles the same completion without rerunning checks or replacing Q (3375.464ms)
+✔ source drift at the finish archive cut keeps resume active with stale evidence (3302.451ms)
+▶ a deleted or tampered completion archive invalidates current completion but preserves history
+  ✔ deleting the archive (2941.124ms)
+  ✔ tampering with the archived cycle identity (2672.9743ms)
+✔ a deleted or tampered completion archive invalidates current completion but preserves history (5617.017ms)
+▶ damaged original check or verification evidence blocks finish
+  ✔ a changed check-runner archive (2226.413ms)
+  ✔ a changed verification archive (2257.9577ms)
+✔ damaged original check or verification evidence blocks finish (4485.9555ms)
+✔ the capability gate recalls calibration evidence with numeric p0 kind names and rejects tampering (299.2593ms)
+✔ docs grants cannot launch a configured command which would overwrite code (1232.9871ms)
+✔ builtin docs integrity records readonly observations without pretending to launch a check process (1474.0036ms)
+✔ a model verdict and stdin delivery cannot replace actual frozen-source reads (0.5777ms)
+✔ CLI reports cannot self-certify assurance, and missing terminal events remain missing (0.7151ms)
+✔ read-only LocalStore inspection leaves a missing .codex directory absent (11.6001ms)
+✔ two independent Node processes contend on one workspace lease after a barrier (615.3581ms)
+✔ archive summaries are content-addressed, API-immutable, and detect direct tampering (81.9915ms)
+✔ a live or crashed lease is reported and never automatically removed (210.9019ms)
+✔ a crash after persisting pending and an effect leaves both records without replay (216.275ms)
+✔ different request IDs retain separate operations and immutable runner facts (79.959ms)
+✔ OperatorAuthority needs explicit adapter confirmation, and the fixture is not Host human proof (43.5008ms)
+✔ OperatorAuthority rejects payload and signature tampering (70.1115ms)
+✔ user/imported sources and a copied grant from another workspace do not verify (102.3155ms)
+✔ portable plugin manifests point at the local MCP server and packaged hooks (5.5156ms)
+✔ hook rejects malformed, unknown, and oversized input without producing output (196.6337ms)
+✔ hook requires host cwd and rejects a conflicting explicit workspace before loading runtime (118.535ms)
+✔ MCP stdio initializes, lists seven tools, and calls read-only status without creating state (240.2326ms)
+✔ constructor pins a real workspace root and exposes readonly identity (9.6109ms)
+✔ reads only explicit UTF-8 files and enforces path and secret boundaries (20.593ms)
+✔ rejects symlink ancestors before reading or applying (15.6139ms)
+✔ enforces per-file, aggregate, and explicit-file limits (102.3765ms)
+✔ snapshot copies actual bytes, survives source A to B to A, and detects tampering (103.9208ms)
+✔ apply preflights all expected hashes before making any change (17.8083ms)
+✔ apply writes atomically, records ordered effects, and preserves POSIX mode (32.0519ms)
+✔ effect persistence failure reports the already published effect without rollback (21.4599ms)
+✔ apply detects an external third state between ordered targets and preserves known effects (29.0881ms)
+ℹ tests 86
+ℹ suites 0
+ℹ pass 86
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 22281.9276
+found 0 vulnerabilities

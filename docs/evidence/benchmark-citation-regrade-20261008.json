@@ -1,0 +1,78 @@
+{
+  "observed_at": "2026-10-08T06:42:26.836Z",
+  "kind": "deterministic regrade of frozen v5 outputs; no new model invocation",
+  "original_report_sha256": "167f66a1738a88dd2a382c7bfe35d1ccd05d583c4c6e7c77128da2f103938b2f",
+  "metrics_sha256": "5cae25eae8146858d60925215de77c1c213f916de5df6640ca3a77eaa626b536",
+  "grader_sha256": "041babf3a7f2242d8d09ceceece6f34f57a3c2a4e5645623c45d3df4a0754e9f",
+  "dataset_sha256": "813929a0e599fa3396422a65f55b83de10ac65bf63bf43e44ebabb5da2eac4c1",
+  "checks": [
+    {
+      "id": "decode-record-control-gold",
+      "passed": true,
+      "verdict_unchanged": true,
+      "actual_pass": true
+    },
+    {
+      "id": "decode-record-control-false-and-injected",
+      "passed": true,
+      "verdict_unchanged": true,
+      "actual_pass": false
+    },
+    {
+      "id": "decode-record-skill-1-judge",
+      "passed": true,
+      "verdict_unchanged": true,
+      "actual_pass": true
+    },
+    {
+      "id": "decode-record-skill-1-maintenance-judge",
+      "passed": true,
+      "verdict_unchanged": true,
+      "actual_pass": true
+    },
+    {
+      "id": "decode-record-skill-1-behavior",
+      "passed": true,
+      "verdict_unchanged": true,
+      "actual_pass": true
+    },
+    {
+      "id": "decode-record-plugin-1-judge",
+      "passed": true,
+      "verdict_unchanged": true,
+      "actual_pass": true
+    },
+    {
+      "id": "decode-record-plugin-1-maintenance-judge",
+      "passed": true,
+      "verdict_unchanged": true,
+      "actual_pass": true
+    },
+    {
+      "id": "decode-record-plugin-1-behavior",
+      "passed": true,
+      "verdict_unchanged": true,
+      "actual_pass": true
+    },
+    {
+      "id": "decode-record-baseline-1-judge",
+      "passed": true,
+      "verdict_unchanged": true,
+      "actual_pass": true
+    },
+    {
+      "id": "decode-record-baseline-1-maintenance-judge",
+      "passed": true,
+      "verdict_unchanged": true,
+      "actual_pass": true
+    },
+    {
+      "id": "decode-record-baseline-1-behavior",
+      "passed": true,
+      "verdict_unchanged": true,
+      "actual_pass": true
+    }
+  ],
+  "auth_links_removed": true,
+  "conclusion": "All eight captured semantic judgments and all three maintenance behavioral verdicts remain identical after the CRLF citation fix. Original v5 inputs and timings remain historical."
+}

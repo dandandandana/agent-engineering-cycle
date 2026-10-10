@@ -1,0 +1,37 @@
+✔ no configuration still has standard defaults; status and unauthorized work create no project records (13934.574ms)
+✔ exact signed documents bootstrap through cycle_apply, while arbitrary Markdown keeps the reuse gate (7565.8497ms)
+✔ unregistered real source discovery permits consumer reuse and blocks stale shared writes (52434.8332ms)
+✔ a second host session gets a readonly pointer and must explicitly join before persistent work (579.7282ms)
+✔ settled own creations remain usable, but an external new file invalidates empty discovery (33645.4682ms)
+✔ a real bundled pure validator recognizes existing declarations without executing the provider (4961.3317ms)
+✔ metadata facts match the real provider bigint DTO for an unchanged binary and worktree control file (24.0392ms)
+✔ collects scoped metadata, includes secret-file names, and skips control/security/generated directories (49.0482ms)
+✔ observes source additions and deletions by enumerating names rather than trusting directory timestamps (47.8138ms)
+✔ file facts expose same-path metadata changes while the path-set digest remains unchanged (29.7714ms)
+✔ honors separate roots, explicit files, and the dot root sentinel (33.8855ms)
+✔ fails closed on a directory symlink or junction without exposing its target (32.3163ms)
+✔ rejects a symlink workspace root and reports missing scoped paths as incomplete (7.4888ms)
+✔ validates empty complete inventory and allows an evidence-free empty new decision (4.3063ms)
+✔ preserves valid blocked enumeration as captured evidence and refuses a new decision (0.582ms)
+✔ a regular worktree control file stays metadata-only rather than becoming a skipped directory (0.3775ms)
+✔ accepts an empty source only with its real empty-text 1..1 capture (1.078ms)
+✔ allows a fully read new decision only after every candidate has a real not_applicable assessment (0.3844ms)
+✔ validates shared-source reuse, requires the caller relation line, and assigns candidate/caller floors (0.6442ms)
+✔ rejects registered UID/singular-symbol identity and mismatched source-to-candidate inventory (0.5895ms)
+✔ validates path-inventory digest, canonical sets, and file classification (0.8206ms)
+✔ recomputes the inventory digest with excluded paths and source failures while keeping I exclusion separate (0.8032ms)
+✔ does not let a zero-match keyword erase the full candidate set for a new decision (0.3947ms)
+✔ reports missing candidate reads and missing new-decision assessments (0.4284ms)
+✔ keeps unknown TS relations blocking for extend and new even when rationale says otherwise (0.5267ms)
+✔ rejects reuse when the selected source is also a consumer target (0.2672ms)
+✔ requires selected-source read ranges to cover the entire source, including a missing middle (0.3332ms)
+✔ does not accept a selected source header-only read as full-source coverage (0.2632ms)
+✔ requires a new-decision not_applicable assessment to cite reads covering the whole source (0.2255ms)
+ℹ tests 29
+ℹ suites 0
+ℹ pass 29
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 113994.4468

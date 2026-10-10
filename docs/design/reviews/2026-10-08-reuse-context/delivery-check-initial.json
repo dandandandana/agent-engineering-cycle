@@ -1,0 +1,188 @@
+{
+  "schema_revision": 1,
+  "checked_at": "2026-10-08T11:59:43.932Z",
+  "scope": "documentation and frozen baseline identities only",
+  "result": "failed",
+  "document_count": 17,
+  "local_links_checked": 110,
+  "reuse_acceptance_ids": [
+    "REUSE-01",
+    "REUSE-02",
+    "REUSE-03",
+    "REUSE-04",
+    "REUSE-05",
+    "REUSE-06",
+    "REUSE-07",
+    "REUSE-08",
+    "REUSE-09",
+    "REUSE-10",
+    "REUSE-11",
+    "REUSE-12"
+  ],
+  "baseline_files_checked": 67,
+  "baseline_unchanged": true,
+  "production_runtime_tests": "not_run; no production changes in this increment",
+  "host_provider_session_benchmark_acceptance": "planned; not_run",
+  "documentation_files": [
+    {
+      "path": "README.md",
+      "sha256": "b95d27b8e80e526d0d0ba2e8d84ed5820de9dab85a2df91b2b4b019bc1e581b1"
+    },
+    {
+      "path": "docs/IMPLEMENTATION_STATE.md",
+      "sha256": "8f517d4d9141ac8d9fd9727288ddd67afc5c830ba86ef46cbc096f1ac2981ddc"
+    },
+    {
+      "path": "docs/design/architecture.md",
+      "sha256": "aea4865ebed2cc6cb7e497f4630a94224a018f50dff133382acf69086d8f6cbc"
+    },
+    {
+      "path": "docs/design/acceptance.md",
+      "sha256": "3a119340a5095046b6b57b7123299e06c57c40ef29900fb3ad298d3209c55a2f"
+    },
+    {
+      "path": "docs/design/review-history.md",
+      "sha256": "5fae51e9834d6ff92bfb74691aee2ef759bf5f4686f87275f20ef9389d3bcc67"
+    },
+    {
+      "path": "docs/design/component-reuse-context.md",
+      "sha256": "f1a369011d10dff5da9649680391af1a65c92cf6eee21bb946ad02f9b62ad4d8"
+    },
+    {
+      "path": "docs/design/component-reuse-implementation.md",
+      "sha256": "4fa759e84253491556a558ffd3ab810a1f7bbe4432a24532b9e6ac07f86b54f1"
+    },
+    {
+      "path": "docs/design/reviews/2026-10-08-reuse-context/00-brief.md",
+      "sha256": "06395ac367dd20f482d04ae3e41d7fcc19bfd68513a5fbb647f6da5579d261a8"
+    },
+    {
+      "path": "docs/design/reviews/2026-10-08-reuse-context/01-design.md",
+      "sha256": "17d1b8e597d9c0f6bf4172cc367ebc5f3b18965e88a012609ef467cdaf392bdd"
+    },
+    {
+      "path": "docs/design/reviews/2026-10-08-reuse-context/02-redteam.md",
+      "sha256": "ef37e1709f66e9eee9b33ce0f1dfde9f36cfb8a1648490725b4795299b45b51c"
+    },
+    {
+      "path": "docs/design/reviews/2026-10-08-reuse-context/03-implementation-eval.md",
+      "sha256": "f2cd923b0048bf07ec3d94ad1dc7041f6ad80d5a44fcb88aa5647adc57e2a6f2"
+    },
+    {
+      "path": "docs/design/reviews/2026-10-08-reuse-context/04-maintainability.md",
+      "sha256": "17ab7f127b15f5439621eb66ef3fc9e7933b89e0f221e55fd5016e4edf6561c9"
+    },
+    {
+      "path": "docs/design/reviews/2026-10-08-reuse-context/05-draft-design.md",
+      "sha256": "d60acf9b2d3f3b274af13cd960e95cec3cd918685b147b5e5fd2cc9ad827e993"
+    },
+    {
+      "path": "docs/design/reviews/2026-10-08-reuse-context/06-draft-implementation.md",
+      "sha256": "8d2a3ad6d10fdd4e578900c8bc883f1cfbb252252063508756376c06b3d7aca7"
+    },
+    {
+      "path": "docs/design/reviews/2026-10-08-reuse-context/07-contract-recheck.md",
+      "sha256": "22d8e5102f911d85a9cf827afa888778ac3619220a72569da7532ba43e263beb"
+    },
+    {
+      "path": "docs/design/reviews/2026-10-08-reuse-context/08-redteam-recheck.md",
+      "sha256": "0b81ef9ba975955796a6ee367817224ecd9de2eaf5813c57f620b9d17f71edb5"
+    },
+    {
+      "path": "docs/design/reviews/2026-10-08-reuse-context/09-eval-recheck.md",
+      "sha256": "1f940968b8625a88c40af6ecf5e6497afb64f84bc1f6475fc0f365f0051a5435"
+    }
+  ],
+  "issues": [
+    {
+      "file": "D:\\zzd\\agent-engineering-cycle\\docs\\design\\reviews\\2026-10-08-reuse-context\\05-draft-design.md",
+      "target": "component-reuse-implementation.md",
+      "reason": "local link not found"
+    },
+    {
+      "file": "D:\\zzd\\agent-engineering-cycle\\docs\\design\\reviews\\2026-10-08-reuse-context\\05-draft-design.md",
+      "target": "review-history.md#2026-10-08-组件复用与上下文控制",
+      "reason": "local link not found"
+    },
+    {
+      "file": "D:\\zzd\\agent-engineering-cycle\\docs\\design\\reviews\\2026-10-08-reuse-context\\05-draft-design.md",
+      "target": "../evidence/benchmark-blog-20261008.md",
+      "reason": "local link not found"
+    },
+    {
+      "file": "D:\\zzd\\agent-engineering-cycle\\docs\\design\\reviews\\2026-10-08-reuse-context\\05-draft-design.md",
+      "target": "acceptance.md#组件复用与上下文控制增量",
+      "reason": "local link not found"
+    },
+    {
+      "file": "D:\\zzd\\agent-engineering-cycle\\docs\\design\\reviews\\2026-10-08-reuse-context\\05-draft-design.md",
+      "target": "component-reuse-implementation.md",
+      "reason": "local link not found"
+    },
+    {
+      "file": "D:\\zzd\\agent-engineering-cycle\\docs\\design\\reviews\\2026-10-08-reuse-context\\06-draft-implementation.md",
+      "target": "component-reuse-context.md",
+      "reason": "local link not found"
+    },
+    {
+      "file": "D:\\zzd\\agent-engineering-cycle\\docs\\design\\reviews\\2026-10-08-reuse-context\\06-draft-implementation.md",
+      "target": "acceptance.md#组件复用与上下文控制增量",
+      "reason": "local link not found"
+    },
+    {
+      "file": "D:\\zzd\\agent-engineering-cycle\\docs\\design\\reviews\\2026-10-08-reuse-context\\06-draft-implementation.md",
+      "target": "../../src/runtime.mjs",
+      "reason": "local link not found"
+    },
+    {
+      "file": "D:\\zzd\\agent-engineering-cycle\\docs\\design\\reviews\\2026-10-08-reuse-context\\06-draft-implementation.md",
+      "target": "../../src/core/contracts.mjs",
+      "reason": "local link not found"
+    },
+    {
+      "file": "D:\\zzd\\agent-engineering-cycle\\docs\\design\\reviews\\2026-10-08-reuse-context\\06-draft-implementation.md",
+      "target": "../../src/core/cycle.mjs",
+      "reason": "local link not found"
+    },
+    {
+      "file": "D:\\zzd\\agent-engineering-cycle\\docs\\design\\reviews\\2026-10-08-reuse-context\\06-draft-implementation.md",
+      "target": "../../src/local/implementation-notes.mjs",
+      "reason": "local link not found"
+    },
+    {
+      "file": "D:\\zzd\\agent-engineering-cycle\\docs\\design\\reviews\\2026-10-08-reuse-context\\06-draft-implementation.md",
+      "target": "../../src/local/config.mjs",
+      "reason": "local link not found"
+    },
+    {
+      "file": "D:\\zzd\\agent-engineering-cycle\\docs\\design\\reviews\\2026-10-08-reuse-context\\06-draft-implementation.md",
+      "target": "../../src/server.mjs",
+      "reason": "local link not found"
+    },
+    {
+      "file": "D:\\zzd\\agent-engineering-cycle\\docs\\design\\reviews\\2026-10-08-reuse-context\\06-draft-implementation.md",
+      "target": "../../../codex-sol/src/architecture/index.mjs",
+      "reason": "local link not found"
+    },
+    {
+      "file": "D:\\zzd\\agent-engineering-cycle\\docs\\design\\reviews\\2026-10-08-reuse-context\\06-draft-implementation.md",
+      "target": "../../../codex-sol/src/server.mjs",
+      "reason": "local link not found"
+    },
+    {
+      "file": "D:\\zzd\\agent-engineering-cycle\\docs\\design\\reviews\\2026-10-08-reuse-context\\06-draft-implementation.md",
+      "target": "../IMPLEMENTATION_STATE.md",
+      "reason": "local link not found"
+    },
+    {
+      "file": "D:\\zzd\\agent-engineering-cycle\\docs\\design\\reviews\\2026-10-08-reuse-context\\06-draft-implementation.md",
+      "target": "../implementation-notes.md",
+      "reason": "local link not found"
+    },
+    {
+      "file": "D:\\zzd\\agent-engineering-cycle\\docs\\design\\reviews\\2026-10-08-reuse-context\\06-draft-implementation.md",
+      "target": "reviews/2026-10-08-reuse-context/source-manifest.json",
+      "reason": "local link not found"
+    }
+  ]
+}

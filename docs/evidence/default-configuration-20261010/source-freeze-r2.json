@@ -1,0 +1,326 @@
+{
+  "scope": "DEFAULT-v1 production inputs, includes untracked files",
+  "node": "v24.11.0",
+  "platform": "win32",
+  "entries": [
+    {
+      "root": "D:/zzd/agent-engineering-cycle",
+      "path": "hooks/hooks.json",
+      "sha256": "ae7625e12f4e02d152af7bae639d3d243ec02131df59f98024affc0d33cfe032",
+      "bytes": 935
+    },
+    {
+      "root": "D:/zzd/agent-engineering-cycle",
+      "path": "mcp.json",
+      "sha256": "c7d07b65eab16ab529e410bd4be0294042a8cfb974a07ff1abb48df532e36166",
+      "bytes": 284
+    },
+    {
+      "root": "D:/zzd/agent-engineering-cycle",
+      "path": "package-lock.json",
+      "sha256": "15592ef04b6128c7ca9cd3df54eb4e2d3bb021db5c9b0e371ea0f7320725e4b1",
+      "bytes": 6166
+    },
+    {
+      "root": "D:/zzd/agent-engineering-cycle",
+      "path": "package.json",
+      "sha256": "9ba52bfffeffe7d0dfd65ded76c1cc129e3ad7350d7db50526c8ec703aba48b3",
+      "bytes": 782
+    },
+    {
+      "root": "D:/zzd/agent-engineering-cycle",
+      "path": "plugin.json",
+      "sha256": "1594d2b9480d1e5a067afa3c02c86238c105ec5731586466bd1b7cbfb7b814d2",
+      "bytes": 353
+    },
+    {
+      "root": "D:/zzd/agent-engineering-cycle",
+      "path": "scripts/check.mjs",
+      "sha256": "73432425d7d5f4ce6857a31a97493d014fde42a0c3887e9175b1313b3d3dda24",
+      "bytes": 543
+    },
+    {
+      "root": "D:/zzd/agent-engineering-cycle",
+      "path": "scripts/p0.mjs",
+      "sha256": "666e0c5fcf1992989197bae4b767cfe2d8a5c53b46ff130ccf428dfacad7b6f5",
+      "bytes": 2353
+    },
+    {
+      "root": "D:/zzd/agent-engineering-cycle",
+      "path": "scripts/package-plugin.mjs",
+      "sha256": "2bb21ce70c1660facd7ca62e5b4377d4e931fb5437a8a4b5bc8ee50881c5f5d3",
+      "bytes": 11722
+    },
+    {
+      "root": "D:/zzd/agent-engineering-cycle",
+      "path": "skills/agent-engineering-cycle/agents/openai.yaml",
+      "sha256": "befa217498d33b52b003c144a7da89ad6adfcf872c74c73e2180c29af685b763",
+      "bytes": 297
+    },
+    {
+      "root": "D:/zzd/agent-engineering-cycle",
+      "path": "skills/agent-engineering-cycle/references/component-reuse.md",
+      "sha256": "a310767e86414fab17808a6c3febdcaa9590691a4386eb97cfe45c4358717d2d",
+      "bytes": 9841
+    },
+    {
+      "root": "D:/zzd/agent-engineering-cycle",
+      "path": "skills/agent-engineering-cycle/references/eval-cases.md",
+      "sha256": "93c6155665b9b464aad22b73025bb3baa2129ab54821c8e03c0d5027290cf763",
+      "bytes": 2939
+    },
+    {
+      "root": "D:/zzd/agent-engineering-cycle",
+      "path": "skills/agent-engineering-cycle/references/implementation-notes.md",
+      "sha256": "f71ddf8116fd20d0edf8fd701e5eadd7d746504a56e925974bb14f6fae4bc31b",
+      "bytes": 8988
+    },
+    {
+      "root": "D:/zzd/agent-engineering-cycle",
+      "path": "skills/agent-engineering-cycle/references/qa-reconciliation.md",
+      "sha256": "f47b28eb70964a52c86bb35cb307002c84e0741395f22a6e6651fc4fc4722ca8",
+      "bytes": 7581
+    },
+    {
+      "root": "D:/zzd/agent-engineering-cycle",
+      "path": "skills/agent-engineering-cycle/references/research-basis.md",
+      "sha256": "1ab34f7c0b8e9f4caa422ac226a25ab3a6123d69c16eaf9041ca8506b873a72c",
+      "bytes": 5207
+    },
+    {
+      "root": "D:/zzd/agent-engineering-cycle",
+      "path": "skills/agent-engineering-cycle/references/state-contract.md",
+      "sha256": "53a7267878b0f5cb9134a6b5540e6e385967e4006ee17374ef5b8cdffbe4c1c6",
+      "bytes": 6994
+    },
+    {
+      "root": "D:/zzd/agent-engineering-cycle",
+      "path": "skills/agent-engineering-cycle/SKILL.md",
+      "sha256": "d00c6bd864857286bf156ffd745e0cddc88250eac077be089dff0c52875371db",
+      "bytes": 14743
+    },
+    {
+      "root": "D:/zzd/agent-engineering-cycle",
+      "path": "src/adapters/calibrate.mjs",
+      "sha256": "6b2abd40726f1a4caa1dc99b9c1e7fdfd9f838a8927c68f13d1a01422887b965",
+      "bytes": 4049
+    },
+    {
+      "root": "D:/zzd/agent-engineering-cycle",
+      "path": "src/adapters/component-provider.mjs",
+      "sha256": "f3a0802639f421bb0f4a1153034b1c5b52bf492857b2e74eb4f11c2fff0e7ce6",
+      "bytes": 18488
+    },
+    {
+      "root": "D:/zzd/agent-engineering-cycle",
+      "path": "src/adapters/qa-cli.mjs",
+      "sha256": "617a67eab3a6498e62b1a45e89b370a0b2efa7926245ea8e2ca74ba9a50004c1",
+      "bytes": 10823
+    },
+    {
+      "root": "D:/zzd/agent-engineering-cycle",
+      "path": "src/adapters/qa-sources.mjs",
+      "sha256": "ccac7c6d9e34a83f2d93d04444555159f0c87853de2da264b15e858dbfde348a",
+      "bytes": 3588
+    },
+    {
+      "root": "D:/zzd/agent-engineering-cycle",
+      "path": "src/adapters/qa-worker.mjs",
+      "sha256": "ca0c0455de398d3ce760471ca09aacf916e226b43a09a4d65e9f73ea072743ad",
+      "bytes": 3555
+    },
+    {
+      "root": "D:/zzd/agent-engineering-cycle",
+      "path": "src/cli.mjs",
+      "sha256": "980d289ca8b386296d5f18dd0675f5c73240be032de2e7ad4f098fec4576ba08",
+      "bytes": 8069
+    },
+    {
+      "root": "D:/zzd/agent-engineering-cycle",
+      "path": "src/core/contracts.mjs",
+      "sha256": "b15664eaf9f52a610d6a2b9c1b5f0673f87dc4d16a65ffeab827c0845b782094",
+      "bytes": 8835
+    },
+    {
+      "root": "D:/zzd/agent-engineering-cycle",
+      "path": "src/core/cycle.mjs",
+      "sha256": "895dee8c9335102781becbde80cafab06ed1b03b1511433d7cff9238f6a3cf96",
+      "bytes": 69686
+    },
+    {
+      "root": "D:/zzd/agent-engineering-cycle",
+      "path": "src/hook.mjs",
+      "sha256": "4d0dff71ba86f993eb37ab17e87c07d144d68423b5f36624235eb35a4ffddc0e",
+      "bytes": 4225
+    },
+    {
+      "root": "D:/zzd/agent-engineering-cycle",
+      "path": "src/local/authority.mjs",
+      "sha256": "98f9e9e6421af5328cf3ff78825b75238514b1aac5b9d7d8e46c3bbc8ce438d8",
+      "bytes": 2434
+    },
+    {
+      "root": "D:/zzd/agent-engineering-cycle",
+      "path": "src/local/check-plan.mjs",
+      "sha256": "82b09cf9d17772cb9e52537b32239b809599a12fae698f0ccb8b981447a55394",
+      "bytes": 15427
+    },
+    {
+      "root": "D:/zzd/agent-engineering-cycle",
+      "path": "src/local/check-runner.mjs",
+      "sha256": "16c8cdfe724dc05f2da4c43359eea41507d8d6f3883731c03f616b6d19103b2d",
+      "bytes": 15967
+    },
+    {
+      "root": "D:/zzd/agent-engineering-cycle",
+      "path": "src/local/config.mjs",
+      "sha256": "1c3331c931d58f75d802164256691b3763d6e3d21b8150f5530376cffe25546e",
+      "bytes": 15945
+    },
+    {
+      "root": "D:/zzd/agent-engineering-cycle",
+      "path": "src/local/default-profile.mjs",
+      "sha256": "c4f80964dc704463d3c1964870fd6d6b880cc66bf2be59191a244f0bcdf5a2dc",
+      "bytes": 6298
+    },
+    {
+      "root": "D:/zzd/agent-engineering-cycle",
+      "path": "src/local/hook-context.mjs",
+      "sha256": "fab3a00599d765eba343fde653924288b617c4d8bd733dc15b6dd7d43aa149c1",
+      "bytes": 18136
+    },
+    {
+      "root": "D:/zzd/agent-engineering-cycle",
+      "path": "src/local/host-context.mjs",
+      "sha256": "6f8214db1d50cf2c3029834a228cb8b10491d37954ef069f6cfe98c51127d74e",
+      "bytes": 7625
+    },
+    {
+      "root": "D:/zzd/agent-engineering-cycle",
+      "path": "src/local/implementation-notes.mjs",
+      "sha256": "5085a01f388fb1c99acd49e7c8670af6a603adab7972a18cfe2aa9bf8ef9b766",
+      "bytes": 6915
+    },
+    {
+      "root": "D:/zzd/agent-engineering-cycle",
+      "path": "src/local/plugin-data.mjs",
+      "sha256": "cbaa40c3670c76f0a7d42120bde90eb76fae58a2022dbf3991d296d4c850ed03",
+      "bytes": 1552
+    },
+    {
+      "root": "D:/zzd/agent-engineering-cycle",
+      "path": "src/local/qa-candidates.mjs",
+      "sha256": "5ba95f94c89909666b78d11231532af2d5d335436bcc1d4a5c2add9f357c275e",
+      "bytes": 9841
+    },
+    {
+      "root": "D:/zzd/agent-engineering-cycle",
+      "path": "src/local/qa-defaults.mjs",
+      "sha256": "c88ee0b7368ec1d47b4ec14ee7f0949681a7d533ea980fbfb29c03c5e221cdaf",
+      "bytes": 2049
+    },
+    {
+      "root": "D:/zzd/agent-engineering-cycle",
+      "path": "src/local/qa-evidence.mjs",
+      "sha256": "9abd8841925c0183cc090f7e3b33f180cf3e8b92f676199cbb9a394de4362cae",
+      "bytes": 3390
+    },
+    {
+      "root": "D:/zzd/agent-engineering-cycle",
+      "path": "src/local/registered-default.mjs",
+      "sha256": "49357137a5c698522298ecca93be0ecff3175247e913374a09196e0466fedea6",
+      "bytes": 5275
+    },
+    {
+      "root": "D:/zzd/agent-engineering-cycle",
+      "path": "src/local/repository-inventory.mjs",
+      "sha256": "ca2a4a20f6805dbd0528e248117e763d8e0edcf3137a4faea0760d8dee427b84",
+      "bytes": 14028
+    },
+    {
+      "root": "D:/zzd/agent-engineering-cycle",
+      "path": "src/local/repository-reuse.mjs",
+      "sha256": "c97bd6d38853b179b532705523164f7af695cf81bc5573e77e364d8c0ba50cce",
+      "bytes": 33852
+    },
+    {
+      "root": "D:/zzd/agent-engineering-cycle",
+      "path": "src/local/reuse-evidence.mjs",
+      "sha256": "d125336af811a268b1f3953bd961bf1f2943c0de92f150367ff38bfb5ecba352",
+      "bytes": 27171
+    },
+    {
+      "root": "D:/zzd/agent-engineering-cycle",
+      "path": "src/local/store.mjs",
+      "sha256": "cbd26b55d43ed97a9ee9676f024a0519893e0f561717664c46e065bec3a9915a",
+      "bytes": 7580
+    },
+    {
+      "root": "D:/zzd/agent-engineering-cycle",
+      "path": "src/local/workspace.mjs",
+      "sha256": "f3d34e1d491acbcbf97ec3a814c4ecdef12d5023331428bac3b6eda8f04ae8e8",
+      "bytes": 40929
+    },
+    {
+      "root": "D:/zzd/agent-engineering-cycle",
+      "path": "src/runtime.mjs",
+      "sha256": "f19bdea5c8b5b58b7c31b7dad9addfe54adf51413b5efae7e6cfc86d01609125",
+      "bytes": 9520
+    },
+    {
+      "root": "D:/zzd/agent-engineering-cycle",
+      "path": "src/server.mjs",
+      "sha256": "001678ca142e976daa8c408e51bbe2389bc18744df412d0756df5813b8646541",
+      "bytes": 9539
+    },
+    {
+      "root": "D:/zzd/codex-sol",
+      "path": "scripts/package-provider.mjs",
+      "sha256": "f1879c58943daad018f8e8dcaf47570785ff30f4646397af39845217ba365b2d",
+      "bytes": 12300
+    },
+    {
+      "root": "D:/zzd/codex-sol",
+      "path": "src/architecture/change.mjs",
+      "sha256": "0bb67fd8a55e7dc7fcdc3b1055d95962f34179bc5a980b57f6c17f1b73ad29de",
+      "bytes": 68130
+    },
+    {
+      "root": "D:/zzd/codex-sol",
+      "path": "src/architecture/context.mjs",
+      "sha256": "86a69844a6bfed12cc1c3d75a47d845d62bbd6e890f8a8655333adff4b46eefc",
+      "bytes": 26339
+    },
+    {
+      "root": "D:/zzd/codex-sol",
+      "path": "src/architecture/index.mjs",
+      "sha256": "f47034590a2e9dfe3c8cfd1376ee989a569a0ad51ba736d50fd549bb0fbdacdf",
+      "bytes": 30378
+    },
+    {
+      "root": "D:/zzd/codex-sol",
+      "path": "src/architecture/session.mjs",
+      "sha256": "c19c1e8c57d7492a950eb758e277affd57868a7bd72e835c0227d766890133d7",
+      "bytes": 11031
+    },
+    {
+      "root": "D:/zzd/codex-sol",
+      "path": "src/provider-policy.mjs",
+      "sha256": "f6180657e6aa25371b82f9ea3fb2a39eceefa398a42a74da4b78395eefbe5ed7",
+      "bytes": 9778
+    },
+    {
+      "root": "D:/zzd/codex-sol",
+      "path": "src/provider-server.mjs",
+      "sha256": "fa4137ed665415b1062b7a3a90df4f3878327d6f24bf6b388813ac75463e1742",
+      "bytes": 19855
+    },
+    {
+      "root": "D:/zzd/codex-sol",
+      "path": "src/repository-index.mjs",
+      "sha256": "6ddd4a262d4869325ff3042804f801dfaa98ea01e1fa53512b4786f429c337f4",
+      "bytes": 27906
+    }
+  ],
+  "revision": "r2"
+}

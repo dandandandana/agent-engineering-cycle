@@ -1,0 +1,19 @@
+# D 原始报告：维护与演进
+
+执行者：真实独立 `gpt-6-luna` / max subagent `reuse_maintenance_review`，首次最小上下文。并发槽位释放后启动，未提供 A/B/C 意见。以下保留返回原文；结论尚须主 Agent 裁决。
+
+**D 维护与演进评审**
+
+**D1｜P1｜已确认源码缺口**：现有 SoL 入口不能直接充当“只读 provider”。`createSolRuntime` 会创建 ObservationStore、ContextEngine 和 ContextSessions（`codex-sol/src/runtime.mjs:11–18`）；`createSolServer` 在架构模式注册架构、上下文和写入/change 工具（`src/server.mjs:45–63,81–93`）；SoL 的打包输入包括整棵 `src` 和 Hook（`scripts/package-plugin.mjs:10–16`）。若只过滤工具名，仍会加载完整控制面。最小修正是增加 SoL 自有的 provider-only server 与独立打包清单，只公开查询/读取接口，复用 `ArchitectureIndex`，不启动 Cycle/SoL Store、ChangeEngine、Hook 或完整流程 instructions；源码不跨仓 deep-import。`ArchitectureIndex.load` 还注明调用方持有工作区锁（`src/architecture/index.mjs:60–64`），无 Store 的入口需明确只读快照/并发合同，并保证临时 Normify 目录在取消和失败后清理（`103–111`）。**验证**：检查成品清单与工具面、确认缺少 SoL 状态目录时仍能查询、确认无 Hook/写工具且临时目录已清理。
+
+**D2｜P1｜设计风险**：当前不能从项目配置证明“全宿主只有一个写入 owner”。Cycle Hook 只匹配 `apply_patch|Edit|Write`（`agent-engineering-cycle/src/runtime.mjs:16–23`、`hooks/hooks.json:25–35`）；SoL 也注册 SessionStart、UserPromptSubmit、PreToolUse、Stop（`codex-sol/hooks/hooks.json:3–45`），并有自己的写入工具。两套插件同装时仍可各自注入上下文、开放写入。把 SoL Hook 关掉或仅启用 provider 工具，不足以证明宿主没有 SoL 控制器。应限定支持组合为 Cycle + provider-only；对 Cycle + 完整 SoL 明确标记冲突或不支持，并把“唯一 owner”限定为 Cycle 后端管理的写路径。**验证**：逐项审查包清单、Hook 注册和实际工具列表；宿主未提供 Hook 清单时，不报告全局独占已验证。
+
+**D3｜P1｜设计风险**：不要另建与 D 文档并行的复用决定账本。当前七工具中，`cycle_artifact` 仅接受 R/D/I/Delta 路径和 I 的实现说明（`src/core/contracts.mjs:30,50`）；CycleCore 将 R/D/I 作为唯一工件并检查路径清单和证据身份（`src/core/cycle.mjs:61–67,365–366`）。若同时保存独立 reuse.json、D 文档复用表和 SoL session 记录，修改后会出现多个“当前决定”。最小修正是：决定正文和理由仍归原 D 文件；provider 的查询身份、版本摘要和被选能力标识作为 D 工件的结构化证据元数据，由 `cycle_status` 派生状态；不在 SoL 再存决定副本。**验证**：修改或撤销 D 中的选择后，只有这一事实来源失效，status 指明需更新 D/证据。
+
+**D4｜P1｜设计风险**：provider 的当前性既未进入 Cycle binding，也要避免被自身受管修改永久打 stale。Cycle 的 `basis()` 当前绑定工作区清单、配置和策略（`src/core/cycle.mjs:42–46`）；SoL 快照包含各文件版本，但 `select()` 仅返回整体 `version` 等查询视图，不返回完整 `versions`（`codex-sol/src/architecture/index.mjs:148–161,352–360`）。Cycle 的 `apply` 会在写后重算 basis（`src/core/cycle.mjs:215–216,374–378`），但 provider 所在仓库的版本变化不会因此自动纳入 Cycle。应让绑定包括可核验的 provider 协议能力、安装/发布身份和查询源版本；在首次写入前校验选择依据与目标前态。受管写入使用该决定后，将原决定保留为绑定前像的历史证据，并记录预期写后快照；区分“写入前外部漂移”与“已记录的自身效果”。**验证**：写前外部改源或登记必须拒绝旧决定；精确受管写入不能永久阻断 status；写后再发生外部漂移必须标 stale。MCP server 当前版本是源码硬编码 `0.1.0`（两仓 `src/server.mjs`），不能单靠此字符串判定能力。
+
+**D5｜P1｜未验证假设**：SHA/结构接收不能证明 Agent 读懂或正确复用了组件。`cycle_artifact prepare` 最多返回 8192 字符来源摘录（`src/core/cycle.mjs:160–165`）；实现说明明确 `semantic_verified:false`（`src/local/implementation-notes.mjs:78`）；SoL 索引只覆盖静态 ESM import/export，不证明完整调用图或行为（`codex-sol/src/architecture/index.mjs:150–161`）。因此“已读取”“适配理由”应是可回查的报告事实，不得作为程序批准或语义证明。分开记录已捕获字节/其 SHA、结构与覆盖、独立 QA 的语义判定。**验证**：新基准保留原八题、25 个机会、旧严格分数和原始报告；另测无用查询调用、复制函数体、错误来源身份及真实行为回归。旧博客报告已在 `docs/evidence/benchmark-blog-20261008.md`，不可改写成新门禁分母。
+
+**D6｜P1｜设计风险**：Hook 去重需要交付状态，但 SoL 的 `ContextSessions` 不是交付回执。Cycle Hook 每次 SessionStart/UserPromptSubmit 都返回摘要，目前没有 session 键、语义去重或预算（`agent-engineering-cycle/src/runtime.mjs:16–23`）；SoL 的 session 账本保存“线程到已准备 Context 的引用”（`codex-sol/src/architecture/session.mjs:22–30,57–70`），语义不同，归 `.codex/sol` 所有。不要复用它或再存一份业务状态。若 Host 无 delivery acknowledgement，记录“已生成”不能等价“已收到”，也不能据此永久抑制恢复注入。只在 Cycle 侧保存最小、有界的投递元数据，按 session/thread + cycle/task + 摘要指纹区分；恢复/compact 和状态变化可重发，多聊天并发受同一 Store 租约保护；2 KiB 用 UTF-8 字节数计算。**验证**：多 session、重复事件、恢复、变更状态和多字节边界用例；无 ack 时状态保持 unknown。
+
+**维护归属与兼容策略**：CycleCore/LocalStore 拥有 Cycle 配置、D 决定证据、当前性门禁和必要的投递元数据；Hook 只投影；SoL provider 拥有索引实现与只读协议，SoL 的 ContextSessions/ChangeEngine 继续由完整 SoL 自己维护。保持现有 7 工具和旧安装行为；provider 默认关闭，缺配置时 status 明确 unavailable 且不启动 peer。`config.mjs` 当前对 `schema_revision:1` 使用 strict schema，新增配置需保证旧配置可读、不自动改写：若升修订，提供旧版读取路径；若做可选加项，明确其兼容语义。能力探测应使用独立协议版本/能力合同，不依赖 server 版本字符串。架构和验收增量写入现有 `docs/design/architecture.md`、`acceptance.md`；`IMPLEMENTATION_STATE.md` 仅在实现后记实际状态、验证和恢复指针，不把计划写成完成。

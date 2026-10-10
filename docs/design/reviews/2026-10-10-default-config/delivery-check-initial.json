@@ -1,0 +1,95 @@
+{
+  "schema_revision": 1,
+  "date": "2026-10-10",
+  "scope": "DEFAULT-v1 design and council documentation",
+  "ok": false,
+  "markdown_files": 12,
+  "local_links_checked": 101,
+  "json_examples_parsed": 1,
+  "acceptance": {
+    "ids": 16,
+    "status": "planned"
+  },
+  "source_identity": {
+    "total": 49,
+    "matched": 49,
+    "meaning": "stable during document delivery check, not runtime execution"
+  },
+  "runtime_tests_run": false,
+  "model_or_benchmark_run": false,
+  "installation_changed": false,
+  "files": [
+    {
+      "path": "docs/design/default-configuration.md",
+      "bytes": 26371,
+      "sha256": "3883350ccf5488f10ea5d9b19ff398326950e1feaa2e86c80637523ff2f31970"
+    },
+    {
+      "path": "README.md",
+      "bytes": 6966,
+      "sha256": "df7f2001ceb58df5973f3cfda3ffc65aeff2fe4a629a327648e2fb1fc7a5625b"
+    },
+    {
+      "path": "docs/IMPLEMENTATION_STATE.md",
+      "bytes": 18177,
+      "sha256": "c70b868d3e9953f7e4815f984db02a30098d99c9dd44763c8cd975e9adee6553"
+    },
+    {
+      "path": "docs/design/architecture.md",
+      "bytes": 28983,
+      "sha256": "1b4c4205f00757322df098591c2803b7287de4031273f136aa699334aa3ec395"
+    },
+    {
+      "path": "docs/design/acceptance.md",
+      "bytes": 9625,
+      "sha256": "a160d629d0495f1b5441a4d07720b8f7d1790e119f2fef78bd2180d4e5158885"
+    },
+    {
+      "path": "docs/design/review-history.md",
+      "bytes": 22076,
+      "sha256": "3353001d62cb9969b9212ad4165be4415b16ccd9b4bea1d22cb360b85badbfde"
+    },
+    {
+      "path": "docs/design/reviews/2026-10-10-default-config/00-brief.md",
+      "bytes": 5583,
+      "sha256": "6d182918271ba934331383154fef674bdeb70914be47896bbf28f86743613e63"
+    },
+    {
+      "path": "docs/design/reviews/2026-10-10-default-config/01-design.md",
+      "bytes": 1644,
+      "sha256": "0cac1f83bda04c59b8ce12c32e877d7aaf0129408c8cca81990a75b901da396e"
+    },
+    {
+      "path": "docs/design/reviews/2026-10-10-default-config/02-redteam.md",
+      "bytes": 1871,
+      "sha256": "0ba134e464502d3a26454de04b0d21532783a5e3173d19e6d2ad3bbaf4764fea"
+    },
+    {
+      "path": "docs/design/reviews/2026-10-10-default-config/03-implementation-eval.md",
+      "bytes": 1858,
+      "sha256": "72c646e907700705616d78fd85af54ec3d3d3d7fd2a87406bf4d3842a18b993a"
+    },
+    {
+      "path": "docs/design/reviews/2026-10-10-default-config/04-maintainability.md",
+      "bytes": 1655,
+      "sha256": "dd67e48e6da9ea2dd6fdf2ea127cc0d7b3b60bd9d02ea1fd34d7db4ad31aad9f"
+    },
+    {
+      "path": "docs/design/reviews/2026-10-10-default-config/05-decisions.md",
+      "bytes": 4301,
+      "sha256": "f1094faeee6fcdd406cb8821932d4eb97a70fd46a5eb1ddeb33309ffe79fb494"
+    }
+  ],
+  "errors": [
+    {
+      "path": "docs\\design\\review-history.md",
+      "target": "reviews/2026-10-10-default-config/delivery-check.json",
+      "error": "local target missing"
+    },
+    {
+      "path": "docs\\design\\reviews\\2026-10-10-default-config\\05-decisions.md",
+      "target": "delivery-check.json",
+      "error": "local target missing"
+    }
+  ]
+}

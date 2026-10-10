@@ -1,0 +1,328 @@
+{
+  "global_update": {
+    "status": "blocked",
+    "error": "CLI failed to back up plugin cache entry: Windows os error 5",
+    "active_cache_cwd_observed": true,
+    "source_registration_restored": true,
+    "old_runtime_package_metadata_matches": true,
+    "legacy_package_scripts_differ": true,
+    "old_cache_source_checks": [
+      {
+        "path": "hooks/hooks.json",
+        "actual_sha256": "ae7625e12f4e02d152af7bae639d3d243ec02131df59f98024affc0d33cfe032",
+        "reference_sha256": "ae7625e12f4e02d152af7bae639d3d243ec02131df59f98024affc0d33cfe032",
+        "matched": true
+      },
+      {
+        "path": "package-lock.json",
+        "actual_sha256": "89d58018b29da7dcae01341bdc899091cbb9d007afc0fb563d6bb74cfc62e65d",
+        "reference_sha256": "89d58018b29da7dcae01341bdc899091cbb9d007afc0fb563d6bb74cfc62e65d",
+        "matched": true
+      },
+      {
+        "path": "package.json",
+        "actual_sha256": "cbec7cc2519a33071daa989e594bc0f540b7f7934d783a2bd76f93e96e9d12da",
+        "reference_sha256": "82153db00ece989775ceeef763a80da03831ca7162525673c9d7003d34512241",
+        "matched": false
+      },
+      {
+        "path": "skills/agent-engineering-cycle/agents/openai.yaml",
+        "actual_sha256": "befa217498d33b52b003c144a7da89ad6adfcf872c74c73e2180c29af685b763",
+        "reference_sha256": "befa217498d33b52b003c144a7da89ad6adfcf872c74c73e2180c29af685b763",
+        "matched": true
+      },
+      {
+        "path": "skills/agent-engineering-cycle/references/eval-cases.md",
+        "actual_sha256": "93c6155665b9b464aad22b73025bb3baa2129ab54821c8e03c0d5027290cf763",
+        "reference_sha256": "93c6155665b9b464aad22b73025bb3baa2129ab54821c8e03c0d5027290cf763",
+        "matched": true
+      },
+      {
+        "path": "skills/agent-engineering-cycle/references/implementation-notes.md",
+        "actual_sha256": "f71ddf8116fd20d0edf8fd701e5eadd7d746504a56e925974bb14f6fae4bc31b",
+        "reference_sha256": "f71ddf8116fd20d0edf8fd701e5eadd7d746504a56e925974bb14f6fae4bc31b",
+        "matched": true
+      },
+      {
+        "path": "skills/agent-engineering-cycle/references/qa-reconciliation.md",
+        "actual_sha256": "f47b28eb70964a52c86bb35cb307002c84e0741395f22a6e6651fc4fc4722ca8",
+        "reference_sha256": "f47b28eb70964a52c86bb35cb307002c84e0741395f22a6e6651fc4fc4722ca8",
+        "matched": true
+      },
+      {
+        "path": "skills/agent-engineering-cycle/references/research-basis.md",
+        "actual_sha256": "1ab34f7c0b8e9f4caa422ac226a25ab3a6123d69c16eaf9041ca8506b873a72c",
+        "reference_sha256": "1ab34f7c0b8e9f4caa422ac226a25ab3a6123d69c16eaf9041ca8506b873a72c",
+        "matched": true
+      },
+      {
+        "path": "skills/agent-engineering-cycle/references/state-contract.md",
+        "actual_sha256": "53a7267878b0f5cb9134a6b5540e6e385967e4006ee17374ef5b8cdffbe4c1c6",
+        "reference_sha256": "53a7267878b0f5cb9134a6b5540e6e385967e4006ee17374ef5b8cdffbe4c1c6",
+        "matched": true
+      },
+      {
+        "path": "skills/agent-engineering-cycle/SKILL.md",
+        "actual_sha256": "bd9c6eed729b3360e64bae85db8692e206a2b7afb3e71304dbffa75dce8555d8",
+        "reference_sha256": "bd9c6eed729b3360e64bae85db8692e206a2b7afb3e71304dbffa75dce8555d8",
+        "matched": true
+      },
+      {
+        "path": "src/adapters/calibrate.mjs",
+        "actual_sha256": "6b2abd40726f1a4caa1dc99b9c1e7fdfd9f838a8927c68f13d1a01422887b965",
+        "reference_sha256": "6b2abd40726f1a4caa1dc99b9c1e7fdfd9f838a8927c68f13d1a01422887b965",
+        "matched": true
+      },
+      {
+        "path": "src/adapters/qa-cli.mjs",
+        "actual_sha256": "bba14ff5bbdd8df6547ca1ae7ce4a7194df184486c4fe739e48463ddcc99de16",
+        "reference_sha256": "bba14ff5bbdd8df6547ca1ae7ce4a7194df184486c4fe739e48463ddcc99de16",
+        "matched": true
+      },
+      {
+        "path": "src/adapters/qa-sources.mjs",
+        "actual_sha256": "358fafc59dd041a3b93a721e5b93cc94fa629d372ed75bc48485862531ab6332",
+        "reference_sha256": "358fafc59dd041a3b93a721e5b93cc94fa629d372ed75bc48485862531ab6332",
+        "matched": true
+      },
+      {
+        "path": "src/adapters/qa-worker.mjs",
+        "actual_sha256": "ca0c0455de398d3ce760471ca09aacf916e226b43a09a4d65e9f73ea072743ad",
+        "reference_sha256": "ca0c0455de398d3ce760471ca09aacf916e226b43a09a4d65e9f73ea072743ad",
+        "matched": true
+      },
+      {
+        "path": "src/cli.mjs",
+        "actual_sha256": "47d373469e040049d12927ff58e246ffa5dd3c6060794506dece5329d22d70e6",
+        "reference_sha256": "47d373469e040049d12927ff58e246ffa5dd3c6060794506dece5329d22d70e6",
+        "matched": true
+      },
+      {
+        "path": "src/core/contracts.mjs",
+        "actual_sha256": "b389a4f5e4b4a0b8376a84b3722afffbad48a544f440730930c6c9c45f4a3d35",
+        "reference_sha256": "b389a4f5e4b4a0b8376a84b3722afffbad48a544f440730930c6c9c45f4a3d35",
+        "matched": true
+      },
+      {
+        "path": "src/core/cycle.mjs",
+        "actual_sha256": "306f7dde0358ee327e5eaab31a2a90e58c033e585754dd0a2ac480d3e29b0d68",
+        "reference_sha256": "306f7dde0358ee327e5eaab31a2a90e58c033e585754dd0a2ac480d3e29b0d68",
+        "matched": true
+      },
+      {
+        "path": "src/hook.mjs",
+        "actual_sha256": "cacec33cf05ae42f46b9d82760c9ccc5f084d7c3c17de08fc23324ddd2638b77",
+        "reference_sha256": "cacec33cf05ae42f46b9d82760c9ccc5f084d7c3c17de08fc23324ddd2638b77",
+        "matched": true
+      },
+      {
+        "path": "src/local/authority.mjs",
+        "actual_sha256": "98f9e9e6421af5328cf3ff78825b75238514b1aac5b9d7d8e46c3bbc8ce438d8",
+        "reference_sha256": "98f9e9e6421af5328cf3ff78825b75238514b1aac5b9d7d8e46c3bbc8ce438d8",
+        "matched": true
+      },
+      {
+        "path": "src/local/check-runner.mjs",
+        "actual_sha256": "91174d4d314a2b3ddcfc3732d0051a297643ed5e424f8d6cf6c3796d476a4fe0",
+        "reference_sha256": "91174d4d314a2b3ddcfc3732d0051a297643ed5e424f8d6cf6c3796d476a4fe0",
+        "matched": true
+      },
+      {
+        "path": "src/local/config.mjs",
+        "actual_sha256": "3f7bc52bd2f156fdadb87c90315948e31142de135ec914bc475b5fd13b1c84ae",
+        "reference_sha256": "3f7bc52bd2f156fdadb87c90315948e31142de135ec914bc475b5fd13b1c84ae",
+        "matched": true
+      },
+      {
+        "path": "src/local/implementation-notes.mjs",
+        "actual_sha256": "b7a3866b6610d1423d83af93a9d22a21921e05de1dd70aaf12c9fd96b98c10c5",
+        "reference_sha256": "b7a3866b6610d1423d83af93a9d22a21921e05de1dd70aaf12c9fd96b98c10c5",
+        "matched": true
+      },
+      {
+        "path": "src/local/store.mjs",
+        "actual_sha256": "cbd26b55d43ed97a9ee9676f024a0519893e0f561717664c46e065bec3a9915a",
+        "reference_sha256": "cbd26b55d43ed97a9ee9676f024a0519893e0f561717664c46e065bec3a9915a",
+        "matched": true
+      },
+      {
+        "path": "src/local/workspace.mjs",
+        "actual_sha256": "bbb0f9855578cfd3d17cc127441b0bab59b5709423bba8acf1304a681f705878",
+        "reference_sha256": "bbb0f9855578cfd3d17cc127441b0bab59b5709423bba8acf1304a681f705878",
+        "matched": true
+      },
+      {
+        "path": "src/runtime.mjs",
+        "actual_sha256": "2a6612de98b98dc4948f6d7ada61b847fe17d0a4cb0a4e9623820d1032dd5699",
+        "reference_sha256": "2a6612de98b98dc4948f6d7ada61b847fe17d0a4cb0a4e9623820d1032dd5699",
+        "matched": true
+      },
+      {
+        "path": "src/server.mjs",
+        "actual_sha256": "f19a056040b8b3a6d0ea7bec1eb842ae54d66f86cf8bb9e3389017b6788f2d7e",
+        "reference_sha256": "f19a056040b8b3a6d0ea7bec1eb842ae54d66f86cf8bb9e3389017b6788f2d7e",
+        "matched": true
+      }
+    ]
+  },
+  "prepared_distribution": {
+    "marketplace_root": "C:\\Users\\dandandandana\\.codex\\plugins\\local-sources\\engineering-cycle-local-20261009",
+    "plugin": {
+      "format": "codex",
+      "destination": "C:\\Users\\dandandandana\\.codex\\plugins\\local-sources\\engineering-cycle-local-20261009\\agent-engineering-cycle",
+      "name": "agent-engineering-cycle",
+      "version": "0.1.0"
+    },
+    "provider_manifest": "C:\\Users\\dandandandana\\.codex\\plugins\\local-sources\\engineering-cycle-local-20261009\\sol-component-provider\\provider-manifest.json",
+    "provider_manifest_sha256": "29c637db6a583a36b5827667c2be4ec9fbff9574fd80b1911a0fb27b98eac856",
+    "version_changed": false,
+    "matched_current_package_files": [
+      {
+        "path": "src/adapters/calibrate.mjs",
+        "sha256": "6b2abd40726f1a4caa1dc99b9c1e7fdfd9f838a8927c68f13d1a01422887b965",
+        "matched": true
+      },
+      {
+        "path": "src/adapters/component-provider.mjs",
+        "sha256": "319f6e0e74c299d07f7a98df445183cd75ab51f2d5ddb2da738a7807e8cf3618",
+        "matched": true
+      },
+      {
+        "path": "src/adapters/qa-cli.mjs",
+        "sha256": "617a67eab3a6498e62b1a45e89b370a0b2efa7926245ea8e2ca74ba9a50004c1",
+        "matched": true
+      },
+      {
+        "path": "src/adapters/qa-sources.mjs",
+        "sha256": "ccac7c6d9e34a83f2d93d04444555159f0c87853de2da264b15e858dbfde348a",
+        "matched": true
+      },
+      {
+        "path": "src/adapters/qa-worker.mjs",
+        "sha256": "ca0c0455de398d3ce760471ca09aacf916e226b43a09a4d65e9f73ea072743ad",
+        "matched": true
+      },
+      {
+        "path": "src/cli.mjs",
+        "sha256": "47d373469e040049d12927ff58e246ffa5dd3c6060794506dece5329d22d70e6",
+        "matched": true
+      },
+      {
+        "path": "src/core/contracts.mjs",
+        "sha256": "065ed80c1d80b23d163f87bd524cdb6ef00a4fa8a10c2e4e2cc3c5c873c2443b",
+        "matched": true
+      },
+      {
+        "path": "src/core/cycle.mjs",
+        "sha256": "3262d39441c0ae45bc8dd8e86ed14b4417e0d5c96d623dae308a788f56738c16",
+        "matched": true
+      },
+      {
+        "path": "src/hook.mjs",
+        "sha256": "cacec33cf05ae42f46b9d82760c9ccc5f084d7c3c17de08fc23324ddd2638b77",
+        "matched": true
+      },
+      {
+        "path": "src/local/authority.mjs",
+        "sha256": "98f9e9e6421af5328cf3ff78825b75238514b1aac5b9d7d8e46c3bbc8ce438d8",
+        "matched": true
+      },
+      {
+        "path": "src/local/check-runner.mjs",
+        "sha256": "16c8cdfe724dc05f2da4c43359eea41507d8d6f3883731c03f616b6d19103b2d",
+        "matched": true
+      },
+      {
+        "path": "src/local/config.mjs",
+        "sha256": "3f9133c01a8899b5c52364da7ace037cd4c80b0fc360ad7f08fff3a515633aa8",
+        "matched": true
+      },
+      {
+        "path": "src/local/hook-context.mjs",
+        "sha256": "fab3a00599d765eba343fde653924288b617c4d8bd733dc15b6dd7d43aa149c1",
+        "matched": true
+      },
+      {
+        "path": "src/local/implementation-notes.mjs",
+        "sha256": "b7a3866b6610d1423d83af93a9d22a21921e05de1dd70aaf12c9fd96b98c10c5",
+        "matched": true
+      },
+      {
+        "path": "src/local/qa-evidence.mjs",
+        "sha256": "9abd8841925c0183cc090f7e3b33f180cf3e8b92f676199cbb9a394de4362cae",
+        "matched": true
+      },
+      {
+        "path": "src/local/reuse-evidence.mjs",
+        "sha256": "819e022d9506c17504aea3672423d37551f2c22d891ccd085d57ced80efb95a2",
+        "matched": true
+      },
+      {
+        "path": "src/local/store.mjs",
+        "sha256": "cbd26b55d43ed97a9ee9676f024a0519893e0f561717664c46e065bec3a9915a",
+        "matched": true
+      },
+      {
+        "path": "src/local/workspace.mjs",
+        "sha256": "bbb0f9855578cfd3d17cc127441b0bab59b5709423bba8acf1304a681f705878",
+        "matched": true
+      },
+      {
+        "path": "src/runtime.mjs",
+        "sha256": "ba78a9cf4314217d6b3a589a052e0cf8afb37d872529d6735292052d0c86bdd2",
+        "matched": true
+      },
+      {
+        "path": "src/server.mjs",
+        "sha256": "a2e5d48ee5dbb751634735c8db6a93f6a94f66375e8272d3f6bee53b7088d2da",
+        "matched": true
+      },
+      {
+        "path": "hooks/hooks.json",
+        "sha256": "ae7625e12f4e02d152af7bae639d3d243ec02131df59f98024affc0d33cfe032",
+        "matched": true
+      },
+      {
+        "path": "skills/agent-engineering-cycle/agents/openai.yaml",
+        "sha256": "befa217498d33b52b003c144a7da89ad6adfcf872c74c73e2180c29af685b763",
+        "matched": true
+      },
+      {
+        "path": "skills/agent-engineering-cycle/references/component-reuse.md",
+        "sha256": "f07242c08df89cef05edc503a25bf838b0a3a4361cb9dcc3f635587d1b7ca85a",
+        "matched": true
+      },
+      {
+        "path": "skills/agent-engineering-cycle/references/eval-cases.md",
+        "sha256": "93c6155665b9b464aad22b73025bb3baa2129ab54821c8e03c0d5027290cf763",
+        "matched": true
+      },
+      {
+        "path": "skills/agent-engineering-cycle/references/implementation-notes.md",
+        "sha256": "f71ddf8116fd20d0edf8fd701e5eadd7d746504a56e925974bb14f6fae4bc31b",
+        "matched": true
+      },
+      {
+        "path": "skills/agent-engineering-cycle/references/qa-reconciliation.md",
+        "sha256": "f47b28eb70964a52c86bb35cb307002c84e0741395f22a6e6651fc4fc4722ca8",
+        "matched": true
+      },
+      {
+        "path": "skills/agent-engineering-cycle/references/research-basis.md",
+        "sha256": "1ab34f7c0b8e9f4caa422ac226a25ab3a6123d69c16eaf9041ca8506b873a72c",
+        "matched": true
+      },
+      {
+        "path": "skills/agent-engineering-cycle/references/state-contract.md",
+        "sha256": "53a7267878b0f5cb9134a6b5540e6e385967e4006ee17374ef5b8cdffbe4c1c6",
+        "matched": true
+      },
+      {
+        "path": "skills/agent-engineering-cycle/SKILL.md",
+        "sha256": "165f0aa9f7c9c0e7c522bb8ec9f1ed34e182e42ffe9624198eeb182397805828",
+        "matched": true
+      }
+    ]
+  },
+  "version_changed": false
+}

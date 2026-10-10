@@ -1,0 +1,39 @@
+{
+  "digest": "c31643d36fbaf94e9a4d42bad3bf6a5c83dc62dddbcbe880fbdf822fcfc2d025",
+  "id": "artifact-c31643d36fbaf94e9a4d42bad3bf6a5c83dc62dddbcbe880fbdf822fcfc2d025",
+  "kind": "artifact",
+  "payload": {
+    "cycle_id": "a8c5f331-6fc7-489b-b797-74d8c2b9db1e",
+    "kind": "R",
+    "manifest": {
+      "digest": "1f99aa8d6f36cf94a5b45d64b1a3ba1846f15934bfbe6e5f6136c9343facafea",
+      "entries": [
+        {
+          "path": "docs/requirements.md",
+          "sha256": "f6aafe50d3bd88e9f6cb75b026806e46b502528ba2bdb4ce387bb2afd4737113",
+          "size": 243
+        }
+      ]
+    },
+    "paths": [
+      "docs/requirements.md"
+    ],
+    "semantic_status": "reported",
+    "snapshot": {
+      "input_dir": "D:\\zzd\\slop\\engineering-cycle-tui-20261008\\workspace\\.codex\\engineering-cycle\\snapshots\\a154a8f3-e711-4a38-965a-97caa046abd2\\input",
+      "manifest": {
+        "digest": "1f99aa8d6f36cf94a5b45d64b1a3ba1846f15934bfbe6e5f6136c9343facafea",
+        "entries": [
+          {
+            "path": "docs/requirements.md",
+            "sha256": "f6aafe50d3bd88e9f6cb75b026806e46b502528ba2bdb4ce387bb2afd4737113",
+            "size": 243
+          }
+        ]
+      },
+      "snapshot_id": "a154a8f3-e711-4a38-965a-97caa046abd2"
+    },
+    "source": "observed_bytes"
+  },
+  "schema_revision": 1
+}

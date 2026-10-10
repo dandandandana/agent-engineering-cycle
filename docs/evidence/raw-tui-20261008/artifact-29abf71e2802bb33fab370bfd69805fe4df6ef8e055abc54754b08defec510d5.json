@@ -1,0 +1,39 @@
+{
+  "digest": "29abf71e2802bb33fab370bfd69805fe4df6ef8e055abc54754b08defec510d5",
+  "id": "artifact-29abf71e2802bb33fab370bfd69805fe4df6ef8e055abc54754b08defec510d5",
+  "kind": "artifact",
+  "payload": {
+    "cycle_id": "bdf68ad6-657c-4b98-9696-c4523af92dee",
+    "kind": "D",
+    "manifest": {
+      "digest": "7d086dedc73a810f33db718748cdef54a18603d5f5e19cae51b0314e51c0b47d",
+      "entries": [
+        {
+          "path": "docs/design.md",
+          "sha256": "eefc8cde5a1548bc055211a956e7bd447f226147617d1980307446bed75a2e93",
+          "size": 183
+        }
+      ]
+    },
+    "paths": [
+      "docs/design.md"
+    ],
+    "semantic_status": "reported",
+    "snapshot": {
+      "input_dir": "D:\\zzd\\slop\\engineering-cycle-tui-20261008\\final-workspace\\.codex\\engineering-cycle\\snapshots\\a2638370-5d72-4752-96cf-6a75217805cf\\input",
+      "manifest": {
+        "digest": "7d086dedc73a810f33db718748cdef54a18603d5f5e19cae51b0314e51c0b47d",
+        "entries": [
+          {
+            "path": "docs/design.md",
+            "sha256": "eefc8cde5a1548bc055211a956e7bd447f226147617d1980307446bed75a2e93",
+            "size": 183
+          }
+        ]
+      },
+      "snapshot_id": "a2638370-5d72-4752-96cf-6a75217805cf"
+    },
+    "source": "observed_bytes"
+  },
+  "schema_revision": 1
+}

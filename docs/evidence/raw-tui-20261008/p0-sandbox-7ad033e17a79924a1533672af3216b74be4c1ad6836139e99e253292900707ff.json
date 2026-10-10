@@ -1,0 +1,32 @@
+{
+  "digest": "7ad033e17a79924a1533672af3216b74be4c1ad6836139e99e253292900707ff",
+  "id": "p0-sandbox-7ad033e17a79924a1533672af3216b74be4c1ad6836139e99e253292900707ff",
+  "kind": "p0-sandbox",
+  "payload": {
+    "denied": false,
+    "fixture": "C:\\Users\\DANDAN~1\\AppData\\Local\\Temp\\engineering-cycle-p0-0iuqOV",
+    "proof_scope": "fixed Node filesystem write under explicit :read-only profile",
+    "receipt": {
+      "argv_digest": "7d840d89c3008e2d062af6784182b5c220c656257d79a520ec1f2121d7e43f0d",
+      "cancel_requested": false,
+      "capture_error": null,
+      "check_id": "sandbox-write-probe",
+      "cleanup_error": null,
+      "exit_code": 1,
+      "input_bytes": 0,
+      "input_delivered": true,
+      "input_digest": null,
+      "launch_error": null,
+      "launch_status": "started",
+      "output_complete": true,
+      "passed": false,
+      "pid": 48644,
+      "signal": null,
+      "stderr": "windows sandbox failed: helper_unknown_error: setup refresh had errors\n",
+      "stdout": "",
+      "terminal_observed": true,
+      "timed_out": false
+    }
+  },
+  "schema_revision": 1
+}

@@ -1,0 +1,356 @@
+
+> agent-engineering-cycle@0.1.0 check
+> npm test && npm audit --audit-level=high --registry=https://registry.npmjs.org/
+
+
+> agent-engineering-cycle@0.1.0 test
+> node scripts/check.mjs
+
+✔ stub runner plumbing requires passed facts and complete evidence fields (480.6305ms)
+✔ a changed browser script hash is rejected before the stub runner can start (21.5869ms)
+✔ a browser script changed during execution cannot return a pass (126.0019ms)
+✔ output must be a new child of projectRoot/slop (21.427ms)
+✔ the v2 plan keeps eight tasks, all 25 opportunities, and per-opportunity task-consumer checks (0.6137ms)
+✔ the independent v2 reference calibration CLI exposes a bounded help entry (188.66ms)
+✔ M stays 0/25 with no probe output and caller-built reported evidence is rejected (85.6364ms)
+✔ a source or v1 rule change after freeze invalidates v2 scoring (57.3663ms)
+✔ the freeze rejects altered denominator metadata and does not edit the prepared run (34.1709ms)
+✔ projects every product file while excluding only declared protocol fields and snapshot-ignored paths (97.0619ms)
+✔ refuses to replace an existing grading workspace (21.3649ms)
+✔ rejects symbolic links in the candidate source before creating a destination (18.7748ms)
+✔ prepareBlog and gradeBlog return the original evaluator results (22.7459ms)
+✔ prepareBlog confines new runs to blogRoot/slop (13.3471ms)
+✔ paired reuse comparison ignores run location and retains baseline/rule identity (0.8398ms)
+✔ reuse-on blog fixtures require real discovery before source writes while the legacy fixture attaches D (2822.6344ms)
+✔ invalid indexed source scope is rejected before a blog fixture or model can start (14.927ms)
+✔ blog protocol requires real settled note bytes, current references and successful business calls (0.4968ms)
+✔ stale notes, failed checks and MCP business errors cannot pass protocol (0.3344ms)
+✔ activation context alone does not substitute for a denied native write (0.1521ms)
+✔ a denial from another workspace or target cannot satisfy the declared Hook probe (0.3021ms)
+✔ only comment additions qualify as harmless patch evidence (0.933ms)
+✔ notes judge receives validation and error helpers even when not in required reuse metadata (23.4586ms)
+✔ each of the eight fixed blog tasks has four source-grounded note criteria (0.3857ms)
+✔ an unexpected trial failure waits for the other active scope before shared cleanup (0.8785ms)
+✔ decode-record: original source passes the public check but fails the maintenance gate (233.4584ms)
+✔ decode-record: maintenance oracle passes every hidden check and grader CLI (223.0385ms)
+✔ publish-text: original source passes the public check but fails the maintenance gate (169.8144ms)
+✔ publish-text: maintenance oracle passes every hidden check and grader CLI (304.4192ms)
+✔ decode-record: rejects overbroad coercion (30.6497ms)
+✔ decode-record: rejects extra fields accepted (31.628ms)
+✔ decode-record: rejects required quantity defaulted (29.5189ms)
+✔ decode-record: rejects ZodError flattened (27.6008ms)
+✔ decode-record: rejects ZodError replaced in public schema (25.4437ms)
+✔ decode-record: rejects caller input mutated (30.1727ms)
+✔ decode-record: detects a helper parameter-flow regression (25.7663ms)
+✔ publish-text: rejects create-only overwrites (56.6285ms)
+✔ publish-text: rejects temporary files leaked (51.22ms)
+✔ publish-text: rejects differently named temporary files leaked (68.5342ms)
+✔ publish-text: rejects primary failure swallowed (59.0005ms)
+✔ publish-text: rejects default replacement lost (68.8161ms)
+✔ publish-text: rejects characters counted as bytes (76.6568ms)
+✔ hidden grader rejects an unknown case and broken candidate module (16.723ms)
+✔ case data keeps public files separate from the oracle and judge controls (0.4423ms)
+✔ absent or failed first credential link does not prevent cleanup of later owned links (20.9227ms)
+✖ backend benchmark reports every planned case and removes its temporary fixtures (18148.7856ms)
+✖ saved backend evidence distinguishes wrong prose, stale inputs, and denied effects (24096.5576ms)
+✔ large source/registry inputs become exact frozen files without expanding the stdin budget (42.6175ms)
+✔ frozen judge sources cannot escape their workspace (9.1138ms)
+✔ oversized stdin is a known non-launch rather than unknown native effects (11.5829ms)
+✔ all planned trials including environment and missing results remain in the denominator (0.9021ms)
+✔ judge cannot omit difficult criteria or invent passing quotes (0.26ms)
+✔ trial plans are reproducible, balanced and reject ambiguous CLI input (0.9078ms)
+✔ failed MCP business results and a managed write of different bytes cannot prove protocol success (0.2733ms)
+✔ managed-write scoring consumes the actual runtime response envelope (421.5031ms)
+✔ judge evidence is extracted from real indexed bytes and invalid path/range cannot pass (0.5126ms)
+✔ multiline citations preserve LF, CRLF and mixed original line endings (0.1941ms)
+✔ detects only existing recognized scripts with fixed npm argv and never runs package scripts or npm launcher (34.2883ms)
+✔ reports scripts unavailable when known npm is missing and leaves legacy check probing untouched (21.7513ms)
+✔ creates a deterministic plan with exact scoped missing test facts and behavioral state (36.6595ms)
+✔ requires dynamic candidate exclusions to be reasoned and rejects unsafe path, duplicate ID, and selected-excluded conflict (64.2405ms)
+✔ preserves configured checks exactly and does not permit excluding them (51.3456ms)
+✔ a declared required applicability without a behavioral check remains missing coverage (24.8516ms)
+✔ legacy plans return their original checks without probing workspace sources (0.2746ms)
+✔ runCheck records a successful child and captures bounded stdout and stderr (71.3143ms)
+✔ runCheck delivers exact UTF-8 stdin and reports only its byte count and digest (65.7992ms)
+✔ runCheck rejects stdin above the UTF-8 byte limit before launching (0.9022ms)
+✔ runCheck records a closed-child stdin write failure without exposing input text (510.4873ms)
+✔ runCheck records a nonzero exit as a completed failure (73.938ms)
+✔ runCheck distinguishes a missing executable from a launched command (3.8624ms)
+✔ runCheck does not launch after an abort already requested (0.2423ms)
+✔ runCheck cancels a running process tree and observes the child terminal state (852.0941ms)
+✔ runCheck enforces a timeout, kills the process, and keeps timeout separate from cancellation (527.4127ms)
+✔ runCheck caps combined stdout and stderr bytes and marks truncated output incomplete (83.8575ms)
+✔ runCheck retains a started fact when the onStarted callback fails (479.645ms)
+✔ runCheck rejects shell command strings and empty or oversized argv entries (0.4645ms)
+✔ selection projection is bounded and rejects changed, out-of-scope and physical I aliases (20755.3526ms)
+✔ public selection and D diagnostics guide missing caller repair without reading private archives (79993.7218ms)
+✔ an existing unindexed target outside discovery scope reports operator denial, not an impossible read (38503.9096ms)
+✔ component reuse v2 captures real provider evidence and gates managed consumer writes (47131.3476ms)
+✔ candidate sources in a mixed shared/consumer target set never inherit a consumer cursor (33257.1899ms)
+✔ unindexed new targets keep fixed absent and settled delete baselines; lost capture responses are not replayed (55645.839ms)
+✔ v1 active cycles conflict with v2 policy and docs-only discovery does not launch a provider (970.7871ms)
+✔ strict status inspection leaves a fresh workspace without persistent store state (121.3443ms)
+▶ begin refuses user-sourced and missing grants without persisting a cycle
+  ✔ a user source cannot mint an accepted begin grant (82.0342ms)
+  ✔ begin without any grant leaves no current cycle record (49.0337ms)
+✔ begin refuses user-sourced and missing grants without persisting a cycle (131.6548ms)
+✔ begin, R/D/I attach, managed write, and fixed verify form an active cycle, not completion (2517.959ms)
+✔ the same request writes once, while changed parameters under that ID conflict (904.637ms)
+▶ write permission rejects docs-mode code, cross-scope, and stale-binding attempts without file effects
+  ✔ docs permission cannot write a code file inside the declared scope (400.1078ms)
+  ✔ a target outside both exact path scopes is not created (372.0245ms)
+  ✔ a binding captured before an attach cannot write after the revision changes (788.4556ms)
+✔ write permission rejects docs-mode code, cross-scope, and stale-binding attempts without file effects (1561.4389ms)
+✔ saved outcomes recover without replay after the file effect already happened (872.7111ms)
+✔ a QA configuration change makes prior checks and Q non-current but retains their evidence (2681.1259ms)
+▶ Delta approval requires a verified decision for this exact cycle and digest, without widening docs access
+  ✔ a proposed Delta without a decision remains unapproved (544.3239ms)
+  ✔ a decision for another cycle cannot approve this Delta (581.7938ms)
+  ✔ a decision for a different Delta digest cannot approve this revision (574.1729ms)
+  ✔ an exact requirement decision approves only the Delta and does not grant code writes (719.8969ms)
+✔ Delta approval requires a verified decision for this exact cycle and digest, without widening docs access (2421.8099ms)
+✔ multi-file settle distinguishes before, after, and third states without overwriting external changes (3290.7391ms)
+✔ incorporated authority sync records that implementation is still unverified (4946.7563ms)
+▶ finish needs independent QA and external source drift cannot publish a current completion
+  ✔ fixed checks and R/D/I without Q cannot complete (3946.1718ms)
+  ✔ source drift before finish leaves no completion archive (4539.8633ms)
+  ✔ source drift after completion archival still prevents publication as complete (3782.0787ms)
+✔ finish needs independent QA and external source drift cannot publish a current completion (12269.9868ms)
+✔ missing project configuration uses an effective in-memory standard profile without writes (8.2201ms)
+✔ default provider digest comes from the bounded installed manifest bytes (18.2725ms)
+✔ an installed but malformed provider manifest is reported as an error (9.929ms)
+✔ rev1 and rev2 validation keep their explicit configuration semantics (13.9ms)
+✔ rev2 remains an explicit registered configuration without profile merge (11.1281ms)
+✔ rev3 applies user then project sparse overrides with atomic QA and replacement arrays (26.6568ms)
+✔ existing null, falsy, empty, unknown, and unsupported configuration values are rejected (56.1193ms)
+✔ malformed preferences are rejected and never created by inspection (17.5132ms)
+✔ a present but unreadable project config path is never treated as missing (9.3587ms)
+✔ a provider-validated root architecture declaration derives an exact registered v1 profile (13.6981ms)
+✔ same-name but unrecognized architecture files stay repository candidates without the real validator (8.7895ms)
+✔ invalid automatic declarations remain repository candidates, but explicit registered mode rejects them (22.4642ms)
+✔ explicit registered mode requires the validator and cannot widen source scope (33.3803ms)
+✔ switching an auto-detected registration to repository mode removes its v1 path and scope (22.5284ms)
+✔ no configuration still has standard defaults; status and unauthorized work create no project records (17206.6603ms)
+✔ exact signed documents bootstrap through cycle_apply, while arbitrary Markdown keeps the reuse gate (8265.0958ms)
+✔ unregistered real source discovery permits consumer reuse and blocks stale shared writes (61410.1814ms)
+✔ a second host session gets a readonly pointer and must explicitly join before persistent work (538.4253ms)
+✔ settled own creations remain usable, but an external new file invalidates empty discovery (34717.0662ms)
+✔ a real bundled pure validator recognizes existing declarations without executing the provider (4647.9687ms)
+✖ unbound hooks emit only a generic status pointer and create no workspace state (16.7257ms)
+✔ runtime binds only a successful non-duplicate settled begin or resume and preserves invoke options (41.522ms)
+✔ session-start forces context; repeated prompts suppress three times then send a pointer (105.0811ms)
+✖ native managed-write denial remains independent of summary dedupe and other tools receive no summary (11.7702ms)
+✔ ledger bounds session count, stores hashes, and degrades on corrupt or contended writes (526.3189ms)
+✔ ledger refuses to create a missing cycle directory and reports unavailable writes (4.4978ms)
+✔ oversized Hook context falls back to a parseable bounded cycle-status pointer (0.2275ms)
+✔ host addresses match only the current turn and never choose the latest project (107.3238ms)
+✔ same parent session/turn with conflicting cwd is ambiguous and cannot be overwritten back (83.9451ms)
+✔ explicit workspace conflicts with reliable Hook context; missing context remains explicit legacy connection (49.2878ms)
+✔ expired, corrupted, replaced-directory and foreign-CODEX_HOME addresses cannot route (76.5082ms)
+✔ native write decoding includes move destinations and declines unknown command wrappers (0.637ms)
+✔ implementation note returns its selected prose and source identities without claiming semantic verification (50.8884ms)
+▶ changing the source, selected prose, or a related source makes its note stale
+  ✔ src/subject.mjs (19.6511ms)
+  ✔ docs/compute-flow.md (14.7245ms)
+  ✔ src/scaler.mjs (10.4228ms)
+✔ changing the source, selected prose, or a related source makes its note stale (82.0912ms)
+✔ missing files and out-of-bounds documentation ranges are distinguished (48.5205ms)
+✔ implementation notes inherit Workspace traversal, secret, and symlink protections (53.7085ms)
+✔ note paths and captured prose stay within their aggregate limits (205.0368ms)
+▶ prepared I handles bind note metadata and reject changed or expired notes without effects
+  ✔ changed note metadata (469.526ms)
+  ✔ changed referenced prose expires the prepared note (442.8363ms)
+✔ prepared I handles bind note metadata and reject changed or expired notes without effects (912.9293ms)
+✔ declared targets block finish and QA start until I is refreshed with current notes (6348.4567ms)
+✔ Hook reports only implementation-note counts and Stop never continues the turn (655.2747ms)
+✔ QA freezes implementation-note sources and context while excluding the I summary (3318.2121ms)
+✔ captured I aliases remain excluded after atomic replacement and reattachment (1654.326ms)
+✔ QA manifest and implementation notes exclude case and hardlink aliases of the I summary (3350.1919ms)
+✔ Codex package bundles the verified public provider and routes through the auto-workspace server (51249.8403ms)
+✔ provider build failures retain the partial package for diagnosis (5217.0436ms)
+✔ finds only native Codex under the known official npm vendor layout and remains unavailable without calibration (94.3615ms)
+✔ uses a host model only as a candidate and does not invent a Codex executable (8.4215ms)
+✔ a declared receipt or configured executable cannot make the discovery candidate calibrated (11.4372ms)
+✔ large frozen evidence is rejected before CLI launch instead of inevitable capture truncation (0.9029ms)
+✔ QA lists bounded reuse references and requires all original bytes, rejecting archive drift (398.1976ms)
+✔ frozen QA source MCP exposes only read-only manifest reads and rejects drift (368.3454ms)
+✔ unknown QA outcome remains non-terminal, blocks abandon and new start, and cancellation preserves uncertainty (3975.8933ms)
+✔ finish archive recovery settles the same completion without rerunning checks or replacing Q (4777.093ms)
+✔ source drift at the finish archive cut keeps resume active with stale evidence (3950.2746ms)
+▶ a deleted or tampered completion archive invalidates current completion but preserves history
+  ✔ deleting the archive (4939.6215ms)
+  ✔ tampering with the archived cycle identity (3855.6596ms)
+✔ a deleted or tampered completion archive invalidates current completion but preserves history (8797.0819ms)
+▶ damaged original check or verification evidence blocks finish
+  ✔ a changed check-runner archive (2770.3738ms)
+  ✔ a changed verification archive (2904.3854ms)
+✔ damaged original check or verification evidence blocks finish (5676.7443ms)
+✔ collects scoped metadata, includes secret-file names, and skips control/security/generated directories (72.0748ms)
+✔ observes source additions and deletions by enumerating names rather than trusting directory timestamps (54.184ms)
+✔ file facts expose same-path metadata changes while the path-set digest remains unchanged (35.0311ms)
+✔ honors separate roots, explicit files, and the dot root sentinel (42.3674ms)
+✔ fails closed on a directory symlink or junction without exposing its target (42.4801ms)
+✔ rejects a symlink workspace root and reports missing scoped paths as incomplete (14.6704ms)
+✔ validates empty complete inventory and allows an evidence-free empty new decision (3.5463ms)
+✔ accepts an empty source only with its real empty-text 1..1 capture (1.2005ms)
+✔ allows a fully read new decision only after every candidate has a real not_applicable assessment (0.3621ms)
+✔ validates shared-source reuse, requires the caller relation line, and assigns candidate/caller floors (0.7227ms)
+✔ rejects registered UID/singular-symbol identity and mismatched source-to-candidate inventory (0.5514ms)
+✔ validates path-inventory digest, canonical sets, and file classification (0.6825ms)
+✔ recomputes the inventory digest with excluded paths and source failures while keeping I exclusion separate (0.9274ms)
+✔ does not let a zero-match keyword erase the full candidate set for a new decision (0.298ms)
+✔ reports missing candidate reads and missing new-decision assessments (0.4637ms)
+✔ keeps unknown TS relations blocking for extend and new even when rationale says otherwise (0.783ms)
+✔ rejects reuse when the selected source is also a consumer target (0.4506ms)
+✔ requires selected-source read ranges to cover the entire source, including a missing middle (0.3965ms)
+✔ does not accept a selected source header-only read as full-source coverage (0.3213ms)
+✔ requires a new-decision not_applicable assessment to cite reads covering the whole source (0.3701ms)
+✔ the capability gate recalls calibration evidence with numeric p0 kind names and rejects tampering (686.8496ms)
+✔ docs grants cannot launch a configured command which would overwrite code (2485.9282ms)
+✔ builtin docs integrity records readonly observations without pretending to launch a check process (2433.9634ms)
+✔ a model verdict and stdin delivery cannot replace actual frozen-source reads (0.6861ms)
+✔ CLI reports cannot self-certify assurance, and missing terminal events remain missing (0.9387ms)
+✔ Windows snapshot publishing survives two injected denials and preserves frozen bytes (395.5797ms)
+✔ persistent Windows publish denial is bounded and remains a failure (434.7608ms)
+✔ snapshot publish retry never replaces an occupied destination (287.1896ms)
+✔ read-only LocalStore inspection leaves a missing .codex directory absent (17.8867ms)
+✔ two independent Node processes contend on one workspace lease after a barrier (650.5616ms)
+✔ archive summaries are content-addressed, API-immutable, and detect direct tampering (144.45ms)
+✔ a live or crashed lease is reported and never automatically removed (230.3983ms)
+✔ a crash after persisting pending and an effect leaves both records without replay (241.7592ms)
+✔ different request IDs retain separate operations and immutable runner facts (152.3593ms)
+✔ OperatorAuthority needs explicit adapter confirmation, and the fixture is not Host human proof (44.0218ms)
+✔ OperatorAuthority rejects payload and signature tampering (107.9495ms)
+✔ user/imported sources and a copied grant from another workspace do not verify (156.0808ms)
+✔ private QA stdio paginates UTF-16 cursors without splitting surrogate pairs (369.7443ms)
+✖ portable plugin manifests point at the local MCP server and packaged hooks (5.0587ms)
+✔ hook rejects malformed, unknown, and oversized input without producing output (506.2384ms)
+✖ hook requires host cwd and rejects a conflicting explicit workspace before loading runtime (338.367ms)
+✔ MCP stdio initializes, lists seven tools, and calls read-only status without creating state (406.5615ms)
+✔ constructor pins a real workspace root and exposes readonly identity (8.8656ms)
+✔ reads only explicit UTF-8 files and enforces path and secret boundaries (23.4017ms)
+✔ rejects symlink ancestors before reading or applying (18.8564ms)
+✔ enforces per-file, aggregate, and explicit-file limits (101.6264ms)
+✔ snapshot copies actual bytes, survives source A to B to A, and detects tampering (98.6857ms)
+✔ apply preflights all expected hashes before making any change (15.7033ms)
+✔ new-contract bootstrap records necessary parent effects and keeps the legacy default (24.9556ms)
+✔ bootstrap validates all file pre-states before creating any directory (10.0677ms)
+✔ a bootstrap interruption preserves known directory effects without publishing a file (11.3856ms)
+✔ bootstrap cannot follow a linked target parent (9.835ms)
+✔ apply writes atomically, records ordered effects, and preserves POSIX mode (37.6165ms)
+✔ effect persistence failure reports the already published effect without rollback (44.2249ms)
+✔ apply detects an external third state between ordered targets and preserves known effects (34.9722ms)
+ℹ tests 226
+ℹ suites 0
+ℹ pass 220
+ℹ fail 6
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 280831.8625
+
+✖ failing tests:
+
+test at tests\benchmark-gates.test.mjs:17:1
+✖ backend benchmark reports every planned case and removes its temporary fixtures (18148.7856ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
+  + actual - expected
+
+    {
+      error: 0,
+  +   fail: 1,
+  +   pass: 8,
+  -   fail: 0,
+  -   pass: 9,
+      planned: 9
+    }
+
+      at TestContext.<anonymous> (file:///D:/zzd/agent-engineering-cycle/tests/benchmark-gates.test.mjs:31:12)
+      at async Test.run (node:internal/test_runner/test:1113:7)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:358:3) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: { planned: 9, pass: 8, fail: 1, error: 0 },
+    expected: { planned: 9, pass: 9, fail: 0, error: 0 },
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }
+
+test at tests\benchmark-gates.test.mjs:41:1
+✖ saved backend evidence distinguishes wrong prose, stale inputs, and denied effects (24096.5576ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  + actual - expected
+
+  + undefined
+  - 'deny'
+
+      at TestContext.<anonymous> (file:///D:/zzd/agent-engineering-cycle/tests/benchmark-gates.test.mjs:80:10)
+      at async Test.run (node:internal/test_runner/test:1113:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:788:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: 'deny',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests\hook-context.test.mjs:49:1
+✖ unbound hooks emit only a generic status pointer and create no workspace state (16.7257ms)
+  TypeError: Cannot read properties of undefined (reading 'additionalContext')
+      at contextFrom (file:///D:/zzd/agent-engineering-cycle/tests/hook-context.test.mjs:46:47)
+      at TestContext.<anonymous> (file:///D:/zzd/agent-engineering-cycle/tests/hook-context.test.mjs:56:20)
+      at async Test.run (node:internal/test_runner/test:1113:7)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:358:3)
+
+test at tests\hook-context.test.mjs:155:1
+✖ native managed-write denial remains independent of summary dedupe and other tools receive no summary (11.7702ms)
+  TypeError: Cannot read properties of undefined (reading 'permissionDecision')
+      at TestContext.<anonymous> (file:///D:/zzd/agent-engineering-cycle/tests/hook-context.test.mjs:167:41)
+      at async Test.run (node:internal/test_runner/test:1113:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:788:7)
+
+test at tests\transport.test.mjs:85:1
+✖ portable plugin manifests point at the local MCP server and packaged hooks (5.0587ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
+  + actual - expected
+
+    {
+      args: [
+        '${PLUGIN_ROOT}/src/server.mjs',
+  +     '--auto-workspace'
+      ],
+      command: 'node',
+      cwd: '${PLUGIN_ROOT}',
+      type: 'stdio'
+    }
+
+      at TestContext.<anonymous> (file:///D:/zzd/agent-engineering-cycle/tests/transport.test.mjs:96:10)
+      at async Test.run (node:internal/test_runner/test:1113:7)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:358:3) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: { type: 'stdio', command: 'node', args: [ '${PLUGIN_ROOT}/src/server.mjs', '--auto-workspace' ], cwd: '${PLUGIN_ROOT}' },
+    expected: { type: 'stdio', command: 'node', args: [ '${PLUGIN_ROOT}/src/server.mjs' ], cwd: '${PLUGIN_ROOT}' },
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }
+
+test at tests\transport.test.mjs:139:1
+✖ hook requires host cwd and rejects a conflicting explicit workspace before loading runtime (338.367ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  + actual - expected
+
+  + 'Hook input could not be read.\n'
+  - 'CYCLE_WORKSPACE does not match the hook event workspace.\n'
+
+      at TestContext.<anonymous> (file:///D:/zzd/agent-engineering-cycle/tests/transport.test.mjs:161:10)
+      at async Test.run (node:internal/test_runner/test:1113:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:788:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 'Hook input could not be read.\n',
+    expected: 'CYCLE_WORKSPACE does not match the hook event workspace.\n',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

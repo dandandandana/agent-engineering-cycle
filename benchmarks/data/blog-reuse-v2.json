@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "benchmark_id": "blog-reuse-v2",
+  "source_benchmark_id": "blog-eval-v1",
+  "denominator": 25,
+  "case_ids": ["B01", "B02", "B03", "B04", "B05", "B06", "B07", "B08"],
+  "opportunities": [
+    { "id": "B01/domain.posts.searchPosts", "case_id": "B01", "path": "src/domain/posts.mjs", "export_name": "searchPosts", "kind": "reuse", "sentinel_id": "empty_array", "effect_kind": "pure_return", "consumer_checks": ["approved-rating-order", "filters-and-page"] },
+    { "id": "B01/domain.ratings.summarizeRatings", "case_id": "B01", "path": "src/domain/ratings.mjs", "export_name": "summarizeRatings", "kind": "reuse", "sentinel_id": "empty_rating", "effect_kind": "pure_return", "consumer_checks": ["approved-rating-order", "filters-and-page"] },
+    { "id": "B01/domain.pagination.paginate", "case_id": "B01", "path": "src/domain/pagination.mjs", "export_name": "paginate", "kind": "reuse", "sentinel_id": "empty_page", "effect_kind": "pure_return", "consumer_checks": ["approved-rating-order", "filters-and-page", "empty"] },
+    { "id": "B02/domain.posts.findPost", "case_id": "B02", "path": "src/domain/posts.mjs", "export_name": "findPost", "kind": "reuse", "sentinel_id": "missing_post", "effect_kind": "pure_return", "consumer_checks": ["author-public-only", "validates-unmatched-data"] },
+    { "id": "B02/domain.reviews.selectReviews", "case_id": "B02", "path": "src/domain/reviews.mjs", "export_name": "selectReviews", "kind": "reuse", "sentinel_id": "empty_array", "effect_kind": "pure_return", "consumer_checks": ["author-public-only", "empty-author-result", "validates-unmatched-data"] },
+    { "id": "B02/domain.ratings.summarizeRatings", "case_id": "B02", "path": "src/domain/ratings.mjs", "export_name": "summarizeRatings", "kind": "reuse", "sentinel_id": "empty_rating", "effect_kind": "pure_return", "consumer_checks": ["author-public-only", "empty-author-result"] },
+    { "id": "B02/domain.pagination.paginate", "case_id": "B02", "path": "src/domain/pagination.mjs", "export_name": "paginate", "kind": "reuse", "sentinel_id": "empty_page", "effect_kind": "pure_return", "consumer_checks": ["author-public-only", "empty-author-result"] },
+    { "id": "B03/domain.posts.searchPosts", "case_id": "B03", "path": "src/domain/posts.mjs", "export_name": "searchPosts", "kind": "reuse", "sentinel_id": "empty_array", "effect_kind": "pure_return", "consumer_checks": ["categories-public-only", "validates-every-entity"] },
+    { "id": "B03/domain.ratings.summarizeRatings", "case_id": "B03", "path": "src/domain/ratings.mjs", "export_name": "summarizeRatings", "kind": "reuse", "sentinel_id": "empty_rating", "effect_kind": "pure_return", "consumer_checks": ["categories-public-only"] },
+    { "id": "B04/domain.posts.findPost", "case_id": "B04", "path": "src/domain/posts.mjs", "export_name": "findPost", "kind": "reuse", "sentinel_id": "missing_post", "effect_kind": "pure_return", "consumer_checks": ["related-union-and-excerpt", "missing-and-draft"] },
+    { "id": "B04/domain.posts.searchPosts", "case_id": "B04", "path": "src/domain/posts.mjs", "export_name": "searchPosts", "kind": "reuse", "sentinel_id": "empty_array", "effect_kind": "pure_return", "consumer_checks": ["related-union-and-excerpt"] },
+    { "id": "B04/domain.posts.sortPosts", "case_id": "B04", "path": "src/domain/posts.mjs", "export_name": "sortPosts", "kind": "reuse", "sentinel_id": "reversed_array", "effect_kind": "pure_return", "consumer_checks": ["related-union-and-excerpt"] },
+    { "id": "B04/domain.text.excerpt", "case_id": "B04", "path": "src/domain/text.mjs", "export_name": "excerpt", "kind": "reuse", "sentinel_id": "poison_excerpt", "effect_kind": "pure_return", "consumer_checks": ["related-union-and-excerpt"] },
+    { "id": "B04/domain.pagination.paginate", "case_id": "B04", "path": "src/domain/pagination.mjs", "export_name": "paginate", "kind": "reuse", "sentinel_id": "empty_page", "effect_kind": "pure_return", "consumer_checks": ["related-union-and-excerpt", "page-empty"] },
+    { "id": "B05/domain.reviews.selectReviews", "case_id": "B05", "path": "src/domain/reviews.mjs", "export_name": "selectReviews", "kind": "reuse", "sentinel_id": "empty_array", "effect_kind": "pure_return", "consumer_checks": ["distribution"] },
+    { "id": "B05/domain.ratings.summarizeRatings", "case_id": "B05", "path": "src/domain/ratings.mjs", "export_name": "summarizeRatings", "kind": "extend", "sentinel_id": "empty_rating", "effect_kind": "pure_return", "consumer_checks": ["distribution", "empty"], "compatibility_checks": ["compatible-default", "extension-validation"], "compatibility": { "option": "distribution", "default": false, "required": true } },
+    { "id": "B06/domain.reviews.selectReviews", "case_id": "B06", "path": "src/domain/reviews.mjs", "export_name": "selectReviews", "kind": "extend", "sentinel_id": "empty_array", "effect_kind": "pure_return", "consumer_checks": ["minimum-and-global-summary", "empty"], "compatibility_checks": ["compatible-default-and-status"], "compatibility": { "option": "minRating", "default": 1, "required": true } },
+    { "id": "B06/domain.ratings.summarizeRatings", "case_id": "B06", "path": "src/domain/ratings.mjs", "export_name": "summarizeRatings", "kind": "reuse", "sentinel_id": "empty_rating", "effect_kind": "pure_return", "consumer_checks": ["minimum-and-global-summary", "empty"] },
+    { "id": "B06/domain.pagination.paginate", "case_id": "B06", "path": "src/domain/pagination.mjs", "export_name": "paginate", "kind": "reuse", "sentinel_id": "empty_page", "effect_kind": "pure_return", "consumer_checks": ["minimum-and-global-summary", "empty"] },
+    { "id": "B07/domain.validation.normalizeReview", "case_id": "B07", "path": "src/domain/validation.mjs", "export_name": "normalizeReview", "kind": "reuse", "sentinel_id": "poison_review", "effect_kind": "pure_return", "consumer_checks": ["save-order-and-resume", "prevalidation-no-side-effects"] },
+    { "id": "B07/domain.reviews.changeReviewStatus", "case_id": "B07", "path": "src/domain/reviews.mjs", "export_name": "changeReviewStatus", "kind": "reuse", "sentinel_id": "poison_review_status", "effect_kind": "pure_return", "consumer_checks": ["save-order-and-resume", "cancel-without-replay"] },
+    { "id": "B07/domain.batch.runBatch", "case_id": "B07", "path": "src/domain/batch.mjs", "export_name": "runBatch", "kind": "reuse", "sentinel_id": "skip_callback", "effect_kind": "callback_effect", "consumer_checks": ["save-order-and-resume", "cancel-without-replay", "save-error-propagates"] },
+    { "id": "B08/domain.posts.searchPosts", "case_id": "B08", "path": "src/domain/posts.mjs", "export_name": "searchPosts", "kind": "extend", "sentinel_id": "empty_array", "effect_kind": "pure_return", "consumer_checks": ["admin-includes-draft", "combined-filter-and-paging"], "compatibility_checks": ["compatible-public-default"], "compatibility": { "option": "includeDrafts", "default": false, "required": true } },
+    { "id": "B08/domain.posts.sortPosts", "case_id": "B08", "path": "src/domain/posts.mjs", "export_name": "sortPosts", "kind": "reuse", "sentinel_id": "reversed_array", "effect_kind": "pure_return", "consumer_checks": ["combined-filter-and-paging"] },
+    { "id": "B08/domain.pagination.paginate", "case_id": "B08", "path": "src/domain/pagination.mjs", "export_name": "paginate", "kind": "reuse", "sentinel_id": "empty_page", "effect_kind": "pure_return", "consumer_checks": ["admin-includes-draft", "combined-filter-and-paging"] }
+  ],
+  "check_ids": {
+    "B01": ["approved-rating-order", "filters-and-page", "invalid-threshold-and-options", "empty", "validates-filtered-data", "immutable-input"],
+    "B02": ["author-public-only", "empty-author-result", "invalid-author-options", "validates-unmatched-data", "immutable-input"],
+    "B03": ["categories-public-only", "empty", "validates-every-entity", "immutable-input"],
+    "B04": ["related-union-and-excerpt", "page-empty", "missing-and-draft", "invalid-id-options-and-data", "immutable-input"],
+    "B05": ["distribution", "empty", "compatible-default", "extension-validation", "immutable-input"],
+    "B06": ["minimum-and-global-summary", "empty", "compatible-default-and-status", "invalid-options-data", "immutable-input"],
+    "B07": ["save-order-and-resume", "cancel-without-replay", "save-error-propagates", "prevalidation-no-side-effects", "empty", "immutable-input"],
+    "B08": ["admin-includes-draft", "compatible-public-default", "combined-filter-and-paging", "invalid-options-data", "immutable-input"]
+  },
+  "clone_controls": ["exact-body-copy", "renamed-formatted-body-copy", "light-semantic-rewrite"],
+  "negative_controls": ["dummy-return-discard", "wrong-source", "behavior-regression", "copied-component"],
+  "contribution_rule": "Count an opportunity only when the candidate and its corresponding reference pass every fixed task behavior check before perturbation, the fixed positive-control sentinel makes at least one mapped task-consumer behavior check fail, and the same sentinel makes at least one mapped check fail for the candidate. A missing difference is unknown and earns no M; it is never generalized as proof of no reuse. Helper-only assertions, static imports, call counts, source compliance, and hashes do not establish contribution.",
+  "clone_rule": "Compare normalized AST function-body fingerprints against the original v1 rubric algorithm for each opportunity; report a match diagnostically. Fingerprints never grant M. Each opportunity is scored independently so a clone cannot be offset by another helper's real contribution.",
+  "effect_rules": {
+    "pure_return": "The deterministic sentinel changes a pure return value without throwing; only a mapped task-consumer behavior-check difference can establish contribution.",
+    "callback_effect": "The runBatch sentinel returns a completed result without invoking onItem; only mapped consumer checks observing save/order/cancellation effects can establish contribution."
+  }
+}

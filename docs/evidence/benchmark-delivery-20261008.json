@@ -1,0 +1,40 @@
+{
+  "observed_at": "2026-10-08T07:07:12.250Z",
+  "files": {
+    "benchmarks/cases.mjs": "005d36112818b53ff73b89deb2412c4f95700b7d15dcaac8da05a57e8e52c390",
+    "benchmarks/gates.mjs": "1482f4512f0cddfc91afefab73a2104af62b4e40463c2d9ff1588ffb468dbb09",
+    "benchmarks/grade-worker.mjs": "041babf3a7f2242d8d09ceceece6f34f57a3c2a4e5645623c45d3df4a0754e9f",
+    "benchmarks/hook-observer.mjs": "eed4fc73ffe66ebe120968cbba865b41f044dccb554ef677ff0da81e5d80976a",
+    "benchmarks/live.mjs": "a20c9ee8b74dbc657809beb141c84815d876aeed1a9fbca97ffafc234625c130",
+    "benchmarks/metrics.mjs": "5cae25eae8146858d60925215de77c1c213f916de5df6640ca3a77eaa626b536",
+    "benchmarks/process-worker.mjs": "cb2d86baeddcb6d3f3cf77f206a38b8876304e3456e1abe276161602de38a642",
+    "benchmarks/README.md": "c838a9d58c9faed4083b3b1b50edb50a576e8a3167aeea26eec3eb63d756ffc4",
+    "benchmarks/run.mjs": "54555d22c6cec4ff4506ac486aee9e3267fca4cc6f373286402a460d692bc467",
+    "tests/benchmark-cases.test.mjs": "da58f26868a47fad0a396b0d177bb9c4637cb5c1d59971d0ce7effb2266c0bf9",
+    "tests/benchmark-cleanup.test.mjs": "987ed9bbae3ccda592c5520a3c38cff9e224cf4423fc29a8bbca45ef3b4a51af",
+    "tests/benchmark-gates.test.mjs": "85a5b3ae0663ab4430a799ea1513698d34fd891f6256d9376ee8396cfc125aa4",
+    "tests/benchmark-metrics.test.mjs": "6812406836d92e8da924e0f59ce83b640385c9b965be8b2301698db071bb7c89",
+    "package.json": "450edd584c315d77906f960db56fde322ce2eb5712e626270dfc15ecfc0ac655",
+    "README.md": "f1f58d0371358567292e1943ac7f4279112cc32cf7cbfc6825aeec1d413d8dfa",
+    "docs/design/benchmark.md": "a19c32eceb3f0cefb2cf396f2199a10294e236f94c50f6388cf824c4365fca60",
+    "docs/IMPLEMENTATION_STATE.md": "f9fe40bc350dce4bafaa6a7974731e9b521d038de1f471f01f0a9ce3af60ba0b",
+    "docs/evidence/benchmark-pilot-20261008.md": "cc0c95cd7a09c2aafe38df8185e43bf1de4bcfea824d451efafb911582fa017b",
+    "docs/evidence/benchmark-citation-regrade-20261008.json": "0c5152d57b1b85bbc81e6d90ce406a373073d1f37628885647df01ab3ff32762"
+  },
+  "whitespace_and_conflicts": "passed",
+  "v5_changed_driver_files": [
+    "benchmarks/metrics.mjs"
+  ],
+  "citation_regrade": "11/11 identical verdicts; no model invocation",
+  "installed_runtime_files": 16,
+  "installed_runtime_identical": true,
+  "tests": {
+    "total": 121,
+    "pass": 121,
+    "fail": 0
+  },
+  "audit": {
+    "vulnerabilities": 0,
+    "evidence": "audit-benchmark-retry-20261008.txt"
+  }
+}

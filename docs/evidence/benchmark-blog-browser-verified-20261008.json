@@ -1,0 +1,140 @@
+{
+  "status": "passed",
+  "passed": true,
+  "out": "D:\\zzd\\agent-engineering-cycle\\slop\\blog-benchmark-20261008-v3\\demo\\slop\\browser-verified",
+  "evidence_path": "D:\\zzd\\agent-engineering-cycle\\slop\\blog-benchmark-20261008-v3\\demo\\slop\\browser-verified\\browser-evidence.json",
+  "script_integrity": {
+    "expected_sha256": "fde9077ecaeb8d6e1af3dd2f1964fdb54012639ebfb6207d8d5a20f59a5590fe",
+    "before_sha256": "fde9077ecaeb8d6e1af3dd2f1964fdb54012639ebfb6207d8d5a20f59a5590fe",
+    "after_sha256": "fde9077ecaeb8d6e1af3dd2f1964fdb54012639ebfb6207d8d5a20f59a5590fe",
+    "unchanged": true
+  },
+  "script_integrity_error": null,
+  "facts": {
+    "check_id": "blog-browser",
+    "argv_digest": "397b58c81cee011c046c5598cdf8761e11264f94b804b9509554b9a2352fa221",
+    "launch_status": "started",
+    "pid": 48376,
+    "terminal_observed": true,
+    "exit_code": 0,
+    "signal": null,
+    "cancel_requested": false,
+    "timed_out": false,
+    "launch_error": null,
+    "capture_error": null,
+    "cleanup_error": null,
+    "output_complete": true,
+    "stdout": "{\"status\":\"passed\",\"checks\":11,\"out\":\"D:\\\\zzd\\\\agent-engineering-cycle\\\\slop\\\\blog-benchmark-20261008-v3\\\\demo\\\\slop\\\\browser-verified\"}\n",
+    "stderr": "",
+    "input_bytes": 0,
+    "input_digest": null,
+    "input_delivered": true,
+    "passed": true
+  },
+  "evidence": {
+    "status": "passed",
+    "checks": [
+      "real-list-pagination",
+      "real-search",
+      "real-review-pending-not-public",
+      "real-bulk-approval",
+      "real-moderation-and-safe-text",
+      "real-hidden-review-removed",
+      "real-draft-edit-and-publish",
+      "empty-result",
+      "injected-failure-retry-to-real-api",
+      "mobile-no-horizontal-overflow",
+      "keyboard-navigation"
+    ],
+    "page_errors": [],
+    "console_errors": [
+      "Failed to load resource: the server responded with a status of 503 (Service Unavailable)"
+    ],
+    "expected_http_failures": [
+      {
+        "status": 503,
+        "url": "http://127.0.0.1:44584/api/posts?query=%E7%BB%84%E4%BB%B6%E5%A4%8D%E7%94%A8%E4%BB%8E%E5%A5%91%E7%BA%A6%E5%BC%80%E5%A7%8B&category=&tag=&order=newest&page=1&pageSize=6"
+      }
+    ],
+    "real_api_responses": 74,
+    "source_inputs": [
+      {
+        "path": "src/config.mjs",
+        "sha256": "d25e9c9ba2bc390e12fd933c4ab1a2f1e3767685b458303b46dff8845e895543"
+      },
+      {
+        "path": "src/domain/batch.mjs",
+        "sha256": "aef5488c67906671bcec26490cffd47fd920f224315a819a52a4bdc49bbdbe84"
+      },
+      {
+        "path": "src/domain/errors.mjs",
+        "sha256": "cad720ac9d89a4f5483a24570eb2bf598f365052e7bee28059d1ccca79fe412e"
+      },
+      {
+        "path": "src/domain/pagination.mjs",
+        "sha256": "ff41aae284885d684eecc168be8aa473a6a074bb2389b759b73e941fce4b05ac"
+      },
+      {
+        "path": "src/domain/posts.mjs",
+        "sha256": "17273ca15765017472c147f8309cf24f65b7309acc8bc8695702d5eaefabe926"
+      },
+      {
+        "path": "src/domain/ratings.mjs",
+        "sha256": "aea7abd8b958a72ef71397998bac4321de26363e42ce088f9bb14bca446267bb"
+      },
+      {
+        "path": "src/domain/reviews.mjs",
+        "sha256": "7754b8fd4bea674e6e961b32cb449f73b5824006b3479670909e14d3608de98c"
+      },
+      {
+        "path": "src/domain/text.mjs",
+        "sha256": "2b554ff14fb9512f48bb36bb54aea54eb8c60dca3a2b8053868329059e2209dc"
+      },
+      {
+        "path": "src/domain/validation.mjs",
+        "sha256": "680ab99645dfdc1c8c4702512e0aeb2115da5570d41a952e2fddc45257001281"
+      },
+      {
+        "path": "src/features.mjs",
+        "sha256": "5e1ed81d9a9c9b55fdbf283bbc56d444abf7dd7b9275daa08fb7023d22da48fb"
+      },
+      {
+        "path": "src/main.mjs",
+        "sha256": "0a56b710c1f2b5326fdcab3c22f9861707733de17e4127776cc21623331e9fb9"
+      },
+      {
+        "path": "src/server.mjs",
+        "sha256": "6654204118734359a3eb759d15b81d0c574d3eee8fdf2bc8e5b64de00c7ca27b"
+      },
+      {
+        "path": "src/services/blog.mjs",
+        "sha256": "0cb815bcc5f0be13179caf384d83af7042e95356d72485575c494f82c929ffef"
+      },
+      {
+        "path": "src/store.mjs",
+        "sha256": "daca7f90f013ac435c6aa7a4be9fca67fe3a70a2c496a80d6159e1aa86dd692f"
+      },
+      {
+        "path": "public/api.mjs",
+        "sha256": "7eaf5be0146a7839b238010035b4893190c8c3fef4d98b2637d3510fb2e17243"
+      },
+      {
+        "path": "public/app.mjs",
+        "sha256": "af72d3234770fe0aae7363ba8fbdf6243e0ff1e350fcfb4b058e7cb72c64609f"
+      },
+      {
+        "path": "public/components.mjs",
+        "sha256": "d495b78d319f286278101ac25f78e169f11303f4be2ca4cc7bb77c90621d833a"
+      },
+      {
+        "path": "public/index.html",
+        "sha256": "0c26a941baa9e42ff6e31144126c0cafc8e6add095cb41b4a997f53a1c57e94b"
+      },
+      {
+        "path": "public/style.css",
+        "sha256": "90fa012c8856b4ac87ccb66cb6352b9283a59902a2ab82b1db2e67d43986777b"
+      }
+    ]
+  },
+  "evidence_error": null
+}

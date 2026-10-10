@@ -1,0 +1,338 @@
+{
+  "recorded_at": "2026-10-08T02:04:15.128Z",
+  "installed_bytes_match_source": true,
+  "identities": [
+    {
+      "path": "src/adapters/calibrate.mjs",
+      "sha256": "6b2abd40726f1a4caa1dc99b9c1e7fdfd9f838a8927c68f13d1a01422887b965"
+    },
+    {
+      "path": "src/adapters/qa-cli.mjs",
+      "sha256": "bba14ff5bbdd8df6547ca1ae7ce4a7194df184486c4fe739e48463ddcc99de16"
+    },
+    {
+      "path": "src/adapters/qa-sources.mjs",
+      "sha256": "358fafc59dd041a3b93a721e5b93cc94fa629d372ed75bc48485862531ab6332"
+    },
+    {
+      "path": "src/adapters/qa-worker.mjs",
+      "sha256": "ca0c0455de398d3ce760471ca09aacf916e226b43a09a4d65e9f73ea072743ad"
+    },
+    {
+      "path": "src/cli.mjs",
+      "sha256": "47d373469e040049d12927ff58e246ffa5dd3c6060794506dece5329d22d70e6"
+    },
+    {
+      "path": "src/core/contracts.mjs",
+      "sha256": "b389a4f5e4b4a0b8376a84b3722afffbad48a544f440730930c6c9c45f4a3d35"
+    },
+    {
+      "path": "src/core/cycle.mjs",
+      "sha256": "306f7dde0358ee327e5eaab31a2a90e58c033e585754dd0a2ac480d3e29b0d68"
+    },
+    {
+      "path": "src/hook.mjs",
+      "sha256": "cacec33cf05ae42f46b9d82760c9ccc5f084d7c3c17de08fc23324ddd2638b77"
+    },
+    {
+      "path": "src/local/authority.mjs",
+      "sha256": "98f9e9e6421af5328cf3ff78825b75238514b1aac5b9d7d8e46c3bbc8ce438d8"
+    },
+    {
+      "path": "src/local/check-runner.mjs",
+      "sha256": "91174d4d314a2b3ddcfc3732d0051a297643ed5e424f8d6cf6c3796d476a4fe0"
+    },
+    {
+      "path": "src/local/config.mjs",
+      "sha256": "3f7bc52bd2f156fdadb87c90315948e31142de135ec914bc475b5fd13b1c84ae"
+    },
+    {
+      "path": "src/local/implementation-notes.mjs",
+      "sha256": "b7a3866b6610d1423d83af93a9d22a21921e05de1dd70aaf12c9fd96b98c10c5"
+    },
+    {
+      "path": "src/local/store.mjs",
+      "sha256": "cbd26b55d43ed97a9ee9676f024a0519893e0f561717664c46e065bec3a9915a"
+    },
+    {
+      "path": "src/local/workspace.mjs",
+      "sha256": "bbb0f9855578cfd3d17cc127441b0bab59b5709423bba8acf1304a681f705878"
+    },
+    {
+      "path": "src/runtime.mjs",
+      "sha256": "2a6612de98b98dc4948f6d7ada61b847fe17d0a4cb0a4e9623820d1032dd5699"
+    },
+    {
+      "path": "src/server.mjs",
+      "sha256": "f19a056040b8b3a6d0ea7bec1eb842ae54d66f86cf8bb9e3389017b6788f2d7e"
+    },
+    {
+      "path": "hooks/hooks.json",
+      "sha256": "ae7625e12f4e02d152af7bae639d3d243ec02131df59f98024affc0d33cfe032"
+    },
+    {
+      "path": "skills/agent-engineering-cycle/agents/openai.yaml",
+      "sha256": "befa217498d33b52b003c144a7da89ad6adfcf872c74c73e2180c29af685b763"
+    },
+    {
+      "path": "skills/agent-engineering-cycle/references/eval-cases.md",
+      "sha256": "93c6155665b9b464aad22b73025bb3baa2129ab54821c8e03c0d5027290cf763"
+    },
+    {
+      "path": "skills/agent-engineering-cycle/references/implementation-notes.md",
+      "sha256": "f71ddf8116fd20d0edf8fd701e5eadd7d746504a56e925974bb14f6fae4bc31b"
+    },
+    {
+      "path": "skills/agent-engineering-cycle/references/qa-reconciliation.md",
+      "sha256": "f47b28eb70964a52c86bb35cb307002c84e0741395f22a6e6651fc4fc4722ca8"
+    },
+    {
+      "path": "skills/agent-engineering-cycle/references/research-basis.md",
+      "sha256": "1ab34f7c0b8e9f4caa422ac226a25ab3a6123d69c16eaf9041ca8506b873a72c"
+    },
+    {
+      "path": "skills/agent-engineering-cycle/references/state-contract.md",
+      "sha256": "53a7267878b0f5cb9134a6b5540e6e385967e4006ee17374ef5b8cdffbe4c1c6"
+    },
+    {
+      "path": "skills/agent-engineering-cycle/SKILL.md",
+      "sha256": "bd9c6eed729b3360e64bae85db8692e206a2b7afb3e71304dbffa75dce8555d8"
+    },
+    {
+      "path": "package.json",
+      "sha256": "cbec7cc2519a33071daa989e594bc0f540b7f7934d783a2bd76f93e96e9d12da"
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "89d58018b29da7dcae01341bdc899091cbb9d007afc0fb563d6bb74cfc62e65d"
+    }
+  ],
+  "failed_attempts_preserved": [
+    {
+      "fixture": "workspace",
+      "lifecycle": "interrupted",
+      "current_complete": false,
+      "qa": null,
+      "pending_operation": "b651000b-1302-40d5-8617-cdaf835dfd21",
+      "operation": {
+        "cycle_id": "a8c5f331-6fc7-489b-b797-74d8c2b9db1e",
+        "effects_known": false,
+        "failure": {
+          "code": "SNAPSHOT_INCOMPLETE",
+          "details": {
+            "reason": "EPERM",
+            "snapshot_id": "550cf5ed-7c26-4f59-b90c-afb708720815"
+          },
+          "message": "The frozen snapshot could not be published."
+        },
+        "input_binding": {
+          "basis_digest": "51885d41e16d55a42058a6eb9273f3df2f380603ae4cac86041b883710ddfb69",
+          "cycle_id": "a8c5f331-6fc7-489b-b797-74d8c2b9db1e",
+          "revision": 6,
+          "workspace_id": "66ea59d29a995b40a63c4f7da120a72d4f551e7b8aa38c0ef332f7e11d2ae958"
+        },
+        "operation_id": "b651000b-1302-40d5-8617-cdaf835dfd21",
+        "phase": "unknown",
+        "request_digest": "8a24d5f1383d163e2081a9dcaa35c16944c1ddb71298aeb4873b0675ee508122",
+        "request_id": "tui-phase3-qa-start-01",
+        "started_at": "2026-10-08T01:21:41.424Z",
+        "tool": "cycle_qa"
+      }
+    },
+    {
+      "fixture": "retry-workspace",
+      "lifecycle": "interrupted",
+      "current_complete": false,
+      "qa": null,
+      "pending_operation": "4d6be4f9-6786-4f78-aaf7-500de1b75851",
+      "operation": {
+        "cycle_id": "d9cf8b79-0636-4315-bbee-93526f277d66",
+        "effects_known": false,
+        "failure": {
+          "code": "SNAPSHOT_INCOMPLETE",
+          "details": {
+            "phase": "publish",
+            "reason": "EPERM",
+            "snapshot_id": "716878c7-e82d-4700-bbfd-f88d385c5460"
+          },
+          "message": "The frozen snapshot could not be published."
+        },
+        "input_binding": {
+          "basis_digest": "50cd9e44924bbd9de9bde8e60dced46546012ec5b433ef9581625f21e1caab31",
+          "cycle_id": "d9cf8b79-0636-4315-bbee-93526f277d66",
+          "revision": 3,
+          "workspace_id": "b393bc4817da302641035b81f4978797669f205d9e2f4839800ec06ac3bcc3e3"
+        },
+        "operation_id": "4d6be4f9-6786-4f78-aaf7-500de1b75851",
+        "phase": "unknown",
+        "request_digest": "8e6711a257b56dc133eb2f7f820ad9e4921bb64669df68e9832723ff08658d46",
+        "request_id": "retry-operator-attach-I",
+        "started_at": "2026-10-08T01:31:48.244Z",
+        "tool": "cycle_artifact"
+      }
+    }
+  ],
+  "final_status": {
+    "ok": true,
+    "binding": {
+      "workspace_id": "dd889b0165c54936362d1d92d083a456dd2a6e86ba3970c9a3d212423773f18d",
+      "cycle_id": "bdf68ad6-657c-4b98-9696-c4523af92dee",
+      "revision": 7,
+      "basis_digest": "d8e41b0dcfa70f4dc10487b7db10dcacd80340d419e269b659a650d06b4af0ef"
+    },
+    "stage": "ready",
+    "lifecycle": "completed",
+    "current_complete": true,
+    "blockers": [],
+    "pending_operation": null,
+    "required_check_ids": [
+      "age-boundaries"
+    ],
+    "implementation_notes": {
+      "status": "current",
+      "summary": {
+        "required": 1,
+        "attached": 1,
+        "current": 1,
+        "stale": 0,
+        "missing": 0,
+        "invalid": 0
+      },
+      "entries": [
+        {
+          "source": {
+            "path": "src/age.mjs",
+            "symbol": "isAdult",
+            "sha256": "716bd6f54a62aee5c6b3cdb4a5edb75f51bbb1c9cf0802d0f30a07747d0a1e80"
+          },
+          "documentation": {
+            "path": "docs/age-notes.md",
+            "sha256": "45242c7ce137424e53cd57c253afffe8876d54ff986408021109f9495bbf0a2f",
+            "start_line": 3,
+            "end_line": 10
+          },
+          "status": "current",
+          "inputs": [
+            {
+              "path": "src/age.mjs",
+              "expected_sha256": "716bd6f54a62aee5c6b3cdb4a5edb75f51bbb1c9cf0802d0f30a07747d0a1e80",
+              "actual_sha256": "716bd6f54a62aee5c6b3cdb4a5edb75f51bbb1c9cf0802d0f30a07747d0a1e80"
+            },
+            {
+              "path": "docs/age-notes.md",
+              "expected_sha256": "45242c7ce137424e53cd57c253afffe8876d54ff986408021109f9495bbf0a2f",
+              "actual_sha256": "45242c7ce137424e53cd57c253afffe8876d54ff986408021109f9495bbf0a2f"
+            },
+            {
+              "path": "check.mjs",
+              "expected_sha256": "0e837f068eb50989b100cf55aa4ed7c9e9101fb219ac6d9c7ec40ea673a684c4",
+              "actual_sha256": "0e837f068eb50989b100cf55aa4ed7c9e9101fb219ac6d9c7ec40ea673a684c4"
+            }
+          ],
+          "content": "## Mechanism\n`isAdult(age)` follows this path: `age` → JavaScript runtime `Number.isInteger(age)` → short-circuited inclusive comparison `age >= 18` → Boolean. If `Number.isInteger(age)` is false, `&&` short-circuits and returns false without evaluating the comparison. Otherwise, `age >= 18` returns a Boolean, so the function always returns a Boolean.\n\n## Invalid values and effects\nStrings, `NaN`, infinities, fractional values, and other non-integers return false. Integer ages below 18 also return false. The function has no state changes or I/O, raises no errors for these invalid values, and uses no external packages.\n\n## Testing and maintenance\nThe configured `age-boundaries` check covers 17, 18, 19, a string, `NaN`, infinity, and a fractional age. Run it after changing `isAdult`. If the age threshold or accepted input type changes, update the check and this note together.",
+          "truncated": false,
+          "symbol_verified": false,
+          "semantic_verified": false
+        }
+      ],
+      "semantic_verified": false,
+      "coverage": "Declared targets only; file identities and selected prose are observed, symbol/call/dataflow meaning is not parsed."
+    },
+    "qa": {
+      "job_id": "a25ed5d3-594b-4443-bb4e-7ea1f32e1b45",
+      "status": "completed",
+      "report_ref": {
+        "digest": "00091e45ca2362b9bcdc01c411b545fe3921d07643395d77eef96319f39131b0",
+        "id": "qa-report-00091e45ca2362b9bcdc01c411b545fe3921d07643395d77eef96319f39131b0",
+        "kind": "qa-report",
+        "schema_revision": 1
+      },
+      "assurance": {
+        "distinct_execution": true,
+        "fresh_session": true,
+        "frozen_input_delivery": true,
+        "permission_observed": true,
+        "terminal_observed": true
+      },
+      "terminal_observed": true,
+      "quiescent": true,
+      "current": true,
+      "passed": true
+    },
+    "evidence_refs": [
+      {
+        "digest": "29abf71e2802bb33fab370bfd69805fe4df6ef8e055abc54754b08defec510d5",
+        "id": "artifact-29abf71e2802bb33fab370bfd69805fe4df6ef8e055abc54754b08defec510d5",
+        "kind": "artifact",
+        "schema_revision": 1
+      },
+      {
+        "digest": "bbfea5b8fa85db716764c3945d7d320f95aee3f19147a9de91d26ffa8c5294dc",
+        "id": "artifact-bbfea5b8fa85db716764c3945d7d320f95aee3f19147a9de91d26ffa8c5294dc",
+        "kind": "artifact",
+        "schema_revision": 1
+      },
+      {
+        "digest": "4618a0ba8cc7648659404cc891fc5a10939efc46d6ef90340c0a60847bfb0b55",
+        "id": "artifact-4618a0ba8cc7648659404cc891fc5a10939efc46d6ef90340c0a60847bfb0b55",
+        "kind": "artifact",
+        "schema_revision": 1
+      },
+      {
+        "digest": "d71aafdeb302b283e95ee7aaa6dc4d11a4ae8cda16e9dc8570bc16e1ef3fdda9",
+        "id": "verification-d71aafdeb302b283e95ee7aaa6dc4d11a4ae8cda16e9dc8570bc16e1ef3fdda9",
+        "kind": "verification",
+        "schema_revision": 1
+      },
+      {
+        "digest": "00091e45ca2362b9bcdc01c411b545fe3921d07643395d77eef96319f39131b0",
+        "id": "qa-report-00091e45ca2362b9bcdc01c411b545fe3921d07643395d77eef96319f39131b0",
+        "kind": "qa-report",
+        "schema_revision": 1
+      },
+      {
+        "digest": "6fb68d63b803433e82dccff0f92d1fe4c9b75ed7b0c702dd82a0b4119ac36ce2",
+        "id": "completion-6fb68d63b803433e82dccff0f92d1fe4c9b75ed7b0c702dd82a0b4119ac36ce2",
+        "kind": "completion",
+        "schema_revision": 1
+      }
+    ],
+    "capabilities": {
+      "local_store": true,
+      "tested_platform": "win32 local filesystem / Node 24",
+      "authority": "interactive-operator signed receipts; no MCP approval minting",
+      "qa_driver": true,
+      "qa": {
+        "available": true,
+        "receipt_digest": "1ff0b1828018e84a0f516fb09c92d1a102d9331964d4e2b7b253167613ffcf73",
+        "assurance": {
+          "distinct_execution": true,
+          "fresh_session": true,
+          "frozen_input_delivery": true,
+          "permission_observed": true,
+          "terminal_observed": true
+        },
+        "source": "program-calibration",
+        "human_identity_verified": false
+      },
+      "native_subagent": false,
+      "hook_coverage": "matched writes only",
+      "stop_continuation": false
+    },
+    "next": [
+      "Keep the historical cycle; begin a new already-authorized goal if needed."
+    ],
+    "coverage_limits": [
+      "Managed entry points only; external edits and unmatched Shell tools are detected, not prevented.",
+      "Semantic verdicts remain reported judgments."
+    ]
+  },
+  "tests": {
+    "command": "npm run check",
+    "evidence": "check-tui-final-repair-20261008.txt",
+    "passed": 92,
+    "failed": 0,
+    "vulnerabilities": 0
+  },
+  "authority_keys_exported": false
+}

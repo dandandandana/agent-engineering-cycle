@@ -1,0 +1,20 @@
+{
+  "digest": "10c57f1ef8ce6248b50b5ca4bd85d1978892148e2028a1f53141732b657d8608",
+  "entries": [
+    {
+      "path": "design.md",
+      "sha256": "f5acf185415cec7062a632f30bc35ae12986010ec7baf47e9042ae027e467348",
+      "size": 238
+    },
+    {
+      "path": "requirements.md",
+      "sha256": "878fce6174144bf2f8dafcda6ce005239425614a64536f5624e5d0cd23d8d7a3",
+      "size": 489
+    },
+    {
+      "path": "subject.mjs",
+      "sha256": "dcdb1f9d47a0c2d8da5ecf7469df9b1ef8df646ef93cd7a8ed8ea0a75332ef0e",
+      "size": 53
+    }
+  ]
+}

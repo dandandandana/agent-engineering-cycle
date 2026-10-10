@@ -1,0 +1,58 @@
+{
+  "digest": "6fb68d63b803433e82dccff0f92d1fe4c9b75ed7b0c702dd82a0b4119ac36ce2",
+  "id": "completion-6fb68d63b803433e82dccff0f92d1fe4c9b75ed7b0c702dd82a0b4119ac36ce2",
+  "kind": "completion",
+  "payload": {
+    "basis_digest": "d8e41b0dcfa70f4dc10487b7db10dcacd80340d419e269b659a650d06b4af0ef",
+    "completed_at": "2026-10-08T01:48:37.236Z",
+    "cycle_id": "bdf68ad6-657c-4b98-9696-c4523af92dee",
+    "evidence_refs": [
+      {
+        "digest": "29abf71e2802bb33fab370bfd69805fe4df6ef8e055abc54754b08defec510d5",
+        "id": "artifact-29abf71e2802bb33fab370bfd69805fe4df6ef8e055abc54754b08defec510d5",
+        "kind": "artifact",
+        "schema_revision": 1
+      },
+      {
+        "digest": "bbfea5b8fa85db716764c3945d7d320f95aee3f19147a9de91d26ffa8c5294dc",
+        "id": "artifact-bbfea5b8fa85db716764c3945d7d320f95aee3f19147a9de91d26ffa8c5294dc",
+        "kind": "artifact",
+        "schema_revision": 1
+      },
+      {
+        "digest": "4618a0ba8cc7648659404cc891fc5a10939efc46d6ef90340c0a60847bfb0b55",
+        "id": "artifact-4618a0ba8cc7648659404cc891fc5a10939efc46d6ef90340c0a60847bfb0b55",
+        "kind": "artifact",
+        "schema_revision": 1
+      },
+      {
+        "digest": "d71aafdeb302b283e95ee7aaa6dc4d11a4ae8cda16e9dc8570bc16e1ef3fdda9",
+        "id": "verification-d71aafdeb302b283e95ee7aaa6dc4d11a4ae8cda16e9dc8570bc16e1ef3fdda9",
+        "kind": "verification",
+        "schema_revision": 1
+      },
+      {
+        "digest": "00091e45ca2362b9bcdc01c411b545fe3921d07643395d77eef96319f39131b0",
+        "id": "qa-report-00091e45ca2362b9bcdc01c411b545fe3921d07643395d77eef96319f39131b0",
+        "kind": "qa-report",
+        "schema_revision": 1
+      }
+    ],
+    "operation_id": "4d3a919f-c9af-4e79-a54a-c8366580d01b",
+    "semantic_verdict": {
+      "correctness_verified": false,
+      "reported": {
+        "evidence_refs": [
+          "artifact-29abf71e2802bb33fab370bfd69805fe4df6ef8e055abc54754b08defec510d5",
+          "artifact-bbfea5b8fa85db716764c3945d7d320f95aee3f19147a9de91d26ffa8c5294dc",
+          "artifact-4618a0ba8cc7648659404cc891fc5a10939efc46d6ef90340c0a60847bfb0b55",
+          "verification-d71aafdeb302b283e95ee7aaa6dc4d11a4ae8cda16e9dc8570bc16e1ef3fdda9",
+          "qa-report-00091e45ca2362b9bcdc01c411b545fe3921d07643395d77eef96319f39131b0"
+        ],
+        "original_goal_covered": true,
+        "unresolved_findings": []
+      }
+    }
+  },
+  "schema_revision": 1
+}

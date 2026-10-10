@@ -1,0 +1,101 @@
+{
+  "schema_revision": 1,
+  "checked_at": "2026-10-08T12:02:59.398Z",
+  "scope": "documentation and frozen baseline identities only",
+  "result": "passed",
+  "document_count": 17,
+  "markdown_count": 15,
+  "raw_draft_count": 2,
+  "local_links_checked": 111,
+  "reuse_acceptance_ids": [
+    "REUSE-01",
+    "REUSE-02",
+    "REUSE-03",
+    "REUSE-04",
+    "REUSE-05",
+    "REUSE-06",
+    "REUSE-07",
+    "REUSE-08",
+    "REUSE-09",
+    "REUSE-10",
+    "REUSE-11",
+    "REUSE-12"
+  ],
+  "baseline_files_checked": 67,
+  "baseline_unchanged": true,
+  "archived_draft_bytes_unchanged": true,
+  "production_runtime_tests": "not_run; no production changes in this increment",
+  "host_provider_session_benchmark_acceptance": "planned; not_run",
+  "first_check": "delivery-check-initial.json; failed on relocated draft relative links; preserved",
+  "documentation_files": [
+    {
+      "path": "README.md",
+      "sha256": "b95d27b8e80e526d0d0ba2e8d84ed5820de9dab85a2df91b2b4b019bc1e581b1"
+    },
+    {
+      "path": "docs/IMPLEMENTATION_STATE.md",
+      "sha256": "8f517d4d9141ac8d9fd9727288ddd67afc5c830ba86ef46cbc096f1ac2981ddc"
+    },
+    {
+      "path": "docs/design/architecture.md",
+      "sha256": "aea4865ebed2cc6cb7e497f4630a94224a018f50dff133382acf69086d8f6cbc"
+    },
+    {
+      "path": "docs/design/acceptance.md",
+      "sha256": "3a119340a5095046b6b57b7123299e06c57c40ef29900fb3ad298d3209c55a2f"
+    },
+    {
+      "path": "docs/design/review-history.md",
+      "sha256": "d9c308aa346adb4ccae05eb3fe4bb78a46ab2f4e10a375caecc67bf3388671f5"
+    },
+    {
+      "path": "docs/design/component-reuse-context.md",
+      "sha256": "f1a369011d10dff5da9649680391af1a65c92cf6eee21bb946ad02f9b62ad4d8"
+    },
+    {
+      "path": "docs/design/component-reuse-implementation.md",
+      "sha256": "4fa759e84253491556a558ffd3ab810a1f7bbe4432a24532b9e6ac07f86b54f1"
+    },
+    {
+      "path": "docs/design/reviews/2026-10-08-reuse-context/00-brief.md",
+      "sha256": "06395ac367dd20f482d04ae3e41d7fcc19bfd68513a5fbb647f6da5579d261a8"
+    },
+    {
+      "path": "docs/design/reviews/2026-10-08-reuse-context/01-design.md",
+      "sha256": "17d1b8e597d9c0f6bf4172cc367ebc5f3b18965e88a012609ef467cdaf392bdd"
+    },
+    {
+      "path": "docs/design/reviews/2026-10-08-reuse-context/02-redteam.md",
+      "sha256": "ef37e1709f66e9eee9b33ce0f1dfde9f36cfb8a1648490725b4795299b45b51c"
+    },
+    {
+      "path": "docs/design/reviews/2026-10-08-reuse-context/03-implementation-eval.md",
+      "sha256": "f2cd923b0048bf07ec3d94ad1dc7041f6ad80d5a44fcb88aa5647adc57e2a6f2"
+    },
+    {
+      "path": "docs/design/reviews/2026-10-08-reuse-context/04-maintainability.md",
+      "sha256": "17ab7f127b15f5439621eb66ef3fc9e7933b89e0f221e55fd5016e4edf6561c9"
+    },
+    {
+      "path": "docs/design/reviews/2026-10-08-reuse-context/05-draft-design.txt",
+      "sha256": "d60acf9b2d3f3b274af13cd960e95cec3cd918685b147b5e5fd2cc9ad827e993"
+    },
+    {
+      "path": "docs/design/reviews/2026-10-08-reuse-context/06-draft-implementation.txt",
+      "sha256": "8d2a3ad6d10fdd4e578900c8bc883f1cfbb252252063508756376c06b3d7aca7"
+    },
+    {
+      "path": "docs/design/reviews/2026-10-08-reuse-context/07-contract-recheck.md",
+      "sha256": "e2718d8f568e49334d5790c3df08afa8be8a7259cbff292b5a1acf834a7aa0d0"
+    },
+    {
+      "path": "docs/design/reviews/2026-10-08-reuse-context/08-redteam-recheck.md",
+      "sha256": "cfca3c143972b40416f74ea1ef5dd6ccafc257ff75d015acc19755b81ce10bbe"
+    },
+    {
+      "path": "docs/design/reviews/2026-10-08-reuse-context/09-eval-recheck.md",
+      "sha256": "8f97982246fd04afa32fddad995243a8904ba24876995f181f6ab3cd6669fc6b"
+    }
+  ],
+  "issues": []
+}

@@ -1,0 +1,35 @@
+{
+  "phase": "P0",
+  "platform": "win32",
+  "node": "v24.11.0",
+  "started_at": "2026-10-07T12:01:34.095Z",
+  "finished_at": "2026-10-07T12:01:50.901Z",
+  "control_root": "C:\\Users\\DANDAN~1\\AppData\\Local\\Temp\\engineering-cycle-p0-control-lQcjGE",
+  "result": {
+    "passed": false,
+    "capability_receipt": null,
+    "fixture": "C:\\Users\\DANDAN~1\\AppData\\Local\\Temp\\engineering-cycle-p0-p0nbYL",
+    "sandbox_probe": {
+      "denied": true,
+      "raw_ref": {
+        "id": "p0-sandbox-d4dee3587c5abe90f22596dadd314f464c4e27d7e2c778aa0507e84032e7bb46",
+        "digest": "d4dee3587c5abe90f22596dadd314f464c4e27d7e2c778aa0507e84032e7bb46",
+        "kind": "p0-sandbox",
+        "schema_revision": 1
+      }
+    },
+    "live_probe": {
+      "passed": false,
+      "raw_ref": {
+        "id": "p0-live-qa-b0dffcde5c55137aad8c4fd2d58b181d6d1ef4962801c7fd1e10a005d19753e1",
+        "digest": "b0dffcde5c55137aad8c4fd2d58b181d6d1ef4962801c7fd1e10a005d19753e1",
+        "kind": "p0-live-qa",
+        "schema_revision": 1
+      }
+    },
+    "coverage_limits": "fresh CLI exec and fixed readonly filesystem probe; no hidden prompt/model identity or all-tool coverage proof"
+  },
+  "native_subagent": "not_attempted; no supported runtime observer implemented",
+  "host_plugin_install": "not_attempted; no global install",
+  "human_decision_channel": "interactive operator entry implemented; not authenticated human identity"
+}

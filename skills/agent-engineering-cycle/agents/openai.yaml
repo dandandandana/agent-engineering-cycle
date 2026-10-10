@@ -1,0 +1,4 @@
+interface:
+  display_name: "Agent 工程闭环"
+  short_description: "自主推进需求、设计、实现状态与独立验收，保留证据和续作入口"
+  default_prompt: "请使用 $agent-engineering-cycle 接手当前项目，在已有授权内完成工程闭环并更新实现状态。"

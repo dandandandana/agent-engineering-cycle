@@ -1,0 +1,199 @@
+{
+  "checked_at": "2026-10-08T00:39:48.341Z",
+  "platform": "win32",
+  "node": "v24.11.0",
+  "status": "passed",
+  "frozen_digest": "7ab3abad7faef83abc8524e1c370486e4bf8cc94f6d86fd10accdfc66ec0315f",
+  "frozen_files": 45,
+  "unchanged_source_test_skill_files": 44,
+  "after_validation_updates": [
+    "docs/IMPLEMENTATION_STATE.md"
+  ],
+  "current_document_links": 43,
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "7c442840e22680efc36d3b0b2badd7506dbefab89a2c8e2c9bb8434319717d27"
+    },
+    {
+      "path": "docs/IMPLEMENTATION_STATE.md",
+      "sha256": "4cc7276f980a14c3253cb6581a71980cbd0fc7d1a4849e9af89da7196aec2f26"
+    },
+    {
+      "path": "docs/design/implementation-notes.md",
+      "sha256": "989571da6b38524b5b8a50f2df750d5bc02303f2ac2f3a190e212d98828a73e2"
+    },
+    {
+      "path": "docs/implementation-notes.md",
+      "sha256": "d94fe54485fc464089af3037cb843bd5da5349465e23811e6014cc6603413aec"
+    },
+    {
+      "path": "hooks/hooks.json",
+      "sha256": "ae7625e12f4e02d152af7bae639d3d243ec02131df59f98024affc0d33cfe032"
+    },
+    {
+      "path": "mcp.json",
+      "sha256": "2f2c3470c19a590550280557e76a7d89a655b658a8e2750755b9cfe986f99631"
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "89d58018b29da7dcae01341bdc899091cbb9d007afc0fb563d6bb74cfc62e65d"
+    },
+    {
+      "path": "package.json",
+      "sha256": "cbec7cc2519a33071daa989e594bc0f540b7f7934d783a2bd76f93e96e9d12da"
+    },
+    {
+      "path": "plugin.json",
+      "sha256": "1594d2b9480d1e5a067afa3c02c86238c105ec5731586466bd1b7cbfb7b814d2"
+    },
+    {
+      "path": "scripts/check.mjs",
+      "sha256": "73432425d7d5f4ce6857a31a97493d014fde42a0c3887e9175b1313b3d3dda24"
+    },
+    {
+      "path": "scripts/p0.mjs",
+      "sha256": "666e0c5fcf1992989197bae4b767cfe2d8a5c53b46ff130ccf428dfacad7b6f5"
+    },
+    {
+      "path": "skills/agent-engineering-cycle/SKILL.md",
+      "sha256": "bd9c6eed729b3360e64bae85db8692e206a2b7afb3e71304dbffa75dce8555d8"
+    },
+    {
+      "path": "skills/agent-engineering-cycle/agents/openai.yaml",
+      "sha256": "befa217498d33b52b003c144a7da89ad6adfcf872c74c73e2180c29af685b763"
+    },
+    {
+      "path": "skills/agent-engineering-cycle/references/eval-cases.md",
+      "sha256": "93c6155665b9b464aad22b73025bb3baa2129ab54821c8e03c0d5027290cf763"
+    },
+    {
+      "path": "skills/agent-engineering-cycle/references/implementation-notes.md",
+      "sha256": "f71ddf8116fd20d0edf8fd701e5eadd7d746504a56e925974bb14f6fae4bc31b"
+    },
+    {
+      "path": "skills/agent-engineering-cycle/references/qa-reconciliation.md",
+      "sha256": "f47b28eb70964a52c86bb35cb307002c84e0741395f22a6e6651fc4fc4722ca8"
+    },
+    {
+      "path": "skills/agent-engineering-cycle/references/research-basis.md",
+      "sha256": "1ab34f7c0b8e9f4caa422ac226a25ab3a6123d69c16eaf9041ca8506b873a72c"
+    },
+    {
+      "path": "skills/agent-engineering-cycle/references/state-contract.md",
+      "sha256": "53a7267878b0f5cb9134a6b5540e6e385967e4006ee17374ef5b8cdffbe4c1c6"
+    },
+    {
+      "path": "src/adapters/calibrate.mjs",
+      "sha256": "6667cdf4325ac80d83d6d824720f9952b1682886079908f0b559354caff7d7aa"
+    },
+    {
+      "path": "src/adapters/qa-cli.mjs",
+      "sha256": "b9ec7cded967616e192f22ffa2004a7a38673c654b750d160b7597fdb66340f9"
+    },
+    {
+      "path": "src/adapters/qa-sources.mjs",
+      "sha256": "358fafc59dd041a3b93a721e5b93cc94fa629d372ed75bc48485862531ab6332"
+    },
+    {
+      "path": "src/adapters/qa-worker.mjs",
+      "sha256": "ca0c0455de398d3ce760471ca09aacf916e226b43a09a4d65e9f73ea072743ad"
+    },
+    {
+      "path": "src/cli.mjs",
+      "sha256": "47d373469e040049d12927ff58e246ffa5dd3c6060794506dece5329d22d70e6"
+    },
+    {
+      "path": "src/core/contracts.mjs",
+      "sha256": "b389a4f5e4b4a0b8376a84b3722afffbad48a544f440730930c6c9c45f4a3d35"
+    },
+    {
+      "path": "src/core/cycle.mjs",
+      "sha256": "306f7dde0358ee327e5eaab31a2a90e58c033e585754dd0a2ac480d3e29b0d68"
+    },
+    {
+      "path": "src/hook.mjs",
+      "sha256": "cacec33cf05ae42f46b9d82760c9ccc5f084d7c3c17de08fc23324ddd2638b77"
+    },
+    {
+      "path": "src/local/authority.mjs",
+      "sha256": "98f9e9e6421af5328cf3ff78825b75238514b1aac5b9d7d8e46c3bbc8ce438d8"
+    },
+    {
+      "path": "src/local/check-runner.mjs",
+      "sha256": "91174d4d314a2b3ddcfc3732d0051a297643ed5e424f8d6cf6c3796d476a4fe0"
+    },
+    {
+      "path": "src/local/config.mjs",
+      "sha256": "ac023ec142f751e51bfccbe797e5ca43d7871fee42363ca60c92ad2fd6cc5ede"
+    },
+    {
+      "path": "src/local/implementation-notes.mjs",
+      "sha256": "b7a3866b6610d1423d83af93a9d22a21921e05de1dd70aaf12c9fd96b98c10c5"
+    },
+    {
+      "path": "src/local/store.mjs",
+      "sha256": "cbd26b55d43ed97a9ee9676f024a0519893e0f561717664c46e065bec3a9915a"
+    },
+    {
+      "path": "src/local/workspace.mjs",
+      "sha256": "140c4f17c713978cda4925df6df929faa7e35661289b97642e75c25fa1089c1b"
+    },
+    {
+      "path": "src/runtime.mjs",
+      "sha256": "2a6612de98b98dc4948f6d7ada61b847fe17d0a4cb0a4e9623820d1032dd5699"
+    },
+    {
+      "path": "src/server.mjs",
+      "sha256": "f19a056040b8b3a6d0ea7bec1eb842ae54d66f86cf8bb9e3389017b6788f2d7e"
+    },
+    {
+      "path": "tests/check-runner.test.mjs",
+      "sha256": "a09e280459be35b495da8958111ab243ec01cfce5593730fbe081cad0be7b1ab"
+    },
+    {
+      "path": "tests/core.test.mjs",
+      "sha256": "d28e713c626769d3e566f03b4814a954a0ff3f517821c518ab6096bbc7ac420b"
+    },
+    {
+      "path": "tests/helpers.mjs",
+      "sha256": "36f6eb92942ec1b44c7d05c7ed0b8fa3e74ce7696bc35b16b8dfe7569cd5de6f"
+    },
+    {
+      "path": "tests/implementation-notes.test.mjs",
+      "sha256": "28b026df94725500be21851dd54122ffee6561bd5b58420bb908e17c600e71ed"
+    },
+    {
+      "path": "tests/qa-sources.test.mjs",
+      "sha256": "250f164ef8f769fb554af262b4d381fce92e8be838306530501807a7441c08ff"
+    },
+    {
+      "path": "tests/recovery.test.mjs",
+      "sha256": "25cf25f35bb8aac1984528f10514e715fbd7b53d9566d6c136672c6519f69807"
+    },
+    {
+      "path": "tests/safety.test.mjs",
+      "sha256": "3bd01997642df3f9089af53e837e611210d80b91a3ca6bba60c8b98c38aabeb9"
+    },
+    {
+      "path": "tests/store.test.mjs",
+      "sha256": "34beb44b2ad4d361ca037f1a11e1fa44ad68beb1a26309cecde56c68110a81fd"
+    },
+    {
+      "path": "tests/text-pagination.test.mjs",
+      "sha256": "c6816476fff7bfff62290590fa22f8066b3a3d486609db9861030066b6d2b22e"
+    },
+    {
+      "path": "tests/transport.test.mjs",
+      "sha256": "d6c5fcadbd427188389aabdb0c409962e4a8819ff3f90e958894f630080715fa"
+    },
+    {
+      "path": "tests/workspace.test.mjs",
+      "sha256": "f29a5b55b54923beefc85224347f62e76f804911066cedfb708c95d19e1f4484"
+    }
+  ],
+  "limits": [
+    "Only the I closeout summary changed after frozen QA.",
+    "No global installation, model CLI invocation or Desktop acceptance in this check."
+  ]
+}

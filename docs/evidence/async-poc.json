@@ -1,0 +1,2431 @@
+{
+  "schema_revision": 1,
+  "task": "async-cli-qa-poc",
+  "attempt_number": 2,
+  "phase": "current-complete",
+  "started_at": "2026-10-07T13:36:15.000Z",
+  "authorization": {
+    "status": "simulated fixture grant; not a real human approval",
+    "source": {
+      "adapter": "interactive-operator",
+      "simulated_fixture": true,
+      "human_identity_verified": false
+    },
+    "human_identity_verified": false,
+    "mode": "implement",
+    "paths": [
+      "requirements.md",
+      "design.md",
+      "implementation.md",
+      "subject.mjs"
+    ],
+    "actions": [
+      "control",
+      "artifact",
+      "apply",
+      "verify",
+      "qa",
+      "reconcile"
+    ],
+    "grant_id": "grant-636877307ab6a53c1f594a96b627df6ed4c90da44b609012147fa2212f957a6d",
+    "goal_digest": "342ddb09b9e6b830ab66d4205e5bec402affa722b1de0e8f781d6113008a6a0f",
+    "payload": {
+      "kind": "action",
+      "workspace_id": "7e7bad0b0f1d818edc91e8d6462a8877803a7d1410efd5e75dfe0dc1f377308c",
+      "goal_digest": "342ddb09b9e6b830ab66d4205e5bec402affa722b1de0e8f781d6113008a6a0f",
+      "mode": "implement",
+      "paths": [
+        "requirements.md",
+        "design.md",
+        "implementation.md",
+        "subject.mjs"
+      ],
+      "actions": [
+        "control",
+        "artifact",
+        "apply",
+        "verify",
+        "qa",
+        "reconcile"
+      ],
+      "source": {
+        "adapter": "interactive-operator",
+        "simulated_fixture": true,
+        "human_identity_verified": false
+      }
+    }
+  },
+  "fixture": {
+    "paths": [
+      "requirements.md",
+      "design.md",
+      "implementation.md",
+      "subject.mjs"
+    ],
+    "acceptance_ids": [
+      "AC-BOUNDARY"
+    ],
+    "check_id": "adult-boundary",
+    "file_facts": {
+      "requirements.md": {
+        "sha256": "878fce6174144bf2f8dafcda6ce005239425614a64536f5624e5d0cd23d8d7a3",
+        "bytes": 489
+      },
+      "design.md": {
+        "sha256": "f5acf185415cec7062a632f30bc35ae12986010ec7baf47e9042ae027e467348",
+        "bytes": 238
+      },
+      "implementation.md": {
+        "sha256": "52f73b6bf05f300fddbc98ea1e7736e85e1195370ffa24851704c00e580acda3",
+        "bytes": 198
+      },
+      "subject.mjs": {
+        "sha256": "dcdb1f9d47a0c2d8da5ecf7469df9b1ef8df646ef93cd7a8ed8ea0a75332ef0e",
+        "bytes": 53
+      }
+    }
+  },
+  "calls": [
+    {
+      "name": "cycle_status.preflight",
+      "args": {},
+      "result": {
+        "ok": true,
+        "status": "unbound",
+        "binding": null,
+        "configured": true,
+        "capabilities": {
+          "local_store": true,
+          "tested_platform": "win32 local filesystem / Node 24",
+          "authority": "interactive-operator signed receipts; no MCP approval minting",
+          "qa_driver": true,
+          "qa": {
+            "available": true,
+            "receipt_digest": "710a98136e9f2e94039dc89f77c9711f871aa68e11cae087be9c716dbe696af2",
+            "assurance": {
+              "distinct_execution": true,
+              "fresh_session": true,
+              "frozen_input_delivery": true,
+              "permission_observed": true,
+              "terminal_observed": true
+            },
+            "source": "program-calibration",
+            "human_identity_verified": false
+          },
+          "native_subagent": false,
+          "hook_coverage": "matched writes only",
+          "stop_continuation": false
+        },
+        "next": [
+          "inspect sources; configure project and authorize a scope before begin"
+        ],
+        "coverage_limits": [
+          "No cycle is active."
+        ]
+      },
+      "observed_at": "2026-10-07T13:36:15.289Z"
+    },
+    {
+      "name": "cycle_control.begin",
+      "args": {
+        "action": "begin",
+        "request_id": "async-poc-begin-d202d380-6e48-499c-be2a-a806008e5011",
+        "goal": "Implement a pure isAdult(age) function that returns whether age is at least 18, and verify AC-BOUNDARY for ages 17, 18, and 19.",
+        "grant_id": "grant-636877307ab6a53c1f594a96b627df6ed4c90da44b609012147fa2212f957a6d",
+        "scope": [
+          "requirements.md",
+          "design.md",
+          "implementation.md",
+          "subject.mjs"
+        ],
+        "inputs": [
+          "requirements.md",
+          "design.md",
+          "implementation.md",
+          "subject.mjs"
+        ],
+        "acceptance_ids": [
+          "AC-BOUNDARY"
+        ]
+      },
+      "result": {
+        "ok": true,
+        "binding": {
+          "workspace_id": "7e7bad0b0f1d818edc91e8d6462a8877803a7d1410efd5e75dfe0dc1f377308c",
+          "cycle_id": "d5c92f78-efc9-457a-944e-6727a8547007",
+          "revision": 1,
+          "basis_digest": "06117ae944ce3cfbd87c85532190f2d5cd4cc09ecf040919c4ed970a57d23fd1"
+        },
+        "stage": "requirements",
+        "lifecycle": "active",
+        "current_complete": false,
+        "blockers": [
+          {
+            "code": "SOURCE_UNAVAILABLE",
+            "kind": "R"
+          },
+          {
+            "code": "SOURCE_UNAVAILABLE",
+            "kind": "D"
+          },
+          {
+            "code": "SOURCE_UNAVAILABLE",
+            "kind": "I"
+          },
+          {
+            "code": "EVIDENCE_INVALID",
+            "kind": "checks"
+          },
+          {
+            "code": "QA_VERIFICATION_UNAVAILABLE",
+            "kind": "independent_qa"
+          }
+        ],
+        "pending_operation": null,
+        "required_check_ids": [
+          "adult-boundary"
+        ],
+        "qa": null,
+        "evidence_refs": [],
+        "capabilities": {
+          "local_store": true,
+          "tested_platform": "win32 local filesystem / Node 24",
+          "authority": "interactive-operator signed receipts; no MCP approval minting",
+          "qa_driver": true,
+          "qa": {
+            "available": true,
+            "receipt_digest": "710a98136e9f2e94039dc89f77c9711f871aa68e11cae087be9c716dbe696af2",
+            "assurance": {
+              "distinct_execution": true,
+              "fresh_session": true,
+              "frozen_input_delivery": true,
+              "permission_observed": true,
+              "terminal_observed": true
+            },
+            "source": "program-calibration",
+            "human_identity_verified": false
+          },
+          "native_subagent": false,
+          "hook_coverage": "matched writes only",
+          "stop_continuation": false
+        },
+        "next": [
+          "Prepare and attach the missing/stale authority record."
+        ],
+        "coverage_limits": [
+          "Managed entry points only; external edits and unmatched Shell tools are detected, not prevented.",
+          "Semantic verdicts remain reported judgments."
+        ],
+        "operation": {
+          "operation_id": "a9cdd6b0-5928-418e-a734-60eb531a549b",
+          "request_id": "async-poc-begin-d202d380-6e48-499c-be2a-a806008e5011",
+          "phase": "settled",
+          "effects_known": true,
+          "outcome_ref": {
+            "id": "outcome-4ddb02ddd4034606f16bca8f52f7d6219e94103808669f9a554d72698915fb8a",
+            "digest": "4ddb02ddd4034606f16bca8f52f7d6219e94103808669f9a554d72698915fb8a",
+            "kind": "outcome",
+            "schema_revision": 1
+          }
+        },
+        "result": {
+          "effects_known": true,
+          "registered": "d5c92f78-efc9-457a-944e-6727a8547007"
+        }
+      },
+      "observed_at": "2026-10-07T13:36:15.451Z"
+    },
+    {
+      "name": "cycle_artifact.prepare.R",
+      "args": {
+        "action": "prepare",
+        "kind": "R",
+        "paths": [
+          "requirements.md"
+        ]
+      },
+      "result": {
+        "ok": true,
+        "kind": "R",
+        "manifest": {
+          "entries": [
+            {
+              "path": "requirements.md",
+              "sha256": "878fce6174144bf2f8dafcda6ce005239425614a64536f5624e5d0cd23d8d7a3",
+              "size": 489
+            }
+          ],
+          "digest": "ee6c472063c612ecfdf0b8e8f5d8d097cab07c90ca9ef710481ad6900145e804"
+        },
+        "prepared_handle": "7cdccbe725a00290eca2ac95e26aa64dca7184f2bf4f6371d3f309e6ca19769a",
+        "binding": {
+          "workspace_id": "7e7bad0b0f1d818edc91e8d6462a8877803a7d1410efd5e75dfe0dc1f377308c",
+          "cycle_id": "d5c92f78-efc9-457a-944e-6727a8547007",
+          "revision": 1,
+          "basis_digest": "06117ae944ce3cfbd87c85532190f2d5cd4cc09ecf040919c4ed970a57d23fd1"
+        },
+        "sources": [
+          {
+            "path": "requirements.md",
+            "sha256": "878fce6174144bf2f8dafcda6ce005239425614a64536f5624e5d0cd23d8d7a3",
+            "content": "# Requirements\n\n## Original goal\nImplement a pure isAdult(age) function that returns whether age is at least 18, and verify AC-BOUNDARY for ages 17, 18, and 19.\n\n## AC-BOUNDARY\nFor integer ages at the threshold boundary, `isAdult(age)` returns a boolean using the inclusive threshold 18.\n- `isAdult(17) === false`\n- `isAdult(18) === true`\n- `isAdult(19) === true`\n\nThe function is synchronous and accepts one numeric age. This fixture does not define other validation or product behavior.\n",
+            "truncated": false
+          }
+        ],
+        "omitted_sources_action": "Read the original authorized source file or prepare a smaller paths set; this view creates no archive."
+      },
+      "observed_at": "2026-10-07T13:36:15.493Z"
+    },
+    {
+      "name": "cycle_artifact.attach.R",
+      "args": {
+        "action": "attach",
+        "kind": "R",
+        "paths": [
+          "requirements.md"
+        ],
+        "binding": {
+          "workspace_id": "7e7bad0b0f1d818edc91e8d6462a8877803a7d1410efd5e75dfe0dc1f377308c",
+          "cycle_id": "d5c92f78-efc9-457a-944e-6727a8547007",
+          "revision": 1,
+          "basis_digest": "06117ae944ce3cfbd87c85532190f2d5cd4cc09ecf040919c4ed970a57d23fd1"
+        },
+        "prepared_handle": "7cdccbe725a00290eca2ac95e26aa64dca7184f2bf4f6371d3f309e6ca19769a",
+        "request_id": "async-poc-attach-R-cfe84e31-e034-413c-8be2-9a1c16917489"
+      },
+      "result": {
+        "ok": true,
+        "binding": {
+          "workspace_id": "7e7bad0b0f1d818edc91e8d6462a8877803a7d1410efd5e75dfe0dc1f377308c",
+          "cycle_id": "d5c92f78-efc9-457a-944e-6727a8547007",
+          "revision": 2,
+          "basis_digest": "06117ae944ce3cfbd87c85532190f2d5cd4cc09ecf040919c4ed970a57d23fd1"
+        },
+        "stage": "design",
+        "lifecycle": "active",
+        "current_complete": false,
+        "blockers": [
+          {
+            "code": "SOURCE_UNAVAILABLE",
+            "kind": "D"
+          },
+          {
+            "code": "SOURCE_UNAVAILABLE",
+            "kind": "I"
+          },
+          {
+            "code": "EVIDENCE_INVALID",
+            "kind": "checks"
+          },
+          {
+            "code": "QA_VERIFICATION_UNAVAILABLE",
+            "kind": "independent_qa"
+          }
+        ],
+        "pending_operation": null,
+        "required_check_ids": [
+          "adult-boundary"
+        ],
+        "qa": null,
+        "evidence_refs": [
+          {
+            "id": "artifact-5f0490056840c67a552d57973a10866e8cfa9423c30f2a89825f21f10e8bef9e",
+            "digest": "5f0490056840c67a552d57973a10866e8cfa9423c30f2a89825f21f10e8bef9e",
+            "kind": "artifact",
+            "schema_revision": 1
+          }
+        ],
+        "capabilities": {
+          "local_store": true,
+          "tested_platform": "win32 local filesystem / Node 24",
+          "authority": "interactive-operator signed receipts; no MCP approval minting",
+          "qa_driver": true,
+          "qa": {
+            "available": true,
+            "receipt_digest": "710a98136e9f2e94039dc89f77c9711f871aa68e11cae087be9c716dbe696af2",
+            "assurance": {
+              "distinct_execution": true,
+              "fresh_session": true,
+              "frozen_input_delivery": true,
+              "permission_observed": true,
+              "terminal_observed": true
+            },
+            "source": "program-calibration",
+            "human_identity_verified": false
+          },
+          "native_subagent": false,
+          "hook_coverage": "matched writes only",
+          "stop_continuation": false
+        },
+        "next": [
+          "Prepare and attach the missing/stale authority record."
+        ],
+        "coverage_limits": [
+          "Managed entry points only; external edits and unmatched Shell tools are detected, not prevented.",
+          "Semantic verdicts remain reported judgments."
+        ],
+        "operation": {
+          "operation_id": "6d61b8e5-6b2c-449b-987e-5e062be87de9",
+          "request_id": "async-poc-attach-R-cfe84e31-e034-413c-8be2-9a1c16917489",
+          "phase": "settled",
+          "effects_known": true,
+          "outcome_ref": {
+            "id": "outcome-1201683029decc358e2507095879b8fca7cf1ba1326ba814e7dbe652a3f5cdf2",
+            "digest": "1201683029decc358e2507095879b8fca7cf1ba1326ba814e7dbe652a3f5cdf2",
+            "kind": "outcome",
+            "schema_revision": 1
+          }
+        },
+        "result": {
+          "accepted": true,
+          "semantic_verified": false,
+          "evidence": {
+            "id": "artifact-5f0490056840c67a552d57973a10866e8cfa9423c30f2a89825f21f10e8bef9e",
+            "digest": "5f0490056840c67a552d57973a10866e8cfa9423c30f2a89825f21f10e8bef9e",
+            "kind": "artifact",
+            "schema_revision": 1
+          },
+          "effects_known": true
+        }
+      },
+      "observed_at": "2026-10-07T13:36:15.723Z"
+    },
+    {
+      "name": "cycle_artifact.prepare.D",
+      "args": {
+        "action": "prepare",
+        "kind": "D",
+        "paths": [
+          "design.md"
+        ]
+      },
+      "result": {
+        "ok": true,
+        "kind": "D",
+        "manifest": {
+          "entries": [
+            {
+              "path": "design.md",
+              "sha256": "f5acf185415cec7062a632f30bc35ae12986010ec7baf47e9042ae027e467348",
+              "size": 238
+            }
+          ],
+          "digest": "0914e3849b36c5bf4d6034c543877ae436bf1cf276fec123abf6af90c574bf7f"
+        },
+        "prepared_handle": "1b68ef84adf16865ebd81ddd24e965a791e28af54857af5d959db09dafa1f209",
+        "binding": {
+          "workspace_id": "7e7bad0b0f1d818edc91e8d6462a8877803a7d1410efd5e75dfe0dc1f377308c",
+          "cycle_id": "d5c92f78-efc9-457a-944e-6727a8547007",
+          "revision": 2,
+          "basis_digest": "06117ae944ce3cfbd87c85532190f2d5cd4cc09ecf040919c4ed970a57d23fd1"
+        },
+        "sources": [
+          {
+            "path": "design.md",
+            "sha256": "f5acf185415cec7062a632f30bc35ae12986010ec7baf47e9042ae027e467348",
+            "content": "# Design\n\n## Invariants\n- `isAdult` is a pure function with no I/O or mutable state.\n- The boundary is inclusive: the result is exactly the boolean value of `age >= 18`.\n- The function is exported from the single ES module `subject.mjs`.\n",
+            "truncated": false
+          }
+        ],
+        "omitted_sources_action": "Read the original authorized source file or prepare a smaller paths set; this view creates no archive."
+      },
+      "observed_at": "2026-10-07T13:36:15.775Z"
+    },
+    {
+      "name": "cycle_artifact.attach.D",
+      "args": {
+        "action": "attach",
+        "kind": "D",
+        "paths": [
+          "design.md"
+        ],
+        "binding": {
+          "workspace_id": "7e7bad0b0f1d818edc91e8d6462a8877803a7d1410efd5e75dfe0dc1f377308c",
+          "cycle_id": "d5c92f78-efc9-457a-944e-6727a8547007",
+          "revision": 2,
+          "basis_digest": "06117ae944ce3cfbd87c85532190f2d5cd4cc09ecf040919c4ed970a57d23fd1"
+        },
+        "prepared_handle": "1b68ef84adf16865ebd81ddd24e965a791e28af54857af5d959db09dafa1f209",
+        "request_id": "async-poc-attach-D-cc9da189-c678-496c-bed7-db8ee6180b21"
+      },
+      "result": {
+        "ok": true,
+        "binding": {
+          "workspace_id": "7e7bad0b0f1d818edc91e8d6462a8877803a7d1410efd5e75dfe0dc1f377308c",
+          "cycle_id": "d5c92f78-efc9-457a-944e-6727a8547007",
+          "revision": 3,
+          "basis_digest": "06117ae944ce3cfbd87c85532190f2d5cd4cc09ecf040919c4ed970a57d23fd1"
+        },
+        "stage": "implementation",
+        "lifecycle": "active",
+        "current_complete": false,
+        "blockers": [
+          {
+            "code": "SOURCE_UNAVAILABLE",
+            "kind": "I"
+          },
+          {
+            "code": "EVIDENCE_INVALID",
+            "kind": "checks"
+          },
+          {
+            "code": "QA_VERIFICATION_UNAVAILABLE",
+            "kind": "independent_qa"
+          }
+        ],
+        "pending_operation": null,
+        "required_check_ids": [
+          "adult-boundary"
+        ],
+        "qa": null,
+        "evidence_refs": [
+          {
+            "digest": "5f0490056840c67a552d57973a10866e8cfa9423c30f2a89825f21f10e8bef9e",
+            "id": "artifact-5f0490056840c67a552d57973a10866e8cfa9423c30f2a89825f21f10e8bef9e",
+            "kind": "artifact",
+            "schema_revision": 1
+          },
+          {
+            "id": "artifact-21afe4c2b2418d4e0e5a60431be759106d1a6272bf99673b7127a763da0e3d44",
+            "digest": "21afe4c2b2418d4e0e5a60431be759106d1a6272bf99673b7127a763da0e3d44",
+            "kind": "artifact",
+            "schema_revision": 1
+          }
+        ],
+        "capabilities": {
+          "local_store": true,
+          "tested_platform": "win32 local filesystem / Node 24",
+          "authority": "interactive-operator signed receipts; no MCP approval minting",
+          "qa_driver": true,
+          "qa": {
+            "available": true,
+            "receipt_digest": "710a98136e9f2e94039dc89f77c9711f871aa68e11cae087be9c716dbe696af2",
+            "assurance": {
+              "distinct_execution": true,
+              "fresh_session": true,
+              "frozen_input_delivery": true,
+              "permission_observed": true,
+              "terminal_observed": true
+            },
+            "source": "program-calibration",
+            "human_identity_verified": false
+          },
+          "native_subagent": false,
+          "hook_coverage": "matched writes only",
+          "stop_continuation": false
+        },
+        "next": [
+          "Prepare and attach the missing/stale authority record."
+        ],
+        "coverage_limits": [
+          "Managed entry points only; external edits and unmatched Shell tools are detected, not prevented.",
+          "Semantic verdicts remain reported judgments."
+        ],
+        "operation": {
+          "operation_id": "b98c3ae5-b09a-4aba-9570-da33729302f8",
+          "request_id": "async-poc-attach-D-cc9da189-c678-496c-bed7-db8ee6180b21",
+          "phase": "settled",
+          "effects_known": true,
+          "outcome_ref": {
+            "id": "outcome-94404337e67b48481f2f1ebb8c1ddaa9a71219902a45ab8bccd1e05376598064",
+            "digest": "94404337e67b48481f2f1ebb8c1ddaa9a71219902a45ab8bccd1e05376598064",
+            "kind": "outcome",
+            "schema_revision": 1
+          }
+        },
+        "result": {
+          "accepted": true,
+          "semantic_verified": false,
+          "evidence": {
+            "id": "artifact-21afe4c2b2418d4e0e5a60431be759106d1a6272bf99673b7127a763da0e3d44",
+            "digest": "21afe4c2b2418d4e0e5a60431be759106d1a6272bf99673b7127a763da0e3d44",
+            "kind": "artifact",
+            "schema_revision": 1
+          },
+          "effects_known": true
+        }
+      },
+      "observed_at": "2026-10-07T13:36:15.983Z"
+    },
+    {
+      "name": "cycle_artifact.prepare.I",
+      "args": {
+        "action": "prepare",
+        "kind": "I",
+        "paths": [
+          "implementation.md"
+        ]
+      },
+      "result": {
+        "ok": true,
+        "kind": "I",
+        "manifest": {
+          "entries": [
+            {
+              "path": "implementation.md",
+              "sha256": "52f73b6bf05f300fddbc98ea1e7736e85e1195370ffa24851704c00e580acda3",
+              "size": 198
+            }
+          ],
+          "digest": "231baeb9a9be7401f6a14fa82b84bc914cbac0e2c573395aa85bb63511d0e640"
+        },
+        "prepared_handle": "b5caef2eacd205e77c10f4cd7fd0ec9e6a974c4b9a94d608abcd02e605048ae8",
+        "binding": {
+          "workspace_id": "7e7bad0b0f1d818edc91e8d6462a8877803a7d1410efd5e75dfe0dc1f377308c",
+          "cycle_id": "d5c92f78-efc9-457a-944e-6727a8547007",
+          "revision": 3,
+          "basis_digest": "06117ae944ce3cfbd87c85532190f2d5cd4cc09ecf040919c4ed970a57d23fd1"
+        },
+        "sources": [
+          {
+            "path": "implementation.md",
+            "sha256": "52f73b6bf05f300fddbc98ea1e7736e85e1195370ffa24851704c00e580acda3",
+            "content": "# Implementation facts\n\n- Module format: Node.js ES module (`.mjs`).\n- Export: `isAdult(age)` from `subject.mjs`.\n- Implemented expression: `age >= 18`.\n- This file records construction facts only.\n",
+            "truncated": false
+          }
+        ],
+        "omitted_sources_action": "Read the original authorized source file or prepare a smaller paths set; this view creates no archive."
+      },
+      "observed_at": "2026-10-07T13:36:16.042Z"
+    },
+    {
+      "name": "cycle_artifact.attach.I",
+      "args": {
+        "action": "attach",
+        "kind": "I",
+        "paths": [
+          "implementation.md"
+        ],
+        "binding": {
+          "workspace_id": "7e7bad0b0f1d818edc91e8d6462a8877803a7d1410efd5e75dfe0dc1f377308c",
+          "cycle_id": "d5c92f78-efc9-457a-944e-6727a8547007",
+          "revision": 3,
+          "basis_digest": "06117ae944ce3cfbd87c85532190f2d5cd4cc09ecf040919c4ed970a57d23fd1"
+        },
+        "prepared_handle": "b5caef2eacd205e77c10f4cd7fd0ec9e6a974c4b9a94d608abcd02e605048ae8",
+        "request_id": "async-poc-attach-I-9ad70c0c-497c-4675-b528-ee7162df2e1a"
+      },
+      "result": {
+        "ok": true,
+        "binding": {
+          "workspace_id": "7e7bad0b0f1d818edc91e8d6462a8877803a7d1410efd5e75dfe0dc1f377308c",
+          "cycle_id": "d5c92f78-efc9-457a-944e-6727a8547007",
+          "revision": 4,
+          "basis_digest": "06117ae944ce3cfbd87c85532190f2d5cd4cc09ecf040919c4ed970a57d23fd1"
+        },
+        "stage": "qa",
+        "lifecycle": "active",
+        "current_complete": false,
+        "blockers": [
+          {
+            "code": "EVIDENCE_INVALID",
+            "kind": "checks"
+          },
+          {
+            "code": "QA_VERIFICATION_UNAVAILABLE",
+            "kind": "independent_qa"
+          }
+        ],
+        "pending_operation": null,
+        "required_check_ids": [
+          "adult-boundary"
+        ],
+        "qa": null,
+        "evidence_refs": [
+          {
+            "digest": "21afe4c2b2418d4e0e5a60431be759106d1a6272bf99673b7127a763da0e3d44",
+            "id": "artifact-21afe4c2b2418d4e0e5a60431be759106d1a6272bf99673b7127a763da0e3d44",
+            "kind": "artifact",
+            "schema_revision": 1
+          },
+          {
+            "digest": "5f0490056840c67a552d57973a10866e8cfa9423c30f2a89825f21f10e8bef9e",
+            "id": "artifact-5f0490056840c67a552d57973a10866e8cfa9423c30f2a89825f21f10e8bef9e",
+            "kind": "artifact",
+            "schema_revision": 1
+          },
+          {
+            "id": "artifact-e8e745c3b34a3384b7303e0b7424d24a1b09d78ffc2f8048ae31e6cc83b2e18c",
+            "digest": "e8e745c3b34a3384b7303e0b7424d24a1b09d78ffc2f8048ae31e6cc83b2e18c",
+            "kind": "artifact",
+            "schema_revision": 1
+          }
+        ],
+        "capabilities": {
+          "local_store": true,
+          "tested_platform": "win32 local filesystem / Node 24",
+          "authority": "interactive-operator signed receipts; no MCP approval minting",
+          "qa_driver": true,
+          "qa": {
+            "available": true,
+            "receipt_digest": "710a98136e9f2e94039dc89f77c9711f871aa68e11cae087be9c716dbe696af2",
+            "assurance": {
+              "distinct_execution": true,
+              "fresh_session": true,
+              "frozen_input_delivery": true,
+              "permission_observed": true,
+              "terminal_observed": true
+            },
+            "source": "program-calibration",
+            "human_identity_verified": false
+          },
+          "native_subagent": false,
+          "hook_coverage": "matched writes only",
+          "stop_continuation": false
+        },
+        "next": [
+          "Run the configured checks with current binding."
+        ],
+        "coverage_limits": [
+          "Managed entry points only; external edits and unmatched Shell tools are detected, not prevented.",
+          "Semantic verdicts remain reported judgments."
+        ],
+        "operation": {
+          "operation_id": "08b0f073-80fd-4cf3-8301-f5e6a0d593c7",
+          "request_id": "async-poc-attach-I-9ad70c0c-497c-4675-b528-ee7162df2e1a",
+          "phase": "settled",
+          "effects_known": true,
+          "outcome_ref": {
+            "id": "outcome-05bcd5ea8f283e20ec85bb536054984f4bef56fdd5ee45d866ad8a0b9e889a2c",
+            "digest": "05bcd5ea8f283e20ec85bb536054984f4bef56fdd5ee45d866ad8a0b9e889a2c",
+            "kind": "outcome",
+            "schema_revision": 1
+          }
+        },
+        "result": {
+          "accepted": true,
+          "semantic_verified": false,
+          "evidence": {
+            "id": "artifact-e8e745c3b34a3384b7303e0b7424d24a1b09d78ffc2f8048ae31e6cc83b2e18c",
+            "digest": "e8e745c3b34a3384b7303e0b7424d24a1b09d78ffc2f8048ae31e6cc83b2e18c",
+            "kind": "artifact",
+            "schema_revision": 1
+          },
+          "effects_known": true
+        }
+      },
+      "observed_at": "2026-10-07T13:36:16.258Z"
+    },
+    {
+      "name": "cycle_status.before-verify",
+      "args": {},
+      "result": {
+        "ok": true,
+        "binding": {
+          "workspace_id": "7e7bad0b0f1d818edc91e8d6462a8877803a7d1410efd5e75dfe0dc1f377308c",
+          "cycle_id": "d5c92f78-efc9-457a-944e-6727a8547007",
+          "revision": 4,
+          "basis_digest": "06117ae944ce3cfbd87c85532190f2d5cd4cc09ecf040919c4ed970a57d23fd1"
+        },
+        "stage": "qa",
+        "lifecycle": "active",
+        "current_complete": false,
+        "blockers": [
+          {
+            "code": "EVIDENCE_INVALID",
+            "kind": "checks"
+          },
+          {
+            "code": "QA_VERIFICATION_UNAVAILABLE",
+            "kind": "independent_qa"
+          }
+        ],
+        "pending_operation": null,
+        "required_check_ids": [
+          "adult-boundary"
+        ],
+        "qa": null,
+        "evidence_refs": [
+          {
+            "digest": "21afe4c2b2418d4e0e5a60431be759106d1a6272bf99673b7127a763da0e3d44",
+            "id": "artifact-21afe4c2b2418d4e0e5a60431be759106d1a6272bf99673b7127a763da0e3d44",
+            "kind": "artifact",
+            "schema_revision": 1
+          },
+          {
+            "digest": "e8e745c3b34a3384b7303e0b7424d24a1b09d78ffc2f8048ae31e6cc83b2e18c",
+            "id": "artifact-e8e745c3b34a3384b7303e0b7424d24a1b09d78ffc2f8048ae31e6cc83b2e18c",
+            "kind": "artifact",
+            "schema_revision": 1
+          },
+          {
+            "digest": "5f0490056840c67a552d57973a10866e8cfa9423c30f2a89825f21f10e8bef9e",
+            "id": "artifact-5f0490056840c67a552d57973a10866e8cfa9423c30f2a89825f21f10e8bef9e",
+            "kind": "artifact",
+            "schema_revision": 1
+          }
+        ],
+        "capabilities": {
+          "local_store": true,
+          "tested_platform": "win32 local filesystem / Node 24",
+          "authority": "interactive-operator signed receipts; no MCP approval minting",
+          "qa_driver": true,
+          "qa": {
+            "available": true,
+            "receipt_digest": "710a98136e9f2e94039dc89f77c9711f871aa68e11cae087be9c716dbe696af2",
+            "assurance": {
+              "distinct_execution": true,
+              "fresh_session": true,
+              "frozen_input_delivery": true,
+              "permission_observed": true,
+              "terminal_observed": true
+            },
+            "source": "program-calibration",
+            "human_identity_verified": false
+          },
+          "native_subagent": false,
+          "hook_coverage": "matched writes only",
+          "stop_continuation": false
+        },
+        "next": [
+          "Run the configured checks with current binding."
+        ],
+        "coverage_limits": [
+          "Managed entry points only; external edits and unmatched Shell tools are detected, not prevented.",
+          "Semantic verdicts remain reported judgments."
+        ]
+      },
+      "observed_at": "2026-10-07T13:36:16.315Z"
+    },
+    {
+      "name": "cycle_verify",
+      "args": {
+        "binding": {
+          "workspace_id": "7e7bad0b0f1d818edc91e8d6462a8877803a7d1410efd5e75dfe0dc1f377308c",
+          "cycle_id": "d5c92f78-efc9-457a-944e-6727a8547007",
+          "revision": 4,
+          "basis_digest": "06117ae944ce3cfbd87c85532190f2d5cd4cc09ecf040919c4ed970a57d23fd1"
+        },
+        "request_id": "async-poc-verify-666cbe0c-f4c4-47b3-af64-a9b0e14e1937",
+        "check_ids": [
+          "adult-boundary"
+        ]
+      },
+      "result": {
+        "ok": true,
+        "binding": {
+          "workspace_id": "7e7bad0b0f1d818edc91e8d6462a8877803a7d1410efd5e75dfe0dc1f377308c",
+          "cycle_id": "d5c92f78-efc9-457a-944e-6727a8547007",
+          "revision": 5,
+          "basis_digest": "06117ae944ce3cfbd87c85532190f2d5cd4cc09ecf040919c4ed970a57d23fd1"
+        },
+        "stage": "qa",
+        "lifecycle": "active",
+        "current_complete": false,
+        "blockers": [
+          {
+            "code": "QA_VERIFICATION_UNAVAILABLE",
+            "kind": "independent_qa"
+          }
+        ],
+        "pending_operation": null,
+        "required_check_ids": [
+          "adult-boundary"
+        ],
+        "qa": null,
+        "evidence_refs": [
+          {
+            "digest": "21afe4c2b2418d4e0e5a60431be759106d1a6272bf99673b7127a763da0e3d44",
+            "id": "artifact-21afe4c2b2418d4e0e5a60431be759106d1a6272bf99673b7127a763da0e3d44",
+            "kind": "artifact",
+            "schema_revision": 1
+          },
+          {
+            "digest": "e8e745c3b34a3384b7303e0b7424d24a1b09d78ffc2f8048ae31e6cc83b2e18c",
+            "id": "artifact-e8e745c3b34a3384b7303e0b7424d24a1b09d78ffc2f8048ae31e6cc83b2e18c",
+            "kind": "artifact",
+            "schema_revision": 1
+          },
+          {
+            "digest": "5f0490056840c67a552d57973a10866e8cfa9423c30f2a89825f21f10e8bef9e",
+            "id": "artifact-5f0490056840c67a552d57973a10866e8cfa9423c30f2a89825f21f10e8bef9e",
+            "kind": "artifact",
+            "schema_revision": 1
+          },
+          {
+            "id": "verification-b7fcd7c3e575e86595aac5858ab8624674cb2096f176be2bf0e89659fb2937b0",
+            "digest": "b7fcd7c3e575e86595aac5858ab8624674cb2096f176be2bf0e89659fb2937b0",
+            "kind": "verification",
+            "schema_revision": 1
+          }
+        ],
+        "capabilities": {
+          "local_store": true,
+          "tested_platform": "win32 local filesystem / Node 24",
+          "authority": "interactive-operator signed receipts; no MCP approval minting",
+          "qa_driver": true,
+          "qa": {
+            "available": true,
+            "receipt_digest": "710a98136e9f2e94039dc89f77c9711f871aa68e11cae087be9c716dbe696af2",
+            "assurance": {
+              "distinct_execution": true,
+              "fresh_session": true,
+              "frozen_input_delivery": true,
+              "permission_observed": true,
+              "terminal_observed": true
+            },
+            "source": "program-calibration",
+            "human_identity_verified": false
+          },
+          "native_subagent": false,
+          "hook_coverage": "matched writes only",
+          "stop_continuation": false
+        },
+        "next": [
+          "Inspect QA capabilities/job; start only a verified driver on frozen inputs."
+        ],
+        "coverage_limits": [
+          "Managed entry points only; external edits and unmatched Shell tools are detected, not prevented.",
+          "Semantic verdicts remain reported judgments."
+        ],
+        "operation": {
+          "operation_id": "2cb67892-27b4-4758-a679-be186675f753",
+          "request_id": "async-poc-verify-666cbe0c-f4c4-47b3-af64-a9b0e14e1937",
+          "phase": "settled",
+          "effects_known": true,
+          "outcome_ref": {
+            "id": "outcome-f5dd59d348947ef11f167afe6b486edbe2b8ead654be9b7d8c888f8f473c2767",
+            "digest": "f5dd59d348947ef11f167afe6b486edbe2b8ead654be9b7d8c888f8f473c2767",
+            "kind": "outcome",
+            "schema_revision": 1
+          }
+        },
+        "result": {
+          "ok": true,
+          "effects_known": true,
+          "passed": true,
+          "results": [
+            {
+              "check_id": "adult-boundary",
+              "argv_digest": "542fd57068b739f2f3e4eead407c87b8daf49661f224e2a0719d3ee99e2902eb",
+              "launch_status": "started",
+              "pid": 61816,
+              "terminal_observed": true,
+              "exit_code": 0,
+              "signal": null,
+              "cancel_requested": false,
+              "timed_out": false,
+              "launch_error": null,
+              "capture_error": null,
+              "cleanup_error": null,
+              "output_complete": true,
+              "input_bytes": 0,
+              "input_digest": null,
+              "input_delivered": true,
+              "passed": true,
+              "raw_ref": {
+                "id": "check-b0485b9c722853e9420df3b0fddca7265d172f692a5c80ecfdb2f6d105cf74ab",
+                "digest": "b0485b9c722853e9420df3b0fddca7265d172f692a5c80ecfdb2f6d105cf74ab",
+                "kind": "check",
+                "schema_revision": 1
+              }
+            }
+          ],
+          "evidence": {
+            "id": "verification-b7fcd7c3e575e86595aac5858ab8624674cb2096f176be2bf0e89659fb2937b0",
+            "digest": "b7fcd7c3e575e86595aac5858ab8624674cb2096f176be2bf0e89659fb2937b0",
+            "kind": "verification",
+            "schema_revision": 1
+          }
+        }
+      },
+      "observed_at": "2026-10-07T13:36:16.628Z"
+    },
+    {
+      "name": "cycle_status.before-qa",
+      "args": {},
+      "result": {
+        "ok": true,
+        "binding": {
+          "workspace_id": "7e7bad0b0f1d818edc91e8d6462a8877803a7d1410efd5e75dfe0dc1f377308c",
+          "cycle_id": "d5c92f78-efc9-457a-944e-6727a8547007",
+          "revision": 5,
+          "basis_digest": "06117ae944ce3cfbd87c85532190f2d5cd4cc09ecf040919c4ed970a57d23fd1"
+        },
+        "stage": "qa",
+        "lifecycle": "active",
+        "current_complete": false,
+        "blockers": [
+          {
+            "code": "QA_VERIFICATION_UNAVAILABLE",
+            "kind": "independent_qa"
+          }
+        ],
+        "pending_operation": null,
+        "required_check_ids": [
+          "adult-boundary"
+        ],
+        "qa": null,
+        "evidence_refs": [
+          {
+            "digest": "21afe4c2b2418d4e0e5a60431be759106d1a6272bf99673b7127a763da0e3d44",
+            "id": "artifact-21afe4c2b2418d4e0e5a60431be759106d1a6272bf99673b7127a763da0e3d44",
+            "kind": "artifact",
+            "schema_revision": 1
+          },
+          {
+            "digest": "e8e745c3b34a3384b7303e0b7424d24a1b09d78ffc2f8048ae31e6cc83b2e18c",
+            "id": "artifact-e8e745c3b34a3384b7303e0b7424d24a1b09d78ffc2f8048ae31e6cc83b2e18c",
+            "kind": "artifact",
+            "schema_revision": 1
+          },
+          {
+            "digest": "5f0490056840c67a552d57973a10866e8cfa9423c30f2a89825f21f10e8bef9e",
+            "id": "artifact-5f0490056840c67a552d57973a10866e8cfa9423c30f2a89825f21f10e8bef9e",
+            "kind": "artifact",
+            "schema_revision": 1
+          },
+          {
+            "digest": "b7fcd7c3e575e86595aac5858ab8624674cb2096f176be2bf0e89659fb2937b0",
+            "id": "verification-b7fcd7c3e575e86595aac5858ab8624674cb2096f176be2bf0e89659fb2937b0",
+            "kind": "verification",
+            "schema_revision": 1
+          }
+        ],
+        "capabilities": {
+          "local_store": true,
+          "tested_platform": "win32 local filesystem / Node 24",
+          "authority": "interactive-operator signed receipts; no MCP approval minting",
+          "qa_driver": true,
+          "qa": {
+            "available": true,
+            "receipt_digest": "710a98136e9f2e94039dc89f77c9711f871aa68e11cae087be9c716dbe696af2",
+            "assurance": {
+              "distinct_execution": true,
+              "fresh_session": true,
+              "frozen_input_delivery": true,
+              "permission_observed": true,
+              "terminal_observed": true
+            },
+            "source": "program-calibration",
+            "human_identity_verified": false
+          },
+          "native_subagent": false,
+          "hook_coverage": "matched writes only",
+          "stop_continuation": false
+        },
+        "next": [
+          "Inspect QA capabilities/job; start only a verified driver on frozen inputs."
+        ],
+        "coverage_limits": [
+          "Managed entry points only; external edits and unmatched Shell tools are detected, not prevented.",
+          "Semantic verdicts remain reported judgments."
+        ]
+      },
+      "observed_at": "2026-10-07T13:36:16.697Z"
+    },
+    {
+      "name": "cycle_qa.start",
+      "args": {
+        "action": "start",
+        "binding": {
+          "workspace_id": "7e7bad0b0f1d818edc91e8d6462a8877803a7d1410efd5e75dfe0dc1f377308c",
+          "cycle_id": "d5c92f78-efc9-457a-944e-6727a8547007",
+          "revision": 5,
+          "basis_digest": "06117ae944ce3cfbd87c85532190f2d5cd4cc09ecf040919c4ed970a57d23fd1"
+        },
+        "request_id": "async-poc-qa-start-a91dc91d-feda-4c19-93db-7943b1c81e28"
+      },
+      "result": {
+        "ok": true,
+        "binding": {
+          "workspace_id": "7e7bad0b0f1d818edc91e8d6462a8877803a7d1410efd5e75dfe0dc1f377308c",
+          "cycle_id": "d5c92f78-efc9-457a-944e-6727a8547007",
+          "revision": 6,
+          "basis_digest": "06117ae944ce3cfbd87c85532190f2d5cd4cc09ecf040919c4ed970a57d23fd1"
+        },
+        "stage": "qa",
+        "lifecycle": "active",
+        "current_complete": false,
+        "blockers": [
+          {
+            "code": "QA_VERIFICATION_UNAVAILABLE",
+            "kind": "independent_qa"
+          }
+        ],
+        "pending_operation": null,
+        "required_check_ids": [
+          "adult-boundary"
+        ],
+        "qa": {
+          "job_id": "ef79655b-28fa-4c0f-96d5-43a06aae6c4c",
+          "status": "pending",
+          "report_ref": null,
+          "assurance": {},
+          "terminal_observed": false,
+          "quiescent": false,
+          "current": true,
+          "passed": false
+        },
+        "evidence_refs": [
+          {
+            "digest": "21afe4c2b2418d4e0e5a60431be759106d1a6272bf99673b7127a763da0e3d44",
+            "id": "artifact-21afe4c2b2418d4e0e5a60431be759106d1a6272bf99673b7127a763da0e3d44",
+            "kind": "artifact",
+            "schema_revision": 1
+          },
+          {
+            "digest": "e8e745c3b34a3384b7303e0b7424d24a1b09d78ffc2f8048ae31e6cc83b2e18c",
+            "id": "artifact-e8e745c3b34a3384b7303e0b7424d24a1b09d78ffc2f8048ae31e6cc83b2e18c",
+            "kind": "artifact",
+            "schema_revision": 1
+          },
+          {
+            "digest": "5f0490056840c67a552d57973a10866e8cfa9423c30f2a89825f21f10e8bef9e",
+            "id": "artifact-5f0490056840c67a552d57973a10866e8cfa9423c30f2a89825f21f10e8bef9e",
+            "kind": "artifact",
+            "schema_revision": 1
+          },
+          {
+            "digest": "b7fcd7c3e575e86595aac5858ab8624674cb2096f176be2bf0e89659fb2937b0",
+            "id": "verification-b7fcd7c3e575e86595aac5858ab8624674cb2096f176be2bf0e89659fb2937b0",
+            "kind": "verification",
+            "schema_revision": 1
+          }
+        ],
+        "capabilities": {
+          "local_store": true,
+          "tested_platform": "win32 local filesystem / Node 24",
+          "authority": "interactive-operator signed receipts; no MCP approval minting",
+          "qa_driver": true,
+          "qa": {
+            "available": true,
+            "receipt_digest": "710a98136e9f2e94039dc89f77c9711f871aa68e11cae087be9c716dbe696af2",
+            "assurance": {
+              "distinct_execution": true,
+              "fresh_session": true,
+              "frozen_input_delivery": true,
+              "permission_observed": true,
+              "terminal_observed": true
+            },
+            "source": "program-calibration",
+            "human_identity_verified": false
+          },
+          "native_subagent": false,
+          "hook_coverage": "matched writes only",
+          "stop_continuation": false
+        },
+        "next": [
+          "Inspect QA capabilities/job; start only a verified driver on frozen inputs."
+        ],
+        "coverage_limits": [
+          "Managed entry points only; external edits and unmatched Shell tools are detected, not prevented.",
+          "Semantic verdicts remain reported judgments."
+        ],
+        "operation": {
+          "operation_id": "bb0d316e-b4ae-430d-9316-08ba9695127c",
+          "request_id": "async-poc-qa-start-a91dc91d-feda-4c19-93db-7943b1c81e28",
+          "phase": "settled",
+          "effects_known": true,
+          "outcome_ref": {
+            "id": "outcome-d408c1f6c141f2e35ac7c653103d8b169fdf6edb093571e04b49c03d92a8f1e4",
+            "digest": "d408c1f6c141f2e35ac7c653103d8b169fdf6edb093571e04b49c03d92a8f1e4",
+            "kind": "outcome",
+            "schema_revision": 1
+          }
+        },
+        "result": {
+          "job_id": "ef79655b-28fa-4c0f-96d5-43a06aae6c4c",
+          "status": "started",
+          "snapshot_ref": {
+            "id": "snapshot-50f0f710f15f5fc7a21e393fce579d04b1ab8f4faa2f30c801a2e6c598e54f57",
+            "digest": "50f0f710f15f5fc7a21e393fce579d04b1ab8f4faa2f30c801a2e6c598e54f57",
+            "kind": "snapshot",
+            "schema_revision": 1
+          },
+          "effects_known": true,
+          "terminal_observed": false
+        }
+      },
+      "observed_at": "2026-10-07T13:36:17.134Z"
+    },
+    {
+      "name": "cycle_status.before-finish",
+      "args": {},
+      "result": {
+        "ok": true,
+        "binding": {
+          "workspace_id": "7e7bad0b0f1d818edc91e8d6462a8877803a7d1410efd5e75dfe0dc1f377308c",
+          "cycle_id": "d5c92f78-efc9-457a-944e-6727a8547007",
+          "revision": 6,
+          "basis_digest": "06117ae944ce3cfbd87c85532190f2d5cd4cc09ecf040919c4ed970a57d23fd1"
+        },
+        "stage": "ready",
+        "lifecycle": "active",
+        "current_complete": false,
+        "blockers": [],
+        "pending_operation": null,
+        "required_check_ids": [
+          "adult-boundary"
+        ],
+        "qa": {
+          "job_id": "ef79655b-28fa-4c0f-96d5-43a06aae6c4c",
+          "status": "completed",
+          "report_ref": {
+            "digest": "9d7ec8944a66e6ed8eb86f4439ceec9c48ddca684d14e11ec52c4555d77e504f",
+            "id": "qa-report-9d7ec8944a66e6ed8eb86f4439ceec9c48ddca684d14e11ec52c4555d77e504f",
+            "kind": "qa-report",
+            "schema_revision": 1
+          },
+          "assurance": {
+            "distinct_execution": true,
+            "fresh_session": true,
+            "frozen_input_delivery": true,
+            "permission_observed": true,
+            "terminal_observed": true
+          },
+          "terminal_observed": true,
+          "quiescent": true,
+          "current": true,
+          "passed": true
+        },
+        "evidence_refs": [
+          {
+            "digest": "21afe4c2b2418d4e0e5a60431be759106d1a6272bf99673b7127a763da0e3d44",
+            "id": "artifact-21afe4c2b2418d4e0e5a60431be759106d1a6272bf99673b7127a763da0e3d44",
+            "kind": "artifact",
+            "schema_revision": 1
+          },
+          {
+            "digest": "e8e745c3b34a3384b7303e0b7424d24a1b09d78ffc2f8048ae31e6cc83b2e18c",
+            "id": "artifact-e8e745c3b34a3384b7303e0b7424d24a1b09d78ffc2f8048ae31e6cc83b2e18c",
+            "kind": "artifact",
+            "schema_revision": 1
+          },
+          {
+            "digest": "5f0490056840c67a552d57973a10866e8cfa9423c30f2a89825f21f10e8bef9e",
+            "id": "artifact-5f0490056840c67a552d57973a10866e8cfa9423c30f2a89825f21f10e8bef9e",
+            "kind": "artifact",
+            "schema_revision": 1
+          },
+          {
+            "digest": "b7fcd7c3e575e86595aac5858ab8624674cb2096f176be2bf0e89659fb2937b0",
+            "id": "verification-b7fcd7c3e575e86595aac5858ab8624674cb2096f176be2bf0e89659fb2937b0",
+            "kind": "verification",
+            "schema_revision": 1
+          },
+          {
+            "digest": "9d7ec8944a66e6ed8eb86f4439ceec9c48ddca684d14e11ec52c4555d77e504f",
+            "id": "qa-report-9d7ec8944a66e6ed8eb86f4439ceec9c48ddca684d14e11ec52c4555d77e504f",
+            "kind": "qa-report",
+            "schema_revision": 1
+          }
+        ],
+        "capabilities": {
+          "local_store": true,
+          "tested_platform": "win32 local filesystem / Node 24",
+          "authority": "interactive-operator signed receipts; no MCP approval minting",
+          "qa_driver": true,
+          "qa": {
+            "available": true,
+            "receipt_digest": "710a98136e9f2e94039dc89f77c9711f871aa68e11cae087be9c716dbe696af2",
+            "assurance": {
+              "distinct_execution": true,
+              "fresh_session": true,
+              "frozen_input_delivery": true,
+              "permission_observed": true,
+              "terminal_observed": true
+            },
+            "source": "program-calibration",
+            "human_identity_verified": false
+          },
+          "native_subagent": false,
+          "hook_coverage": "matched writes only",
+          "stop_continuation": false
+        },
+        "next": [
+          "Reconcile approved authority updates, then submit the reported original-goal verdict to finish."
+        ],
+        "coverage_limits": [
+          "Managed entry points only; external edits and unmatched Shell tools are detected, not prevented.",
+          "Semantic verdicts remain reported judgments."
+        ]
+      },
+      "observed_at": "2026-10-07T13:36:39.932Z"
+    },
+    {
+      "name": "cycle_control.finish",
+      "args": {
+        "action": "finish",
+        "request_id": "async-poc-finish-fa69dfb8-18d7-41ee-ab2d-588d2da7b767",
+        "binding": {
+          "workspace_id": "7e7bad0b0f1d818edc91e8d6462a8877803a7d1410efd5e75dfe0dc1f377308c",
+          "cycle_id": "d5c92f78-efc9-457a-944e-6727a8547007",
+          "revision": 6,
+          "basis_digest": "06117ae944ce3cfbd87c85532190f2d5cd4cc09ecf040919c4ed970a57d23fd1"
+        },
+        "semantic_verdict": {
+          "original_goal_covered": true,
+          "unresolved_findings": [],
+          "evidence_refs": [
+            "artifact-21afe4c2b2418d4e0e5a60431be759106d1a6272bf99673b7127a763da0e3d44",
+            "artifact-e8e745c3b34a3384b7303e0b7424d24a1b09d78ffc2f8048ae31e6cc83b2e18c",
+            "artifact-5f0490056840c67a552d57973a10866e8cfa9423c30f2a89825f21f10e8bef9e",
+            "verification-b7fcd7c3e575e86595aac5858ab8624674cb2096f176be2bf0e89659fb2937b0",
+            "qa-report-9d7ec8944a66e6ed8eb86f4439ceec9c48ddca684d14e11ec52c4555d77e504f"
+          ]
+        }
+      },
+      "result": {
+        "ok": true,
+        "binding": {
+          "workspace_id": "7e7bad0b0f1d818edc91e8d6462a8877803a7d1410efd5e75dfe0dc1f377308c",
+          "cycle_id": "d5c92f78-efc9-457a-944e-6727a8547007",
+          "revision": 7,
+          "basis_digest": "06117ae944ce3cfbd87c85532190f2d5cd4cc09ecf040919c4ed970a57d23fd1"
+        },
+        "stage": "ready",
+        "lifecycle": "completed",
+        "current_complete": true,
+        "blockers": [],
+        "pending_operation": null,
+        "required_check_ids": [
+          "adult-boundary"
+        ],
+        "qa": {
+          "job_id": "ef79655b-28fa-4c0f-96d5-43a06aae6c4c",
+          "status": "completed",
+          "report_ref": {
+            "digest": "9d7ec8944a66e6ed8eb86f4439ceec9c48ddca684d14e11ec52c4555d77e504f",
+            "id": "qa-report-9d7ec8944a66e6ed8eb86f4439ceec9c48ddca684d14e11ec52c4555d77e504f",
+            "kind": "qa-report",
+            "schema_revision": 1
+          },
+          "assurance": {
+            "distinct_execution": true,
+            "fresh_session": true,
+            "frozen_input_delivery": true,
+            "permission_observed": true,
+            "terminal_observed": true
+          },
+          "terminal_observed": true,
+          "quiescent": true,
+          "current": true,
+          "passed": true
+        },
+        "evidence_refs": [
+          {
+            "digest": "21afe4c2b2418d4e0e5a60431be759106d1a6272bf99673b7127a763da0e3d44",
+            "id": "artifact-21afe4c2b2418d4e0e5a60431be759106d1a6272bf99673b7127a763da0e3d44",
+            "kind": "artifact",
+            "schema_revision": 1
+          },
+          {
+            "digest": "e8e745c3b34a3384b7303e0b7424d24a1b09d78ffc2f8048ae31e6cc83b2e18c",
+            "id": "artifact-e8e745c3b34a3384b7303e0b7424d24a1b09d78ffc2f8048ae31e6cc83b2e18c",
+            "kind": "artifact",
+            "schema_revision": 1
+          },
+          {
+            "digest": "5f0490056840c67a552d57973a10866e8cfa9423c30f2a89825f21f10e8bef9e",
+            "id": "artifact-5f0490056840c67a552d57973a10866e8cfa9423c30f2a89825f21f10e8bef9e",
+            "kind": "artifact",
+            "schema_revision": 1
+          },
+          {
+            "digest": "b7fcd7c3e575e86595aac5858ab8624674cb2096f176be2bf0e89659fb2937b0",
+            "id": "verification-b7fcd7c3e575e86595aac5858ab8624674cb2096f176be2bf0e89659fb2937b0",
+            "kind": "verification",
+            "schema_revision": 1
+          },
+          {
+            "digest": "9d7ec8944a66e6ed8eb86f4439ceec9c48ddca684d14e11ec52c4555d77e504f",
+            "id": "qa-report-9d7ec8944a66e6ed8eb86f4439ceec9c48ddca684d14e11ec52c4555d77e504f",
+            "kind": "qa-report",
+            "schema_revision": 1
+          },
+          {
+            "id": "completion-0b657e23675fae8081740915af7fbdc79ecb9306bceb387fea51de85e138fc51",
+            "digest": "0b657e23675fae8081740915af7fbdc79ecb9306bceb387fea51de85e138fc51",
+            "kind": "completion",
+            "schema_revision": 1
+          }
+        ],
+        "capabilities": {
+          "local_store": true,
+          "tested_platform": "win32 local filesystem / Node 24",
+          "authority": "interactive-operator signed receipts; no MCP approval minting",
+          "qa_driver": true,
+          "qa": {
+            "available": true,
+            "receipt_digest": "710a98136e9f2e94039dc89f77c9711f871aa68e11cae087be9c716dbe696af2",
+            "assurance": {
+              "distinct_execution": true,
+              "fresh_session": true,
+              "frozen_input_delivery": true,
+              "permission_observed": true,
+              "terminal_observed": true
+            },
+            "source": "program-calibration",
+            "human_identity_verified": false
+          },
+          "native_subagent": false,
+          "hook_coverage": "matched writes only",
+          "stop_continuation": false
+        },
+        "next": [
+          "Keep the historical cycle; begin a new already-authorized goal if needed."
+        ],
+        "coverage_limits": [
+          "Managed entry points only; external edits and unmatched Shell tools are detected, not prevented.",
+          "Semantic verdicts remain reported judgments."
+        ],
+        "operation": {
+          "operation_id": "bd6b0249-1cc8-478d-a9e2-6190c218576f",
+          "request_id": "async-poc-finish-fa69dfb8-18d7-41ee-ab2d-588d2da7b767",
+          "phase": "settled",
+          "effects_known": true,
+          "outcome_ref": {
+            "id": "outcome-479f5fab1adae9ec4d15db4aa6a1eeb5afb42596d01f656e4111abc9155dd0fb",
+            "digest": "479f5fab1adae9ec4d15db4aa6a1eeb5afb42596d01f656e4111abc9155dd0fb",
+            "kind": "outcome",
+            "schema_revision": 1
+          }
+        },
+        "result": {
+          "completion_ref": {
+            "id": "completion-0b657e23675fae8081740915af7fbdc79ecb9306bceb387fea51de85e138fc51",
+            "digest": "0b657e23675fae8081740915af7fbdc79ecb9306bceb387fea51de85e138fc51",
+            "kind": "completion",
+            "schema_revision": 1
+          },
+          "effects_known": true
+        }
+      },
+      "observed_at": "2026-10-07T13:36:40.300Z"
+    },
+    {
+      "name": "cycle_status.final",
+      "args": {},
+      "result": {
+        "ok": true,
+        "binding": {
+          "workspace_id": "7e7bad0b0f1d818edc91e8d6462a8877803a7d1410efd5e75dfe0dc1f377308c",
+          "cycle_id": "d5c92f78-efc9-457a-944e-6727a8547007",
+          "revision": 7,
+          "basis_digest": "06117ae944ce3cfbd87c85532190f2d5cd4cc09ecf040919c4ed970a57d23fd1"
+        },
+        "stage": "ready",
+        "lifecycle": "completed",
+        "current_complete": true,
+        "blockers": [],
+        "pending_operation": null,
+        "required_check_ids": [
+          "adult-boundary"
+        ],
+        "qa": {
+          "job_id": "ef79655b-28fa-4c0f-96d5-43a06aae6c4c",
+          "status": "completed",
+          "report_ref": {
+            "digest": "9d7ec8944a66e6ed8eb86f4439ceec9c48ddca684d14e11ec52c4555d77e504f",
+            "id": "qa-report-9d7ec8944a66e6ed8eb86f4439ceec9c48ddca684d14e11ec52c4555d77e504f",
+            "kind": "qa-report",
+            "schema_revision": 1
+          },
+          "assurance": {
+            "distinct_execution": true,
+            "fresh_session": true,
+            "frozen_input_delivery": true,
+            "permission_observed": true,
+            "terminal_observed": true
+          },
+          "terminal_observed": true,
+          "quiescent": true,
+          "current": true,
+          "passed": true
+        },
+        "evidence_refs": [
+          {
+            "digest": "21afe4c2b2418d4e0e5a60431be759106d1a6272bf99673b7127a763da0e3d44",
+            "id": "artifact-21afe4c2b2418d4e0e5a60431be759106d1a6272bf99673b7127a763da0e3d44",
+            "kind": "artifact",
+            "schema_revision": 1
+          },
+          {
+            "digest": "e8e745c3b34a3384b7303e0b7424d24a1b09d78ffc2f8048ae31e6cc83b2e18c",
+            "id": "artifact-e8e745c3b34a3384b7303e0b7424d24a1b09d78ffc2f8048ae31e6cc83b2e18c",
+            "kind": "artifact",
+            "schema_revision": 1
+          },
+          {
+            "digest": "5f0490056840c67a552d57973a10866e8cfa9423c30f2a89825f21f10e8bef9e",
+            "id": "artifact-5f0490056840c67a552d57973a10866e8cfa9423c30f2a89825f21f10e8bef9e",
+            "kind": "artifact",
+            "schema_revision": 1
+          },
+          {
+            "digest": "b7fcd7c3e575e86595aac5858ab8624674cb2096f176be2bf0e89659fb2937b0",
+            "id": "verification-b7fcd7c3e575e86595aac5858ab8624674cb2096f176be2bf0e89659fb2937b0",
+            "kind": "verification",
+            "schema_revision": 1
+          },
+          {
+            "digest": "9d7ec8944a66e6ed8eb86f4439ceec9c48ddca684d14e11ec52c4555d77e504f",
+            "id": "qa-report-9d7ec8944a66e6ed8eb86f4439ceec9c48ddca684d14e11ec52c4555d77e504f",
+            "kind": "qa-report",
+            "schema_revision": 1
+          },
+          {
+            "digest": "0b657e23675fae8081740915af7fbdc79ecb9306bceb387fea51de85e138fc51",
+            "id": "completion-0b657e23675fae8081740915af7fbdc79ecb9306bceb387fea51de85e138fc51",
+            "kind": "completion",
+            "schema_revision": 1
+          }
+        ],
+        "capabilities": {
+          "local_store": true,
+          "tested_platform": "win32 local filesystem / Node 24",
+          "authority": "interactive-operator signed receipts; no MCP approval minting",
+          "qa_driver": true,
+          "qa": {
+            "available": true,
+            "receipt_digest": "710a98136e9f2e94039dc89f77c9711f871aa68e11cae087be9c716dbe696af2",
+            "assurance": {
+              "distinct_execution": true,
+              "fresh_session": true,
+              "frozen_input_delivery": true,
+              "permission_observed": true,
+              "terminal_observed": true
+            },
+            "source": "program-calibration",
+            "human_identity_verified": false
+          },
+          "native_subagent": false,
+          "hook_coverage": "matched writes only",
+          "stop_continuation": false
+        },
+        "next": [
+          "Keep the historical cycle; begin a new already-authorized goal if needed."
+        ],
+        "coverage_limits": [
+          "Managed entry points only; external edits and unmatched Shell tools are detected, not prevented.",
+          "Semantic verdicts remain reported judgments."
+        ]
+      },
+      "observed_at": "2026-10-07T13:36:40.391Z"
+    }
+  ],
+  "qa": {
+    "start_count": 1,
+    "job_id": "ef79655b-28fa-4c0f-96d5-43a06aae6c4c",
+    "polls": [
+      {
+        "observed_at": "2026-10-07T13:36:17.225Z",
+        "ok": true,
+        "lifecycle": "active",
+        "job_id": "ef79655b-28fa-4c0f-96d5-43a06aae6c4c",
+        "job_status": "pending",
+        "outcome_status": null,
+        "terminal_observed": false,
+        "quiescent": false,
+        "passed": false,
+        "raw_ref": null,
+        "report_ref": null,
+        "error": null
+      },
+      {
+        "observed_at": "2026-10-07T13:36:18.305Z",
+        "ok": true,
+        "lifecycle": "active",
+        "job_id": "ef79655b-28fa-4c0f-96d5-43a06aae6c4c",
+        "job_status": "running",
+        "outcome_status": null,
+        "terminal_observed": false,
+        "quiescent": false,
+        "passed": false,
+        "raw_ref": null,
+        "report_ref": null,
+        "error": null
+      },
+      {
+        "observed_at": "2026-10-07T13:36:19.397Z",
+        "ok": true,
+        "lifecycle": "active",
+        "job_id": "ef79655b-28fa-4c0f-96d5-43a06aae6c4c",
+        "job_status": "running",
+        "outcome_status": null,
+        "terminal_observed": false,
+        "quiescent": false,
+        "passed": false,
+        "raw_ref": null,
+        "report_ref": null,
+        "error": null
+      },
+      {
+        "observed_at": "2026-10-07T13:36:20.482Z",
+        "ok": true,
+        "lifecycle": "active",
+        "job_id": "ef79655b-28fa-4c0f-96d5-43a06aae6c4c",
+        "job_status": "running",
+        "outcome_status": null,
+        "terminal_observed": false,
+        "quiescent": false,
+        "passed": false,
+        "raw_ref": null,
+        "report_ref": null,
+        "error": null
+      },
+      {
+        "observed_at": "2026-10-07T13:36:21.558Z",
+        "ok": true,
+        "lifecycle": "active",
+        "job_id": "ef79655b-28fa-4c0f-96d5-43a06aae6c4c",
+        "job_status": "running",
+        "outcome_status": null,
+        "terminal_observed": false,
+        "quiescent": false,
+        "passed": false,
+        "raw_ref": null,
+        "report_ref": null,
+        "error": null
+      },
+      {
+        "observed_at": "2026-10-07T13:36:22.644Z",
+        "ok": true,
+        "lifecycle": "active",
+        "job_id": "ef79655b-28fa-4c0f-96d5-43a06aae6c4c",
+        "job_status": "running",
+        "outcome_status": null,
+        "terminal_observed": false,
+        "quiescent": false,
+        "passed": false,
+        "raw_ref": null,
+        "report_ref": null,
+        "error": null
+      },
+      {
+        "observed_at": "2026-10-07T13:36:23.723Z",
+        "ok": true,
+        "lifecycle": "active",
+        "job_id": "ef79655b-28fa-4c0f-96d5-43a06aae6c4c",
+        "job_status": "running",
+        "outcome_status": null,
+        "terminal_observed": false,
+        "quiescent": false,
+        "passed": false,
+        "raw_ref": null,
+        "report_ref": null,
+        "error": null
+      },
+      {
+        "observed_at": "2026-10-07T13:36:24.796Z",
+        "ok": true,
+        "lifecycle": "active",
+        "job_id": "ef79655b-28fa-4c0f-96d5-43a06aae6c4c",
+        "job_status": "running",
+        "outcome_status": null,
+        "terminal_observed": false,
+        "quiescent": false,
+        "passed": false,
+        "raw_ref": null,
+        "report_ref": null,
+        "error": null
+      },
+      {
+        "observed_at": "2026-10-07T13:36:25.875Z",
+        "ok": true,
+        "lifecycle": "active",
+        "job_id": "ef79655b-28fa-4c0f-96d5-43a06aae6c4c",
+        "job_status": "running",
+        "outcome_status": null,
+        "terminal_observed": false,
+        "quiescent": false,
+        "passed": false,
+        "raw_ref": null,
+        "report_ref": null,
+        "error": null
+      },
+      {
+        "observed_at": "2026-10-07T13:36:26.964Z",
+        "ok": true,
+        "lifecycle": "active",
+        "job_id": "ef79655b-28fa-4c0f-96d5-43a06aae6c4c",
+        "job_status": "running",
+        "outcome_status": null,
+        "terminal_observed": false,
+        "quiescent": false,
+        "passed": false,
+        "raw_ref": null,
+        "report_ref": null,
+        "error": null
+      },
+      {
+        "observed_at": "2026-10-07T13:36:28.063Z",
+        "ok": true,
+        "lifecycle": "active",
+        "job_id": "ef79655b-28fa-4c0f-96d5-43a06aae6c4c",
+        "job_status": "running",
+        "outcome_status": null,
+        "terminal_observed": false,
+        "quiescent": false,
+        "passed": false,
+        "raw_ref": null,
+        "report_ref": null,
+        "error": null
+      },
+      {
+        "observed_at": "2026-10-07T13:36:29.136Z",
+        "ok": true,
+        "lifecycle": "active",
+        "job_id": "ef79655b-28fa-4c0f-96d5-43a06aae6c4c",
+        "job_status": "running",
+        "outcome_status": null,
+        "terminal_observed": false,
+        "quiescent": false,
+        "passed": false,
+        "raw_ref": null,
+        "report_ref": null,
+        "error": null
+      },
+      {
+        "observed_at": "2026-10-07T13:36:30.227Z",
+        "ok": true,
+        "lifecycle": "active",
+        "job_id": "ef79655b-28fa-4c0f-96d5-43a06aae6c4c",
+        "job_status": "running",
+        "outcome_status": null,
+        "terminal_observed": false,
+        "quiescent": false,
+        "passed": false,
+        "raw_ref": null,
+        "report_ref": null,
+        "error": null
+      },
+      {
+        "observed_at": "2026-10-07T13:36:31.302Z",
+        "ok": true,
+        "lifecycle": "active",
+        "job_id": "ef79655b-28fa-4c0f-96d5-43a06aae6c4c",
+        "job_status": "running",
+        "outcome_status": null,
+        "terminal_observed": false,
+        "quiescent": false,
+        "passed": false,
+        "raw_ref": null,
+        "report_ref": null,
+        "error": null
+      },
+      {
+        "observed_at": "2026-10-07T13:36:32.372Z",
+        "ok": true,
+        "lifecycle": "active",
+        "job_id": "ef79655b-28fa-4c0f-96d5-43a06aae6c4c",
+        "job_status": "running",
+        "outcome_status": null,
+        "terminal_observed": false,
+        "quiescent": false,
+        "passed": false,
+        "raw_ref": null,
+        "report_ref": null,
+        "error": null
+      },
+      {
+        "observed_at": "2026-10-07T13:36:33.446Z",
+        "ok": true,
+        "lifecycle": "active",
+        "job_id": "ef79655b-28fa-4c0f-96d5-43a06aae6c4c",
+        "job_status": "running",
+        "outcome_status": null,
+        "terminal_observed": false,
+        "quiescent": false,
+        "passed": false,
+        "raw_ref": null,
+        "report_ref": null,
+        "error": null
+      },
+      {
+        "observed_at": "2026-10-07T13:36:34.517Z",
+        "ok": true,
+        "lifecycle": "active",
+        "job_id": "ef79655b-28fa-4c0f-96d5-43a06aae6c4c",
+        "job_status": "running",
+        "outcome_status": null,
+        "terminal_observed": false,
+        "quiescent": false,
+        "passed": false,
+        "raw_ref": null,
+        "report_ref": null,
+        "error": null
+      },
+      {
+        "observed_at": "2026-10-07T13:36:35.593Z",
+        "ok": true,
+        "lifecycle": "active",
+        "job_id": "ef79655b-28fa-4c0f-96d5-43a06aae6c4c",
+        "job_status": "running",
+        "outcome_status": null,
+        "terminal_observed": false,
+        "quiescent": false,
+        "passed": false,
+        "raw_ref": null,
+        "report_ref": null,
+        "error": null
+      },
+      {
+        "observed_at": "2026-10-07T13:36:36.661Z",
+        "ok": true,
+        "lifecycle": "active",
+        "job_id": "ef79655b-28fa-4c0f-96d5-43a06aae6c4c",
+        "job_status": "running",
+        "outcome_status": null,
+        "terminal_observed": false,
+        "quiescent": false,
+        "passed": false,
+        "raw_ref": null,
+        "report_ref": null,
+        "error": null
+      },
+      {
+        "observed_at": "2026-10-07T13:36:37.724Z",
+        "ok": true,
+        "lifecycle": "active",
+        "job_id": "ef79655b-28fa-4c0f-96d5-43a06aae6c4c",
+        "job_status": "running",
+        "outcome_status": null,
+        "terminal_observed": false,
+        "quiescent": false,
+        "passed": false,
+        "raw_ref": null,
+        "report_ref": null,
+        "error": null
+      },
+      {
+        "observed_at": "2026-10-07T13:36:38.782Z",
+        "ok": true,
+        "lifecycle": "active",
+        "job_id": "ef79655b-28fa-4c0f-96d5-43a06aae6c4c",
+        "job_status": "running",
+        "outcome_status": null,
+        "terminal_observed": false,
+        "quiescent": false,
+        "passed": false,
+        "raw_ref": null,
+        "report_ref": null,
+        "error": null
+      },
+      {
+        "observed_at": "2026-10-07T13:36:39.864Z",
+        "ok": true,
+        "lifecycle": "active",
+        "job_id": "ef79655b-28fa-4c0f-96d5-43a06aae6c4c",
+        "job_status": "completed",
+        "outcome_status": "completed",
+        "terminal_observed": true,
+        "quiescent": true,
+        "passed": true,
+        "raw_ref": {
+          "digest": "71fdabb260d0804fb78e8dab5d86eb8652e478d036f44c88f85bf6e97a565471",
+          "id": "qa-raw-71fdabb260d0804fb78e8dab5d86eb8652e478d036f44c88f85bf6e97a565471",
+          "kind": "qa-raw",
+          "schema_revision": 1
+        },
+        "report_ref": {
+          "digest": "9d7ec8944a66e6ed8eb86f4439ceec9c48ddca684d14e11ec52c4555d77e504f",
+          "id": "qa-report-9d7ec8944a66e6ed8eb86f4439ceec9c48ddca684d14e11ec52c4555d77e504f",
+          "kind": "qa-report",
+          "schema_revision": 1
+        },
+        "error": null
+      }
+    ],
+    "terminal": {
+      "observed": true,
+      "quiescent": true,
+      "job_id": "ef79655b-28fa-4c0f-96d5-43a06aae6c4c",
+      "job_status": "completed",
+      "outcome_status": "completed",
+      "passed": true,
+      "raw_ref": {
+        "digest": "71fdabb260d0804fb78e8dab5d86eb8652e478d036f44c88f85bf6e97a565471",
+        "id": "qa-raw-71fdabb260d0804fb78e8dab5d86eb8652e478d036f44c88f85bf6e97a565471",
+        "kind": "qa-raw",
+        "schema_revision": 1
+      },
+      "report_ref": {
+        "digest": "9d7ec8944a66e6ed8eb86f4439ceec9c48ddca684d14e11ec52c4555d77e504f",
+        "id": "qa-report-9d7ec8944a66e6ed8eb86f4439ceec9c48ddca684d14e11ec52c4555d77e504f",
+        "kind": "qa-report",
+        "schema_revision": 1
+      },
+      "snapshot_ref": {
+        "digest": "50f0f710f15f5fc7a21e393fce579d04b1ab8f4faa2f30c801a2e6c598e54f57",
+        "id": "snapshot-50f0f710f15f5fc7a21e393fce579d04b1ab8f4faa2f30c801a2e6c598e54f57",
+        "kind": "snapshot",
+        "schema_revision": 1
+      },
+      "requested_model": "gpt-6-luna",
+      "driver_timeout_ms": 150000,
+      "launch_status": "started",
+      "exit_code": 0,
+      "thread_id": "01a11694-4439-75f2-a618-4249ee4e82fe",
+      "terminal_event": {
+        "type": "turn.completed",
+        "usage": {
+          "cache_write_input_tokens": 0,
+          "cached_input_tokens": 58624,
+          "input_tokens": 83715,
+          "output_tokens": 481,
+          "reasoning_output_tokens": 163
+        }
+      },
+      "source_delivery": {
+        "complete": true,
+        "delivered_paths": [
+          "design.md",
+          "requirements.md",
+          "subject.mjs"
+        ],
+        "listed": true,
+        "missing_paths": []
+      },
+      "report_complete": true,
+      "snapshot_paths": [
+        "design.md",
+        "requirements.md",
+        "subject.mjs"
+      ],
+      "report": {
+        "acceptance": [
+          {
+            "evidence": "Frozen `subject.mjs` exports synchronous `isAdult(age)` and returns `age >= 18`. Applying that comparison to the required cases gives `isAdult(17) === false`, `isAdult(18) === true`, and `isAdult(19) === true`. The frozen QA context also records the `adult-boundary` check as passed with exit code 0 and terminal output captured.",
+            "id": "AC-BOUNDARY",
+            "status": "pass"
+          }
+        ],
+        "coverage_limits": [],
+        "findings": [],
+        "verdict": "pass"
+      },
+      "raw_result": {
+        "assurance": {
+          "distinct_execution": true,
+          "fresh_session": true,
+          "frozen_input_delivery": true,
+          "permission_observed": true,
+          "terminal_observed": true
+        },
+        "binary_digest": "af02050cc0c95f5aeb714af2c1077e635c58e9896c13c89d75099cf5b96477be",
+        "coverage_limits": [
+          "Client-visible exec/session and frozen bytes are observed; hidden provider context/model identity are unavailable.",
+          "Ambient user Skill catalog can still load; this is a fresh exec, not proof of empty global instructions.",
+          "Global instructions and Host sandbox coverage require the versioned calibration receipt."
+        ],
+        "passed": true,
+        "prompt_digest": "c35aad1c946ebd794566c6b32bb05d60bf258ad6d9e26b9221a1662563b67b14",
+        "receipt": {
+          "argv_digest": "ec3a9f605a1fd17fb12d170f8dccf361caee2f096c1930dca0c9ea3cc9583f83",
+          "cancel_requested": false,
+          "capture_error": null,
+          "check_id": "independent-qa",
+          "cleanup_error": null,
+          "exit_code": 0,
+          "input_bytes": 882,
+          "input_delivered": true,
+          "input_digest": "c35aad1c946ebd794566c6b32bb05d60bf258ad6d9e26b9221a1662563b67b14",
+          "launch_error": null,
+          "launch_status": "started",
+          "output_complete": true,
+          "passed": true,
+          "pid": 52080,
+          "signal": null,
+          "stderr": "2026-10-07T13:36:19.825106Z  WARN codex_core::shell_snapshot: Failed to create shell snapshot for powershell: Shell snapshot not supported yet for PowerShell\n2026-10-07T13:36:19.960780Z  WARN codex_skills_extension::loader::metadata: ignoring file:///C:/Users/dandandandana/.codex/skills/build-flashy-vite-experience/agents/openai.yaml: failed to read openai.yaml: invalid utf-8 sequence of 1 bytes from index 82\n2026-10-07T13:36:19.961629Z  WARN codex_skills_extension::loader::metadata: ignoring file:///C:/Users/dandandandana/.codex/skills/rewrite-fiction-chapter/agents/openai.yaml: failed to read openai.yaml: invalid utf-8 sequence of 1 bytes from index 77\n2026-10-07T13:36:19.961715Z  WARN codex_skills_extension::loader::metadata: ignoring file:///C:/Users/dandandandana/.codex/skills/scoped-input-presence-check/agents/openai.yaml: failed to read openai.yaml: invalid utf-8 sequence of 1 bytes from index 81\n",
+          "stdout": "{\"type\":\"thread.started\",\"thread_id\":\"01a11694-4439-75f2-a618-4249ee4e82fe\"}\n{\"type\":\"turn.started\"}\n{\"type\":\"item.completed\",\"item\":{\"id\":\"item_0\",\"type\":\"agent_message\",\"text\":\"I’ll inspect the frozen manifest and relevant requirements/design/source through the readonly QA connector, then assess the required acceptance case without modifying anything.\"}}\n{\"type\":\"item.started\",\"item\":{\"id\":\"item_1\",\"type\":\"mcp_tool_call\",\"server\":\"cycle_frozen_sources\",\"tool\":\"qa_source_list\",\"arguments\":{},\"result\":null,\"error\":null,\"status\":\"in_progress\"}}\n{\"type\":\"item.completed\",\"item\":{\"id\":\"item_1\",\"type\":\"mcp_tool_call\",\"server\":\"cycle_frozen_sources\",\"tool\":\"qa_source_list\",\"arguments\":{},\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"{\\\"ok\\\":true,\\\"manifest\\\":{\\\"digest\\\":\\\"10c57f1ef8ce6248b50b5ca4bd85d1978892148e2028a1f53141732b657d8608\\\",\\\"entries\\\":[{\\\"path\\\":\\\"design.md\\\",\\\"sha256\\\":\\\"f5acf185415cec7062a632f30bc35ae12986010ec7baf47e9042ae027e467348\\\",\\\"size\\\":238},{\\\"path\\\":\\\"requirements.md\\\",\\\"sha256\\\":\\\"878fce6174144bf2f8dafcda6ce005239425614a64536f5624e5d0cd23d8d7a3\\\",\\\"size\\\":489},{\\\"path\\\":\\\"subject.mjs\\\",\\\"sha256\\\":\\\"dcdb1f9d47a0c2d8da5ecf7469df9b1ef8df646ef93cd7a8ed8ea0a75332ef0e\\\",\\\"size\\\":53}]},\\\"qa_context\\\":{\\\"action_mode\\\":\\\"implement\\\",\\\"checks\\\":[{\\\"argv_digest\\\":\\\"542fd57068b739f2f3e4eead407c87b8daf49661f224e2a0719d3ee99e2902eb\\\",\\\"cancel_requested\\\":false,\\\"capture_error\\\":null,\\\"check_id\\\":\\\"adult-boundary\\\",\\\"cleanup_error\\\":null,\\\"display_truncated\\\":false,\\\"exit_code\\\":0,\\\"input_bytes\\\":0,\\\"input_delivered\\\":true,\\\"input_digest\\\":null,\\\"launch_error\\\":null,\\\"launch_status\\\":\\\"started\\\",\\\"output_complete\\\":true,\\\"passed\\\":true,\\\"pid\\\":61816,\\\"raw_ref\\\":{\\\"digest\\\":\\\"b0485b9c722853e9420df3b0fddca7265d172f692a5c80ecfdb2f6d105cf74ab\\\",\\\"id\\\":\\\"check-b0485b9c722853e9420df3b0fddca7265d172f692a5c80ecfdb2f6d105cf74ab\\\",\\\"kind\\\":\\\"check\\\",\\\"schema_revision\\\":1},\\\"signal\\\":null,\\\"stderr_excerpt\\\":\\\"\\\",\\\"stdout_excerpt\\\":\\\"\\\",\\\"terminal_observed\\\":true,\\\"timed_out\\\":false}],\\\"original_goal\\\":\\\"Implement a pure isAdult(age) function that returns whether age is at least 18, and verify AC-BOUNDARY for ages 17, 18, and 19.\\\"}}\"}],\"structured_content\":{\"ok\":true,\"manifest\":{\"digest\":\"10c57f1ef8ce6248b50b5ca4bd85d1978892148e2028a1f53141732b657d8608\",\"entries\":[{\"path\":\"design.md\",\"sha256\":\"f5acf185415cec7062a632f30bc35ae12986010ec7baf47e9042ae027e467348\",\"size\":238},{\"path\":\"requirements.md\",\"sha256\":\"878fce6174144bf2f8dafcda6ce005239425614a64536f5624e5d0cd23d8d7a3\",\"size\":489},{\"path\":\"subject.mjs\",\"sha256\":\"dcdb1f9d47a0c2d8da5ecf7469df9b1ef8df646ef93cd7a8ed8ea0a75332ef0e\",\"size\":53}]},\"qa_context\":{\"action_mode\":\"implement\",\"checks\":[{\"argv_digest\":\"542fd57068b739f2f3e4eead407c87b8daf49661f224e2a0719d3ee99e2902eb\",\"cancel_requested\":false,\"capture_error\":null,\"check_id\":\"adult-boundary\",\"cleanup_error\":null,\"display_truncated\":false,\"exit_code\":0,\"input_bytes\":0,\"input_delivered\":true,\"input_digest\":null,\"launch_error\":null,\"launch_status\":\"started\",\"output_complete\":true,\"passed\":true,\"pid\":61816,\"raw_ref\":{\"digest\":\"b0485b9c722853e9420df3b0fddca7265d172f692a5c80ecfdb2f6d105cf74ab\",\"id\":\"check-b0485b9c722853e9420df3b0fddca7265d172f692a5c80ecfdb2f6d105cf74ab\",\"kind\":\"check\",\"schema_revision\":1},\"signal\":null,\"stderr_excerpt\":\"\",\"stdout_excerpt\":\"\",\"terminal_observed\":true,\"timed_out\":false}],\"original_goal\":\"Implement a pure isAdult(age) function that returns whether age is at least 18, and verify AC-BOUNDARY for ages 17, 18, and 19.\"}}},\"error\":null,\"status\":\"completed\"}}\n{\"type\":\"item.started\",\"item\":{\"id\":\"item_2\",\"type\":\"mcp_tool_call\",\"server\":\"cycle_frozen_sources\",\"tool\":\"qa_source_read\",\"arguments\":{\"path\":\"design.md\",\"offset\":0,\"limit\":4000},\"result\":null,\"error\":null,\"status\":\"in_progress\"}}\n{\"type\":\"item.started\",\"item\":{\"id\":\"item_3\",\"type\":\"mcp_tool_call\",\"server\":\"cycle_frozen_sources\",\"tool\":\"qa_source_read\",\"arguments\":{\"path\":\"subject.mjs\",\"offset\":0,\"limit\":4000},\"result\":null,\"error\":null,\"status\":\"in_progress\"}}\n{\"type\":\"item.started\",\"item\":{\"id\":\"item_4\",\"type\":\"mcp_tool_call\",\"server\":\"cycle_frozen_sources\",\"tool\":\"qa_source_read\",\"arguments\":{\"path\":\"requirements.md\",\"offset\":0,\"limit\":4000},\"result\":null,\"error\":null,\"status\":\"in_progress\"}}\n{\"type\":\"item.completed\",\"item\":{\"id\":\"item_2\",\"type\":\"mcp_tool_call\",\"server\":\"cycle_frozen_sources\",\"tool\":\"qa_source_read\",\"arguments\":{\"path\":\"design.md\",\"offset\":0,\"limit\":4000},\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"{\\\"ok\\\":true,\\\"path\\\":\\\"design.md\\\",\\\"sha256\\\":\\\"f5acf185415cec7062a632f30bc35ae12986010ec7baf47e9042ae027e467348\\\",\\\"content\\\":\\\"# Design\\\\n\\\\n## Invariants\\\\n- `isAdult` is a pure function with no I/O or mutable state.\\\\n- The boundary is inclusive: the result is exactly the boolean value of `age >= 18`.\\\\n- The function is exported from the single ES module `subject.mjs`.\\\\n\\\",\\\"next_offset\\\":null}\"}],\"structured_content\":{\"ok\":true,\"path\":\"design.md\",\"sha256\":\"f5acf185415cec7062a632f30bc35ae12986010ec7baf47e9042ae027e467348\",\"content\":\"# Design\\n\\n## Invariants\\n- `isAdult` is a pure function with no I/O or mutable state.\\n- The boundary is inclusive: the result is exactly the boolean value of `age >= 18`.\\n- The function is exported from the single ES module `subject.mjs`.\\n\",\"next_offset\":null}},\"error\":null,\"status\":\"completed\"}}\n{\"type\":\"item.completed\",\"item\":{\"id\":\"item_3\",\"type\":\"mcp_tool_call\",\"server\":\"cycle_frozen_sources\",\"tool\":\"qa_source_read\",\"arguments\":{\"path\":\"subject.mjs\",\"offset\":0,\"limit\":4000},\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"{\\\"ok\\\":true,\\\"path\\\":\\\"subject.mjs\\\",\\\"sha256\\\":\\\"dcdb1f9d47a0c2d8da5ecf7469df9b1ef8df646ef93cd7a8ed8ea0a75332ef0e\\\",\\\"content\\\":\\\"export function isAdult(age) {\\\\n  return age >= 18;\\\\n}\\\\n\\\",\\\"next_offset\\\":null}\"}],\"structured_content\":{\"ok\":true,\"path\":\"subject.mjs\",\"sha256\":\"dcdb1f9d47a0c2d8da5ecf7469df9b1ef8df646ef93cd7a8ed8ea0a75332ef0e\",\"content\":\"export function isAdult(age) {\\n  return age >= 18;\\n}\\n\",\"next_offset\":null}},\"error\":null,\"status\":\"completed\"}}\n{\"type\":\"item.completed\",\"item\":{\"id\":\"item_4\",\"type\":\"mcp_tool_call\",\"server\":\"cycle_frozen_sources\",\"tool\":\"qa_source_read\",\"arguments\":{\"path\":\"requirements.md\",\"offset\":0,\"limit\":4000},\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"{\\\"ok\\\":true,\\\"path\\\":\\\"requirements.md\\\",\\\"sha256\\\":\\\"878fce6174144bf2f8dafcda6ce005239425614a64536f5624e5d0cd23d8d7a3\\\",\\\"content\\\":\\\"# Requirements\\\\n\\\\n## Original goal\\\\nImplement a pure isAdult(age) function that returns whether age is at least 18, and verify AC-BOUNDARY for ages 17, 18, and 19.\\\\n\\\\n## AC-BOUNDARY\\\\nFor integer ages at the threshold boundary, `isAdult(age)` returns a boolean using the inclusive threshold 18.\\\\n- `isAdult(17) === false`\\\\n- `isAdult(18) === true`\\\\n- `isAdult(19) === true`\\\\n\\\\nThe function is synchronous and accepts one numeric age. This fixture does not define other validation or product behavior.\\\\n\\\",\\\"next_offset\\\":null}\"}],\"structured_content\":{\"ok\":true,\"path\":\"requirements.md\",\"sha256\":\"878fce6174144bf2f8dafcda6ce005239425614a64536f5624e5d0cd23d8d7a3\",\"content\":\"# Requirements\\n\\n## Original goal\\nImplement a pure isAdult(age) function that returns whether age is at least 18, and verify AC-BOUNDARY for ages 17, 18, and 19.\\n\\n## AC-BOUNDARY\\nFor integer ages at the threshold boundary, `isAdult(age)` returns a boolean using the inclusive threshold 18.\\n- `isAdult(17) === false`\\n- `isAdult(18) === true`\\n- `isAdult(19) === true`\\n\\nThe function is synchronous and accepts one numeric age. This fixture does not define other validation or product behavior.\\n\",\"next_offset\":null}},\"error\":null,\"status\":\"completed\"}}\n{\"type\":\"item.completed\",\"item\":{\"id\":\"item_5\",\"type\":\"agent_message\",\"text\":\"{\\\"verdict\\\":\\\"pass\\\",\\\"acceptance\\\":[{\\\"id\\\":\\\"AC-BOUNDARY\\\",\\\"status\\\":\\\"pass\\\",\\\"evidence\\\":\\\"Frozen `subject.mjs` exports synchronous `isAdult(age)` and returns `age >= 18`. Applying that comparison to the required cases gives `isAdult(17) === false`, `isAdult(18) === true`, and `isAdult(19) === true`. The frozen QA context also records the `adult-boundary` check as passed with exit code 0 and terminal output captured.\\\"}],\\\"findings\\\":[],\\\"coverage_limits\\\":[]}\"}}\n{\"type\":\"turn.completed\",\"usage\":{\"input_tokens\":83715,\"cached_input_tokens\":58624,\"cache_write_input_tokens\":0,\"output_tokens\":481,\"reasoning_output_tokens\":163}}\n",
+          "terminal_observed": true,
+          "timed_out": false
+        },
+        "report": {
+          "acceptance": [
+            {
+              "evidence": "Frozen `subject.mjs` exports synchronous `isAdult(age)` and returns `age >= 18`. Applying that comparison to the required cases gives `isAdult(17) === false`, `isAdult(18) === true`, and `isAdult(19) === true`. The frozen QA context also records the `adult-boundary` check as passed with exit code 0 and terminal output captured.",
+              "id": "AC-BOUNDARY",
+              "status": "pass"
+            }
+          ],
+          "coverage_limits": [],
+          "findings": [],
+          "verdict": "pass"
+        },
+        "report_complete": true,
+        "snapshot_valid": true,
+        "source_delivery": {
+          "complete": true,
+          "delivered_paths": [
+            "design.md",
+            "requirements.md",
+            "subject.mjs"
+          ],
+          "listed": true,
+          "missing_paths": []
+        },
+        "terminal_event": {
+          "type": "turn.completed",
+          "usage": {
+            "cache_write_input_tokens": 0,
+            "cached_input_tokens": 58624,
+            "input_tokens": 83715,
+            "output_tokens": 481,
+            "reasoning_output_tokens": 163
+          }
+        },
+        "thread_id": "01a11694-4439-75f2-a618-4249ee4e82fe"
+      },
+      "implementation_record_delivered": false,
+      "implementation_record_omission_reason": "The I artifact was attached and recorded; the frozen QA manifest excludes the attached I path."
+    },
+    "start_requested_at": "2026-10-07T13:36:16.698Z",
+    "start_response": {
+      "ok": true,
+      "binding": {
+        "workspace_id": "7e7bad0b0f1d818edc91e8d6462a8877803a7d1410efd5e75dfe0dc1f377308c",
+        "cycle_id": "d5c92f78-efc9-457a-944e-6727a8547007",
+        "revision": 6,
+        "basis_digest": "06117ae944ce3cfbd87c85532190f2d5cd4cc09ecf040919c4ed970a57d23fd1"
+      },
+      "stage": "qa",
+      "lifecycle": "active",
+      "current_complete": false,
+      "blockers": [
+        {
+          "code": "QA_VERIFICATION_UNAVAILABLE",
+          "kind": "independent_qa"
+        }
+      ],
+      "pending_operation": null,
+      "required_check_ids": [
+        "adult-boundary"
+      ],
+      "qa": {
+        "job_id": "ef79655b-28fa-4c0f-96d5-43a06aae6c4c",
+        "status": "pending",
+        "report_ref": null,
+        "assurance": {},
+        "terminal_observed": false,
+        "quiescent": false,
+        "current": true,
+        "passed": false
+      },
+      "evidence_refs": [
+        {
+          "digest": "21afe4c2b2418d4e0e5a60431be759106d1a6272bf99673b7127a763da0e3d44",
+          "id": "artifact-21afe4c2b2418d4e0e5a60431be759106d1a6272bf99673b7127a763da0e3d44",
+          "kind": "artifact",
+          "schema_revision": 1
+        },
+        {
+          "digest": "e8e745c3b34a3384b7303e0b7424d24a1b09d78ffc2f8048ae31e6cc83b2e18c",
+          "id": "artifact-e8e745c3b34a3384b7303e0b7424d24a1b09d78ffc2f8048ae31e6cc83b2e18c",
+          "kind": "artifact",
+          "schema_revision": 1
+        },
+        {
+          "digest": "5f0490056840c67a552d57973a10866e8cfa9423c30f2a89825f21f10e8bef9e",
+          "id": "artifact-5f0490056840c67a552d57973a10866e8cfa9423c30f2a89825f21f10e8bef9e",
+          "kind": "artifact",
+          "schema_revision": 1
+        },
+        {
+          "digest": "b7fcd7c3e575e86595aac5858ab8624674cb2096f176be2bf0e89659fb2937b0",
+          "id": "verification-b7fcd7c3e575e86595aac5858ab8624674cb2096f176be2bf0e89659fb2937b0",
+          "kind": "verification",
+          "schema_revision": 1
+        }
+      ],
+      "capabilities": {
+        "local_store": true,
+        "tested_platform": "win32 local filesystem / Node 24",
+        "authority": "interactive-operator signed receipts; no MCP approval minting",
+        "qa_driver": true,
+        "qa": {
+          "available": true,
+          "receipt_digest": "710a98136e9f2e94039dc89f77c9711f871aa68e11cae087be9c716dbe696af2",
+          "assurance": {
+            "distinct_execution": true,
+            "fresh_session": true,
+            "frozen_input_delivery": true,
+            "permission_observed": true,
+            "terminal_observed": true
+          },
+          "source": "program-calibration",
+          "human_identity_verified": false
+        },
+        "native_subagent": false,
+        "hook_coverage": "matched writes only",
+        "stop_continuation": false
+      },
+      "next": [
+        "Inspect QA capabilities/job; start only a verified driver on frozen inputs."
+      ],
+      "coverage_limits": [
+        "Managed entry points only; external edits and unmatched Shell tools are detected, not prevented.",
+        "Semantic verdicts remain reported judgments."
+      ],
+      "operation": {
+        "operation_id": "bb0d316e-b4ae-430d-9316-08ba9695127c",
+        "request_id": "async-poc-qa-start-a91dc91d-feda-4c19-93db-7943b1c81e28",
+        "phase": "settled",
+        "effects_known": true,
+        "outcome_ref": {
+          "id": "outcome-d408c1f6c141f2e35ac7c653103d8b169fdf6edb093571e04b49c03d92a8f1e4",
+          "digest": "d408c1f6c141f2e35ac7c653103d8b169fdf6edb093571e04b49c03d92a8f1e4",
+          "kind": "outcome",
+          "schema_revision": 1
+        }
+      },
+      "result": {
+        "job_id": "ef79655b-28fa-4c0f-96d5-43a06aae6c4c",
+        "status": "started",
+        "snapshot_ref": {
+          "id": "snapshot-50f0f710f15f5fc7a21e393fce579d04b1ab8f4faa2f30c801a2e6c598e54f57",
+          "digest": "50f0f710f15f5fc7a21e393fce579d04b1ab8f4faa2f30c801a2e6c598e54f57",
+          "kind": "snapshot",
+          "schema_revision": 1
+        },
+        "effects_known": true,
+        "terminal_observed": false
+      }
+    },
+    "poll_deadline_ms": 175000,
+    "final_status_ref": {
+      "job_id": "ef79655b-28fa-4c0f-96d5-43a06aae6c4c",
+      "raw_ref": {
+        "digest": "71fdabb260d0804fb78e8dab5d86eb8652e478d036f44c88f85bf6e97a565471",
+        "id": "qa-raw-71fdabb260d0804fb78e8dab5d86eb8652e478d036f44c88f85bf6e97a565471",
+        "kind": "qa-raw",
+        "schema_revision": 1
+      },
+      "report_ref": {
+        "digest": "9d7ec8944a66e6ed8eb86f4439ceec9c48ddca684d14e11ec52c4555d77e504f",
+        "id": "qa-report-9d7ec8944a66e6ed8eb86f4439ceec9c48ddca684d14e11ec52c4555d77e504f",
+        "kind": "qa-report",
+        "schema_revision": 1
+      },
+      "snapshot_ref": {
+        "digest": "50f0f710f15f5fc7a21e393fce579d04b1ab8f4faa2f30c801a2e6c598e54f57",
+        "id": "snapshot-50f0f710f15f5fc7a21e393fce579d04b1ab8f4faa2f30c801a2e6c598e54f57",
+        "kind": "snapshot",
+        "schema_revision": 1
+      }
+    },
+    "elapsed_ms": 23166,
+    "within_180s": true,
+    "assurance_all_true": true
+  },
+  "final": {
+    "status": "pass",
+    "current_complete": true,
+    "lifecycle": "completed",
+    "stage": "ready",
+    "qa": {
+      "job_id": "ef79655b-28fa-4c0f-96d5-43a06aae6c4c",
+      "status": "completed",
+      "report_ref": {
+        "digest": "9d7ec8944a66e6ed8eb86f4439ceec9c48ddca684d14e11ec52c4555d77e504f",
+        "id": "qa-report-9d7ec8944a66e6ed8eb86f4439ceec9c48ddca684d14e11ec52c4555d77e504f",
+        "kind": "qa-report",
+        "schema_revision": 1
+      },
+      "assurance": {
+        "distinct_execution": true,
+        "fresh_session": true,
+        "frozen_input_delivery": true,
+        "permission_observed": true,
+        "terminal_observed": true
+      },
+      "terminal_observed": true,
+      "quiescent": true,
+      "current": true,
+      "passed": true
+    },
+    "blockers": [],
+    "evidence_refs": [
+      {
+        "digest": "21afe4c2b2418d4e0e5a60431be759106d1a6272bf99673b7127a763da0e3d44",
+        "id": "artifact-21afe4c2b2418d4e0e5a60431be759106d1a6272bf99673b7127a763da0e3d44",
+        "kind": "artifact",
+        "schema_revision": 1
+      },
+      {
+        "digest": "e8e745c3b34a3384b7303e0b7424d24a1b09d78ffc2f8048ae31e6cc83b2e18c",
+        "id": "artifact-e8e745c3b34a3384b7303e0b7424d24a1b09d78ffc2f8048ae31e6cc83b2e18c",
+        "kind": "artifact",
+        "schema_revision": 1
+      },
+      {
+        "digest": "5f0490056840c67a552d57973a10866e8cfa9423c30f2a89825f21f10e8bef9e",
+        "id": "artifact-5f0490056840c67a552d57973a10866e8cfa9423c30f2a89825f21f10e8bef9e",
+        "kind": "artifact",
+        "schema_revision": 1
+      },
+      {
+        "digest": "b7fcd7c3e575e86595aac5858ab8624674cb2096f176be2bf0e89659fb2937b0",
+        "id": "verification-b7fcd7c3e575e86595aac5858ab8624674cb2096f176be2bf0e89659fb2937b0",
+        "kind": "verification",
+        "schema_revision": 1
+      },
+      {
+        "digest": "9d7ec8944a66e6ed8eb86f4439ceec9c48ddca684d14e11ec52c4555d77e504f",
+        "id": "qa-report-9d7ec8944a66e6ed8eb86f4439ceec9c48ddca684d14e11ec52c4555d77e504f",
+        "kind": "qa-report",
+        "schema_revision": 1
+      },
+      {
+        "digest": "0b657e23675fae8081740915af7fbdc79ecb9306bceb387fea51de85e138fc51",
+        "id": "completion-0b657e23675fae8081740915af7fbdc79ecb9306bceb387fea51de85e138fc51",
+        "kind": "completion",
+        "schema_revision": 1
+      }
+    ],
+    "finish_operation": {
+      "operation_id": "bd6b0249-1cc8-478d-a9e2-6190c218576f",
+      "request_id": "async-poc-finish-fa69dfb8-18d7-41ee-ab2d-588d2da7b767",
+      "phase": "settled",
+      "effects_known": true,
+      "outcome_ref": {
+        "id": "outcome-479f5fab1adae9ec4d15db4aa6a1eeb5afb42596d01f656e4111abc9155dd0fb",
+        "digest": "479f5fab1adae9ec4d15db4aa6a1eeb5afb42596d01f656e4111abc9155dd0fb",
+        "kind": "outcome",
+        "schema_revision": 1
+      }
+    },
+    "audit_checks": {
+      "single_start": true,
+      "job_identity": true,
+      "model": true,
+      "cli_started": true,
+      "terminal": true,
+      "source_delivery": true,
+      "report": true,
+      "check": true,
+      "finish_evidence_matches": true,
+      "final_complete": true,
+      "blocked_attempt_preserved": true,
+      "synthetic_source": true,
+      "within_180s": true,
+      "assurance_all_true": true
+    }
+  },
+  "limitations": [
+    "The operator grant is an explicitly simulated local fixture, not a human identity or real MCP approval.",
+    "The CLI-requested model is observable; provider-side model identity is not independently exposed by this runtime."
+  ],
+  "preflight_history": [
+    {
+      "schema_revision": 1,
+      "task": "async-cli-qa-poc",
+      "phase": "blocked-capability-evidence-id-schema",
+      "started_at": "2026-10-07T13:30:37.060Z",
+      "authorization": {
+        "status": "simulated fixture grant; not a real human approval",
+        "source": {
+          "adapter": "interactive-operator",
+          "simulated_fixture": true,
+          "human_identity_verified": false
+        },
+        "human_identity_verified": false,
+        "mode": "implement",
+        "paths": [
+          "requirements.md",
+          "design.md",
+          "implementation.md",
+          "subject.mjs"
+        ],
+        "actions": [
+          "control",
+          "artifact",
+          "apply",
+          "verify",
+          "qa",
+          "reconcile"
+        ],
+        "grant_id": null,
+        "goal_digest": null
+      },
+      "fixture": {
+        "paths": [
+          "requirements.md",
+          "design.md",
+          "implementation.md",
+          "subject.mjs"
+        ],
+        "acceptance_ids": [
+          "AC-BOUNDARY"
+        ],
+        "check_id": "adult-boundary",
+        "file_facts": {
+          "requirements.md": {
+            "sha256": "878fce6174144bf2f8dafcda6ce005239425614a64536f5624e5d0cd23d8d7a3",
+            "bytes": 489
+          },
+          "design.md": {
+            "sha256": "f5acf185415cec7062a632f30bc35ae12986010ec7baf47e9042ae027e467348",
+            "bytes": 238
+          },
+          "implementation.md": {
+            "sha256": "52f73b6bf05f300fddbc98ea1e7736e85e1195370ffa24851704c00e580acda3",
+            "bytes": 198
+          },
+          "subject.mjs": {
+            "sha256": "dcdb1f9d47a0c2d8da5ecf7469df9b1ef8df646ef93cd7a8ed8ea0a75332ef0e",
+            "bytes": 53
+          }
+        }
+      },
+      "calls": [
+        {
+          "name": "cycle_status.preflight",
+          "args": {},
+          "result": {
+            "ok": true,
+            "status": "unbound",
+            "binding": null,
+            "configured": true,
+            "capabilities": {
+              "local_store": true,
+              "tested_platform": "win32 local filesystem / Node 24",
+              "authority": "interactive-operator signed receipts; no MCP approval minting",
+              "qa_driver": false,
+              "qa": {
+                "available": false,
+                "reason": "Capability evidence unavailable."
+              },
+              "native_subagent": false,
+              "hook_coverage": "matched writes only",
+              "stop_continuation": false
+            },
+            "next": [
+              "inspect sources; configure project and authorize a scope before begin"
+            ],
+            "coverage_limits": [
+              "No cycle is active."
+            ]
+          },
+          "observed_at": "2026-10-07T13:30:37.312Z"
+        }
+      ],
+      "qa": {
+        "start_count": 0,
+        "job_id": null,
+        "polls": [],
+        "terminal": null
+      },
+      "final": {
+        "status": "blocked",
+        "current_complete": false,
+        "reason": "QA_VERIFICATION_UNAVAILABLE"
+      },
+      "limitations": [
+        "The operator grant is an explicitly simulated local fixture, not a human identity or real MCP approval.",
+        "The CLI-requested model is observable; provider-side model identity is not independently exposed by this runtime."
+      ],
+      "control_root": "C:\\Users\\DANDAN~1\\AppData\\Local\\Temp\\engineering-cycle-p0-control-pZMw20",
+      "p0_capability": {
+        "evidence_ref": "docs/evidence/p0-cli.json#result.capability_receipt",
+        "passed": true,
+        "receipt_digest": "710a98136e9f2e94039dc89f77c9711f871aa68e11cae087be9c716dbe696af2",
+        "driver_revision": 3,
+        "requested_model": "gpt-6-luna"
+      },
+      "error": {
+        "code": "QA_VERIFICATION_UNAVAILABLE",
+        "message": "The calibrated P0 CLI capability is rejected because LocalStore.evidence does not accept the signed p0-* evidence IDs."
+      },
+      "finished_at": "2026-10-07T13:33:32.983Z",
+      "preflight_diagnostic": {
+        "qa_driver_available": false,
+        "qa_driver_reason": "Capability evidence unavailable.",
+        "checks": {
+          "p0_receipt_matches_config": true,
+          "p0_receipt_matches_payload": true,
+          "signature_valid_without_exposing_key": "[redacted]",
+          "binary_digest_matches": true,
+          "platform_matches": true,
+          "driver_revision_matches": true,
+          "requested_model_matches": true,
+          "live_probe_passed": true,
+          "sandbox_probe_denied": true
+        },
+        "evidence_refs": [
+          {
+            "id": "p0-live-qa-feabcacf369ec79a380b543ed054a1a23d4bb1716ea6f3b108e53bc876b0b59d",
+            "record_file_present": true,
+            "record_digest_valid": true,
+            "record_identity_valid": true,
+            "evidence_id_regex_accepts": false,
+            "store_evidence_error": "EVIDENCE_INVALID"
+          },
+          {
+            "id": "p0-sandbox-86d1162740c1bf082d3235b97a4a367532f3acf38681b41d15f0087dd2cf1df9",
+            "record_file_present": true,
+            "record_digest_valid": true,
+            "record_identity_valid": true,
+            "evidence_id_regex_accepts": false,
+            "store_evidence_error": "EVIDENCE_INVALID"
+          }
+        ],
+        "source_cause": {
+          "file": "src/local/store.mjs",
+          "symbol": "LocalStore.evidence",
+          "line": 71,
+          "regex": "^[a-z_-]+-[a-f0-9]{64}$",
+          "explanation": "The signed P0 evidence IDs use the prefix p0-..., but the namespace portion rejects digit 0. Both on-disk records exist and their digests are valid; the lookup rejects their IDs before reading them."
+        }
+      },
+      "no_cycle_state_created": true,
+      "no_operator_grant_issued": true,
+      "model_invocations": 0
+    }
+  ],
+  "resumed_after_blocked_preflight": true,
+  "control_root": "C:\\Users\\DANDAN~1\\AppData\\Local\\Temp\\engineering-cycle-p0-control-pZMw20",
+  "p0_capability": {
+    "evidence_ref": "docs/evidence/p0-cli.json#result.capability_receipt",
+    "passed": true,
+    "receipt_digest": "710a98136e9f2e94039dc89f77c9711f871aa68e11cae087be9c716dbe696af2",
+    "driver_revision": 3,
+    "requested_model": "gpt-6-luna"
+  },
+  "preflight": {
+    "status": "unbound",
+    "local_store": true,
+    "qa_driver": true,
+    "requested_model": "gpt-6-luna",
+    "timeout_ms": 150000,
+    "capability_receipt_matches_p0": "[redacted]"
+  },
+  "verification": {
+    "passed": true,
+    "evidence_ref": {
+      "id": "verification-b7fcd7c3e575e86595aac5858ab8624674cb2096f176be2bf0e89659fb2937b0",
+      "digest": "b7fcd7c3e575e86595aac5858ab8624674cb2096f176be2bf0e89659fb2937b0",
+      "kind": "verification",
+      "schema_revision": 1
+    },
+    "check": {
+      "check_id": "adult-boundary",
+      "argv_digest": "542fd57068b739f2f3e4eead407c87b8daf49661f224e2a0719d3ee99e2902eb",
+      "launch_status": "started",
+      "pid": 61816,
+      "terminal_observed": true,
+      "exit_code": 0,
+      "signal": null,
+      "cancel_requested": false,
+      "timed_out": false,
+      "launch_error": null,
+      "capture_error": null,
+      "cleanup_error": null,
+      "output_complete": true,
+      "input_bytes": 0,
+      "input_digest": null,
+      "input_delivered": true,
+      "passed": true,
+      "raw_ref": {
+        "id": "check-b0485b9c722853e9420df3b0fddca7265d172f692a5c80ecfdb2f6d105cf74ab",
+        "digest": "b0485b9c722853e9420df3b0fddca7265d172f692a5c80ecfdb2f6d105cf74ab",
+        "kind": "check",
+        "schema_revision": 1
+      }
+    }
+  },
+  "finished_at": "2026-10-07T13:36:40.404Z",
+  "model_invocations": 1
+}

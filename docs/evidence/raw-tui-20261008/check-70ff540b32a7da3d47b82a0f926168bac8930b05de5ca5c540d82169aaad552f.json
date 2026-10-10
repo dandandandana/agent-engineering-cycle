@@ -1,0 +1,31 @@
+{
+  "digest": "70ff540b32a7da3d47b82a0f926168bac8930b05de5ca5c540d82169aaad552f",
+  "id": "check-70ff540b32a7da3d47b82a0f926168bac8930b05de5ca5c540d82169aaad552f",
+  "kind": "check",
+  "payload": {
+    "cycle_id": "a8c5f331-6fc7-489b-b797-74d8c2b9db1e",
+    "input_basis": "cc19d9f404c82b6de927ae75be804a4c5e1f488e55c7ac2c60d2296825cc6be2",
+    "receipt": {
+      "argv_digest": "182ca2f7bb8f174ec56903b991d4bae2bd27712fc49238a1b3024378b3f510f0",
+      "cancel_requested": false,
+      "capture_error": null,
+      "check_id": "age-boundaries",
+      "cleanup_error": null,
+      "exit_code": 0,
+      "input_bytes": 0,
+      "input_delivered": true,
+      "input_digest": null,
+      "launch_error": null,
+      "launch_status": "started",
+      "output_complete": true,
+      "passed": true,
+      "pid": 49168,
+      "signal": null,
+      "stderr": "",
+      "stdout": "AC-AGE-PASS\n",
+      "terminal_observed": true,
+      "timed_out": false
+    }
+  },
+  "schema_revision": 1
+}

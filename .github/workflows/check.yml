@@ -1,0 +1,31 @@
+name: check
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  windows:
+    runs-on: windows-latest
+    timeout-minutes: 20
+    defaults:
+      run:
+        working-directory: agent-engineering-cycle
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: agent-engineering-cycle
+      - uses: actions/checkout@v4
+        with:
+          repository: dandandandana/codex-sol
+          ref: 7777b5f2344be324164c1b542756cda108fb1bac
+          path: codex-sol
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+          cache-dependency-path: |
+            agent-engineering-cycle/package-lock.json
+            codex-sol/package-lock.json
+      - run: npm ci --ignore-scripts --registry=https://registry.npmjs.org/
+        working-directory: codex-sol
+      - run: npm ci --ignore-scripts --registry=https://registry.npmjs.org/
+      - run: npm run check

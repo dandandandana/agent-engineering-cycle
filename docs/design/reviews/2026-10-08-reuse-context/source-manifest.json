@@ -1,0 +1,270 @@
+[
+  {
+    "path": "D:/zzd/agent-engineering-cycle/docs/evidence/benchmark-blog-20261008.md",
+    "sha256": "221d20032d782665bb84c9d8913b6ae55912ab82ac846771fb8199a9e783c5b4"
+  },
+  {
+    "path": "D:/zzd/agent-engineering-cycle/hooks/hooks.json",
+    "sha256": "ae7625e12f4e02d152af7bae639d3d243ec02131df59f98024affc0d33cfe032"
+  },
+  {
+    "path": "D:/zzd/agent-engineering-cycle/mcp.json",
+    "sha256": "2f2c3470c19a590550280557e76a7d89a655b658a8e2750755b9cfe986f99631"
+  },
+  {
+    "path": "D:/zzd/agent-engineering-cycle/package-lock.json",
+    "sha256": "89d58018b29da7dcae01341bdc899091cbb9d007afc0fb563d6bb74cfc62e65d"
+  },
+  {
+    "path": "D:/zzd/agent-engineering-cycle/package.json",
+    "sha256": "82153db00ece989775ceeef763a80da03831ca7162525673c9d7003d34512241"
+  },
+  {
+    "path": "D:/zzd/agent-engineering-cycle/plugin.json",
+    "sha256": "1594d2b9480d1e5a067afa3c02c86238c105ec5731586466bd1b7cbfb7b814d2"
+  },
+  {
+    "path": "D:/zzd/agent-engineering-cycle/scripts/check.mjs",
+    "sha256": "73432425d7d5f4ce6857a31a97493d014fde42a0c3887e9175b1313b3d3dda24"
+  },
+  {
+    "path": "D:/zzd/agent-engineering-cycle/scripts/p0.mjs",
+    "sha256": "666e0c5fcf1992989197bae4b767cfe2d8a5c53b46ff130ccf428dfacad7b6f5"
+  },
+  {
+    "path": "D:/zzd/agent-engineering-cycle/scripts/package-plugin.mjs",
+    "sha256": "fe63bc34714c3ec6e83d9f2321bf3132ec83216c71210d03b66c3acbd442ee4e"
+  },
+  {
+    "path": "D:/zzd/agent-engineering-cycle/skills/agent-engineering-cycle/agents/openai.yaml",
+    "sha256": "befa217498d33b52b003c144a7da89ad6adfcf872c74c73e2180c29af685b763"
+  },
+  {
+    "path": "D:/zzd/agent-engineering-cycle/skills/agent-engineering-cycle/references/eval-cases.md",
+    "sha256": "93c6155665b9b464aad22b73025bb3baa2129ab54821c8e03c0d5027290cf763"
+  },
+  {
+    "path": "D:/zzd/agent-engineering-cycle/skills/agent-engineering-cycle/references/implementation-notes.md",
+    "sha256": "f71ddf8116fd20d0edf8fd701e5eadd7d746504a56e925974bb14f6fae4bc31b"
+  },
+  {
+    "path": "D:/zzd/agent-engineering-cycle/skills/agent-engineering-cycle/references/qa-reconciliation.md",
+    "sha256": "f47b28eb70964a52c86bb35cb307002c84e0741395f22a6e6651fc4fc4722ca8"
+  },
+  {
+    "path": "D:/zzd/agent-engineering-cycle/skills/agent-engineering-cycle/references/research-basis.md",
+    "sha256": "1ab34f7c0b8e9f4caa422ac226a25ab3a6123d69c16eaf9041ca8506b873a72c"
+  },
+  {
+    "path": "D:/zzd/agent-engineering-cycle/skills/agent-engineering-cycle/references/state-contract.md",
+    "sha256": "53a7267878b0f5cb9134a6b5540e6e385967e4006ee17374ef5b8cdffbe4c1c6"
+  },
+  {
+    "path": "D:/zzd/agent-engineering-cycle/skills/agent-engineering-cycle/SKILL.md",
+    "sha256": "bd9c6eed729b3360e64bae85db8692e206a2b7afb3e71304dbffa75dce8555d8"
+  },
+  {
+    "path": "D:/zzd/agent-engineering-cycle/src/adapters/calibrate.mjs",
+    "sha256": "6b2abd40726f1a4caa1dc99b9c1e7fdfd9f838a8927c68f13d1a01422887b965"
+  },
+  {
+    "path": "D:/zzd/agent-engineering-cycle/src/adapters/qa-cli.mjs",
+    "sha256": "bba14ff5bbdd8df6547ca1ae7ce4a7194df184486c4fe739e48463ddcc99de16"
+  },
+  {
+    "path": "D:/zzd/agent-engineering-cycle/src/adapters/qa-sources.mjs",
+    "sha256": "358fafc59dd041a3b93a721e5b93cc94fa629d372ed75bc48485862531ab6332"
+  },
+  {
+    "path": "D:/zzd/agent-engineering-cycle/src/adapters/qa-worker.mjs",
+    "sha256": "ca0c0455de398d3ce760471ca09aacf916e226b43a09a4d65e9f73ea072743ad"
+  },
+  {
+    "path": "D:/zzd/agent-engineering-cycle/src/cli.mjs",
+    "sha256": "47d373469e040049d12927ff58e246ffa5dd3c6060794506dece5329d22d70e6"
+  },
+  {
+    "path": "D:/zzd/agent-engineering-cycle/src/core/contracts.mjs",
+    "sha256": "b389a4f5e4b4a0b8376a84b3722afffbad48a544f440730930c6c9c45f4a3d35"
+  },
+  {
+    "path": "D:/zzd/agent-engineering-cycle/src/core/cycle.mjs",
+    "sha256": "306f7dde0358ee327e5eaab31a2a90e58c033e585754dd0a2ac480d3e29b0d68"
+  },
+  {
+    "path": "D:/zzd/agent-engineering-cycle/src/hook.mjs",
+    "sha256": "cacec33cf05ae42f46b9d82760c9ccc5f084d7c3c17de08fc23324ddd2638b77"
+  },
+  {
+    "path": "D:/zzd/agent-engineering-cycle/src/local/authority.mjs",
+    "sha256": "98f9e9e6421af5328cf3ff78825b75238514b1aac5b9d7d8e46c3bbc8ce438d8"
+  },
+  {
+    "path": "D:/zzd/agent-engineering-cycle/src/local/check-runner.mjs",
+    "sha256": "91174d4d314a2b3ddcfc3732d0051a297643ed5e424f8d6cf6c3796d476a4fe0"
+  },
+  {
+    "path": "D:/zzd/agent-engineering-cycle/src/local/config.mjs",
+    "sha256": "3f7bc52bd2f156fdadb87c90315948e31142de135ec914bc475b5fd13b1c84ae"
+  },
+  {
+    "path": "D:/zzd/agent-engineering-cycle/src/local/implementation-notes.mjs",
+    "sha256": "b7a3866b6610d1423d83af93a9d22a21921e05de1dd70aaf12c9fd96b98c10c5"
+  },
+  {
+    "path": "D:/zzd/agent-engineering-cycle/src/local/store.mjs",
+    "sha256": "cbd26b55d43ed97a9ee9676f024a0519893e0f561717664c46e065bec3a9915a"
+  },
+  {
+    "path": "D:/zzd/agent-engineering-cycle/src/local/workspace.mjs",
+    "sha256": "bbb0f9855578cfd3d17cc127441b0bab59b5709423bba8acf1304a681f705878"
+  },
+  {
+    "path": "D:/zzd/agent-engineering-cycle/src/runtime.mjs",
+    "sha256": "2a6612de98b98dc4948f6d7ada61b847fe17d0a4cb0a4e9623820d1032dd5699"
+  },
+  {
+    "path": "D:/zzd/agent-engineering-cycle/src/server.mjs",
+    "sha256": "f19a056040b8b3a6d0ea7bec1eb842ae54d66f86cf8bb9e3389017b6788f2d7e"
+  },
+  {
+    "path": "D:/zzd/blog-eval/evals/rubric.mjs",
+    "sha256": "2a26999f0652ef257d6252e94db3271e10de2e99c2c4e7f1554c90486104a244"
+  },
+  {
+    "path": "D:/zzd/blog-eval/evals/runner.mjs",
+    "sha256": "65ec44ea4dac86ba7535332dc3206ae0bed74d29b9438a8f4fdce123926f4861"
+  },
+  {
+    "path": "D:/zzd/codex-sol/hooks/hooks.json",
+    "sha256": "5face5c50f448f174c0ad498e18f461650b0f4d40e50df8a503ba7a59155a09d"
+  },
+  {
+    "path": "D:/zzd/codex-sol/mcp.json",
+    "sha256": "4b574340086d223f7116700115ad3674b9ebda0b7b938835c43667227aa3f1ef"
+  },
+  {
+    "path": "D:/zzd/codex-sol/package-lock.json",
+    "sha256": "24cb62a9e9110d14784df19ffc2cba858bed2246665bfcc8f8337ebf8552c0ac"
+  },
+  {
+    "path": "D:/zzd/codex-sol/package.json",
+    "sha256": "f479879c392ecb6b54c55e9c7b890f625a9c6fe3a9b81669e38268e35da4095c"
+  },
+  {
+    "path": "D:/zzd/codex-sol/plugin.json",
+    "sha256": "dc5fcc229e0dafb4ad4a62eb97d3c6ee8e7de05130bcb21159bd6a79e348769f"
+  },
+  {
+    "path": "D:/zzd/codex-sol/scripts/ci-check.mjs",
+    "sha256": "09ef0aa56b955fbb7d12b28dc8e35b99a5f11e7c2f8630f85f452055b308c2be"
+  },
+  {
+    "path": "D:/zzd/codex-sol/scripts/package-plugin.mjs",
+    "sha256": "c5a1d7e5f67108cd7bb2964eb82fe31318c57aa66bddce6eaa465ce67c3b1aa1"
+  },
+  {
+    "path": "D:/zzd/codex-sol/scripts/test-runner.mjs",
+    "sha256": "7d6a954d0e3cbf7e6f819d2cc5969b3ee5035fb5f5c4e7cddf8d228f491a2e06"
+  },
+  {
+    "path": "D:/zzd/codex-sol/src/architecture/change.mjs",
+    "sha256": "0bb67fd8a55e7dc7fcdc3b1055d95962f34179bc5a980b57f6c17f1b73ad29de"
+  },
+  {
+    "path": "D:/zzd/codex-sol/src/architecture/context.mjs",
+    "sha256": "86a69844a6bfed12cc1c3d75a47d845d62bbd6e890f8a8655333adff4b46eefc"
+  },
+  {
+    "path": "D:/zzd/codex-sol/src/architecture/index.mjs",
+    "sha256": "16a76d78831fb9fb503fc2674fb3d4dab58260be2b43ba5a5bb065f61675dc61"
+  },
+  {
+    "path": "D:/zzd/codex-sol/src/architecture/session.mjs",
+    "sha256": "c19c1e8c57d7492a950eb758e277affd57868a7bd72e835c0227d766890133d7"
+  },
+  {
+    "path": "D:/zzd/codex-sol/src/context-hook.mjs",
+    "sha256": "781ff565a74a6453cbd300d3ce8df87f8ab319d7432af2aac7d241abd4654331"
+  },
+  {
+    "path": "D:/zzd/codex-sol/src/host-cancellation.mjs",
+    "sha256": "b7ba21494af29c829a258a090f36b9a4efa3f66f587f9e1028441ff19ede2a9f"
+  },
+  {
+    "path": "D:/zzd/codex-sol/src/managed-command.mjs",
+    "sha256": "8e4aa03fbf83486ec569046dfce68ca745bdd775a56055d5be92eac27f518db8"
+  },
+  {
+    "path": "D:/zzd/codex-sol/src/managed-write.mjs",
+    "sha256": "51d19cb08d355bd22b1e5b623b5b47ae701ec48259b250b062363044a0862cf3"
+  },
+  {
+    "path": "D:/zzd/codex-sol/src/native-hook.mjs",
+    "sha256": "c1a1dfd729b4b518d72cbe64eba6d7675126f18ea1df57afe12268ca3a2cde02"
+  },
+  {
+    "path": "D:/zzd/codex-sol/src/pack.mjs",
+    "sha256": "b797dc4edbf70e3a3cd9b219f64d7faf57a0d13a30f105cbfecab96fb8310a87"
+  },
+  {
+    "path": "D:/zzd/codex-sol/src/patch.mjs",
+    "sha256": "5792b1e7467a7f01074d0a257d157a87512c37f018d650a7ec5494a5b37f0077"
+  },
+  {
+    "path": "D:/zzd/codex-sol/src/plugin-bootstrap.cjs",
+    "sha256": "bc4e5d94a3a711dc479c467e5632c3f5b9fd467ef45005a2d60d6ca64f410e0d"
+  },
+  {
+    "path": "D:/zzd/codex-sol/src/plugin-launcher.mjs",
+    "sha256": "92244db6a60ce500a3dfe3b83ae6b58df3d0cf6716ef2a4a850d9dfbd6ede5a4"
+  },
+  {
+    "path": "D:/zzd/codex-sol/src/process.mjs",
+    "sha256": "7db23971614c8d1f4eeb548ead76c7468cbfa2b9d2cd7f345d73778e22b6b5e4"
+  },
+  {
+    "path": "D:/zzd/codex-sol/src/read.mjs",
+    "sha256": "57dc3be78ecd3a76b2f6f4793ba1276414fa8b6cf49216843a59e3572480dae3"
+  },
+  {
+    "path": "D:/zzd/codex-sol/src/recall.mjs",
+    "sha256": "8b014d7cdf5270d580076d6cd19791720c8c42d58d35464031a2e95e30b525a6"
+  },
+  {
+    "path": "D:/zzd/codex-sol/src/records.mjs",
+    "sha256": "daffe45eda4aa8bf05b01953f84d4fadcc47f26f026bec1fdeda6b738a3210a9"
+  },
+  {
+    "path": "D:/zzd/codex-sol/src/runtime.mjs",
+    "sha256": "b20631cef7ba1e8ad67e8129b05297835cf84ecd8a52c13f807bac0f99c2474e"
+  },
+  {
+    "path": "D:/zzd/codex-sol/src/schema.mjs",
+    "sha256": "d11b589b786f6627e2d0144564d0fc3842cf1718ae77d10cc926da8034b3db42"
+  },
+  {
+    "path": "D:/zzd/codex-sol/src/server.mjs",
+    "sha256": "aa8daffadf63e96bd43bcbe29b9c8801f9e5b294a86266ab03ebfe9641c8a2c1"
+  },
+  {
+    "path": "D:/zzd/codex-sol/src/store.mjs",
+    "sha256": "8c26efa488a6254b9e1ba35ab0af0cd0282eb7607a6b0b4f456c5e935c195847"
+  },
+  {
+    "path": "D:/zzd/codex-sol/src/validation.mjs",
+    "sha256": "c1b8cc1ab580a8df5f81aa5e4f4f1f68bb79bd3720f779eccbfeedd21946567a"
+  },
+  {
+    "path": "D:/zzd/codex-sol/src/workspace-lock.mjs",
+    "sha256": "c25a851ea1dd62586e2fe4f6ae43cb5c60ac43728f1d8059e504a30f44413890"
+  },
+  {
+    "path": "D:/zzd/codex-sol/src/workspace-snapshot.mjs",
+    "sha256": "e257b58a5ce046cdfd8ba2c42bac887e7486464fe6ea2e61e601d799a692da41"
+  },
+  {
+    "path": "D:/zzd/codex-sol/src/workspace.mjs",
+    "sha256": "5d63992285bd3c7cc866b1eef28705d4793b1399c66d444891ee534e73098c0f"
+  }
+]

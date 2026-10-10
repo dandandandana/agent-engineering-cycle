@@ -1,0 +1,60 @@
+{
+  "digest": "bbfea5b8fa85db716764c3945d7d320f95aee3f19147a9de91d26ffa8c5294dc",
+  "id": "artifact-bbfea5b8fa85db716764c3945d7d320f95aee3f19147a9de91d26ffa8c5294dc",
+  "kind": "artifact",
+  "payload": {
+    "cycle_id": "bdf68ad6-657c-4b98-9696-c4523af92dee",
+    "implementation_notes": [
+      {
+        "documentation": {
+          "end_line": 10,
+          "path": "docs/age-notes.md",
+          "sha256": "45242c7ce137424e53cd57c253afffe8876d54ff986408021109f9495bbf0a2f",
+          "start_line": 3
+        },
+        "related_sources": [
+          {
+            "path": "check.mjs",
+            "sha256": "0e837f068eb50989b100cf55aa4ed7c9e9101fb219ac6d9c7ec40ea673a684c4"
+          }
+        ],
+        "source": {
+          "path": "src/age.mjs",
+          "sha256": "716bd6f54a62aee5c6b3cdb4a5edb75f51bbb1c9cf0802d0f30a07747d0a1e80",
+          "symbol": "isAdult"
+        }
+      }
+    ],
+    "kind": "I",
+    "manifest": {
+      "digest": "022bbfa9a8e0e49f9711dcde598a8257cbd89aadc90d140ad23b42a022ffe73b",
+      "entries": [
+        {
+          "path": "docs/implementation.md",
+          "sha256": "179f00fb0f88c109ba4dd7fa5df68b8f19e6439743fdfdce7dfdc5563a3294c7",
+          "size": 567
+        }
+      ]
+    },
+    "paths": [
+      "docs/implementation.md"
+    ],
+    "semantic_status": "reported",
+    "snapshot": {
+      "input_dir": "D:\\zzd\\slop\\engineering-cycle-tui-20261008\\final-workspace\\.codex\\engineering-cycle\\snapshots\\3d3b7fe2-928d-4164-987c-4cffff1ed44e\\input",
+      "manifest": {
+        "digest": "022bbfa9a8e0e49f9711dcde598a8257cbd89aadc90d140ad23b42a022ffe73b",
+        "entries": [
+          {
+            "path": "docs/implementation.md",
+            "sha256": "179f00fb0f88c109ba4dd7fa5df68b8f19e6439743fdfdce7dfdc5563a3294c7",
+            "size": 567
+          }
+        ]
+      },
+      "snapshot_id": "3d3b7fe2-928d-4164-987c-4cffff1ed44e"
+    },
+    "source": "observed_bytes"
+  },
+  "schema_revision": 1
+}

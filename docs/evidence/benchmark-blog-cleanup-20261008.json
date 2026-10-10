@@ -1,0 +1,79 @@
+{
+  "checked_at": "2026-10-08T09:43:54.927Z",
+  "owned_process_inventory": "No codex/node/git command line matched benchmark scopes or cycle-bench-homes before cleanup.",
+  "original_unknown_failure": "v1 original raw facts retained; PIDs45804/50260 later observed absent. Full-context failure was before native launch due to validated stdin budget.",
+  "homes": [
+    {
+      "path": "C:\\Users\\DANDAN~1\\AppData\\Local\\Temp\\cycle-bench-homes-0udgIZ",
+      "removed": true,
+      "authentication_links": [
+        {
+          "role": "plain",
+          "exists": false
+        },
+        {
+          "role": "skill",
+          "exists": false
+        },
+        {
+          "role": "plugin",
+          "exists": false
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\DANDAN~1\\AppData\\Local\\Temp\\cycle-bench-homes-mQB0J2",
+      "removed": true,
+      "authentication_links": [
+        {
+          "role": "plain",
+          "exists": false
+        },
+        {
+          "role": "skill",
+          "exists": false
+        },
+        {
+          "role": "plugin",
+          "exists": false
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\DANDAN~1\\AppData\\Local\\Temp\\cycle-bench-homes-GT0MUO",
+      "removed": true,
+      "authentication_links": [
+        {
+          "role": "plain",
+          "exists": false
+        },
+        {
+          "role": "skill",
+          "exists": false
+        },
+        {
+          "role": "plugin",
+          "exists": false
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\DANDAN~1\\AppData\\Local\\Temp\\cycle-bench-homes-A2GRGM",
+      "removed": true,
+      "authentication_links": [
+        {
+          "role": "plain",
+          "exists": false
+        },
+        {
+          "role": "skill",
+          "exists": false
+        },
+        {
+          "role": "plugin",
+          "exists": false
+        }
+      ]
+    }
+  ]
+}

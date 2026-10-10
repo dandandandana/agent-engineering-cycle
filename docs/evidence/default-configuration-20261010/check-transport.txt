@@ -1,0 +1,12 @@
+✔ portable plugin manifests point at the local MCP server and packaged hooks (4.5309ms)
+✔ hook rejects malformed, unknown, and oversized input without producing output (554.5296ms)
+✔ hook requires host cwd and rejects a conflicting explicit workspace before loading runtime (382.899ms)
+✔ MCP stdio initializes, lists seven tools, and calls read-only status without creating state (418.703ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 4
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1553.5532

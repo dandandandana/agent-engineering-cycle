@@ -1,0 +1,95 @@
+
+> agent-engineering-cycle@0.1.0 check
+> npm test && npm audit --audit-level=high --registry=https://registry.npmjs.org/
+
+
+> agent-engineering-cycle@0.1.0 test
+> node scripts/check.mjs
+
+✔ runCheck records a successful child and captures bounded stdout and stderr (76.1873ms)
+✔ runCheck delivers exact UTF-8 stdin and reports only its byte count and digest (74.0118ms)
+✔ runCheck rejects stdin above the UTF-8 byte limit before launching (0.8484ms)
+✔ runCheck records a closed-child stdin write failure without exposing input text (601.5635ms)
+✔ runCheck records a nonzero exit as a completed failure (68.2541ms)
+✔ runCheck distinguishes a missing executable from a launched command (2.9897ms)
+✔ runCheck does not launch after an abort already requested (0.2014ms)
+✔ runCheck cancels a running process tree and observes the child terminal state (822.2664ms)
+✔ runCheck enforces a timeout, kills the process, and keeps timeout separate from cancellation (527.5074ms)
+✔ runCheck caps combined stdout and stderr bytes and marks truncated output incomplete (68.5603ms)
+✔ runCheck retains a started fact when the onStarted callback fails (463.7084ms)
+✔ runCheck rejects shell command strings and empty or oversized argv entries (0.3808ms)
+✔ strict status inspection leaves a fresh workspace without persistent store state (14.9614ms)
+▶ begin refuses user-sourced and missing grants without persisting a cycle
+  ✔ a user source cannot mint an accepted begin grant (58.6314ms)
+  ✔ begin without any grant leaves no current cycle record (25.0086ms)
+✔ begin refuses user-sourced and missing grants without persisting a cycle (84.3199ms)
+✔ begin, R/D/I attach, managed write, and fixed verify form an active cycle, not completion (1811.0352ms)
+✔ the same request writes once, while changed parameters under that ID conflict (466.6492ms)
+▶ write permission rejects docs-mode code, cross-scope, and stale-binding attempts without file effects
+  ✔ docs permission cannot write a code file inside the declared scope (246.4625ms)
+  ✔ a target outside both exact path scopes is not created (263.2539ms)
+  ✔ a binding captured before an attach cannot write after the revision changes (533.3469ms)
+✔ write permission rejects docs-mode code, cross-scope, and stale-binding attempts without file effects (1043.9649ms)
+✔ saved outcomes recover without replay after the file effect already happened (652.7234ms)
+✔ a QA configuration change makes prior checks and Q non-current but retains their evidence (2005.425ms)
+▶ Delta approval requires a verified decision for this exact cycle and digest, without widening docs access
+  ✔ a proposed Delta without a decision remains unapproved (447.6183ms)
+  ✔ a decision for another cycle cannot approve this Delta (483.6552ms)
+  ✔ a decision for a different Delta digest cannot approve this revision (468.4695ms)
+  ✔ an exact requirement decision approves only the Delta and does not grant code writes (660.07ms)
+✔ Delta approval requires a verified decision for this exact cycle and digest, without widening docs access (2061.7214ms)
+✔ multi-file settle distinguishes before, after, and third states without overwriting external changes (2414.7254ms)
+✔ incorporated authority sync records that implementation is still unverified (2113.8226ms)
+▶ finish needs independent QA and external source drift cannot publish a current completion
+  ✔ fixed checks and R/D/I without Q cannot complete (1862.8007ms)
+  ✔ source drift before finish leaves no completion archive (2027.3351ms)
+  ✔ source drift after completion archival still prevents publication as complete (2213.6811ms)
+✔ finish needs independent QA and external source drift cannot publish a current completion (6105.3812ms)
+✔ frozen QA source MCP exposes only read-only manifest reads and rejects drift (336.7554ms)
+✔ unknown QA outcome remains non-terminal, blocks abandon and new start, and cancellation preserves uncertainty (2444.3399ms)
+✔ finish archive recovery settles the same completion without rerunning checks or replacing Q (3011.7899ms)
+✔ source drift at the finish archive cut keeps resume active with stale evidence (2775.1911ms)
+▶ a deleted or tampered completion archive invalidates current completion but preserves history
+  ✔ deleting the archive (2238.7387ms)
+  ✔ tampering with the archived cycle identity (2193.2143ms)
+✔ a deleted or tampered completion archive invalidates current completion but preserves history (4433.5046ms)
+▶ damaged original check or verification evidence blocks finish
+  ✔ a changed check-runner archive (1899.3508ms)
+  ✔ a changed verification archive (2026.2466ms)
+✔ damaged original check or verification evidence blocks finish (3927.008ms)
+✔ the capability gate recalls calibration evidence with numeric p0 kind names and rejects tampering (304.6758ms)
+✔ docs grants cannot launch a configured command which would overwrite code (1382.914ms)
+✔ builtin docs integrity records readonly observations without pretending to launch a check process (1394.9992ms)
+✔ a model verdict and stdin delivery cannot replace actual frozen-source reads (0.6222ms)
+✔ CLI reports cannot self-certify assurance, and missing terminal events remain missing (1.2268ms)
+✔ read-only LocalStore inspection leaves a missing .codex directory absent (12.7522ms)
+✔ two independent Node processes contend on one workspace lease after a barrier (623.1368ms)
+✔ archive summaries are content-addressed, API-immutable, and detect direct tampering (37.1451ms)
+✔ a live or crashed lease is reported and never automatically removed (195.4009ms)
+✔ a crash after persisting pending and an effect leaves both records without replay (199.105ms)
+✔ different request IDs retain separate operations and immutable runner facts (65.4055ms)
+✔ OperatorAuthority needs explicit adapter confirmation, and the fixture is not Host human proof (36.1536ms)
+✔ OperatorAuthority rejects payload and signature tampering (60.9222ms)
+✔ user/imported sources and a copied grant from another workspace do not verify (95.7635ms)
+✔ portable plugin manifests point at the local MCP server and packaged hooks (5.8545ms)
+✔ hook rejects malformed, unknown, and oversized input without producing output (164.1339ms)
+✔ hook requires host cwd and rejects a conflicting explicit workspace before loading runtime (111.0155ms)
+✔ MCP stdio initializes, lists seven tools, and calls read-only status without creating state (312.4771ms)
+✔ constructor pins a real workspace root and exposes readonly identity (11.3152ms)
+✔ reads only explicit UTF-8 files and enforces path and secret boundaries (21.7634ms)
+✔ rejects symlink ancestors before reading or applying (19.0402ms)
+✔ enforces per-file, aggregate, and explicit-file limits (106.1111ms)
+✔ snapshot copies actual bytes, survives source A to B to A, and detects tampering (118.4915ms)
+✔ apply preflights all expected hashes before making any change (18.5971ms)
+✔ apply writes atomically, records ordered effects, and preserves POSIX mode (40.4973ms)
+✔ effect persistence failure reports the already published effect without rollback (27.9602ms)
+✔ apply detects an external third state between ordered targets and preserves known effects (26.9927ms)
+ℹ tests 72
+ℹ suites 0
+ℹ pass 72
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 19021.3768
+found 0 vulnerabilities

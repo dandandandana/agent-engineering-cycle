@@ -1,0 +1,400 @@
+{
+  "roots": {
+    "agent-engineering-cycle": "D:\\zzd\\agent-engineering-cycle",
+    "codex-sol": "D:\\zzd\\codex-sol"
+  },
+  "files": [
+    {
+      "project": "agent-engineering-cycle",
+      "path": "hooks/hooks.json",
+      "bytes": 935,
+      "sha256": "ae7625e12f4e02d152af7bae639d3d243ec02131df59f98024affc0d33cfe032",
+      "current_sha256": "ae7625e12f4e02d152af7bae639d3d243ec02131df59f98024affc0d33cfe032",
+      "matches_design_source": true
+    },
+    {
+      "project": "agent-engineering-cycle",
+      "path": "mcp.json",
+      "bytes": 264,
+      "sha256": "2f2c3470c19a590550280557e76a7d89a655b658a8e2750755b9cfe986f99631",
+      "current_sha256": "2f2c3470c19a590550280557e76a7d89a655b658a8e2750755b9cfe986f99631",
+      "matches_design_source": true
+    },
+    {
+      "project": "agent-engineering-cycle",
+      "path": "package-lock.json",
+      "bytes": 6166,
+      "sha256": "15592ef04b6128c7ca9cd3df54eb4e2d3bb021db5c9b0e371ea0f7320725e4b1",
+      "current_sha256": "15592ef04b6128c7ca9cd3df54eb4e2d3bb021db5c9b0e371ea0f7320725e4b1",
+      "matches_design_source": true
+    },
+    {
+      "project": "agent-engineering-cycle",
+      "path": "package.json",
+      "bytes": 782,
+      "sha256": "9ba52bfffeffe7d0dfd65ded76c1cc129e3ad7350d7db50526c8ec703aba48b3",
+      "current_sha256": "9ba52bfffeffe7d0dfd65ded76c1cc129e3ad7350d7db50526c8ec703aba48b3",
+      "matches_design_source": true
+    },
+    {
+      "project": "agent-engineering-cycle",
+      "path": "plugin.json",
+      "bytes": 353,
+      "sha256": "1594d2b9480d1e5a067afa3c02c86238c105ec5731586466bd1b7cbfb7b814d2",
+      "current_sha256": "1594d2b9480d1e5a067afa3c02c86238c105ec5731586466bd1b7cbfb7b814d2",
+      "matches_design_source": true
+    },
+    {
+      "project": "agent-engineering-cycle",
+      "path": "scripts/check.mjs",
+      "bytes": 543,
+      "sha256": "73432425d7d5f4ce6857a31a97493d014fde42a0c3887e9175b1313b3d3dda24",
+      "current_sha256": "73432425d7d5f4ce6857a31a97493d014fde42a0c3887e9175b1313b3d3dda24",
+      "matches_design_source": true
+    },
+    {
+      "project": "agent-engineering-cycle",
+      "path": "scripts/p0.mjs",
+      "bytes": 2353,
+      "sha256": "666e0c5fcf1992989197bae4b767cfe2d8a5c53b46ff130ccf428dfacad7b6f5",
+      "current_sha256": "666e0c5fcf1992989197bae4b767cfe2d8a5c53b46ff130ccf428dfacad7b6f5",
+      "matches_design_source": true
+    },
+    {
+      "project": "agent-engineering-cycle",
+      "path": "scripts/package-plugin.mjs",
+      "bytes": 3486,
+      "sha256": "fe63bc34714c3ec6e83d9f2321bf3132ec83216c71210d03b66c3acbd442ee4e",
+      "current_sha256": "fe63bc34714c3ec6e83d9f2321bf3132ec83216c71210d03b66c3acbd442ee4e",
+      "matches_design_source": true
+    },
+    {
+      "project": "agent-engineering-cycle",
+      "path": "skills/agent-engineering-cycle/agents/openai.yaml",
+      "bytes": 297,
+      "sha256": "befa217498d33b52b003c144a7da89ad6adfcf872c74c73e2180c29af685b763",
+      "current_sha256": "befa217498d33b52b003c144a7da89ad6adfcf872c74c73e2180c29af685b763",
+      "matches_design_source": true
+    },
+    {
+      "project": "agent-engineering-cycle",
+      "path": "skills/agent-engineering-cycle/references/component-reuse.md",
+      "bytes": 7828,
+      "sha256": "3ea8430ac4703e3eceabf551206189589355e8c1ceede70312eaabbf76c43cf9",
+      "current_sha256": "3ea8430ac4703e3eceabf551206189589355e8c1ceede70312eaabbf76c43cf9",
+      "matches_design_source": true
+    },
+    {
+      "project": "agent-engineering-cycle",
+      "path": "skills/agent-engineering-cycle/references/eval-cases.md",
+      "bytes": 2939,
+      "sha256": "93c6155665b9b464aad22b73025bb3baa2129ab54821c8e03c0d5027290cf763",
+      "current_sha256": "93c6155665b9b464aad22b73025bb3baa2129ab54821c8e03c0d5027290cf763",
+      "matches_design_source": true
+    },
+    {
+      "project": "agent-engineering-cycle",
+      "path": "skills/agent-engineering-cycle/references/implementation-notes.md",
+      "bytes": 8988,
+      "sha256": "f71ddf8116fd20d0edf8fd701e5eadd7d746504a56e925974bb14f6fae4bc31b",
+      "current_sha256": "f71ddf8116fd20d0edf8fd701e5eadd7d746504a56e925974bb14f6fae4bc31b",
+      "matches_design_source": true
+    },
+    {
+      "project": "agent-engineering-cycle",
+      "path": "skills/agent-engineering-cycle/references/qa-reconciliation.md",
+      "bytes": 7581,
+      "sha256": "f47b28eb70964a52c86bb35cb307002c84e0741395f22a6e6651fc4fc4722ca8",
+      "current_sha256": "f47b28eb70964a52c86bb35cb307002c84e0741395f22a6e6651fc4fc4722ca8",
+      "matches_design_source": true
+    },
+    {
+      "project": "agent-engineering-cycle",
+      "path": "skills/agent-engineering-cycle/references/research-basis.md",
+      "bytes": 5207,
+      "sha256": "1ab34f7c0b8e9f4caa422ac226a25ab3a6123d69c16eaf9041ca8506b873a72c",
+      "current_sha256": "1ab34f7c0b8e9f4caa422ac226a25ab3a6123d69c16eaf9041ca8506b873a72c",
+      "matches_design_source": true
+    },
+    {
+      "project": "agent-engineering-cycle",
+      "path": "skills/agent-engineering-cycle/references/state-contract.md",
+      "bytes": 6994,
+      "sha256": "53a7267878b0f5cb9134a6b5540e6e385967e4006ee17374ef5b8cdffbe4c1c6",
+      "current_sha256": "53a7267878b0f5cb9134a6b5540e6e385967e4006ee17374ef5b8cdffbe4c1c6",
+      "matches_design_source": true
+    },
+    {
+      "project": "agent-engineering-cycle",
+      "path": "skills/agent-engineering-cycle/SKILL.md",
+      "bytes": 13005,
+      "sha256": "165f0aa9f7c9c0e7c522bb8ec9f1ed34e182e42ffe9624198eeb182397805828",
+      "current_sha256": "165f0aa9f7c9c0e7c522bb8ec9f1ed34e182e42ffe9624198eeb182397805828",
+      "matches_design_source": true
+    },
+    {
+      "project": "agent-engineering-cycle",
+      "path": "src/adapters/calibrate.mjs",
+      "bytes": 4049,
+      "sha256": "6b2abd40726f1a4caa1dc99b9c1e7fdfd9f838a8927c68f13d1a01422887b965",
+      "current_sha256": "6b2abd40726f1a4caa1dc99b9c1e7fdfd9f838a8927c68f13d1a01422887b965",
+      "matches_design_source": true
+    },
+    {
+      "project": "agent-engineering-cycle",
+      "path": "src/adapters/component-provider.mjs",
+      "bytes": 16358,
+      "sha256": "319f6e0e74c299d07f7a98df445183cd75ab51f2d5ddb2da738a7807e8cf3618",
+      "current_sha256": "319f6e0e74c299d07f7a98df445183cd75ab51f2d5ddb2da738a7807e8cf3618",
+      "matches_design_source": true
+    },
+    {
+      "project": "agent-engineering-cycle",
+      "path": "src/adapters/qa-cli.mjs",
+      "bytes": 10823,
+      "sha256": "617a67eab3a6498e62b1a45e89b370a0b2efa7926245ea8e2ca74ba9a50004c1",
+      "current_sha256": "617a67eab3a6498e62b1a45e89b370a0b2efa7926245ea8e2ca74ba9a50004c1",
+      "matches_design_source": true
+    },
+    {
+      "project": "agent-engineering-cycle",
+      "path": "src/adapters/qa-sources.mjs",
+      "bytes": 3588,
+      "sha256": "ccac7c6d9e34a83f2d93d04444555159f0c87853de2da264b15e858dbfde348a",
+      "current_sha256": "ccac7c6d9e34a83f2d93d04444555159f0c87853de2da264b15e858dbfde348a",
+      "matches_design_source": true
+    },
+    {
+      "project": "agent-engineering-cycle",
+      "path": "src/adapters/qa-worker.mjs",
+      "bytes": 3555,
+      "sha256": "ca0c0455de398d3ce760471ca09aacf916e226b43a09a4d65e9f73ea072743ad",
+      "current_sha256": "ca0c0455de398d3ce760471ca09aacf916e226b43a09a4d65e9f73ea072743ad",
+      "matches_design_source": true
+    },
+    {
+      "project": "agent-engineering-cycle",
+      "path": "src/cli.mjs",
+      "bytes": 5091,
+      "sha256": "47d373469e040049d12927ff58e246ffa5dd3c6060794506dece5329d22d70e6",
+      "current_sha256": "47d373469e040049d12927ff58e246ffa5dd3c6060794506dece5329d22d70e6",
+      "matches_design_source": true
+    },
+    {
+      "project": "agent-engineering-cycle",
+      "path": "src/core/contracts.mjs",
+      "bytes": 7187,
+      "sha256": "7abbba0c0a696313fc0a6a78cf3e10f8d593e09d8a7fddc440fc3b0937bde323",
+      "current_sha256": "7abbba0c0a696313fc0a6a78cf3e10f8d593e09d8a7fddc440fc3b0937bde323",
+      "matches_design_source": true
+    },
+    {
+      "project": "agent-engineering-cycle",
+      "path": "src/core/cycle.mjs",
+      "bytes": 58034,
+      "sha256": "43112a1fff56cc921cca653ab05fc5789305f43e97e5238b6d6ebbb070cebddc",
+      "current_sha256": "43112a1fff56cc921cca653ab05fc5789305f43e97e5238b6d6ebbb070cebddc",
+      "matches_design_source": true
+    },
+    {
+      "project": "agent-engineering-cycle",
+      "path": "src/hook.mjs",
+      "bytes": 3842,
+      "sha256": "cacec33cf05ae42f46b9d82760c9ccc5f084d7c3c17de08fc23324ddd2638b77",
+      "current_sha256": "cacec33cf05ae42f46b9d82760c9ccc5f084d7c3c17de08fc23324ddd2638b77",
+      "matches_design_source": true
+    },
+    {
+      "project": "agent-engineering-cycle",
+      "path": "src/local/authority.mjs",
+      "bytes": 2434,
+      "sha256": "98f9e9e6421af5328cf3ff78825b75238514b1aac5b9d7d8e46c3bbc8ce438d8",
+      "current_sha256": "98f9e9e6421af5328cf3ff78825b75238514b1aac5b9d7d8e46c3bbc8ce438d8",
+      "matches_design_source": true
+    },
+    {
+      "project": "agent-engineering-cycle",
+      "path": "src/local/check-runner.mjs",
+      "bytes": 15967,
+      "sha256": "16c8cdfe724dc05f2da4c43359eea41507d8d6f3883731c03f616b6d19103b2d",
+      "current_sha256": "16c8cdfe724dc05f2da4c43359eea41507d8d6f3883731c03f616b6d19103b2d",
+      "matches_design_source": true
+    },
+    {
+      "project": "agent-engineering-cycle",
+      "path": "src/local/config.mjs",
+      "bytes": 3262,
+      "sha256": "3f9133c01a8899b5c52364da7ace037cd4c80b0fc360ad7f08fff3a515633aa8",
+      "current_sha256": "3f9133c01a8899b5c52364da7ace037cd4c80b0fc360ad7f08fff3a515633aa8",
+      "matches_design_source": true
+    },
+    {
+      "project": "agent-engineering-cycle",
+      "path": "src/local/hook-context.mjs",
+      "bytes": 18136,
+      "sha256": "fab3a00599d765eba343fde653924288b617c4d8bd733dc15b6dd7d43aa149c1",
+      "current_sha256": "fab3a00599d765eba343fde653924288b617c4d8bd733dc15b6dd7d43aa149c1",
+      "matches_design_source": true
+    },
+    {
+      "project": "agent-engineering-cycle",
+      "path": "src/local/implementation-notes.mjs",
+      "bytes": 6915,
+      "sha256": "5085a01f388fb1c99acd49e7c8670af6a603adab7972a18cfe2aa9bf8ef9b766",
+      "current_sha256": "5085a01f388fb1c99acd49e7c8670af6a603adab7972a18cfe2aa9bf8ef9b766",
+      "matches_design_source": true
+    },
+    {
+      "project": "agent-engineering-cycle",
+      "path": "src/local/qa-evidence.mjs",
+      "bytes": 3390,
+      "sha256": "9abd8841925c0183cc090f7e3b33f180cf3e8b92f676199cbb9a394de4362cae",
+      "current_sha256": "9abd8841925c0183cc090f7e3b33f180cf3e8b92f676199cbb9a394de4362cae",
+      "matches_design_source": true
+    },
+    {
+      "project": "agent-engineering-cycle",
+      "path": "src/local/reuse-evidence.mjs",
+      "bytes": 21440,
+      "sha256": "a9abb5a0e83e7e040307943e7c061826e52f672d12ee7b2f70721bf5393a72ef",
+      "current_sha256": "a9abb5a0e83e7e040307943e7c061826e52f672d12ee7b2f70721bf5393a72ef",
+      "matches_design_source": true
+    },
+    {
+      "project": "agent-engineering-cycle",
+      "path": "src/local/store.mjs",
+      "bytes": 7580,
+      "sha256": "cbd26b55d43ed97a9ee9676f024a0519893e0f561717664c46e065bec3a9915a",
+      "current_sha256": "cbd26b55d43ed97a9ee9676f024a0519893e0f561717664c46e065bec3a9915a",
+      "matches_design_source": true
+    },
+    {
+      "project": "agent-engineering-cycle",
+      "path": "src/local/workspace.mjs",
+      "bytes": 38035,
+      "sha256": "bbb0f9855578cfd3d17cc127441b0bab59b5709423bba8acf1304a681f705878",
+      "current_sha256": "bbb0f9855578cfd3d17cc127441b0bab59b5709423bba8acf1304a681f705878",
+      "matches_design_source": true
+    },
+    {
+      "project": "agent-engineering-cycle",
+      "path": "src/runtime.mjs",
+      "bytes": 5735,
+      "sha256": "ba78a9cf4314217d6b3a589a052e0cf8afb37d872529d6735292052d0c86bdd2",
+      "current_sha256": "ba78a9cf4314217d6b3a589a052e0cf8afb37d872529d6735292052d0c86bdd2",
+      "matches_design_source": true
+    },
+    {
+      "project": "agent-engineering-cycle",
+      "path": "src/server.mjs",
+      "bytes": 7213,
+      "sha256": "5e89df7ff7d63486fb03c3ac3f55a69fff943a51519582ec8fa81e615680e46a",
+      "current_sha256": "5e89df7ff7d63486fb03c3ac3f55a69fff943a51519582ec8fa81e615680e46a",
+      "matches_design_source": true
+    },
+    {
+      "project": "agent-engineering-cycle",
+      "path": "tests/component-reuse.test.mjs",
+      "bytes": 40552,
+      "sha256": "7cde0df0f116070ae177d363ac0d0c21150b8b72c688984525157042fb241b6f",
+      "current_sha256": "7cde0df0f116070ae177d363ac0d0c21150b8b72c688984525157042fb241b6f",
+      "matches_design_source": true
+    },
+    {
+      "project": "agent-engineering-cycle",
+      "path": "tests/core.test.mjs",
+      "bytes": 23580,
+      "sha256": "d28e713c626769d3e566f03b4814a954a0ff3f517821c518ab6096bbc7ac420b",
+      "current_sha256": "d28e713c626769d3e566f03b4814a954a0ff3f517821c518ab6096bbc7ac420b",
+      "matches_design_source": true
+    },
+    {
+      "project": "agent-engineering-cycle",
+      "path": "tests/hook-context.test.mjs",
+      "bytes": 10963,
+      "sha256": "e48c800d88f91897f00d30783cd88ecad3bd8f044550eeebb0d223d7593364df",
+      "current_sha256": "e48c800d88f91897f00d30783cd88ecad3bd8f044550eeebb0d223d7593364df",
+      "matches_design_source": true
+    },
+    {
+      "project": "agent-engineering-cycle",
+      "path": "tests/packaging.test.mjs",
+      "bytes": 1770,
+      "sha256": "30a7049b28a058f15d77fb7e7155ef1120ab016a3abdc373c5d1670b2cd0ff8d",
+      "current_sha256": "30a7049b28a058f15d77fb7e7155ef1120ab016a3abdc373c5d1670b2cd0ff8d",
+      "matches_design_source": true
+    },
+    {
+      "project": "agent-engineering-cycle",
+      "path": "tests/safety.test.mjs",
+      "bytes": 6268,
+      "sha256": "db4821e4fcbc994c4d724cbef7f5eaf5b1c6a9d253f1658ffdb7ba11bda7db3c",
+      "current_sha256": "db4821e4fcbc994c4d724cbef7f5eaf5b1c6a9d253f1658ffdb7ba11bda7db3c",
+      "matches_design_source": true
+    },
+    {
+      "project": "agent-engineering-cycle",
+      "path": "tests/transport.test.mjs",
+      "bytes": 8046,
+      "sha256": "d6c5fcadbd427188389aabdb0c409962e4a8819ff3f90e958894f630080715fa",
+      "current_sha256": "d6c5fcadbd427188389aabdb0c409962e4a8819ff3f90e958894f630080715fa",
+      "matches_design_source": true
+    },
+    {
+      "project": "codex-sol",
+      "path": "src/provider-server.mjs",
+      "bytes": 14068,
+      "sha256": "dd767afdff2f122a89e891eddf5cb74716a4ec7676f5ac59cbff53e07bbdc05a",
+      "current_sha256": "dd767afdff2f122a89e891eddf5cb74716a4ec7676f5ac59cbff53e07bbdc05a",
+      "matches_design_source": true
+    },
+    {
+      "project": "codex-sol",
+      "path": "src/provider-policy.mjs",
+      "bytes": 5211,
+      "sha256": "4899484d0225d21b02aec3c3a9ec5cacaf141a8eb92c8efb747598835036db77",
+      "current_sha256": "4899484d0225d21b02aec3c3a9ec5cacaf141a8eb92c8efb747598835036db77",
+      "matches_design_source": true
+    },
+    {
+      "project": "codex-sol",
+      "path": "src/architecture/index.mjs",
+      "bytes": 29852,
+      "sha256": "f071f57d27e404ac76ef716ead340c9eaf55dd6ee597c14f3948574279cc7f62",
+      "current_sha256": "f071f57d27e404ac76ef716ead340c9eaf55dd6ee597c14f3948574279cc7f62",
+      "matches_design_source": true
+    },
+    {
+      "project": "codex-sol",
+      "path": "src/workspace-read.mjs",
+      "bytes": 6434,
+      "sha256": "6f704e82c0b82ced4e568387a2d46c781d75b81cd73daa8f96c6c70653645642",
+      "current_sha256": "6f704e82c0b82ced4e568387a2d46c781d75b81cd73daa8f96c6c70653645642",
+      "matches_design_source": true
+    },
+    {
+      "project": "codex-sol",
+      "path": "src/read.mjs",
+      "bytes": 3571,
+      "sha256": "57dc3be78ecd3a76b2f6f4793ba1276414fa8b6cf49216843a59e3572480dae3",
+      "current_sha256": "57dc3be78ecd3a76b2f6f4793ba1276414fa8b6cf49216843a59e3572480dae3",
+      "matches_design_source": true
+    },
+    {
+      "project": "codex-sol",
+      "path": "src/recall.mjs",
+      "bytes": 11519,
+      "sha256": "8b014d7cdf5270d580076d6cd19791720c8c42d58d35464031a2e95e30b525a6",
+      "current_sha256": "8b014d7cdf5270d580076d6cd19791720c8c42d58d35464031a2e95e30b525a6",
+      "matches_design_source": true
+    },
+    {
+      "project": "codex-sol",
+      "path": "scripts/package-provider.mjs",
+      "bytes": 12112,
+      "sha256": "9aac823ccb0dc812d8ee6caca57c10a0d20456e123bfb70ad143c1e02c396e79",
+      "current_sha256": "9aac823ccb0dc812d8ee6caca57c10a0d20456e123bfb70ad143c1e02c396e79",
+      "matches_design_source": true
+    }
+  ]
+}

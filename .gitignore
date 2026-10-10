@@ -1,0 +1,7 @@
+node_modules/
+.codex/engineering-cycle/
+slop/
+.env
+.env.*
+!.env.example
+*.log

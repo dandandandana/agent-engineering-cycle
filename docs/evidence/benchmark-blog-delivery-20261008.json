@@ -1,0 +1,696 @@
+{
+  "checked_at": "2026-10-08T09:28:39.212Z",
+  "global_installation": {
+    "plugin_id": "agent-engineering-cycle@engineering-cycle-local",
+    "enabled": true,
+    "installed_path": "C:/Users/dandandandana/.codex/plugins/cache/engineering-cycle-local/agent-engineering-cycle/0.1.0",
+    "version": "0.1.0",
+    "source_files": [
+      {
+        "path": "src/adapters/calibrate.mjs",
+        "source_sha256": "6b2abd40726f1a4caa1dc99b9c1e7fdfd9f838a8927c68f13d1a01422887b965",
+        "installed_sha256": "6b2abd40726f1a4caa1dc99b9c1e7fdfd9f838a8927c68f13d1a01422887b965",
+        "frozen_v3_sha256": "6b2abd40726f1a4caa1dc99b9c1e7fdfd9f838a8927c68f13d1a01422887b965",
+        "match": true
+      },
+      {
+        "path": "src/adapters/qa-cli.mjs",
+        "source_sha256": "bba14ff5bbdd8df6547ca1ae7ce4a7194df184486c4fe739e48463ddcc99de16",
+        "installed_sha256": "bba14ff5bbdd8df6547ca1ae7ce4a7194df184486c4fe739e48463ddcc99de16",
+        "frozen_v3_sha256": "bba14ff5bbdd8df6547ca1ae7ce4a7194df184486c4fe739e48463ddcc99de16",
+        "match": true
+      },
+      {
+        "path": "src/adapters/qa-sources.mjs",
+        "source_sha256": "358fafc59dd041a3b93a721e5b93cc94fa629d372ed75bc48485862531ab6332",
+        "installed_sha256": "358fafc59dd041a3b93a721e5b93cc94fa629d372ed75bc48485862531ab6332",
+        "frozen_v3_sha256": "358fafc59dd041a3b93a721e5b93cc94fa629d372ed75bc48485862531ab6332",
+        "match": true
+      },
+      {
+        "path": "src/adapters/qa-worker.mjs",
+        "source_sha256": "ca0c0455de398d3ce760471ca09aacf916e226b43a09a4d65e9f73ea072743ad",
+        "installed_sha256": "ca0c0455de398d3ce760471ca09aacf916e226b43a09a4d65e9f73ea072743ad",
+        "frozen_v3_sha256": "ca0c0455de398d3ce760471ca09aacf916e226b43a09a4d65e9f73ea072743ad",
+        "match": true
+      },
+      {
+        "path": "src/cli.mjs",
+        "source_sha256": "47d373469e040049d12927ff58e246ffa5dd3c6060794506dece5329d22d70e6",
+        "installed_sha256": "47d373469e040049d12927ff58e246ffa5dd3c6060794506dece5329d22d70e6",
+        "frozen_v3_sha256": "47d373469e040049d12927ff58e246ffa5dd3c6060794506dece5329d22d70e6",
+        "match": true
+      },
+      {
+        "path": "src/core/contracts.mjs",
+        "source_sha256": "b389a4f5e4b4a0b8376a84b3722afffbad48a544f440730930c6c9c45f4a3d35",
+        "installed_sha256": "b389a4f5e4b4a0b8376a84b3722afffbad48a544f440730930c6c9c45f4a3d35",
+        "frozen_v3_sha256": "b389a4f5e4b4a0b8376a84b3722afffbad48a544f440730930c6c9c45f4a3d35",
+        "match": true
+      },
+      {
+        "path": "src/core/cycle.mjs",
+        "source_sha256": "306f7dde0358ee327e5eaab31a2a90e58c033e585754dd0a2ac480d3e29b0d68",
+        "installed_sha256": "306f7dde0358ee327e5eaab31a2a90e58c033e585754dd0a2ac480d3e29b0d68",
+        "frozen_v3_sha256": "306f7dde0358ee327e5eaab31a2a90e58c033e585754dd0a2ac480d3e29b0d68",
+        "match": true
+      },
+      {
+        "path": "src/hook.mjs",
+        "source_sha256": "cacec33cf05ae42f46b9d82760c9ccc5f084d7c3c17de08fc23324ddd2638b77",
+        "installed_sha256": "cacec33cf05ae42f46b9d82760c9ccc5f084d7c3c17de08fc23324ddd2638b77",
+        "frozen_v3_sha256": "cacec33cf05ae42f46b9d82760c9ccc5f084d7c3c17de08fc23324ddd2638b77",
+        "match": true
+      },
+      {
+        "path": "src/local/authority.mjs",
+        "source_sha256": "98f9e9e6421af5328cf3ff78825b75238514b1aac5b9d7d8e46c3bbc8ce438d8",
+        "installed_sha256": "98f9e9e6421af5328cf3ff78825b75238514b1aac5b9d7d8e46c3bbc8ce438d8",
+        "frozen_v3_sha256": "98f9e9e6421af5328cf3ff78825b75238514b1aac5b9d7d8e46c3bbc8ce438d8",
+        "match": true
+      },
+      {
+        "path": "src/local/check-runner.mjs",
+        "source_sha256": "91174d4d314a2b3ddcfc3732d0051a297643ed5e424f8d6cf6c3796d476a4fe0",
+        "installed_sha256": "91174d4d314a2b3ddcfc3732d0051a297643ed5e424f8d6cf6c3796d476a4fe0",
+        "frozen_v3_sha256": "91174d4d314a2b3ddcfc3732d0051a297643ed5e424f8d6cf6c3796d476a4fe0",
+        "match": true
+      },
+      {
+        "path": "src/local/config.mjs",
+        "source_sha256": "3f7bc52bd2f156fdadb87c90315948e31142de135ec914bc475b5fd13b1c84ae",
+        "installed_sha256": "3f7bc52bd2f156fdadb87c90315948e31142de135ec914bc475b5fd13b1c84ae",
+        "frozen_v3_sha256": "3f7bc52bd2f156fdadb87c90315948e31142de135ec914bc475b5fd13b1c84ae",
+        "match": true
+      },
+      {
+        "path": "src/local/implementation-notes.mjs",
+        "source_sha256": "b7a3866b6610d1423d83af93a9d22a21921e05de1dd70aaf12c9fd96b98c10c5",
+        "installed_sha256": "b7a3866b6610d1423d83af93a9d22a21921e05de1dd70aaf12c9fd96b98c10c5",
+        "frozen_v3_sha256": "b7a3866b6610d1423d83af93a9d22a21921e05de1dd70aaf12c9fd96b98c10c5",
+        "match": true
+      },
+      {
+        "path": "src/local/store.mjs",
+        "source_sha256": "cbd26b55d43ed97a9ee9676f024a0519893e0f561717664c46e065bec3a9915a",
+        "installed_sha256": "cbd26b55d43ed97a9ee9676f024a0519893e0f561717664c46e065bec3a9915a",
+        "frozen_v3_sha256": "cbd26b55d43ed97a9ee9676f024a0519893e0f561717664c46e065bec3a9915a",
+        "match": true
+      },
+      {
+        "path": "src/local/workspace.mjs",
+        "source_sha256": "bbb0f9855578cfd3d17cc127441b0bab59b5709423bba8acf1304a681f705878",
+        "installed_sha256": "bbb0f9855578cfd3d17cc127441b0bab59b5709423bba8acf1304a681f705878",
+        "frozen_v3_sha256": "bbb0f9855578cfd3d17cc127441b0bab59b5709423bba8acf1304a681f705878",
+        "match": true
+      },
+      {
+        "path": "src/runtime.mjs",
+        "source_sha256": "2a6612de98b98dc4948f6d7ada61b847fe17d0a4cb0a4e9623820d1032dd5699",
+        "installed_sha256": "2a6612de98b98dc4948f6d7ada61b847fe17d0a4cb0a4e9623820d1032dd5699",
+        "frozen_v3_sha256": "2a6612de98b98dc4948f6d7ada61b847fe17d0a4cb0a4e9623820d1032dd5699",
+        "match": true
+      },
+      {
+        "path": "src/server.mjs",
+        "source_sha256": "f19a056040b8b3a6d0ea7bec1eb842ae54d66f86cf8bb9e3389017b6788f2d7e",
+        "installed_sha256": "f19a056040b8b3a6d0ea7bec1eb842ae54d66f86cf8bb9e3389017b6788f2d7e",
+        "frozen_v3_sha256": "f19a056040b8b3a6d0ea7bec1eb842ae54d66f86cf8bb9e3389017b6788f2d7e",
+        "match": true
+      }
+    ]
+  },
+  "metrics": {
+    "task_success": {
+      "numerator": 2,
+      "denominator": 8,
+      "rate": 0.25
+    },
+    "behavior_pass": {
+      "numerator": 41,
+      "denominator": 41,
+      "rate": 1
+    },
+    "code_compliance": {
+      "numerator": 88,
+      "denominator": 96,
+      "rate": 0.9166666666666666,
+      "unverified": 0
+    },
+    "effective_reuse": {
+      "numerator": 4,
+      "denominator": 25,
+      "rate": 0.16,
+      "unverified": 0
+    },
+    "observed_reuse": {
+      "numerator": 19,
+      "denominator": 25,
+      "rate": 0.76
+    }
+  },
+  "cases": [
+    {
+      "id": "B01",
+      "success": true,
+      "behavior_passed": 6,
+      "behavior_total": 6,
+      "compliance_passed": 12,
+      "compliance_total": 12,
+      "findings": []
+    },
+    {
+      "id": "B02",
+      "success": false,
+      "behavior_passed": 5,
+      "behavior_total": 5,
+      "compliance_passed": 11,
+      "compliance_total": 12,
+      "findings": [
+        {
+          "id": "component_registry",
+          "status": "failed",
+          "findings": [
+            {
+              "code": "PUBLIC_CONTRACT_NOT_SYNCHRONIZED"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "B03",
+      "success": true,
+      "behavior_passed": 4,
+      "behavior_total": 4,
+      "compliance_passed": 12,
+      "compliance_total": 12,
+      "findings": []
+    },
+    {
+      "id": "B04",
+      "success": false,
+      "behavior_passed": 5,
+      "behavior_total": 5,
+      "compliance_passed": 10,
+      "compliance_total": 12,
+      "findings": [
+        {
+          "id": "component_registry",
+          "status": "failed",
+          "findings": [
+            {
+              "code": "PUBLIC_CONTRACT_NOT_SYNCHRONIZED"
+            }
+          ]
+        },
+        {
+          "id": "no_copied_component",
+          "status": "failed",
+          "findings": [
+            {
+              "path": "src/features.mjs",
+              "code": "COPIED_PROTECTED_FUNCTION_BODY"
+            },
+            {
+              "path": "src/features.mjs",
+              "code": "COPIED_PROTECTED_FUNCTION_BODY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "B05",
+      "success": false,
+      "behavior_passed": 5,
+      "behavior_total": 5,
+      "compliance_passed": 11,
+      "compliance_total": 12,
+      "findings": [
+        {
+          "id": "component_registry",
+          "status": "failed",
+          "findings": [
+            {
+              "code": "PUBLIC_CONTRACT_NOT_SYNCHRONIZED"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "B06",
+      "success": false,
+      "behavior_passed": 5,
+      "behavior_total": 5,
+      "compliance_passed": 11,
+      "compliance_total": 12,
+      "findings": [
+        {
+          "id": "component_registry",
+          "status": "failed",
+          "findings": [
+            {
+              "code": "PUBLIC_CONTRACT_NOT_SYNCHRONIZED"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "B07",
+      "success": false,
+      "behavior_passed": 6,
+      "behavior_total": 6,
+      "compliance_passed": 10,
+      "compliance_total": 12,
+      "findings": [
+        {
+          "id": "component_registry",
+          "status": "failed",
+          "findings": [
+            {
+              "code": "PUBLIC_CONTRACT_NOT_SYNCHRONIZED"
+            }
+          ]
+        },
+        {
+          "id": "no_copied_component",
+          "status": "failed",
+          "findings": [
+            {
+              "path": "src/features.mjs",
+              "code": "COPIED_PROTECTED_FUNCTION_BODY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "B08",
+      "success": false,
+      "behavior_passed": 5,
+      "behavior_total": 5,
+      "compliance_passed": 11,
+      "compliance_total": 12,
+      "findings": [
+        {
+          "id": "component_registry",
+          "status": "failed",
+          "findings": [
+            {
+              "code": "PUBLIC_CONTRACT_NOT_SYNCHRONIZED"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "original_model_run": {
+    "path": "slop/blog-benchmark-20261008-v3/report.json",
+    "model": "gpt-6-luna",
+    "effort": "max",
+    "concurrency": 2,
+    "usage": {
+      "input_tokens": 11157880,
+      "cached_input_tokens": 9980160,
+      "output_tokens": 320244
+    },
+    "duration_ms": 2613650,
+    "authentication_links_removed": true,
+    "installation": {
+      "plugin_id": "agent-engineering-cycle@engineering-cycle-bench",
+      "version": "0.1.0",
+      "installed": true,
+      "enabled": "explicit per-invocation config; actual activation required by protocol score",
+      "hook_instrumentation": "Vetted benchmark wrapper forwards stock handler output/exit; scoped hook-trust bypass, no persisted user trust claim.",
+      "original_handler_sha256": "cacec33cf05ae42f46b9d82760c9ccc5f084d7c3c17de08fc23324ddd2638b77",
+      "wrapper_sha256": "eed4fc73ffe66ebe120968cbba865b41f044dccb554ef677ff0da81e5d80976a",
+      "hook_definitions_sha256": "ad1980876d4d909ad4fad0b54e74662e8330c32386948e97cff5e83df4f61a4b",
+      "owned_config_sha256": "bc3e0650c1d97bf21a0d2fc53fd4491e7146ac0b51b691188c58c2148188078b"
+    },
+    "rows": [
+      {
+        "id": "B01",
+        "status": "model-completed",
+        "current_notes": "current",
+        "checks_current": true,
+        "fixture_closeout": "abandoned"
+      },
+      {
+        "id": "B02",
+        "status": "model-completed",
+        "current_notes": "current",
+        "checks_current": true,
+        "fixture_closeout": "abandoned"
+      },
+      {
+        "id": "B03",
+        "status": "model-completed",
+        "current_notes": "current",
+        "checks_current": true,
+        "fixture_closeout": "abandoned"
+      },
+      {
+        "id": "B04",
+        "status": "model-completed",
+        "current_notes": "current",
+        "checks_current": true,
+        "fixture_closeout": "abandoned"
+      },
+      {
+        "id": "B05",
+        "status": "model-completed",
+        "current_notes": "current",
+        "checks_current": true,
+        "fixture_closeout": "abandoned"
+      },
+      {
+        "id": "B06",
+        "status": "model-completed",
+        "current_notes": "current",
+        "checks_current": true,
+        "fixture_closeout": "abandoned"
+      },
+      {
+        "id": "B07",
+        "status": "model-completed",
+        "current_notes": "current",
+        "checks_current": true,
+        "fixture_closeout": "abandoned"
+      },
+      {
+        "id": "B08",
+        "status": "model-completed",
+        "current_notes": "current",
+        "checks_current": true,
+        "fixture_closeout": "abandoned"
+      }
+    ]
+  },
+  "final_notes_report": "slop/blog-benchmark-20261008-v3-final-notes/report.json",
+  "verified_browser_report": "docs/evidence/benchmark-blog-browser-verified-20261008.json",
+  "final_notes": {
+    "metrics": {
+      "passed_tasks": 8,
+      "task_denominator": 8,
+      "passed_criteria": 32,
+      "criterion_denominator": 32
+    },
+    "strict_probe": {
+      "numerator": 6,
+      "denominator": 8
+    },
+    "authentication_links_removed": true,
+    "temporary_home": {
+      "path": "C:\\Users\\DANDAN~1\\AppData\\Local\\Temp\\cycle-bench-homes-X80oOt",
+      "retained_for_reconciliation": false,
+      "removed": true
+    },
+    "invocations": [
+      {
+        "id": "B02-notes-full-source",
+        "attempted": true,
+        "passed": true,
+        "duration_ms": 208833,
+        "usage": {
+          "input_tokens": 340112,
+          "cached_input_tokens": 272384,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 15151,
+          "reasoning_output_tokens": 13308
+        },
+        "execution_status": "terminal",
+        "thread_id": "01a11acd-4e4c-71e0-ba86-169ebbc1cee4",
+        "evidence": "raw/B02-notes-full-source",
+        "launch_status": "started",
+        "timed_out": false,
+        "capture_error": null,
+        "cleanup_error": null
+      },
+      {
+        "id": "B01-notes-full-source",
+        "attempted": true,
+        "passed": true,
+        "duration_ms": 219688,
+        "usage": {
+          "input_tokens": 351328,
+          "cached_input_tokens": 290560,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 14883,
+          "reasoning_output_tokens": 13318
+        },
+        "execution_status": "terminal",
+        "thread_id": "01a11acd-4e90-7811-b42e-c5a6990f86d8",
+        "evidence": "raw/B01-notes-full-source",
+        "launch_status": "started",
+        "timed_out": false,
+        "capture_error": null,
+        "cleanup_error": null
+      },
+      {
+        "id": "B04-notes-full-source",
+        "attempted": true,
+        "passed": true,
+        "duration_ms": 147387,
+        "usage": {
+          "input_tokens": 208512,
+          "cached_input_tokens": 129792,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 10625,
+          "reasoning_output_tokens": 9450
+        },
+        "execution_status": "terminal",
+        "thread_id": "01a11ad0-a81a-7c53-9bfc-9f90496549c8",
+        "evidence": "raw/B04-notes-full-source",
+        "launch_status": "started",
+        "timed_out": false,
+        "capture_error": null,
+        "cleanup_error": null
+      },
+      {
+        "id": "B03-notes-full-source",
+        "attempted": true,
+        "passed": true,
+        "duration_ms": 173089,
+        "usage": {
+          "input_tokens": 456484,
+          "cached_input_tokens": 391424,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 9864,
+          "reasoning_output_tokens": 7919
+        },
+        "execution_status": "terminal",
+        "thread_id": "01a11ad0-7dc2-70b1-9728-6dd996c85780",
+        "evidence": "raw/B03-notes-full-source",
+        "launch_status": "started",
+        "timed_out": false,
+        "capture_error": null,
+        "cleanup_error": null
+      },
+      {
+        "id": "B06-notes-full-source",
+        "attempted": true,
+        "passed": true,
+        "duration_ms": 204432,
+        "usage": {
+          "input_tokens": 370832,
+          "cached_input_tokens": 312832,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 11915,
+          "reasoning_output_tokens": 10632
+        },
+        "execution_status": "terminal",
+        "thread_id": "01a11ad3-2216-7b42-a709-3350c9395818",
+        "evidence": "raw/B06-notes-full-source",
+        "launch_status": "started",
+        "timed_out": false,
+        "capture_error": null,
+        "cleanup_error": null
+      },
+      {
+        "id": "B05-notes-full-source",
+        "attempted": true,
+        "passed": true,
+        "duration_ms": 308240,
+        "usage": {
+          "input_tokens": 739224,
+          "cached_input_tokens": 652800,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 19552,
+          "reasoning_output_tokens": 16800
+        },
+        "execution_status": "terminal",
+        "thread_id": "01a11ad2-e833-7140-84ba-d1a0ee55c29a",
+        "evidence": "raw/B05-notes-full-source",
+        "launch_status": "started",
+        "timed_out": false,
+        "capture_error": null,
+        "cleanup_error": null
+      },
+      {
+        "id": "B07-notes-full-source",
+        "attempted": true,
+        "passed": true,
+        "duration_ms": 173989,
+        "usage": {
+          "input_tokens": 162799,
+          "cached_input_tokens": 129536,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 12601,
+          "reasoning_output_tokens": 11550
+        },
+        "execution_status": "terminal",
+        "thread_id": "01a11ad6-40ac-7b51-baf9-8bdc4c25e193",
+        "evidence": "raw/B07-notes-full-source",
+        "launch_status": "started",
+        "timed_out": false,
+        "capture_error": null,
+        "cleanup_error": null
+      },
+      {
+        "id": "B08-notes-full-source",
+        "attempted": true,
+        "passed": true,
+        "duration_ms": 196754,
+        "usage": {
+          "input_tokens": 490678,
+          "cached_input_tokens": 419072,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 11133,
+          "reasoning_output_tokens": 9651
+        },
+        "execution_status": "terminal",
+        "thread_id": "01a11ad7-9c5f-7852-8569-ea00479fea35",
+        "evidence": "raw/B08-notes-full-source",
+        "launch_status": "started",
+        "timed_out": false,
+        "capture_error": null,
+        "cleanup_error": null
+      }
+    ]
+  },
+  "browser": {
+    "passed": true,
+    "checks": [
+      "real-list-pagination",
+      "real-search",
+      "real-review-pending-not-public",
+      "real-bulk-approval",
+      "real-moderation-and-safe-text",
+      "real-hidden-review-removed",
+      "real-draft-edit-and-publish",
+      "empty-result",
+      "injected-failure-retry-to-real-api",
+      "mobile-no-horizontal-overflow",
+      "keyboard-navigation"
+    ],
+    "script_integrity": {
+      "expected_sha256": "fde9077ecaeb8d6e1af3dd2f1964fdb54012639ebfb6207d8d5a20f59a5590fe",
+      "before_sha256": "fde9077ecaeb8d6e1af3dd2f1964fdb54012639ebfb6207d8d5a20f59a5590fe",
+      "after_sha256": "fde9077ecaeb8d6e1af3dd2f1964fdb54012639ebfb6207d8d5a20f59a5590fe",
+      "unchanged": true
+    },
+    "evidence": "D:\\zzd\\agent-engineering-cycle\\slop\\blog-benchmark-20261008-v3\\demo\\slop\\browser-verified\\browser-evidence.json"
+  },
+  "evidence_hashes": {
+    "slop/blog-benchmark-20261008-v3/report.json": "24451891fddf68fe97123371c854a97cb5bc592bd6b222282057381dd3006c58",
+    "slop/blog-benchmark-20261008-v3-final-notes/report.json": "f28498cb7dae9de7c8d5c6cf69a03864111ea522e1c4681d35311c93d4b56f01",
+    "docs/evidence/benchmark-blog-browser-verified-20261008.json": "a912eaf77d67300fe72fba0ff8999cf0d9e2d2a8a106daa5ad1892936c1a9208",
+    "docs/evidence/check-benchmark-blog-delivery-20261008.txt": "141bab0b7eb33bbdd80c07afa29d95111c0676fdc7539365205310ada6453b96",
+    "docs/evidence/check-benchmark-blog-targeted-final-20261008.txt": "5e697ea9a1268f6c883baaaca7f6be0348db8a7e8926b8f7c11aa99d5b745e50",
+    "docs/evidence/benchmark-blog-cleanup-20261008.json": "f3af7e135b8ff163e5f05a64ee1bf38ed3e97617213102e28527c306bdfdc5f6"
+  },
+  "cleanup_report": "docs/evidence/benchmark-blog-cleanup-20261008.json",
+  "cleanup": {
+    "checked_at": "2026-10-08T09:43:54.927Z",
+    "owned_process_inventory": "No codex/node/git command line matched benchmark scopes or cycle-bench-homes before cleanup.",
+    "original_unknown_failure": "v1 original raw facts retained; PIDs45804/50260 later observed absent. Full-context failure was before native launch due to validated stdin budget.",
+    "homes": [
+      {
+        "path": "C:\\Users\\DANDAN~1\\AppData\\Local\\Temp\\cycle-bench-homes-0udgIZ",
+        "removed": true,
+        "authentication_links": [
+          {
+            "role": "plain",
+            "exists": false
+          },
+          {
+            "role": "skill",
+            "exists": false
+          },
+          {
+            "role": "plugin",
+            "exists": false
+          }
+        ]
+      },
+      {
+        "path": "C:\\Users\\DANDAN~1\\AppData\\Local\\Temp\\cycle-bench-homes-mQB0J2",
+        "removed": true,
+        "authentication_links": [
+          {
+            "role": "plain",
+            "exists": false
+          },
+          {
+            "role": "skill",
+            "exists": false
+          },
+          {
+            "role": "plugin",
+            "exists": false
+          }
+        ]
+      },
+      {
+        "path": "C:\\Users\\DANDAN~1\\AppData\\Local\\Temp\\cycle-bench-homes-GT0MUO",
+        "removed": true,
+        "authentication_links": [
+          {
+            "role": "plain",
+            "exists": false
+          },
+          {
+            "role": "skill",
+            "exists": false
+          },
+          {
+            "role": "plugin",
+            "exists": false
+          }
+        ]
+      },
+      {
+        "path": "C:\\Users\\DANDAN~1\\AppData\\Local\\Temp\\cycle-bench-homes-A2GRGM",
+        "removed": true,
+        "authentication_links": [
+          {
+            "role": "plain",
+            "exists": false
+          },
+          {
+            "role": "skill",
+            "exists": false
+          },
+          {
+            "role": "plugin",
+            "exists": false
+          }
+        ]
+      }
+    ]
+  },
+  "demo_readme": "slop/blog-benchmark-20261008-v3/demo/README.benchmark.md",
+  "final_source_identity": {
+    "benchmarks/blog.mjs": "c797108e4b5d521890306d6e95430c3f2fa545c0fb38f4943e8d0a1c578d650a",
+    "benchmarks/live.mjs": "f7a66222692f5fa7d6d2e1bda53ee0f7ddebc07aa3af0a4872806d1a2b016904",
+    "benchmarks/blog-browser.mjs": "8792bcc38d7894e75711f71b0c5aff8c00600841f14cc425981a98dced4c5cc5",
+    "benchmarks/blog-score.mjs": "1a376e4019a941904db65ed7054a13f878f62fedb2fe910d990040b201bb57a1",
+    "benchmarks/hook-observer.mjs": "402e8c52dc099bfaa2394ebac94b673558efba30ad6e4afa4ddbb814d5fe22f7",
+    "tests/benchmark-blog.test.mjs": "50bc40c795316108a94b1bf43f66c4365c0713a8a14613771b39757c1e207efc",
+    "tests/benchmark-judge-files.test.mjs": "542eb43a60525f40339407f463ffeb18d1b763db57e2d4bcc713ad4bff847ea5",
+    "package.json": "82153db00ece989775ceeef763a80da03831ca7162525673c9d7003d34512241"
+  }
+}

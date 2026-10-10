@@ -1,0 +1,86 @@
+{
+  "checked_at": "2026-10-07T13:44:34.532Z",
+  "platform": "win32",
+  "node": "v24.11.0",
+  "outcome": "passed",
+  "current_complete": true,
+  "job_id": "ef79655b-28fa-4c0f-96d5-43a06aae6c4c",
+  "assurance": {
+    "distinct_execution": true,
+    "fresh_session": true,
+    "frozen_input_delivery": true,
+    "permission_observed": true,
+    "terminal_observed": true
+  },
+  "model_invocations": 1,
+  "fixture_inputs_current": true,
+  "exported": [
+    {
+      "id": "p0-sandbox-86d1162740c1bf082d3235b97a4a367532f3acf38681b41d15f0087dd2cf1df9",
+      "digest": "86d1162740c1bf082d3235b97a4a367532f3acf38681b41d15f0087dd2cf1df9",
+      "kind": "p0-sandbox"
+    },
+    {
+      "id": "p0-live-qa-feabcacf369ec79a380b543ed054a1a23d4bb1716ea6f3b108e53bc876b0b59d",
+      "digest": "feabcacf369ec79a380b543ed054a1a23d4bb1716ea6f3b108e53bc876b0b59d",
+      "kind": "p0-live-qa"
+    },
+    {
+      "id": "artifact-21afe4c2b2418d4e0e5a60431be759106d1a6272bf99673b7127a763da0e3d44",
+      "digest": "21afe4c2b2418d4e0e5a60431be759106d1a6272bf99673b7127a763da0e3d44",
+      "kind": "artifact"
+    },
+    {
+      "id": "artifact-e8e745c3b34a3384b7303e0b7424d24a1b09d78ffc2f8048ae31e6cc83b2e18c",
+      "digest": "e8e745c3b34a3384b7303e0b7424d24a1b09d78ffc2f8048ae31e6cc83b2e18c",
+      "kind": "artifact"
+    },
+    {
+      "id": "artifact-5f0490056840c67a552d57973a10866e8cfa9423c30f2a89825f21f10e8bef9e",
+      "digest": "5f0490056840c67a552d57973a10866e8cfa9423c30f2a89825f21f10e8bef9e",
+      "kind": "artifact"
+    },
+    {
+      "id": "verification-b7fcd7c3e575e86595aac5858ab8624674cb2096f176be2bf0e89659fb2937b0",
+      "digest": "b7fcd7c3e575e86595aac5858ab8624674cb2096f176be2bf0e89659fb2937b0",
+      "kind": "verification"
+    },
+    {
+      "id": "qa-report-9d7ec8944a66e6ed8eb86f4439ceec9c48ddca684d14e11ec52c4555d77e504f",
+      "digest": "9d7ec8944a66e6ed8eb86f4439ceec9c48ddca684d14e11ec52c4555d77e504f",
+      "kind": "qa-report"
+    },
+    {
+      "id": "completion-0b657e23675fae8081740915af7fbdc79ecb9306bceb387fea51de85e138fc51",
+      "digest": "0b657e23675fae8081740915af7fbdc79ecb9306bceb387fea51de85e138fc51",
+      "kind": "completion"
+    },
+    {
+      "id": "qa-raw-71fdabb260d0804fb78e8dab5d86eb8652e478d036f44c88f85bf6e97a565471",
+      "digest": "71fdabb260d0804fb78e8dab5d86eb8652e478d036f44c88f85bf6e97a565471",
+      "kind": "qa-raw"
+    },
+    {
+      "id": "snapshot-50f0f710f15f5fc7a21e393fce579d04b1ab8f4faa2f30c801a2e6c598e54f57",
+      "digest": "50f0f710f15f5fc7a21e393fce579d04b1ab8f4faa2f30c801a2e6c598e54f57",
+      "kind": "snapshot"
+    },
+    {
+      "id": "outcome-479f5fab1adae9ec4d15db4aa6a1eeb5afb42596d01f656e4111abc9155dd0fb",
+      "digest": "479f5fab1adae9ec4d15db4aa6a1eeb5afb42596d01f656e4111abc9155dd0fb",
+      "kind": "outcome"
+    },
+    {
+      "id": "check-b0485b9c722853e9420df3b0fddca7265d172f692a5c80ecfdb2f6d105cf74ab",
+      "digest": "b0485b9c722853e9420df3b0fddca7265d172f692a5c80ecfdb2f6d105cf74ab",
+      "kind": "check"
+    }
+  ],
+  "utf8_json_checked_files": 83,
+  "local_document_links": 36,
+  "authority_exported": false,
+  "coverage_limits": [
+    "Readonly verification and explicit evidence export; no new QA, install or authorization.",
+    "No Desktop Hook or untested platform acceptance."
+  ]
+}

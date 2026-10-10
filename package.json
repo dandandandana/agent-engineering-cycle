@@ -1,0 +1,27 @@
+{
+  "name": "agent-engineering-cycle",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20.8"
+  },
+  "bin": {
+    "engineering-cycle": "src/cli.mjs"
+  },
+  "scripts": {
+    "test": "node scripts/check.mjs",
+    "check": "npm test && npm audit --audit-level=high --registry=https://registry.npmjs.org/",
+    "doctor": "node src/cli.mjs doctor",
+    "p0": "node scripts/p0.mjs",
+    "bench": "node benchmarks/run.mjs",
+    "bench:live": "node benchmarks/run.mjs --live",
+    "bench:blog": "node benchmarks/blog.mjs",
+    "bench:reuse-calibrate": "node benchmarks/blog-reuse-v2.mjs reference-calibrate"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/client": "2.2.0",
+    "@modelcontextprotocol/server": "2.2.0",
+    "zod": "4.6.5"
+  }
+}

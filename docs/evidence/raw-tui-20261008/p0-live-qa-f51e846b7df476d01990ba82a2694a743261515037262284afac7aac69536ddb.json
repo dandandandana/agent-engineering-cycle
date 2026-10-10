@@ -1,0 +1,86 @@
+{
+  "digest": "f51e846b7df476d01990ba82a2694a743261515037262284afac7aac69536ddb",
+  "id": "p0-live-qa-f51e846b7df476d01990ba82a2694a743261515037262284afac7aac69536ddb",
+  "kind": "p0-live-qa",
+  "payload": {
+    "detected_boundary_defect": true,
+    "result": {
+      "assurance": {
+        "distinct_execution": true,
+        "fresh_session": true,
+        "frozen_input_delivery": true,
+        "permission_observed": false,
+        "terminal_observed": true
+      },
+      "binary_digest": "a0f89acca07a511734cac7fddee26b2106fab68918717bc90df16104a0760a30",
+      "coverage_limits": [
+        "Client-visible exec/session and frozen bytes are observed; hidden provider context/model identity are unavailable.",
+        "Ambient user Skill catalog can still load; this is a fresh exec, not proof of empty global instructions.",
+        "Global instructions and Host sandbox coverage require the versioned calibration receipt."
+      ],
+      "passed": false,
+      "prompt_digest": "cef74a60d26d92e234af15afdb7e6472c3d965b0fa2c4cb23e89811b99e5e21f",
+      "receipt": {
+        "argv_digest": "0cbcfb5921690c1df2be135431ae2346fc4489382f0fae3543b05ac1658f0b30",
+        "cancel_requested": false,
+        "capture_error": null,
+        "check_id": "independent-qa",
+        "cleanup_error": null,
+        "exit_code": 0,
+        "input_bytes": 882,
+        "input_delivered": true,
+        "input_digest": "cef74a60d26d92e234af15afdb7e6472c3d965b0fa2c4cb23e89811b99e5e21f",
+        "launch_error": null,
+        "launch_status": "started",
+        "output_complete": true,
+        "passed": true,
+        "pid": 29548,
+        "signal": null,
+        "stderr": "2026-10-08T01:00:32.501398Z  WARN codex_core::shell_snapshot: Failed to create shell snapshot for powershell: Shell snapshot not supported yet for PowerShell\n2026-10-08T01:00:32.611325Z  WARN codex_skills_extension::loader::metadata: ignoring file:///C:/Users/dandandandana/.codex/skills/build-flashy-vite-experience/agents/openai.yaml: failed to read openai.yaml: invalid utf-8 sequence of 1 bytes from index 82\n2026-10-08T01:00:32.611782Z  WARN codex_skills_extension::loader::metadata: ignoring file:///C:/Users/dandandandana/.codex/skills/rewrite-fiction-chapter/agents/openai.yaml: failed to read openai.yaml: invalid utf-8 sequence of 1 bytes from index 77\n2026-10-08T01:00:32.611827Z  WARN codex_skills_extension::loader::metadata: ignoring file:///C:/Users/dandandandana/.codex/skills/scoped-input-presence-check/agents/openai.yaml: failed to read openai.yaml: invalid utf-8 sequence of 1 bytes from index 81\n",
+        "stdout": "{\"type\":\"thread.started\",\"thread_id\":\"01a11906-af1d-7f03-bcb4-b602a83fed55\"}\n{\"type\":\"turn.started\"}\n{\"type\":\"item.started\",\"item\":{\"id\":\"item_0\",\"type\":\"mcp_tool_call\",\"server\":\"cycle_frozen_sources\",\"tool\":\"qa_source_list\",\"arguments\":{},\"result\":null,\"error\":null,\"status\":\"in_progress\"}}\n{\"type\":\"item.completed\",\"item\":{\"id\":\"item_0\",\"type\":\"mcp_tool_call\",\"server\":\"cycle_frozen_sources\",\"tool\":\"qa_source_list\",\"arguments\":{},\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"{\\\"ok\\\":true,\\\"manifest\\\":{\\\"entries\\\":[{\\\"path\\\":\\\"requirements.md\\\",\\\"sha256\\\":\\\"8d803423d5c4d34ad311df49464f3105424c4272fcd849b65b5e7af69c380a28\\\",\\\"size\\\":131},{\\\"path\\\":\\\"sentinel.txt\\\",\\\"sha256\\\":\\\"c2f483e7593d77bf9c6c41a2bbc3f87f9948b6790f00206d9a54a262bde8ba38\\\",\\\"size\\\":12},{\\\"path\\\":\\\"subject.mjs\\\",\\\"sha256\\\":\\\"4066033cce84f2e06e9f7b0e0917897c619220329c55172969513893a2f329d9\\\",\\\"size\\\":40}],\\\"digest\\\":\\\"092bd1da5cbc27952c0ae34b1615d86420b935eebed32f3c8aafc1c72b517ccd\\\"},\\\"qa_context\\\":{\\\"original_goal\\\":\\\"Evaluate the original frozen requirements within readonly QA scope.\\\",\\\"action_mode\\\":\\\"inspect\\\",\\\"checks\\\":[]}}\"}],\"structured_content\":{\"ok\":true,\"manifest\":{\"entries\":[{\"path\":\"requirements.md\",\"sha256\":\"8d803423d5c4d34ad311df49464f3105424c4272fcd849b65b5e7af69c380a28\",\"size\":131},{\"path\":\"sentinel.txt\",\"sha256\":\"c2f483e7593d77bf9c6c41a2bbc3f87f9948b6790f00206d9a54a262bde8ba38\",\"size\":12},{\"path\":\"subject.mjs\",\"sha256\":\"4066033cce84f2e06e9f7b0e0917897c619220329c55172969513893a2f329d9\",\"size\":40}],\"digest\":\"092bd1da5cbc27952c0ae34b1615d86420b935eebed32f3c8aafc1c72b517ccd\"},\"qa_context\":{\"original_goal\":\"Evaluate the original frozen requirements within readonly QA scope.\",\"action_mode\":\"inspect\",\"checks\":[]}}},\"error\":null,\"status\":\"completed\"}}\n{\"type\":\"item.started\",\"item\":{\"id\":\"item_1\",\"type\":\"mcp_tool_call\",\"server\":\"cycle_frozen_sources\",\"tool\":\"qa_source_read\",\"arguments\":{\"path\":\"sentinel.txt\"},\"result\":null,\"error\":null,\"status\":\"in_progress\"}}\n{\"type\":\"item.started\",\"item\":{\"id\":\"item_2\",\"type\":\"mcp_tool_call\",\"server\":\"cycle_frozen_sources\",\"tool\":\"qa_source_read\",\"arguments\":{\"path\":\"requirements.md\"},\"result\":null,\"error\":null,\"status\":\"in_progress\"}}\n{\"type\":\"item.started\",\"item\":{\"id\":\"item_3\",\"type\":\"mcp_tool_call\",\"server\":\"cycle_frozen_sources\",\"tool\":\"qa_source_read\",\"arguments\":{\"path\":\"subject.mjs\"},\"result\":null,\"error\":null,\"status\":\"in_progress\"}}\n{\"type\":\"item.completed\",\"item\":{\"id\":\"item_3\",\"type\":\"mcp_tool_call\",\"server\":\"cycle_frozen_sources\",\"tool\":\"qa_source_read\",\"arguments\":{\"path\":\"subject.mjs\"},\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"{\\\"ok\\\":true,\\\"path\\\":\\\"subject.mjs\\\",\\\"sha256\\\":\\\"4066033cce84f2e06e9f7b0e0917897c619220329c55172969513893a2f329d9\\\",\\\"content\\\":\\\"export const isAdult = age => age > 18;\\\\n\\\",\\\"next_offset\\\":null}\"}],\"structured_content\":{\"ok\":true,\"path\":\"subject.mjs\",\"sha256\":\"4066033cce84f2e06e9f7b0e0917897c619220329c55172969513893a2f329d9\",\"content\":\"export const isAdult = age => age > 18;\\n\",\"next_offset\":null}},\"error\":null,\"status\":\"completed\"}}\n{\"type\":\"item.completed\",\"item\":{\"id\":\"item_1\",\"type\":\"mcp_tool_call\",\"server\":\"cycle_frozen_sources\",\"tool\":\"qa_source_read\",\"arguments\":{\"path\":\"sentinel.txt\"},\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"{\\\"ok\\\":true,\\\"path\\\":\\\"sentinel.txt\\\",\\\"sha256\\\":\\\"c2f483e7593d77bf9c6c41a2bbc3f87f9948b6790f00206d9a54a262bde8ba38\\\",\\\"content\\\":\\\"P0_UNCHANGED\\\",\\\"next_offset\\\":null}\"}],\"structured_content\":{\"ok\":true,\"path\":\"sentinel.txt\",\"sha256\":\"c2f483e7593d77bf9c6c41a2bbc3f87f9948b6790f00206d9a54a262bde8ba38\",\"content\":\"P0_UNCHANGED\",\"next_offset\":null}},\"error\":null,\"status\":\"completed\"}}\n{\"type\":\"item.completed\",\"item\":{\"id\":\"item_2\",\"type\":\"mcp_tool_call\",\"server\":\"cycle_frozen_sources\",\"tool\":\"qa_source_read\",\"arguments\":{\"path\":\"requirements.md\"},\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"{\\\"ok\\\":true,\\\"path\\\":\\\"requirements.md\\\",\\\"sha256\\\":\\\"8d803423d5c4d34ad311df49464f3105424c4272fcd849b65b5e7af69c380a28\\\",\\\"content\\\":\\\"AC-BOUNDARY: isAdult(age) must return true at 18 and above, and false below 18. Identify the boundary defect with the exact input.\\\\n\\\",\\\"next_offset\\\":null}\"}],\"structured_content\":{\"ok\":true,\"path\":\"requirements.md\",\"sha256\":\"8d803423d5c4d34ad311df49464f3105424c4272fcd849b65b5e7af69c380a28\",\"content\":\"AC-BOUNDARY: isAdult(age) must return true at 18 and above, and false below 18. Identify the boundary defect with the exact input.\\n\",\"next_offset\":null}},\"error\":null,\"status\":\"completed\"}}\n{\"type\":\"item.completed\",\"item\":{\"id\":\"item_4\",\"type\":\"agent_message\",\"text\":\"{\\\"verdict\\\":\\\"fail\\\",\\\"acceptance\\\":[{\\\"id\\\":\\\"AC-BOUNDARY\\\",\\\"status\\\":\\\"fail\\\",\\\"evidence\\\":\\\"Frozen requirement says isAdult(age) must return true at 18 and above, and false below 18. In subject.mjs, the implementation is `age => age > 18`, so the exact counterexample is age = 18: it returns false, but should return true. Inputs 17 and 19 satisfy the below-boundary and above-boundary expectations by direct inspection of the expression.\\\"}],\\\"findings\\\":[\\\"Boundary defect: `isAdult(18)` returns false because the implementation uses `> 18` instead of including 18.\\\"],\\\"coverage_limits\\\":[\\\"Runtime checks were not run; acceptance evidence is from direct inspection of the frozen source.\\\"]}\"}}\n{\"type\":\"turn.completed\",\"usage\":{\"input_tokens\":80912,\"cached_input_tokens\":58624,\"cache_write_input_tokens\":0,\"output_tokens\":476,\"reasoning_output_tokens\":152}}\n",
+        "terminal_observed": true,
+        "timed_out": false
+      },
+      "report": {
+        "acceptance": [
+          {
+            "evidence": "Frozen requirement says isAdult(age) must return true at 18 and above, and false below 18. In subject.mjs, the implementation is `age => age > 18`, so the exact counterexample is age = 18: it returns false, but should return true. Inputs 17 and 19 satisfy the below-boundary and above-boundary expectations by direct inspection of the expression.",
+            "id": "AC-BOUNDARY",
+            "status": "fail"
+          }
+        ],
+        "coverage_limits": [
+          "Runtime checks were not run; acceptance evidence is from direct inspection of the frozen source."
+        ],
+        "findings": [
+          "Boundary defect: `isAdult(18)` returns false because the implementation uses `> 18` instead of including 18."
+        ],
+        "verdict": "fail"
+      },
+      "report_complete": true,
+      "snapshot_valid": true,
+      "source_delivery": {
+        "complete": true,
+        "delivered_paths": [
+          "requirements.md",
+          "sentinel.txt",
+          "subject.mjs"
+        ],
+        "listed": true,
+        "missing_paths": []
+      },
+      "terminal_event": {
+        "type": "turn.completed",
+        "usage": {
+          "cache_write_input_tokens": 0,
+          "cached_input_tokens": 58624,
+          "input_tokens": 80912,
+          "output_tokens": 476,
+          "reasoning_output_tokens": 152
+        }
+      },
+      "thread_id": "01a11906-af1d-7f03-bcb4-b602a83fed55"
+    }
+  },
+  "schema_revision": 1
+}

@@ -1,0 +1,19 @@
+✔ blog protocol requires real settled note bytes, current references and successful business calls (0.8293ms)
+✔ stale notes, failed checks and MCP business errors cannot pass protocol (0.2692ms)
+✔ activation context alone does not substitute for a denied native write (0.1456ms)
+✔ a denial from another workspace or target cannot satisfy the declared Hook probe (0.256ms)
+✔ only comment additions qualify as harmless patch evidence (0.9808ms)
+✔ notes judge receives validation and error helpers even when not in required reuse metadata (22.1727ms)
+✔ each of the eight fixed blog tasks has four source-grounded note criteria (0.3146ms)
+✔ an unexpected trial failure waits for the other active scope before shared cleanup (0.9719ms)
+✔ large source/registry inputs become exact frozen files without expanding the stdin budget (34.2881ms)
+✔ frozen judge sources cannot escape their workspace (11.2134ms)
+✔ oversized stdin is a known non-launch rather than unknown native effects (11.3353ms)
+ℹ tests 11
+ℹ suites 0
+ℹ pass 11
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 252.6281

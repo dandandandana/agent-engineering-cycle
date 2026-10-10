@@ -1,0 +1,18 @@
+✔ backend benchmark reports every planned case and removes its temporary fixtures (15340.9138ms)
+✔ saved backend evidence distinguishes wrong prose, stale inputs, and denied effects (17736.6176ms)
+✔ idle hooks remain quiet and do not create workspace state (14091.2669ms)
+✔ an unjoined session stays quiet while another session owns the real current cycle (3183.2211ms)
+✔ runtime binds only a successful non-duplicate settled begin or resume and preserves invoke options (66.3463ms)
+✔ session-start forces context; repeated prompts suppress three times then send a pointer (7706.3889ms)
+✔ Hook denies joined unknown targets and decoded scope intersections, but ignores other-session writes outside scope (3154.6048ms)
+✔ ledger bounds session count, stores hashes, and degrades on corrupt or contended writes (547.0008ms)
+✔ ledger refuses to create a missing cycle directory and reports unavailable writes (4.8481ms)
+✔ oversized Hook context falls back to a parseable bounded cycle-status pointer (0.4702ms)
+ℹ tests 10
+ℹ suites 0
+ℹ pass 10
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 33352.8796

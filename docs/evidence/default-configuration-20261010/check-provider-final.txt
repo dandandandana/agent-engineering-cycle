@@ -1,0 +1,48 @@
+✔ architecture declaration validator is synchronous, returns Normify-validated config, and does not read sources (3.4646ms)
+✔ architecture declaration validation preserves strict-root and Normify module/policy errors (1.2461ms)
+✔ declaration validation does not turn locally valid records into a graph-readiness claim (0.2217ms)
+✔ architecture declaration validation rejects nested and module limits before any compile or source access (6.2446ms)
+✔ captured facts retain undeclared exports without expanding query output; analysis is synchronous and pure (258.9888ms)
+✔ changed source, added and removed real exports and fingerprint drift carry before/current locations and versions (371.4079ms)
+✔ new cumulative formal JS source stays unregistered even when scope assigns a valid module and load is ready (379.1834ms)
+✔ removing a registered module and source retains deleted exports and its old transitive users (322.8757ms)
+✔ deleting an export with declarations retained exposes missing named imports and old consumers (359.4616ms)
+✔ declared missing sources reuse upstream blockers rather than inventing a valid deletion (345.5466ms)
+✔ UID-stable module and source renaming retains old/new paths, relocated exports and users (447.4879ms)
+✔ scope attribution for documents stays a review fact without requiring source registration (298.6883ms)
+✔ legacy without archived before facts reports a gap without guessing historical export removal (204.4489ms)
+✔ declared reference deltas remain distinct from static relations; unrelated uncovered facts are excluded (294.3171ms)
+✔ actual source ownership transfer is visible even when public names and source bytes stay the same (376.2159ms)
+✔ policy-only or declaration-path changes conservatively include every before/current source and UID (377.8997ms)
+✔ declared relation label changes require review without treating them as static import changes (274.0267ms)
+✔ exports outside declared source segments are explicitly uncovered in affected files (144.9182ms)
+✔ pinned Normify compiles independently; JS locations prove ownership, reuse and import impact (280.0804ms)
+✔ module rename retains UID and reverse imports, rebuild is derived from current declarations (220.5223ms)
+✔ fingerprint drift, missing exports and overlapping ownership remain blockers (306.7477ms)
+✔ invalid structure, duplicate UID and declaration dependency policy use upstream diagnostics (327.7912ms)
+✔ undeclared forbidden static imports and removed named exports have source evidence (334.332ms)
+✔ workspace paths, links, malformed JS and cancellation fail safely and release resources (190.9413ms)
+✔ Context opt-in selects architecture by responsibility; source change outside targets invalidates submit and prompt (1124.3654ms)
+✔ real STDIO advertises opt-in query tool and returns compiled provenance plus bounded results (986.8458ms)
+✔ provider package is an independently executable allowlisted MCP artifact with a verifiable manifest (24069.2925ms)
+✔ createProviderServer returns the documented server, store, and read policy (106.5744ms)
+✔ provider initialize advertises the fixed protocol and exposes exactly three tools (1243.181ms)
+✔ query archives complete versions and selected view for byte-exact SHA-verified recall (1474.5706ms)
+✔ all indexed source paths are scope-checked before reading any source bytes (1126.7738ms)
+✔ scoped reads reject credential paths and linked paths before observation capture (1051.37ms)
+✔ default store and index behavior remain compatible; explicit cache is separate and cancellation cleans temporary files (325.819ms)
+✔ repository v2 initializes on an unregistered empty workspace and captures a complete empty inventory (1362.5246ms)
+✔ repository candidates include shared JavaScript and TSX with unknown symbols; a zero keyword hit keeps the full set (1655.2567ms)
+✔ repository budgets report partial or blocked coverage instead of an empty complete inventory (3348.4955ms)
+✔ repository collection becomes unstable when a file appears between its two scans (47.7715ms)
+✔ repository mode excludes secrets and links and rejects out-of-scope reads before capture (1027.895ms)
+✔ repository v2 binds exact authority-document and implementation-verdict exclusions into every query (1072.7081ms)
+✔ repository workspace and scope identities are strict and v1 still rejects the repository root sentinel (990.2826ms)
+ℹ tests 40
+ℹ suites 0
+ℹ pass 40
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 24560.4737

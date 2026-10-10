@@ -1,0 +1,33 @@
+{
+  "digest": "00091e45ca2362b9bcdc01c411b545fe3921d07643395d77eef96319f39131b0",
+  "id": "qa-report-00091e45ca2362b9bcdc01c411b545fe3921d07643395d77eef96319f39131b0",
+  "kind": "qa-report",
+  "payload": {
+    "job_id": "a25ed5d3-594b-4443-bb4e-7ea1f32e1b45",
+    "raw_ref": {
+      "digest": "a1e68f3dee325ea6bf2feccf45fce221c38eccd12c77bebf884a74a0c4b208a7",
+      "id": "qa-raw-a1e68f3dee325ea6bf2feccf45fce221c38eccd12c77bebf884a74a0c4b208a7",
+      "kind": "qa-raw",
+      "schema_revision": 1
+    },
+    "report": {
+      "acceptance": [
+        {
+          "evidence": "`src/age.mjs` implements `Number.isInteger(age) && age >= 18`. The frozen `age-boundaries` check completed with exit code 0 and `AC-AGE-PASS`; its assertions cover 17, 18, 19, a string, NaN, infinity, and a fractional age.",
+          "id": "AC-AGE",
+          "status": "pass"
+        },
+        {
+          "evidence": "`docs/age-notes.md` describes the mechanism and short-circuit behavior, invalid values and effects, absence of external packages, tested boundaries, and maintenance guidance.",
+          "id": "AC-NOTES",
+          "status": "pass"
+        }
+      ],
+      "coverage_limits": [],
+      "findings": [],
+      "verdict": "pass"
+    },
+    "source": "reported"
+  },
+  "schema_revision": 1
+}

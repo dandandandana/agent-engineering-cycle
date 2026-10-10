@@ -1,0 +1,41 @@
+{
+  "digest": "d71aafdeb302b283e95ee7aaa6dc4d11a4ae8cda16e9dc8570bc16e1ef3fdda9",
+  "id": "verification-d71aafdeb302b283e95ee7aaa6dc4d11a4ae8cda16e9dc8570bc16e1ef3fdda9",
+  "kind": "verification",
+  "payload": {
+    "basis_digest": "58384bc89d5ad3632b7b3efb5fe301f68b5b450e38e4a60b392b0f632a9eb337",
+    "config_digest": "559cd1094e19437b99e9dfd88e038dab041b66079f1e6a73eb0fbad42791e0ab",
+    "passed": true,
+    "required": [
+      "age-boundaries"
+    ],
+    "results": [
+      {
+        "argv_digest": "d4e646d523e422f705c6637e9ee27dfb2364ce25d55232bcaeec29eb24cf6de4",
+        "cancel_requested": false,
+        "capture_error": null,
+        "check_id": "age-boundaries",
+        "cleanup_error": null,
+        "exit_code": 0,
+        "input_bytes": 0,
+        "input_delivered": true,
+        "input_digest": null,
+        "launch_error": null,
+        "launch_status": "started",
+        "output_complete": true,
+        "passed": true,
+        "pid": 39500,
+        "raw_ref": {
+          "digest": "e193048185c3c42a9e9ba604c62b0f192872262fac8c30afeb1114f5566f97aa",
+          "id": "check-e193048185c3c42a9e9ba604c62b0f192872262fac8c30afeb1114f5566f97aa",
+          "kind": "check",
+          "schema_revision": 1
+        },
+        "signal": null,
+        "terminal_observed": true,
+        "timed_out": false
+      }
+    ]
+  },
+  "schema_revision": 1
+}

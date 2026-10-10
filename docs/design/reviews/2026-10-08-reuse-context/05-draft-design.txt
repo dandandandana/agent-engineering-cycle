@@ -1,0 +1,144 @@
+# 组件复用与 Hook 上下文控制设计
+
+修订：CRCTX-v1，2026-10-08。状态：四角色架构评审后的设计合同，**运行时尚未实现**。用户目标是提高有效组件复用，并控制 Hook 上下文注入；本轮授权为评审与文档。实施现状、分期和恢复点见[实施文档](component-reuse-implementation.md)，原始意见及裁决见[评审记录](review-history.md#2026-10-08-组件复用与上下文控制)。本增量沿用原 R/D/I/Q、权限和恢复合同，不创建第二套规划系统。
+
+## 1. 目标和当前缺口
+
+写产品代码前发现已有能力，查看真实接口、实现与受影响调用方；选择复用、兼容扩展或有证据的新实现。程序保证来源身份、覆盖和门禁，独立 QA 判断实际适配与结果贡献。不能以 import、一次调用或模型自述代替有效复用。
+
+当前 engineering-cycle 的七工具已存在，但 `cycle_apply` 没有复用门禁；`implementation_targets` 是实现说明目标，不是完整源码写入范围。当前 Hook 没有 session 关联、去重和 UTF-8 字节上限。SoL 全量 server 注册自己的流程、写工具和 Hook，尚无 provider-only 入口。旧安装不具备本文新增能力。
+
+博客 v1 保留：行为 41/41，合规 88/96，严格成功 2/8，严格有效复用 4/25，实际调用观测 19/25。六题登记文案变更影响严格评分，B04/B07另有复制函数体；不能解释成六题功能失败，也不能据此推断 Hook 的因果收益。来源为[原始验收记录](../evidence/benchmark-blog-20261008.md)。
+
+## 2. 职责和部署边界
+
+```mermaid
+flowchart LR
+  Host[Codex TUI] --> Hook[工程循环 Hook：简短状态]
+  Host --> MCP[工程循环 MCP：七工具]
+  Skill[工程循环 Skill：方法与按需参考] --> Host
+  Hook --> View[只读状态投影]
+  MCP --> Core[CycleCore：决定证据、写前门禁、RDIQ]
+  Core --> Writer[现有 WorkspaceAdapter：产品写入]
+  Core --> Gateway[固定配置的发现 adapter]
+  Gateway --> Provider[SoL provider-only MCP]
+  Provider --> Index[既有 ArchitectureIndex / 读取 / recall]
+  Core --> QA[固定检查与冻结输入独立 QA]
+```
+
+| 层 | 唯一责任 | 不授予的能力 |
+| --- | --- | --- |
+| CycleCore / LocalStore | 工程状态、D 证据、binding、受管写入、检查、QA、恢复 | 不能从模型字段生成批准或改验收 |
+| SoL provider | 发现、源字节与静态关系、原始输出召回 | 不拥有工程决定、产品写入、完成或自动续跑 |
+| Hook | 投影程序状态、已匹配原生写入口的短拒绝提示 | 不决定复用、不启动 provider、不执行检查 |
+| Skill | 解释何时查询、怎样判断适配、怎样查看证据 | 不替代运行时门禁、不重复贴完整源码或设计 |
+
+选择 **Cycle 内部 gateway 调用独立 SoL provider**，模型仍只见七个 cycle 工具。provider 的 query/read/recall 按需经 `cycle_artifact` 调用，避免让模型转述结果充当可信回执，也避免第二份流程 instructions。provider 独立分发；cycle 不私有跨仓 import，不复制 Acorn/Normify 索引。
+
+支持组合为工程循环 + provider-only。同一任务启用完整 SoL 控制面属于冲突组合；操作者通过现有宿主清单核验，有实际观测能力才自动诊断。不得自动关闭全局插件或猜测所有 Hook 已关闭。唯一写入 owner 的承诺限定为本集成的**受管产品写入口**；Shell、外部编辑器及未观测插件仍是覆盖边界，相关输入变化会使证据过期，不能宣称全宿主独占或 OS 隔离。
+
+## 3. provider 公共合同
+
+以下为拟实现合同，当前 SoL 不接受这些配置或模式。
+
+- 独立入口、独立打包 manifest；不调用 `createSolRuntime/createSolServer` 全量工厂，不初始化 ContextSessions/ChangeEngine，不注册 Hook，不带工作流 Skill 或 server 流程 instructions。复用 ArchitectureIndex、路径保护、ObservationPack/read/recall 原语。
+- 内部 MCP 只允许 `sol_architecture_query`、`sol_read_file`、`sol_recall`。initialize 能力元数据提供独立协议 `sol-component-discovery/1`、工作区身份、声明文件身份、产品写入 none、观测缓存写入边界；gateway 同时检查实际 tools/list，不能仅凭 server 的 `0.1.0` 字符串接受。
+- 操作者配置固定 executable、argv、发行 manifest 身份、协议版本、工作区内声明路径和超时。gateway 使用 shell=false、受控环境、固定 cwd，不接收模型命令、npx 下载或响应内的执行建议。完整分发身份含运行时代码和锁文件；只检查入口文件不足以防依赖漂移。
+- 观测归档可写到**显式专用 provider-cache**，只保存传输原字节与索引，不保存 D 选择、业务阶段或完成状态。需给现有 ObservationStore 增加受校验的存储位置选择；这是待实现能力。完整 SoL 的 `.codex/sol` 状态语义保留。Cycle 归档可独立恢复的证据后，cache 可清理；它不是第二个工程事实来源。
+- query 除现有 selected view 外，返回完整输入 manifest：声明和所有被索引源码的安全相对路径、SHA-256/缺失事实、query 参数、version、diagnostics、uncovered。现有 `ArchitectureIndex.select()` 单独返回的 version 不足以让 cycle 重读核验；新入口需包裹 `load()` 的 versions，而不是编造摘要。
+- 所有读取限定当前工作区和现有安全路径规则，拒绝秘密/控制目录、链接、越界和不支持的输入。声明中的源路径必须在索引读取前校验，不能等输出后才发现读了秘密。静态 JS ESM 是首版覆盖；动态调用、其他语言、登记缺失显示 uncovered，不把空候选解释成全仓不存在能力。
+- Index 调用者须满足既有工作区锁要求。gateway 在 cycle 写前捕获阶段持 cycle lease；provider 单独按既有锁原语保护索引/缓存，固定锁顺序 cycle → provider，provider 从不回调 cycle。前后 SHA 校验及临时 Normify 目录清理仍必需；合作锁不能防止外部编辑或读取期间 ABA，独立 QA 使用冻结字节。
+
+首次查询或需刷新时，配置/能力/完整度不符即 unavailable，不能自动选 new。有效归档可在发行身份与全部相关文件仍当前时复用，正常 status/Hook 不启动 peer；可用缓存不等于 provider 进程正在运行。
+
+## 4. 配置与七工具演进
+
+新 runtime 保留 v1 严格读取路径，不自动改写旧配置或旧 cycle。新增 `schema_revision:2` 承载可选 `component_reuse`：固定 provider 配置、required 策略及精确 documentation_paths。默认未启用；旧项目保持原语义。新合同标记 contract_revision=2，功能能力单独报告，包版本本轮不变。
+
+启用策略在 begin 固定 policy/config 身份。有效 cycle 不能通过配置变更或模型字段降低已要求的复用门禁；冲突先停止，按已有授权结束/放弃旧任务并由操作者显式迁移。已存在 v1 cycle 不静默升级。begin 的实现说明目标仍与复用覆盖分开。
+
+| 公共工具 | 拟新增行为 | 保持行为 |
+| --- | --- | --- |
+| cycle_control | begin 固定复用策略；resume 保留原操作及计划历史 | 不增授权动作；不恢复重放 |
+| cycle_status | 派生 reuse 状态、覆盖、证据 ID、provider 身份/限制 | 未配置严格只读，不探测或启动 peer；证据分页沿用现有接口 |
+| cycle_artifact | 新 D 专用 discover/read；D prepare/attach 解析并绑定决定 | R/I/Delta 原行为；I 的 implementation_notes 不转为前置复用证明 |
+| cycle_apply | pending 前校验实际目标覆盖、当前 D/查询/读取/前态 | 仍是精确 write/delete；原 scope、grant、expected_sha256 二次校验 |
+| cycle_verify | 对当前复用 lineage 运行配置中已有具名检查 | 模型不能提交新命令或成功字段 |
+| cycle_qa | 冻结 R/D、前后源码、原始复用证据与检查事实 | 不把 I 判词当 QA 输入；保证维度、取消和终态沿原合同 |
+| cycle_reconcile | 设计/需求改变沿原 Delta 与决定来源 | 不让复用理由替代批准或扩大权限 |
+
+discover/read 是显式、已有授权内的证据捕获：必须 current binding、request_id、active cycle、artifact 动作许可；仅 D 接受。discover 输入有界 paths（沿用 ≤16）及 literal capability；read 输入安全 path 与有界行段。Cycle 捕获 provider 原始输出、验证完整 SHA、源身份和当前性，返回自己的不可变 evidence_id。查询捕获不把阶段推进到 implementation，不批准写入。
+
+每次视图明确 `source_capture_complete`、已返回行段及 `view_complete/truncated`。遗漏按现有 cycle_status 分页补读；没有宿主确认时 delivery 为 unknown。后端能证明实际字节捕获、指定视图被生成、来源未过期；不能证明模型收到、读懂或调用方穷尽。模型提供的路径、符号和理由仍需校验与 QA。
+
+## 5. D 中的复用决定与写前门禁
+
+决定及理由只维护在原 D 文件内。首版约定一个有界、严格 JSON 的 `cycle-reuse-v1` fenced block（最多 16 决定、覆盖最多 64 写目标）；解析复用现有 JSON/Zod，不引入 Markdown 框架。D prepare 从该区块生成绑定正文路径/行段/SHA 的元数据投影；attach 复核同一内容，不接收另一份可独立生效的 reuse.json 或模型参数副本。source symbol 可用于定位，未知 symbol 不冒称 verified。
+
+每条决定至少包含：局部 decision ID、精确 target_paths、相关 acceptance_ids、reuse/extend/new、选择的 module UID + symbol（reuse/extend 必填）、query_evidence_id、实现/接口/调用方 read_evidence_ids、选择或不适配理由。new 仍需发现记录与适配检查，不能用“没找到”或 provider 失败代替理由；性能复杂度、接口或语义差异可成为必要新实现的依据。
+
+Cycle 元数据只持正文引用、规范化投影摘要、实际捕获身份和 lineage，不在 SoL 保存选择副本。attach 接受意味着结构/来源当前，`semantic_verified:false`；D 正文变化使旧投影失效。对真实共享职责登记，不为每个私有函数建台账或抽象。
+
+启用的 implement cycle 由后端对**实际全部写/删目标**分类。只有操作者 documentation_paths 中且满足现有文档扩展名限制的目标可豁免；未知类型、新路径、产品配置与未声明函数一律要求决定覆盖。docs grant 仍不得写代码/配置，不启动发现；嵌入代码的模板必须归 source 类。模型没有 source=false、skip 或豁免参数。
+
+写前顺序：原 binding/grant/路径和 pending 检查 → 目标分类 → 当前 D/策略 → 可验证 query/源读取/调用方覆盖及发行身份 → target 前态与 lineage → 原 pending → 实际写入 → outcome/settle。缺决定、来源伪造、过期或需刷新而 provider 不可用均在 pending 和产品副作用前拒绝。身份通过不能使 clone/dummy call 获得语义通过；写后按 §8 验证。
+
+## 6. 当前性、受管修改与恢复
+
+不能把一个旧 cycle revision 当计划永久有效条件，也不能让自己刚完成的每次写入使计划永远无法使用。
+
+| 状态 | 含义与下一动作 |
+| --- | --- |
+| missing | 没有当前 D 决定或必要捕获；先 discover/read/prepare/attach |
+| ready_before_write | D、发行身份、查询输入及目标前态均可核验 |
+| in_progress | 原决定已被受管写入消费；保留冻结前像，target cursor 随已知、已结算写回执推进 |
+| needs_refresh | 未记录漂移、共享候选/登记修改、覆盖变化；重新查询/阅读并接入当前 D |
+| unknown | 部分写入或归档/清理效果未知；先查同 operation，禁止新写和自动重放 |
+| verified | 当前写后输入通过固定检查和独立 QA；不是仅调用成功 |
+
+basis/prepared handle 纳入策略、发行/协议身份、D 投影、捕获 manifest 与 target cursor。决定的 before manifest 永不覆写；受管 targets 的当前 SHA 只能由完整效果回执推进，未改依赖仍须符合原 manifest。对消费者的精确受管编辑可以继续已有决定；修改被选共享实现、接口、登记或已记录调用方后标 needs_refresh，在下一源码写入及 QA/finish 前刷新选择依据。新目标须有原 scope/grant 与新 D 覆盖，不能借 cursor 扩权。
+
+外部编辑（含写后再次漂移）不能由“内容看起来合理”吸收进 cursor；ABA 的历史不能仅靠末尾 SHA 排除，因此不承诺监测所有外部过程。冻结 before/after 和检查/QA 实际输入确保报告不会读取活动源码假装冻结。
+
+查询/读取也沿 cycle request_id → pending → outcome → settle。provider 只生成可重复的观测缓存，无产品效果；响应丢失仍记录查询/归档效果 unknown，不能写成 not_started。先确认原进程终态并检查已有回执；证据不完整时显式新捕获可代替旧捕获，保留旧 attempt，不声称旧调用未执行。产品写未知仍绝不重放。同 request 参数冲突沿原 REQUEST_CONFLICT。
+
+拟新增错误原因：REUSE_PLAN_REQUIRED、REUSE_STALE、PROVIDER_UNAVAILABLE、SESSION_UNBOUND；最终实现须在 contracts 集中定义并测试。原 BINDING_STALE/SCOPE_DENIED/OUTCOME_UNKNOWN 等仍保持。未知清理/产品效果优先于“重新查询”建议，不用更换 request_id 绕过 pending。
+
+## 7. Hook 的内容、预算和注入时机
+
+一个上下文流程 emitter：工程循环 Hook；provider 无 Hook，MCP instructions 和 Skill 只维护一次简短入口规则。工具完整输出按需读取，不把组件描述、源码注释、实现文档或模型理由插入 Hook 指令。来源文本始终标为数据；ActionGrant/RequirementDecision 不从这些文本产生。
+
+Hook 使用 cycle_status 的本地投影，不初始化状态、启动 provider、跑检查或改变业务阶段。摘要仅含短 task/cycle 标识、stage/lifecycle、复用覆盖计数及状态、最重要的程序 blocker code、固定 next-tool/action 与证据读取指针；不包含任意仓库文字或整段 goal。
+
+**本集成单次 Hook 输出完整 JSON 的 UTF-8 字节数 ≤2048**，计入 envelope、additionalContext 与 deny reason 的序列化转义；这是可测预算，不是 token 数或整个宿主请求预算。确定性优先保留 pending/unknown/stale 等关键 blocker 和下一动作，再省略普通计数/次要 blocker；超限退到可解析的最小 cycle_status 指针。先裁字段再 JSON.stringify，最终检查 Buffer.byteLength，不能截断已序列化 JSON 或拆字符。其他插件/宿主包装、已有历史上下文不受此预算控制。
+
+| 事件 | 拟定行为 |
+| --- | --- |
+| SessionStart startup/resume/clear/compact | 当前 session 已绑定 cycle 则重发摘要、重置去重 epoch；未绑定只给不含别的任务数据的通用查询指针 |
+| UserPromptSubmit | 语义状态变化则发；相同状态最多连续省略 3 次，第 4 次给最小提醒；有宿主 ack 时可采用经验证的更严格去重 |
+| PreToolUse 原生 apply_patch/Edit/Write | 原受管拒绝规则照常，不受去重抑制；短 reason 引导 cycle_apply。其他工具不追加业务摘要 |
+| Stop | 仍返回空对象；不续跑、不自动 block |
+
+semantic fingerprint 包含 session/epoch、cycle、stage/lifecycle、scope、reuse 当前性与依赖身份、关键 blocker、pending operation 与 next action；不含时间戳或仅因读取归档递增的 revision。账本只保存 session 哈希、cycle 指针、指纹、生成事件与省略计数，不能保存第二份业务状态；独立短租约更新、原子写入，单工作区最多 64 session，淘汰不删除业务/证据。cycle_status 与未配置 Hook 不写这个账本。
+
+MCP 与 Hook 的 session 关联必须基于实测的 host metadata/event，不能只凭 cwd 或模型填写的 session_id；不同宿主字段尚待 P0 验证。begin/明确 resume 从观测通道建立关联；缺少可靠对应时返回 SESSION_UNBOUND/通用查询提示，不自动套用另一聊天的目标。session 只是路由元数据，不是人类认证或新增写权限；显式续接仍需原有效 grant/binding。
+
+账本记录 generated/emission_attempt，只有观测到 ack 才记录 acknowledged；输出返回或 CLI exit0 不能证明模型收到。没有 ack 时采用上述有限 debounce、恢复必发，不永久静默。账本损坏/写入失败降为最小提示并标诊断；后台门禁不受 Hook 缺席、超时或消息被丢弃影响。
+
+## 8. 写后有效复用与 benchmark
+
+I 引用实际公共接口、实现步骤、参数/包 API 流向、错误、副作用与不变量，沿现有 implementation_notes，而非另建每函数文档。固定检查和冻结 QA 回查 D 选择与前后源码/调用方，确认所选实现参与用户可观察结果或职责明确的副作用；clone、死调用、丢弃纯函数结果、错误参数均不能靠查询或计数通过。
+
+新增 blog-reuse-v2 在运行候选前冻结：八题、25 个原机会、源码/规则/checks 身份、机会与 capability 的映射、适用性 E 及扩展兼容条件、负控与样本计划。主报告同时给 M/25 与 M/E，防止通过删难题提高比例；必要新实现的合理性与复用计数分列，不以模型理由事后删分母。
+
+分列功能、合规、静态关系、实际调用、对结果有贡献的有效复用、说明质量、耗时/可观察 token。说明文字差异不再让所有复用项整体归零，但接口/行为/安全兼容和 clone 仍影响对应机会。旧 v1 评分器、原报告和严格 4/25、成功 2/8 保留；v2 不追认旧运行的新分。
+
+评分器先验证真复用正控、dummy call、复制函数体、错误来源与行为错误负控。在一次性冻结副本中，以受控依赖扰动或真实调用方行为测试判别结果贡献，纯函数和合法副作用分开定义；不把 mock 成功或一次 perturbation 无差异当普遍证明。动态覆盖未知项列 unknown，不给通过分。
+
+之后才运行相同模型、题目、重复数、输入/安装身份与预算的 off/on 对照；仅改变本文增量开关，保留两臂原始 v1 分及 v2 分，不把新增安装/人工差异归因于 Hook。预算/重复数先冻结，结果不理想不能改规则重算。这是未来验收计划，本轮没有新分或费用/质量收益结论。
+
+## 9. 验收与实施状态
+
+增量验收 REUSE-01–12 见[验收标准](acceptance.md#组件复用与上下文控制增量)，全部 runtime 验收仍 planned。原四角色意见已处置为本文设计约束；能力验证、宿主 session/ack、peer client 接线、评分校准与真实 A/B 均未运行。
+
+本轮只形成可实施的合同。下一步先做独立 provider/会话关联的受限 P0，而不是直接启用完整 SoL 或跑新模型 benchmark；详见[实施文档](component-reuse-implementation.md)。

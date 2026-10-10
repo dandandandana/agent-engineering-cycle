@@ -1,0 +1,31 @@
+✔ metadata facts match the real provider bigint DTO for an unchanged binary and worktree control file (20.7738ms)
+✔ collects scoped metadata, includes secret-file names, and skips control/security/generated directories (43.7459ms)
+✔ observes source additions and deletions by enumerating names rather than trusting directory timestamps (37.7539ms)
+✔ file facts expose same-path metadata changes while the path-set digest remains unchanged (25.6282ms)
+✔ honors separate roots, explicit files, and the dot root sentinel (28.7595ms)
+✔ fails closed on a directory symlink or junction without exposing its target (27.6835ms)
+✔ rejects a symlink workspace root and reports missing scoped paths as incomplete (7.0438ms)
+✔ validates empty complete inventory and allows an evidence-free empty new decision (2.8165ms)
+✔ preserves valid blocked enumeration as captured evidence and refuses a new decision (0.4882ms)
+✔ a regular worktree control file stays metadata-only rather than becoming a skipped directory (0.3486ms)
+✔ accepts an empty source only with its real empty-text 1..1 capture (0.8182ms)
+✔ allows a fully read new decision only after every candidate has a real not_applicable assessment (0.3403ms)
+✔ validates shared-source reuse, requires the caller relation line, and assigns candidate/caller floors (0.6732ms)
+✔ rejects registered UID/singular-symbol identity and mismatched source-to-candidate inventory (0.7288ms)
+✔ validates path-inventory digest, canonical sets, and file classification (0.6077ms)
+✔ recomputes the inventory digest with excluded paths and source failures while keeping I exclusion separate (0.7759ms)
+✔ does not let a zero-match keyword erase the full candidate set for a new decision (0.3498ms)
+✔ reports missing candidate reads and missing new-decision assessments (0.7083ms)
+✔ keeps unknown TS relations blocking for extend and new even when rationale says otherwise (0.6161ms)
+✔ rejects reuse when the selected source is also a consumer target (0.3003ms)
+✔ requires selected-source read ranges to cover the entire source, including a missing middle (0.448ms)
+✔ does not accept a selected source header-only read as full-source coverage (0.2552ms)
+✔ requires a new-decision not_applicable assessment to cite reads covering the whole source (0.2415ms)
+ℹ tests 23
+ℹ suites 0
+ℹ pass 23
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 357.5003

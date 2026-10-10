@@ -1,0 +1,11 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "agent-engineering-cycle",
+  "version": "0.1.0",
+  "description": "Coordinate an authorized engineering cycle with local evidence, controlled checks, and explicit QA boundaries.",
+  "extensions": {
+    "com.openai": {
+      "hooks": "./hooks/hooks.json"
+    }
+  }
+}

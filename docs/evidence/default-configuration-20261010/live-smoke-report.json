@@ -1,0 +1,158 @@
+{
+  "schema_version": 1,
+  "status": "failed",
+  "fixture_only": true,
+  "model": {
+    "main": "gpt-6-luna",
+    "main_reasoning_effort_requested": "max",
+    "main_reasoning_effort_observed": false,
+    "controlled_qa": "gpt-6-luna",
+    "controlled_qa_reasoning_effort": "not declared by current QA runner"
+  },
+  "native_cli": {
+    "executable": "C:\\Users\\dandandandana\\AppData\\Local\\OpenAI\\Codex\\bin\\9691020b546a15b2\\codex.exe",
+    "version": "codex-cli 0.162.0-alpha.2",
+    "sha256": "3553cd6e7df5a093d8cb8301cd8088a57e0971aba71ddbe0e67f7f44a15cdf68"
+  },
+  "bundle": {
+    "manifest_sha256": "9785102970669e9519ab41ffc0529abc055886a6d03ad8074b6f114acbc85fea",
+    "schema_revision": 1,
+    "protocol": "sol-component-discovery/1",
+    "protocols": [
+      "sol-component-discovery/1",
+      "sol-component-discovery/2"
+    ],
+    "modes": [
+      "registered",
+      "repository"
+    ],
+    "manifest_file_count": 1750,
+    "manifest_files_verified": 1750,
+    "repository_index_sha256": "6ddd4a262d4869325ff3042804f801dfaa98ea01e1fa53512b4786f429c337f4",
+    "verified_files": 1750
+  },
+  "isolated": {
+    "workspace": "D:\\zzd\\agent-engineering-cycle\\slop\\default-configuration-20261010\\live-smoke\\attempts\\run-2026-10-10T015506-537Z-7a11d3d4\\workspace",
+    "codex_home_created": true,
+    "marketplace_created": true,
+    "auth_source_kind": "user_codex_home",
+    "installed_plugin_relative_path": "plugins\\cache\\default-configuration-live-smoke\\agent-engineering-cycle\\0.1.0"
+  },
+  "calibration": {
+    "process": {
+      "terminal_observed": true,
+      "exit_code": 1,
+      "timed_out": false,
+      "launch_error": null,
+      "stderr_error_code": null
+    },
+    "passed": false,
+    "stage": "sandbox",
+    "capability_receipt": null,
+    "sandbox_probe": {
+      "raw_ref_id": "p0-sandbox-f864458a6af2d7f8de43578b876b78b63a23f1159ea42dbcb45ce14efe517b2f",
+      "denied": false,
+      "launch_status": "started",
+      "terminal_observed": true,
+      "exit_code": 1,
+      "timed_out": false,
+      "stdout_bytes": 0,
+      "stderr_bytes": 71,
+      "denial_marker_observed": false,
+      "failure_reason_code": "windows_sandbox_helper_setup_refresh_failed"
+    },
+    "live_probe": {
+      "raw_ref_id": null,
+      "passed": false
+    },
+    "coverage_limits": [],
+    "cli_error_code": null
+  },
+  "synthetic_grant": null,
+  "main_turn": null,
+  "tool_observations": {
+    "names": [],
+    "cycle_status": [],
+    "cycle_qa": [],
+    "repository_discovery": [],
+    "source_reads": [],
+    "artifacts": [],
+    "managed_writes": [],
+    "verification": []
+  },
+  "final_cycle": null,
+  "cleanup": {
+    "allowed": true,
+    "results": [
+      "auth_copy_removed",
+      "isolated_home_removed",
+      "marketplace_removed"
+    ]
+  },
+  "limitations": [
+    "The fixture grant is synthetic source.fixture=true and is not human approval.",
+    "The model and hidden provider context are not independently authenticated by client-visible CLI events.",
+    "The current controlled QA runner does not expose a reasoning-effort override.",
+    "This is a Windows native Codex CLI smoke; it does not establish Desktop, TUI, or other-platform coverage."
+  ],
+  "attempt_id": "run-2026-10-10T015506-537Z-7a11d3d4",
+  "attempt_path": "D:\\zzd\\agent-engineering-cycle\\slop\\default-configuration-20261010\\live-smoke\\attempts\\run-2026-10-10T015506-537Z-7a11d3d4",
+  "report_path": "D:\\zzd\\agent-engineering-cycle\\slop\\default-configuration-20261010\\live-smoke\\attempts\\run-2026-10-10T015506-537Z-7a11d3d4\\report.json",
+  "failure_code": "live_calibration_failed",
+  "process_receipts": [
+    {
+      "id": "native-version",
+      "terminal_observed": true,
+      "exit_code": 0,
+      "timed_out": false,
+      "launch_error": null,
+      "stderr_error_code": null,
+      "event_kinds": []
+    },
+    {
+      "id": "marketplace-add",
+      "terminal_observed": true,
+      "exit_code": 0,
+      "timed_out": false,
+      "launch_error": null,
+      "stderr_error_code": null,
+      "event_kinds": []
+    },
+    {
+      "id": "plugin-add",
+      "terminal_observed": true,
+      "exit_code": 0,
+      "timed_out": false,
+      "launch_error": null,
+      "stderr_error_code": null,
+      "event_kinds": []
+    },
+    {
+      "id": "live-calibration",
+      "terminal_observed": true,
+      "exit_code": 1,
+      "timed_out": false,
+      "launch_error": null,
+      "stderr_error_code": null,
+      "event_kinds": []
+    },
+    {
+      "id": "fixture-baseline-test-after-calibration-stop",
+      "terminal_observed": true,
+      "exit_code": 1,
+      "timed_out": false,
+      "launch_error": null,
+      "stderr_error_code": null,
+      "event_kinds": []
+    }
+  ],
+  "fixture_baseline": {
+    "terminal_observed": true,
+    "exit_code": 1,
+    "expected_failure": true,
+    "expected_mismatch_observed": true,
+    "actual": "/hello-world",
+    "expected": "/posts/hello-world",
+    "observed_after_calibration_stop": true
+  }
+}

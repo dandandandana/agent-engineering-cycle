@@ -1,0 +1,2270 @@
+{
+  "recorded_at": "2026-10-08T02:04:03.988Z",
+  "platform": "win32",
+  "node": "v24.11.0",
+  "codex": {
+    "version": "0.161.0",
+    "binary_sha256": "a0f89acca07a511734cac7fddee26b2106fab68918717bc90df16104a0760a30",
+    "installation": "npm install -g @openai/codex@latest; verified native exe and shim; no Desktop upgrade"
+  },
+  "plugin": {
+    "id": "agent-engineering-cycle@engineering-cycle-local",
+    "version": "0.1.0",
+    "installed_root": "C:/Users/dandandandana/.codex/plugins/cache/engineering-cycle-local/agent-engineering-cycle/0.1.0",
+    "local_source": "C:/Users/dandandandana/.codex/plugins/local-sources/engineering-cycle-local-20261008/agent-engineering-cycle-native-v2",
+    "identities": [
+      {
+        "path": ".codex-plugin/plugin.json",
+        "installed_sha256": "22fca49cd2004659c643e05ddaa94566aee35ae485ed08971e2afa79370fb6a7",
+        "distribution_sha256": "22fca49cd2004659c643e05ddaa94566aee35ae485ed08971e2afa79370fb6a7"
+      },
+      {
+        "path": ".mcp.json",
+        "installed_sha256": "4d858910dcbe01690079f01664586ccee6ecb7976bedd08ca897bd00418fed6c",
+        "distribution_sha256": "4d858910dcbe01690079f01664586ccee6ecb7976bedd08ca897bd00418fed6c"
+      },
+      {
+        "path": "mcp.json",
+        "installed_sha256": "2f2c3470c19a590550280557e76a7d89a655b658a8e2750755b9cfe986f99631",
+        "distribution_sha256": "2f2c3470c19a590550280557e76a7d89a655b658a8e2750755b9cfe986f99631"
+      },
+      {
+        "path": "hooks/hooks.json",
+        "installed_sha256": "ae7625e12f4e02d152af7bae639d3d243ec02131df59f98024affc0d33cfe032",
+        "distribution_sha256": "ae7625e12f4e02d152af7bae639d3d243ec02131df59f98024affc0d33cfe032"
+      },
+      {
+        "path": "src/server.mjs",
+        "installed_sha256": "f19a056040b8b3a6d0ea7bec1eb842ae54d66f86cf8bb9e3389017b6788f2d7e",
+        "distribution_sha256": "f19a056040b8b3a6d0ea7bec1eb842ae54d66f86cf8bb9e3389017b6788f2d7e"
+      },
+      {
+        "path": "src/hook.mjs",
+        "installed_sha256": "cacec33cf05ae42f46b9d82760c9ccc5f084d7c3c17de08fc23324ddd2638b77",
+        "distribution_sha256": "cacec33cf05ae42f46b9d82760c9ccc5f084d7c3c17de08fc23324ddd2638b77"
+      },
+      {
+        "path": "src/local/config.mjs",
+        "installed_sha256": "3f7bc52bd2f156fdadb87c90315948e31142de135ec914bc475b5fd13b1c84ae",
+        "distribution_sha256": "3f7bc52bd2f156fdadb87c90315948e31142de135ec914bc475b5fd13b1c84ae"
+      },
+      {
+        "path": "src/local/workspace.mjs",
+        "installed_sha256": "bbb0f9855578cfd3d17cc127441b0bab59b5709423bba8acf1304a681f705878",
+        "distribution_sha256": "bbb0f9855578cfd3d17cc127441b0bab59b5709423bba8acf1304a681f705878"
+      },
+      {
+        "path": "src/adapters/calibrate.mjs",
+        "installed_sha256": "6b2abd40726f1a4caa1dc99b9c1e7fdfd9f838a8927c68f13d1a01422887b965",
+        "distribution_sha256": "6b2abd40726f1a4caa1dc99b9c1e7fdfd9f838a8927c68f13d1a01422887b965"
+      },
+      {
+        "path": "src/adapters/qa-cli.mjs",
+        "installed_sha256": "bba14ff5bbdd8df6547ca1ae7ce4a7194df184486c4fe739e48463ddcc99de16",
+        "distribution_sha256": "bba14ff5bbdd8df6547ca1ae7ce4a7194df184486c4fe739e48463ddcc99de16"
+      },
+      {
+        "path": "skills/agent-engineering-cycle/SKILL.md",
+        "installed_sha256": "bd9c6eed729b3360e64bae85db8692e206a2b7afb3e71304dbffa75dce8555d8",
+        "distribution_sha256": "bd9c6eed729b3360e64bae85db8692e206a2b7afb3e71304dbffa75dce8555d8"
+      }
+    ],
+    "source_runtime": "same seven-tool CycleCore as portable package"
+  },
+  "fixture": {
+    "root": "D:\\zzd\\slop\\engineering-cycle-tui-20261008\\final-workspace",
+    "original_goal": "Make isAdult accept integer ages of 18 and above, reject invalid ages, and preserve current implementation notes for independent maintenance review.",
+    "scope": [
+      "src/age.mjs",
+      "docs/requirements.md",
+      "docs/design.md",
+      "docs/implementation.md",
+      "docs/age-notes.md",
+      "sentinel.txt"
+    ],
+    "original_sentinel_sha256": "dcc49343a703cad6ecaed2c8270c6d3f63ed7e758676236e9e3e542a086cbcac",
+    "current_sentinel_sha256": "dcc49343a703cad6ecaed2c8270c6d3f63ed7e758676236e9e3e542a086cbcac"
+  },
+  "operator": "User-authorized parent agent operating a real PTY; human identity unverified",
+  "calibration": {
+    "assurance": {
+      "distinct_execution": true,
+      "fresh_session": true,
+      "frozen_input_delivery": true,
+      "permission_observed": true,
+      "terminal_observed": true
+    },
+    "binary_digest": "a0f89acca07a511734cac7fddee26b2106fab68918717bc90df16104a0760a30",
+    "driver_revision": 4,
+    "live_probe": {
+      "passed": true,
+      "raw_ref": {
+        "digest": "4958768712196f2a90a1d4ed4291dd2c0d030375933310e825336fe8803ec84a",
+        "id": "p0-live-qa-4958768712196f2a90a1d4ed4291dd2c0d030375933310e825336fe8803ec84a",
+        "kind": "p0-live-qa",
+        "schema_revision": 1
+      }
+    },
+    "model": "gpt-6-luna",
+    "node": "v24.11.0",
+    "platform": "win32",
+    "proof_scope": "fresh CLI exec and fixed readonly filesystem probe; no hidden prompt/model identity or all-tool coverage proof",
+    "recorded_at": "2026-10-08T01:37:56.482Z",
+    "sandbox_probe": {
+      "denied": true,
+      "raw_ref": {
+        "digest": "3a131306598967f518bdb964d75212f6dcbc68a45ebc4410411c73a17b046b6d",
+        "id": "p0-sandbox-3a131306598967f518bdb964d75212f6dcbc68a45ebc4410411c73a17b046b6d",
+        "kind": "p0-sandbox",
+        "schema_revision": 1
+      }
+    },
+    "windows_sandbox": "unelevated",
+    "signature_exported": false,
+    "verified_by_status": true
+  },
+  "tui": {
+    "session_id": "01a1192b-8cb8-7651-b976-03b42b180a73",
+    "rollout_sha256_at_export": "4bbc9c72b34618f0ee388523af014ec2455fe77e7e20a2da173b3c417ee21774",
+    "thread_source": "real native CLI TUI in PTY; no GUI operations",
+    "tools_observed": [
+      "cycle_control",
+      "cycle_qa",
+      "cycle_status",
+      "cycle_verify"
+    ],
+    "calls": [
+      {
+        "timestamp": "2026-10-08T01:41:28.420Z",
+        "tool": "cycle_status",
+        "args": {},
+        "outcome": "completed",
+        "plugin_id": "agent-engineering-cycle@engineering-cycle-local",
+        "result": {
+          "ok": true,
+          "binding": {
+            "workspace_id": "dd889b0165c54936362d1d92d083a456dd2a6e86ba3970c9a3d212423773f18d",
+            "cycle_id": "bdf68ad6-657c-4b98-9696-c4523af92dee",
+            "revision": 4,
+            "basis_digest": "d8e41b0dcfa70f4dc10487b7db10dcacd80340d419e269b659a650d06b4af0ef"
+          },
+          "stage": "qa",
+          "lifecycle": "active",
+          "current_complete": false,
+          "blockers": [
+            {
+              "code": "EVIDENCE_INVALID",
+              "kind": "checks"
+            },
+            {
+              "code": "QA_VERIFICATION_UNAVAILABLE",
+              "kind": "independent_qa"
+            }
+          ],
+          "pending_operation": null,
+          "required_check_ids": [
+            "age-boundaries"
+          ],
+          "implementation_notes": {
+            "status": "current",
+            "summary": {
+              "required": 1,
+              "attached": 1,
+              "current": 1,
+              "stale": 0,
+              "missing": 0,
+              "invalid": 0
+            },
+            "entries": [
+              {
+                "source": {
+                  "path": "src/age.mjs",
+                  "symbol": "isAdult",
+                  "sha256": "716bd6f54a62aee5c6b3cdb4a5edb75f51bbb1c9cf0802d0f30a07747d0a1e80"
+                },
+                "documentation": {
+                  "path": "docs/age-notes.md",
+                  "sha256": "45242c7ce137424e53cd57c253afffe8876d54ff986408021109f9495bbf0a2f",
+                  "start_line": 3,
+                  "end_line": 10
+                },
+                "status": "current",
+                "inputs": [
+                  {
+                    "path": "src/age.mjs",
+                    "expected_sha256": "716bd6f54a62aee5c6b3cdb4a5edb75f51bbb1c9cf0802d0f30a07747d0a1e80",
+                    "actual_sha256": "716bd6f54a62aee5c6b3cdb4a5edb75f51bbb1c9cf0802d0f30a07747d0a1e80"
+                  },
+                  {
+                    "path": "docs/age-notes.md",
+                    "expected_sha256": "45242c7ce137424e53cd57c253afffe8876d54ff986408021109f9495bbf0a2f",
+                    "actual_sha256": "45242c7ce137424e53cd57c253afffe8876d54ff986408021109f9495bbf0a2f"
+                  },
+                  {
+                    "path": "check.mjs",
+                    "expected_sha256": "0e837f068eb50989b100cf55aa4ed7c9e9101fb219ac6d9c7ec40ea673a684c4",
+                    "actual_sha256": "0e837f068eb50989b100cf55aa4ed7c9e9101fb219ac6d9c7ec40ea673a684c4"
+                  }
+                ],
+                "content": "## Mechanism\n`isAdult(age)` follows this path: `age` → JavaScript runtime `Number.isInteger(age)` → short-circuited inclusive comparison `age >= 18` → Boolean. If `Number.isInteger(age)` is false, `&&` short-circuits and returns false without evaluating the comparison. Otherwise, `age >= 18` returns a Boolean, so the function always returns a Boolean.\n\n## Invalid values and effects\nStrings, `NaN`, infinities, fractional values, and other non-integers return false. Integer ages below 18 also return false. The function has no state changes or I/O, raises no errors for these invalid values, and uses no external packages.\n\n## Testing and maintenance\nThe configured `age-boundaries` check covers 17, 18, 19, a string, `NaN`, infinity, and a fractional age. Run it after changing `isAdult`. If the age threshold or accepted input type changes, update the check and this note together.",
+                "truncated": false,
+                "symbol_verified": false,
+                "semantic_verified": false
+              }
+            ],
+            "semantic_verified": false,
+            "coverage": "Declared targets only; file identities and selected prose are observed, symbol/call/dataflow meaning is not parsed."
+          },
+          "qa": null,
+          "evidence_refs": [
+            {
+              "digest": "29abf71e2802bb33fab370bfd69805fe4df6ef8e055abc54754b08defec510d5",
+              "id": "artifact-29abf71e2802bb33fab370bfd69805fe4df6ef8e055abc54754b08defec510d5",
+              "kind": "artifact",
+              "schema_revision": 1
+            },
+            {
+              "digest": "bbfea5b8fa85db716764c3945d7d320f95aee3f19147a9de91d26ffa8c5294dc",
+              "id": "artifact-bbfea5b8fa85db716764c3945d7d320f95aee3f19147a9de91d26ffa8c5294dc",
+              "kind": "artifact",
+              "schema_revision": 1
+            },
+            {
+              "digest": "4618a0ba8cc7648659404cc891fc5a10939efc46d6ef90340c0a60847bfb0b55",
+              "id": "artifact-4618a0ba8cc7648659404cc891fc5a10939efc46d6ef90340c0a60847bfb0b55",
+              "kind": "artifact",
+              "schema_revision": 1
+            }
+          ],
+          "capabilities": {
+            "local_store": true,
+            "tested_platform": "win32 local filesystem / Node 24",
+            "authority": "interactive-operator signed receipts; no MCP approval minting",
+            "qa_driver": true,
+            "qa": {
+              "available": true,
+              "receipt_digest": "1ff0b1828018e84a0f516fb09c92d1a102d9331964d4e2b7b253167613ffcf73",
+              "assurance": {
+                "distinct_execution": true,
+                "fresh_session": true,
+                "frozen_input_delivery": true,
+                "permission_observed": true,
+                "terminal_observed": true
+              },
+              "source": "program-calibration",
+              "human_identity_verified": false
+            },
+            "native_subagent": false,
+            "hook_coverage": "matched writes only",
+            "stop_continuation": false
+          },
+          "next": [
+            "Run the configured checks with current binding."
+          ],
+          "coverage_limits": [
+            "Managed entry points only; external edits and unmatched Shell tools are detected, not prevented.",
+            "Semantic verdicts remain reported judgments."
+          ]
+        }
+      },
+      {
+        "timestamp": "2026-10-08T01:41:38.168Z",
+        "tool": "cycle_status",
+        "args": {},
+        "outcome": "completed",
+        "plugin_id": "agent-engineering-cycle@engineering-cycle-local",
+        "result": {
+          "ok": true,
+          "binding": {
+            "workspace_id": "dd889b0165c54936362d1d92d083a456dd2a6e86ba3970c9a3d212423773f18d",
+            "cycle_id": "bdf68ad6-657c-4b98-9696-c4523af92dee",
+            "revision": 4,
+            "basis_digest": "d8e41b0dcfa70f4dc10487b7db10dcacd80340d419e269b659a650d06b4af0ef"
+          },
+          "stage": "qa",
+          "lifecycle": "active",
+          "current_complete": false,
+          "blockers": [
+            {
+              "code": "EVIDENCE_INVALID",
+              "kind": "checks"
+            },
+            {
+              "code": "QA_VERIFICATION_UNAVAILABLE",
+              "kind": "independent_qa"
+            }
+          ],
+          "pending_operation": null,
+          "required_check_ids": [
+            "age-boundaries"
+          ],
+          "implementation_notes": {
+            "status": "current",
+            "summary": {
+              "required": 1,
+              "attached": 1,
+              "current": 1,
+              "stale": 0,
+              "missing": 0,
+              "invalid": 0
+            },
+            "entries": [
+              {
+                "source": {
+                  "path": "src/age.mjs",
+                  "symbol": "isAdult",
+                  "sha256": "716bd6f54a62aee5c6b3cdb4a5edb75f51bbb1c9cf0802d0f30a07747d0a1e80"
+                },
+                "documentation": {
+                  "path": "docs/age-notes.md",
+                  "sha256": "45242c7ce137424e53cd57c253afffe8876d54ff986408021109f9495bbf0a2f",
+                  "start_line": 3,
+                  "end_line": 10
+                },
+                "status": "current",
+                "inputs": [
+                  {
+                    "path": "src/age.mjs",
+                    "expected_sha256": "716bd6f54a62aee5c6b3cdb4a5edb75f51bbb1c9cf0802d0f30a07747d0a1e80",
+                    "actual_sha256": "716bd6f54a62aee5c6b3cdb4a5edb75f51bbb1c9cf0802d0f30a07747d0a1e80"
+                  },
+                  {
+                    "path": "docs/age-notes.md",
+                    "expected_sha256": "45242c7ce137424e53cd57c253afffe8876d54ff986408021109f9495bbf0a2f",
+                    "actual_sha256": "45242c7ce137424e53cd57c253afffe8876d54ff986408021109f9495bbf0a2f"
+                  },
+                  {
+                    "path": "check.mjs",
+                    "expected_sha256": "0e837f068eb50989b100cf55aa4ed7c9e9101fb219ac6d9c7ec40ea673a684c4",
+                    "actual_sha256": "0e837f068eb50989b100cf55aa4ed7c9e9101fb219ac6d9c7ec40ea673a684c4"
+                  }
+                ],
+                "content": "## Mechanism\n`isAdult(age)` follows this path: `age` → JavaScript runtime `Number.isInteger(age)` → short-circuited inclusive comparison `age >= 18` → Boolean. If `Number.isInteger(age)` is false, `&&` short-circuits and returns false without evaluating the comparison. Otherwise, `age >= 18` returns a Boolean, so the function always returns a Boolean.\n\n## Invalid values and effects\nStrings, `NaN`, infinities, fractional values, and other non-integers return false. Integer ages below 18 also return false. The function has no state changes or I/O, raises no errors for these invalid values, and uses no external packages.\n\n## Testing and maintenance\nThe configured `age-boundaries` check covers 17, 18, 19, a string, `NaN`, infinity, and a fractional age. Run it after changing `isAdult`. If the age threshold or accepted input type changes, update the check and this note together.",
+                "truncated": false,
+                "symbol_verified": false,
+                "semantic_verified": false
+              }
+            ],
+            "semantic_verified": false,
+            "coverage": "Declared targets only; file identities and selected prose are observed, symbol/call/dataflow meaning is not parsed."
+          },
+          "qa": null,
+          "evidence_refs": [
+            {
+              "digest": "29abf71e2802bb33fab370bfd69805fe4df6ef8e055abc54754b08defec510d5",
+              "id": "artifact-29abf71e2802bb33fab370bfd69805fe4df6ef8e055abc54754b08defec510d5",
+              "kind": "artifact",
+              "schema_revision": 1
+            },
+            {
+              "digest": "bbfea5b8fa85db716764c3945d7d320f95aee3f19147a9de91d26ffa8c5294dc",
+              "id": "artifact-bbfea5b8fa85db716764c3945d7d320f95aee3f19147a9de91d26ffa8c5294dc",
+              "kind": "artifact",
+              "schema_revision": 1
+            },
+            {
+              "digest": "4618a0ba8cc7648659404cc891fc5a10939efc46d6ef90340c0a60847bfb0b55",
+              "id": "artifact-4618a0ba8cc7648659404cc891fc5a10939efc46d6ef90340c0a60847bfb0b55",
+              "kind": "artifact",
+              "schema_revision": 1
+            }
+          ],
+          "capabilities": {
+            "local_store": true,
+            "tested_platform": "win32 local filesystem / Node 24",
+            "authority": "interactive-operator signed receipts; no MCP approval minting",
+            "qa_driver": true,
+            "qa": {
+              "available": true,
+              "receipt_digest": "1ff0b1828018e84a0f516fb09c92d1a102d9331964d4e2b7b253167613ffcf73",
+              "assurance": {
+                "distinct_execution": true,
+                "fresh_session": true,
+                "frozen_input_delivery": true,
+                "permission_observed": true,
+                "terminal_observed": true
+              },
+              "source": "program-calibration",
+              "human_identity_verified": false
+            },
+            "native_subagent": false,
+            "hook_coverage": "matched writes only",
+            "stop_continuation": false
+          },
+          "next": [
+            "Run the configured checks with current binding."
+          ],
+          "coverage_limits": [
+            "Managed entry points only; external edits and unmatched Shell tools are detected, not prevented.",
+            "Semantic verdicts remain reported judgments."
+          ]
+        }
+      },
+      {
+        "timestamp": "2026-10-08T01:43:04.580Z",
+        "tool": "cycle_verify",
+        "args": {
+          "binding": {
+            "workspace_id": "dd889b0165c54936362d1d92d083a456dd2a6e86ba3970c9a3d212423773f18d",
+            "cycle_id": "bdf68ad6-657c-4b98-9696-c4523af92dee",
+            "revision": 4,
+            "basis_digest": "d8e41b0dcfa70f4dc10487b7db10dcacd80340d419e269b659a650d06b4af0ef"
+          },
+          "check_ids": [
+            "age-boundaries"
+          ],
+          "request_id": "final-tui-verify"
+        },
+        "outcome": "completed",
+        "plugin_id": "agent-engineering-cycle@engineering-cycle-local",
+        "result": {
+          "ok": true,
+          "binding": {
+            "workspace_id": "dd889b0165c54936362d1d92d083a456dd2a6e86ba3970c9a3d212423773f18d",
+            "cycle_id": "bdf68ad6-657c-4b98-9696-c4523af92dee",
+            "revision": 5,
+            "basis_digest": "d8e41b0dcfa70f4dc10487b7db10dcacd80340d419e269b659a650d06b4af0ef"
+          },
+          "stage": "qa",
+          "lifecycle": "active",
+          "current_complete": false,
+          "blockers": [
+            {
+              "code": "QA_VERIFICATION_UNAVAILABLE",
+              "kind": "independent_qa"
+            }
+          ],
+          "pending_operation": null,
+          "required_check_ids": [
+            "age-boundaries"
+          ],
+          "implementation_notes": {
+            "status": "current",
+            "summary": {
+              "required": 1,
+              "attached": 1,
+              "current": 1,
+              "stale": 0,
+              "missing": 0,
+              "invalid": 0
+            },
+            "entries": [
+              {
+                "source": {
+                  "path": "src/age.mjs",
+                  "symbol": "isAdult",
+                  "sha256": "716bd6f54a62aee5c6b3cdb4a5edb75f51bbb1c9cf0802d0f30a07747d0a1e80"
+                },
+                "documentation": {
+                  "path": "docs/age-notes.md",
+                  "sha256": "45242c7ce137424e53cd57c253afffe8876d54ff986408021109f9495bbf0a2f",
+                  "start_line": 3,
+                  "end_line": 10
+                },
+                "status": "current",
+                "inputs": [
+                  {
+                    "path": "src/age.mjs",
+                    "expected_sha256": "716bd6f54a62aee5c6b3cdb4a5edb75f51bbb1c9cf0802d0f30a07747d0a1e80",
+                    "actual_sha256": "716bd6f54a62aee5c6b3cdb4a5edb75f51bbb1c9cf0802d0f30a07747d0a1e80"
+                  },
+                  {
+                    "path": "docs/age-notes.md",
+                    "expected_sha256": "45242c7ce137424e53cd57c253afffe8876d54ff986408021109f9495bbf0a2f",
+                    "actual_sha256": "45242c7ce137424e53cd57c253afffe8876d54ff986408021109f9495bbf0a2f"
+                  },
+                  {
+                    "path": "check.mjs",
+                    "expected_sha256": "0e837f068eb50989b100cf55aa4ed7c9e9101fb219ac6d9c7ec40ea673a684c4",
+                    "actual_sha256": "0e837f068eb50989b100cf55aa4ed7c9e9101fb219ac6d9c7ec40ea673a684c4"
+                  }
+                ],
+                "content": "## Mechanism\n`isAdult(age)` follows this path: `age` → JavaScript runtime `Number.isInteger(age)` → short-circuited inclusive comparison `age >= 18` → Boolean. If `Number.isInteger(age)` is false, `&&` short-circuits and returns false without evaluating the comparison. Otherwise, `age >= 18` returns a Boolean, so the function always returns a Boolean.\n\n## Invalid values and effects\nStrings, `NaN`, infinities, fractional values, and other non-integers return false. Integer ages below 18 also return false. The function has no state changes or I/O, raises no errors for these invalid values, and uses no external packages.\n\n## Testing and maintenance\nThe configured `age-boundaries` check covers 17, 18, 19, a string, `NaN`, infinity, and a fractional age. Run it after changing `isAdult`. If the age threshold or accepted input type changes, update the check and this note together.",
+                "truncated": false,
+                "symbol_verified": false,
+                "semantic_verified": false
+              }
+            ],
+            "semantic_verified": false,
+            "coverage": "Declared targets only; file identities and selected prose are observed, symbol/call/dataflow meaning is not parsed."
+          },
+          "qa": null,
+          "evidence_refs": [
+            {
+              "digest": "29abf71e2802bb33fab370bfd69805fe4df6ef8e055abc54754b08defec510d5",
+              "id": "artifact-29abf71e2802bb33fab370bfd69805fe4df6ef8e055abc54754b08defec510d5",
+              "kind": "artifact",
+              "schema_revision": 1
+            },
+            {
+              "digest": "bbfea5b8fa85db716764c3945d7d320f95aee3f19147a9de91d26ffa8c5294dc",
+              "id": "artifact-bbfea5b8fa85db716764c3945d7d320f95aee3f19147a9de91d26ffa8c5294dc",
+              "kind": "artifact",
+              "schema_revision": 1
+            },
+            {
+              "digest": "4618a0ba8cc7648659404cc891fc5a10939efc46d6ef90340c0a60847bfb0b55",
+              "id": "artifact-4618a0ba8cc7648659404cc891fc5a10939efc46d6ef90340c0a60847bfb0b55",
+              "kind": "artifact",
+              "schema_revision": 1
+            },
+            {
+              "id": "verification-d71aafdeb302b283e95ee7aaa6dc4d11a4ae8cda16e9dc8570bc16e1ef3fdda9",
+              "digest": "d71aafdeb302b283e95ee7aaa6dc4d11a4ae8cda16e9dc8570bc16e1ef3fdda9",
+              "kind": "verification",
+              "schema_revision": 1
+            }
+          ],
+          "capabilities": {
+            "local_store": true,
+            "tested_platform": "win32 local filesystem / Node 24",
+            "authority": "interactive-operator signed receipts; no MCP approval minting",
+            "qa_driver": true,
+            "qa": {
+              "available": true,
+              "receipt_digest": "1ff0b1828018e84a0f516fb09c92d1a102d9331964d4e2b7b253167613ffcf73",
+              "assurance": {
+                "distinct_execution": true,
+                "fresh_session": true,
+                "frozen_input_delivery": true,
+                "permission_observed": true,
+                "terminal_observed": true
+              },
+              "source": "program-calibration",
+              "human_identity_verified": false
+            },
+            "native_subagent": false,
+            "hook_coverage": "matched writes only",
+            "stop_continuation": false
+          },
+          "next": [
+            "Inspect QA capabilities/job; start only a verified driver on frozen inputs."
+          ],
+          "coverage_limits": [
+            "Managed entry points only; external edits and unmatched Shell tools are detected, not prevented.",
+            "Semantic verdicts remain reported judgments."
+          ],
+          "operation": {
+            "operation_id": "c8ff012e-1300-4802-88be-d1abab104507",
+            "request_id": "final-tui-verify",
+            "phase": "settled",
+            "effects_known": true,
+            "outcome_ref": {
+              "id": "outcome-93ad7049015ea3a6ed329e7eeefe056f4e9db46c8303a640e3bce2f9fb848112",
+              "digest": "93ad7049015ea3a6ed329e7eeefe056f4e9db46c8303a640e3bce2f9fb848112",
+              "kind": "outcome",
+              "schema_revision": 1
+            }
+          },
+          "result": {
+            "ok": true,
+            "effects_known": true,
+            "passed": true,
+            "results": [
+              {
+                "check_id": "age-boundaries",
+                "argv_digest": "d4e646d523e422f705c6637e9ee27dfb2364ce25d55232bcaeec29eb24cf6de4",
+                "launch_status": "started",
+                "pid": 39500,
+                "terminal_observed": true,
+                "exit_code": 0,
+                "signal": null,
+                "cancel_requested": false,
+                "timed_out": false,
+                "launch_error": null,
+                "capture_error": null,
+                "cleanup_error": null,
+                "output_complete": true,
+                "input_bytes": 0,
+                "input_digest": null,
+                "input_delivered": true,
+                "passed": true,
+                "raw_ref": {
+                  "id": "check-e193048185c3c42a9e9ba604c62b0f192872262fac8c30afeb1114f5566f97aa",
+                  "digest": "e193048185c3c42a9e9ba604c62b0f192872262fac8c30afeb1114f5566f97aa",
+                  "kind": "check",
+                  "schema_revision": 1
+                }
+              }
+            ],
+            "evidence": {
+              "id": "verification-d71aafdeb302b283e95ee7aaa6dc4d11a4ae8cda16e9dc8570bc16e1ef3fdda9",
+              "digest": "d71aafdeb302b283e95ee7aaa6dc4d11a4ae8cda16e9dc8570bc16e1ef3fdda9",
+              "kind": "verification",
+              "schema_revision": 1
+            }
+          }
+        }
+      },
+      {
+        "timestamp": "2026-10-08T01:43:15.326Z",
+        "tool": "cycle_status",
+        "args": {},
+        "outcome": "completed",
+        "plugin_id": "agent-engineering-cycle@engineering-cycle-local",
+        "result": {
+          "ok": true,
+          "binding": {
+            "workspace_id": "dd889b0165c54936362d1d92d083a456dd2a6e86ba3970c9a3d212423773f18d",
+            "cycle_id": "bdf68ad6-657c-4b98-9696-c4523af92dee",
+            "revision": 5,
+            "basis_digest": "d8e41b0dcfa70f4dc10487b7db10dcacd80340d419e269b659a650d06b4af0ef"
+          },
+          "stage": "qa",
+          "lifecycle": "active",
+          "current_complete": false,
+          "blockers": [
+            {
+              "code": "QA_VERIFICATION_UNAVAILABLE",
+              "kind": "independent_qa"
+            }
+          ],
+          "pending_operation": null,
+          "required_check_ids": [
+            "age-boundaries"
+          ],
+          "implementation_notes": {
+            "status": "current",
+            "summary": {
+              "required": 1,
+              "attached": 1,
+              "current": 1,
+              "stale": 0,
+              "missing": 0,
+              "invalid": 0
+            },
+            "entries": [
+              {
+                "source": {
+                  "path": "src/age.mjs",
+                  "symbol": "isAdult",
+                  "sha256": "716bd6f54a62aee5c6b3cdb4a5edb75f51bbb1c9cf0802d0f30a07747d0a1e80"
+                },
+                "documentation": {
+                  "path": "docs/age-notes.md",
+                  "sha256": "45242c7ce137424e53cd57c253afffe8876d54ff986408021109f9495bbf0a2f",
+                  "start_line": 3,
+                  "end_line": 10
+                },
+                "status": "current",
+                "inputs": [
+                  {
+                    "path": "src/age.mjs",
+                    "expected_sha256": "716bd6f54a62aee5c6b3cdb4a5edb75f51bbb1c9cf0802d0f30a07747d0a1e80",
+                    "actual_sha256": "716bd6f54a62aee5c6b3cdb4a5edb75f51bbb1c9cf0802d0f30a07747d0a1e80"
+                  },
+                  {
+                    "path": "docs/age-notes.md",
+                    "expected_sha256": "45242c7ce137424e53cd57c253afffe8876d54ff986408021109f9495bbf0a2f",
+                    "actual_sha256": "45242c7ce137424e53cd57c253afffe8876d54ff986408021109f9495bbf0a2f"
+                  },
+                  {
+                    "path": "check.mjs",
+                    "expected_sha256": "0e837f068eb50989b100cf55aa4ed7c9e9101fb219ac6d9c7ec40ea673a684c4",
+                    "actual_sha256": "0e837f068eb50989b100cf55aa4ed7c9e9101fb219ac6d9c7ec40ea673a684c4"
+                  }
+                ],
+                "content": "## Mechanism\n`isAdult(age)` follows this path: `age` → JavaScript runtime `Number.isInteger(age)` → short-circuited inclusive comparison `age >= 18` → Boolean. If `Number.isInteger(age)` is false, `&&` short-circuits and returns false without evaluating the comparison. Otherwise, `age >= 18` returns a Boolean, so the function always returns a Boolean.\n\n## Invalid values and effects\nStrings, `NaN`, infinities, fractional values, and other non-integers return false. Integer ages below 18 also return false. The function has no state changes or I/O, raises no errors for these invalid values, and uses no external packages.\n\n## Testing and maintenance\nThe configured `age-boundaries` check covers 17, 18, 19, a string, `NaN`, infinity, and a fractional age. Run it after changing `isAdult`. If the age threshold or accepted input type changes, update the check and this note together.",
+                "truncated": false,
+                "symbol_verified": false,
+                "semantic_verified": false
+              }
+            ],
+            "semantic_verified": false,
+            "coverage": "Declared targets only; file identities and selected prose are observed, symbol/call/dataflow meaning is not parsed."
+          },
+          "qa": null,
+          "evidence_refs": [
+            {
+              "digest": "29abf71e2802bb33fab370bfd69805fe4df6ef8e055abc54754b08defec510d5",
+              "id": "artifact-29abf71e2802bb33fab370bfd69805fe4df6ef8e055abc54754b08defec510d5",
+              "kind": "artifact",
+              "schema_revision": 1
+            },
+            {
+              "digest": "bbfea5b8fa85db716764c3945d7d320f95aee3f19147a9de91d26ffa8c5294dc",
+              "id": "artifact-bbfea5b8fa85db716764c3945d7d320f95aee3f19147a9de91d26ffa8c5294dc",
+              "kind": "artifact",
+              "schema_revision": 1
+            },
+            {
+              "digest": "4618a0ba8cc7648659404cc891fc5a10939efc46d6ef90340c0a60847bfb0b55",
+              "id": "artifact-4618a0ba8cc7648659404cc891fc5a10939efc46d6ef90340c0a60847bfb0b55",
+              "kind": "artifact",
+              "schema_revision": 1
+            },
+            {
+              "digest": "d71aafdeb302b283e95ee7aaa6dc4d11a4ae8cda16e9dc8570bc16e1ef3fdda9",
+              "id": "verification-d71aafdeb302b283e95ee7aaa6dc4d11a4ae8cda16e9dc8570bc16e1ef3fdda9",
+              "kind": "verification",
+              "schema_revision": 1
+            }
+          ],
+          "capabilities": {
+            "local_store": true,
+            "tested_platform": "win32 local filesystem / Node 24",
+            "authority": "interactive-operator signed receipts; no MCP approval minting",
+            "qa_driver": true,
+            "qa": {
+              "available": true,
+              "receipt_digest": "1ff0b1828018e84a0f516fb09c92d1a102d9331964d4e2b7b253167613ffcf73",
+              "assurance": {
+                "distinct_execution": true,
+                "fresh_session": true,
+                "frozen_input_delivery": true,
+                "permission_observed": true,
+                "terminal_observed": true
+              },
+              "source": "program-calibration",
+              "human_identity_verified": false
+            },
+            "native_subagent": false,
+            "hook_coverage": "matched writes only",
+            "stop_continuation": false
+          },
+          "next": [
+            "Inspect QA capabilities/job; start only a verified driver on frozen inputs."
+          ],
+          "coverage_limits": [
+            "Managed entry points only; external edits and unmatched Shell tools are detected, not prevented.",
+            "Semantic verdicts remain reported judgments."
+          ]
+        }
+      },
+      {
+        "timestamp": "2026-10-08T01:44:40.673Z",
+        "tool": "cycle_qa",
+        "args": {
+          "action": "start",
+          "binding": {
+            "workspace_id": "dd889b0165c54936362d1d92d083a456dd2a6e86ba3970c9a3d212423773f18d",
+            "cycle_id": "bdf68ad6-657c-4b98-9696-c4523af92dee",
+            "revision": 5,
+            "basis_digest": "d8e41b0dcfa70f4dc10487b7db10dcacd80340d419e269b659a650d06b4af0ef"
+          },
+          "request_id": "final-tui-qa-start"
+        },
+        "outcome": "completed",
+        "plugin_id": "agent-engineering-cycle@engineering-cycle-local",
+        "result": {
+          "ok": true,
+          "binding": {
+            "workspace_id": "dd889b0165c54936362d1d92d083a456dd2a6e86ba3970c9a3d212423773f18d",
+            "cycle_id": "bdf68ad6-657c-4b98-9696-c4523af92dee",
+            "revision": 6,
+            "basis_digest": "d8e41b0dcfa70f4dc10487b7db10dcacd80340d419e269b659a650d06b4af0ef"
+          },
+          "stage": "qa",
+          "lifecycle": "active",
+          "current_complete": false,
+          "blockers": [
+            {
+              "code": "QA_VERIFICATION_UNAVAILABLE",
+              "kind": "independent_qa"
+            }
+          ],
+          "pending_operation": null,
+          "required_check_ids": [
+            "age-boundaries"
+          ],
+          "implementation_notes": {
+            "status": "current",
+            "summary": {
+              "required": 1,
+              "attached": 1,
+              "current": 1,
+              "stale": 0,
+              "missing": 0,
+              "invalid": 0
+            },
+            "entries": [
+              {
+                "source": {
+                  "path": "src/age.mjs",
+                  "symbol": "isAdult",
+                  "sha256": "716bd6f54a62aee5c6b3cdb4a5edb75f51bbb1c9cf0802d0f30a07747d0a1e80"
+                },
+                "documentation": {
+                  "path": "docs/age-notes.md",
+                  "sha256": "45242c7ce137424e53cd57c253afffe8876d54ff986408021109f9495bbf0a2f",
+                  "start_line": 3,
+                  "end_line": 10
+                },
+                "status": "current",
+                "inputs": [
+                  {
+                    "path": "src/age.mjs",
+                    "expected_sha256": "716bd6f54a62aee5c6b3cdb4a5edb75f51bbb1c9cf0802d0f30a07747d0a1e80",
+                    "actual_sha256": "716bd6f54a62aee5c6b3cdb4a5edb75f51bbb1c9cf0802d0f30a07747d0a1e80"
+                  },
+                  {
+                    "path": "docs/age-notes.md",
+                    "expected_sha256": "45242c7ce137424e53cd57c253afffe8876d54ff986408021109f9495bbf0a2f",
+                    "actual_sha256": "45242c7ce137424e53cd57c253afffe8876d54ff986408021109f9495bbf0a2f"
+                  },
+                  {
+                    "path": "check.mjs",
+                    "expected_sha256": "0e837f068eb50989b100cf55aa4ed7c9e9101fb219ac6d9c7ec40ea673a684c4",
+                    "actual_sha256": "0e837f068eb50989b100cf55aa4ed7c9e9101fb219ac6d9c7ec40ea673a684c4"
+                  }
+                ],
+                "content": "## Mechanism\n`isAdult(age)` follows this path: `age` → JavaScript runtime `Number.isInteger(age)` → short-circuited inclusive comparison `age >= 18` → Boolean. If `Number.isInteger(age)` is false, `&&` short-circuits and returns false without evaluating the comparison. Otherwise, `age >= 18` returns a Boolean, so the function always returns a Boolean.\n\n## Invalid values and effects\nStrings, `NaN`, infinities, fractional values, and other non-integers return false. Integer ages below 18 also return false. The function has no state changes or I/O, raises no errors for these invalid values, and uses no external packages.\n\n## Testing and maintenance\nThe configured `age-boundaries` check covers 17, 18, 19, a string, `NaN`, infinity, and a fractional age. Run it after changing `isAdult`. If the age threshold or accepted input type changes, update the check and this note together.",
+                "truncated": false,
+                "symbol_verified": false,
+                "semantic_verified": false
+              }
+            ],
+            "semantic_verified": false,
+            "coverage": "Declared targets only; file identities and selected prose are observed, symbol/call/dataflow meaning is not parsed."
+          },
+          "qa": {
+            "job_id": "a25ed5d3-594b-4443-bb4e-7ea1f32e1b45",
+            "status": "pending",
+            "report_ref": null,
+            "assurance": {},
+            "terminal_observed": false,
+            "quiescent": false,
+            "current": true,
+            "passed": false
+          },
+          "evidence_refs": [
+            {
+              "digest": "29abf71e2802bb33fab370bfd69805fe4df6ef8e055abc54754b08defec510d5",
+              "id": "artifact-29abf71e2802bb33fab370bfd69805fe4df6ef8e055abc54754b08defec510d5",
+              "kind": "artifact",
+              "schema_revision": 1
+            },
+            {
+              "digest": "bbfea5b8fa85db716764c3945d7d320f95aee3f19147a9de91d26ffa8c5294dc",
+              "id": "artifact-bbfea5b8fa85db716764c3945d7d320f95aee3f19147a9de91d26ffa8c5294dc",
+              "kind": "artifact",
+              "schema_revision": 1
+            },
+            {
+              "digest": "4618a0ba8cc7648659404cc891fc5a10939efc46d6ef90340c0a60847bfb0b55",
+              "id": "artifact-4618a0ba8cc7648659404cc891fc5a10939efc46d6ef90340c0a60847bfb0b55",
+              "kind": "artifact",
+              "schema_revision": 1
+            },
+            {
+              "digest": "d71aafdeb302b283e95ee7aaa6dc4d11a4ae8cda16e9dc8570bc16e1ef3fdda9",
+              "id": "verification-d71aafdeb302b283e95ee7aaa6dc4d11a4ae8cda16e9dc8570bc16e1ef3fdda9",
+              "kind": "verification",
+              "schema_revision": 1
+            }
+          ],
+          "capabilities": {
+            "local_store": true,
+            "tested_platform": "win32 local filesystem / Node 24",
+            "authority": "interactive-operator signed receipts; no MCP approval minting",
+            "qa_driver": true,
+            "qa": {
+              "available": true,
+              "receipt_digest": "1ff0b1828018e84a0f516fb09c92d1a102d9331964d4e2b7b253167613ffcf73",
+              "assurance": {
+                "distinct_execution": true,
+                "fresh_session": true,
+                "frozen_input_delivery": true,
+                "permission_observed": true,
+                "terminal_observed": true
+              },
+              "source": "program-calibration",
+              "human_identity_verified": false
+            },
+            "native_subagent": false,
+            "hook_coverage": "matched writes only",
+            "stop_continuation": false
+          },
+          "next": [
+            "Inspect QA capabilities/job; start only a verified driver on frozen inputs."
+          ],
+          "coverage_limits": [
+            "Managed entry points only; external edits and unmatched Shell tools are detected, not prevented.",
+            "Semantic verdicts remain reported judgments."
+          ],
+          "operation": {
+            "operation_id": "4fb5b182-31bd-4a88-8892-d799c2d502c7",
+            "request_id": "final-tui-qa-start",
+            "phase": "settled",
+            "effects_known": true,
+            "outcome_ref": {
+              "id": "outcome-81876be876e3f4e1f66810292bfa10ae5508f000b5858be7a794f057dfe0f5a5",
+              "digest": "81876be876e3f4e1f66810292bfa10ae5508f000b5858be7a794f057dfe0f5a5",
+              "kind": "outcome",
+              "schema_revision": 1
+            }
+          },
+          "result": {
+            "job_id": "a25ed5d3-594b-4443-bb4e-7ea1f32e1b45",
+            "status": "started",
+            "snapshot_ref": {
+              "id": "snapshot-fd1839c364b3ed8e37685ad09a1991f1b26658fc9ccd392c4f1f7d1ab63c7c46",
+              "digest": "fd1839c364b3ed8e37685ad09a1991f1b26658fc9ccd392c4f1f7d1ab63c7c46",
+              "kind": "snapshot",
+              "schema_revision": 1
+            },
+            "effects_known": true,
+            "terminal_observed": false
+          }
+        }
+      },
+      {
+        "timestamp": "2026-10-08T01:44:47.936Z",
+        "tool": "cycle_status",
+        "args": {},
+        "outcome": "completed",
+        "plugin_id": "agent-engineering-cycle@engineering-cycle-local",
+        "result": {
+          "ok": true,
+          "binding": {
+            "workspace_id": "dd889b0165c54936362d1d92d083a456dd2a6e86ba3970c9a3d212423773f18d",
+            "cycle_id": "bdf68ad6-657c-4b98-9696-c4523af92dee",
+            "revision": 6,
+            "basis_digest": "d8e41b0dcfa70f4dc10487b7db10dcacd80340d419e269b659a650d06b4af0ef"
+          },
+          "stage": "qa",
+          "lifecycle": "active",
+          "current_complete": false,
+          "blockers": [
+            {
+              "code": "OPERATION_PENDING",
+              "kind": "independent_qa"
+            }
+          ],
+          "pending_operation": null,
+          "required_check_ids": [
+            "age-boundaries"
+          ],
+          "implementation_notes": {
+            "status": "current",
+            "summary": {
+              "required": 1,
+              "attached": 1,
+              "current": 1,
+              "stale": 0,
+              "missing": 0,
+              "invalid": 0
+            },
+            "entries": [
+              {
+                "source": {
+                  "path": "src/age.mjs",
+                  "symbol": "isAdult",
+                  "sha256": "716bd6f54a62aee5c6b3cdb4a5edb75f51bbb1c9cf0802d0f30a07747d0a1e80"
+                },
+                "documentation": {
+                  "path": "docs/age-notes.md",
+                  "sha256": "45242c7ce137424e53cd57c253afffe8876d54ff986408021109f9495bbf0a2f",
+                  "start_line": 3,
+                  "end_line": 10
+                },
+                "status": "current",
+                "inputs": [
+                  {
+                    "path": "src/age.mjs",
+                    "expected_sha256": "716bd6f54a62aee5c6b3cdb4a5edb75f51bbb1c9cf0802d0f30a07747d0a1e80",
+                    "actual_sha256": "716bd6f54a62aee5c6b3cdb4a5edb75f51bbb1c9cf0802d0f30a07747d0a1e80"
+                  },
+                  {
+                    "path": "docs/age-notes.md",
+                    "expected_sha256": "45242c7ce137424e53cd57c253afffe8876d54ff986408021109f9495bbf0a2f",
+                    "actual_sha256": "45242c7ce137424e53cd57c253afffe8876d54ff986408021109f9495bbf0a2f"
+                  },
+                  {
+                    "path": "check.mjs",
+                    "expected_sha256": "0e837f068eb50989b100cf55aa4ed7c9e9101fb219ac6d9c7ec40ea673a684c4",
+                    "actual_sha256": "0e837f068eb50989b100cf55aa4ed7c9e9101fb219ac6d9c7ec40ea673a684c4"
+                  }
+                ],
+                "content": "## Mechanism\n`isAdult(age)` follows this path: `age` → JavaScript runtime `Number.isInteger(age)` → short-circuited inclusive comparison `age >= 18` → Boolean. If `Number.isInteger(age)` is false, `&&` short-circuits and returns false without evaluating the comparison. Otherwise, `age >= 18` returns a Boolean, so the function always returns a Boolean.\n\n## Invalid values and effects\nStrings, `NaN`, infinities, fractional values, and other non-integers return false. Integer ages below 18 also return false. The function has no state changes or I/O, raises no errors for these invalid values, and uses no external packages.\n\n## Testing and maintenance\nThe configured `age-boundaries` check covers 17, 18, 19, a string, `NaN`, infinity, and a fractional age. Run it after changing `isAdult`. If the age threshold or accepted input type changes, update the check and this note together.",
+                "truncated": false,
+                "symbol_verified": false,
+                "semantic_verified": false
+              }
+            ],
+            "semantic_verified": false,
+            "coverage": "Declared targets only; file identities and selected prose are observed, symbol/call/dataflow meaning is not parsed."
+          },
+          "qa": {
+            "job_id": "a25ed5d3-594b-4443-bb4e-7ea1f32e1b45",
+            "status": "running",
+            "report_ref": null,
+            "assurance": {},
+            "terminal_observed": false,
+            "quiescent": false,
+            "current": true,
+            "passed": false
+          },
+          "evidence_refs": [
+            {
+              "digest": "29abf71e2802bb33fab370bfd69805fe4df6ef8e055abc54754b08defec510d5",
+              "id": "artifact-29abf71e2802bb33fab370bfd69805fe4df6ef8e055abc54754b08defec510d5",
+              "kind": "artifact",
+              "schema_revision": 1
+            },
+            {
+              "digest": "bbfea5b8fa85db716764c3945d7d320f95aee3f19147a9de91d26ffa8c5294dc",
+              "id": "artifact-bbfea5b8fa85db716764c3945d7d320f95aee3f19147a9de91d26ffa8c5294dc",
+              "kind": "artifact",
+              "schema_revision": 1
+            },
+            {
+              "digest": "4618a0ba8cc7648659404cc891fc5a10939efc46d6ef90340c0a60847bfb0b55",
+              "id": "artifact-4618a0ba8cc7648659404cc891fc5a10939efc46d6ef90340c0a60847bfb0b55",
+              "kind": "artifact",
+              "schema_revision": 1
+            },
+            {
+              "digest": "d71aafdeb302b283e95ee7aaa6dc4d11a4ae8cda16e9dc8570bc16e1ef3fdda9",
+              "id": "verification-d71aafdeb302b283e95ee7aaa6dc4d11a4ae8cda16e9dc8570bc16e1ef3fdda9",
+              "kind": "verification",
+              "schema_revision": 1
+            }
+          ],
+          "capabilities": {
+            "local_store": true,
+            "tested_platform": "win32 local filesystem / Node 24",
+            "authority": "interactive-operator signed receipts; no MCP approval minting",
+            "qa_driver": true,
+            "qa": {
+              "available": true,
+              "receipt_digest": "1ff0b1828018e84a0f516fb09c92d1a102d9331964d4e2b7b253167613ffcf73",
+              "assurance": {
+                "distinct_execution": true,
+                "fresh_session": true,
+                "frozen_input_delivery": true,
+                "permission_observed": true,
+                "terminal_observed": true
+              },
+              "source": "program-calibration",
+              "human_identity_verified": false
+            },
+            "native_subagent": false,
+            "hook_coverage": "matched writes only",
+            "stop_continuation": false
+          },
+          "next": [
+            "Inspect QA capabilities/job; start only a verified driver on frozen inputs."
+          ],
+          "coverage_limits": [
+            "Managed entry points only; external edits and unmatched Shell tools are detected, not prevented.",
+            "Semantic verdicts remain reported judgments."
+          ]
+        }
+      },
+      {
+        "timestamp": "2026-10-08T01:44:48.005Z",
+        "tool": "cycle_qa",
+        "args": {
+          "action": "status",
+          "job_id": "a25ed5d3-594b-4443-bb4e-7ea1f32e1b45"
+        },
+        "outcome": "completed",
+        "plugin_id": "agent-engineering-cycle@engineering-cycle-local",
+        "result": {
+          "ok": true,
+          "binding": {
+            "workspace_id": "dd889b0165c54936362d1d92d083a456dd2a6e86ba3970c9a3d212423773f18d",
+            "cycle_id": "bdf68ad6-657c-4b98-9696-c4523af92dee",
+            "revision": 6,
+            "basis_digest": "d8e41b0dcfa70f4dc10487b7db10dcacd80340d419e269b659a650d06b4af0ef"
+          },
+          "stage": "qa",
+          "lifecycle": "active",
+          "current_complete": false,
+          "blockers": [
+            {
+              "code": "OPERATION_PENDING",
+              "kind": "independent_qa"
+            }
+          ],
+          "pending_operation": null,
+          "required_check_ids": [
+            "age-boundaries"
+          ],
+          "implementation_notes": {
+            "status": "current",
+            "summary": {
+              "required": 1,
+              "attached": 1,
+              "current": 1,
+              "stale": 0,
+              "missing": 0,
+              "invalid": 0
+            },
+            "entries": [
+              {
+                "source": {
+                  "path": "src/age.mjs",
+                  "symbol": "isAdult",
+                  "sha256": "716bd6f54a62aee5c6b3cdb4a5edb75f51bbb1c9cf0802d0f30a07747d0a1e80"
+                },
+                "documentation": {
+                  "path": "docs/age-notes.md",
+                  "sha256": "45242c7ce137424e53cd57c253afffe8876d54ff986408021109f9495bbf0a2f",
+                  "start_line": 3,
+                  "end_line": 10
+                },
+                "status": "current",
+                "inputs": [
+                  {
+                    "path": "src/age.mjs",
+                    "expected_sha256": "716bd6f54a62aee5c6b3cdb4a5edb75f51bbb1c9cf0802d0f30a07747d0a1e80",
+                    "actual_sha256": "716bd6f54a62aee5c6b3cdb4a5edb75f51bbb1c9cf0802d0f30a07747d0a1e80"
+                  },
+                  {
+                    "path": "docs/age-notes.md",
+                    "expected_sha256": "45242c7ce137424e53cd57c253afffe8876d54ff986408021109f9495bbf0a2f",
+                    "actual_sha256": "45242c7ce137424e53cd57c253afffe8876d54ff986408021109f9495bbf0a2f"
+                  },
+                  {
+                    "path": "check.mjs",
+                    "expected_sha256": "0e837f068eb50989b100cf55aa4ed7c9e9101fb219ac6d9c7ec40ea673a684c4",
+                    "actual_sha256": "0e837f068eb50989b100cf55aa4ed7c9e9101fb219ac6d9c7ec40ea673a684c4"
+                  }
+                ],
+                "content": "## Mechanism\n`isAdult(age)` follows this path: `age` → JavaScript runtime `Number.isInteger(age)` → short-circuited inclusive comparison `age >= 18` → Boolean. If `Number.isInteger(age)` is false, `&&` short-circuits and returns false without evaluating the comparison. Otherwise, `age >= 18` returns a Boolean, so the function always returns a Boolean.\n\n## Invalid values and effects\nStrings, `NaN`, infinities, fractional values, and other non-integers return false. Integer ages below 18 also return false. The function has no state changes or I/O, raises no errors for these invalid values, and uses no external packages.\n\n## Testing and maintenance\nThe configured `age-boundaries` check covers 17, 18, 19, a string, `NaN`, infinity, and a fractional age. Run it after changing `isAdult`. If the age threshold or accepted input type changes, update the check and this note together.",
+                "truncated": false,
+                "symbol_verified": false,
+                "semantic_verified": false
+              }
+            ],
+            "semantic_verified": false,
+            "coverage": "Declared targets only; file identities and selected prose are observed, symbol/call/dataflow meaning is not parsed."
+          },
+          "qa": {
+            "job_id": "a25ed5d3-594b-4443-bb4e-7ea1f32e1b45",
+            "status": "running",
+            "report_ref": null,
+            "assurance": {},
+            "terminal_observed": false,
+            "quiescent": false,
+            "current": true,
+            "passed": false
+          },
+          "evidence_refs": [
+            {
+              "digest": "29abf71e2802bb33fab370bfd69805fe4df6ef8e055abc54754b08defec510d5",
+              "id": "artifact-29abf71e2802bb33fab370bfd69805fe4df6ef8e055abc54754b08defec510d5",
+              "kind": "artifact",
+              "schema_revision": 1
+            },
+            {
+              "digest": "bbfea5b8fa85db716764c3945d7d320f95aee3f19147a9de91d26ffa8c5294dc",
+              "id": "artifact-bbfea5b8fa85db716764c3945d7d320f95aee3f19147a9de91d26ffa8c5294dc",
+              "kind": "artifact",
+              "schema_revision": 1
+            },
+            {
+              "digest": "4618a0ba8cc7648659404cc891fc5a10939efc46d6ef90340c0a60847bfb0b55",
+              "id": "artifact-4618a0ba8cc7648659404cc891fc5a10939efc46d6ef90340c0a60847bfb0b55",
+              "kind": "artifact",
+              "schema_revision": 1
+            },
+            {
+              "digest": "d71aafdeb302b283e95ee7aaa6dc4d11a4ae8cda16e9dc8570bc16e1ef3fdda9",
+              "id": "verification-d71aafdeb302b283e95ee7aaa6dc4d11a4ae8cda16e9dc8570bc16e1ef3fdda9",
+              "kind": "verification",
+              "schema_revision": 1
+            }
+          ],
+          "capabilities": {
+            "local_store": true,
+            "tested_platform": "win32 local filesystem / Node 24",
+            "authority": "interactive-operator signed receipts; no MCP approval minting",
+            "qa_driver": true,
+            "qa": {
+              "available": true,
+              "receipt_digest": "1ff0b1828018e84a0f516fb09c92d1a102d9331964d4e2b7b253167613ffcf73",
+              "assurance": {
+                "distinct_execution": true,
+                "fresh_session": true,
+                "frozen_input_delivery": true,
+                "permission_observed": true,
+                "terminal_observed": true
+              },
+              "source": "program-calibration",
+              "human_identity_verified": false
+            },
+            "native_subagent": false,
+            "hook_coverage": "matched writes only",
+            "stop_continuation": false
+          },
+          "next": [
+            "Inspect QA capabilities/job; start only a verified driver on frozen inputs."
+          ],
+          "coverage_limits": [
+            "Managed entry points only; external edits and unmatched Shell tools are detected, not prevented.",
+            "Semantic verdicts remain reported judgments."
+          ],
+          "job": {
+            "acceptance_ids": [
+              "AC-AGE",
+              "AC-NOTES"
+            ],
+            "basis_digest": "58384bc89d5ad3632b7b3efb5fe301f68b5b450e38e4a60b392b0f632a9eb337",
+            "cancel_requested": false,
+            "config_digest": "559cd1094e19437b99e9dfd88e038dab041b66079f1e6a73eb0fbad42791e0ab",
+            "created_at": "2026-10-08T01:44:40.584Z",
+            "cycle_id": "bdf68ad6-657c-4b98-9696-c4523af92dee",
+            "driver": {
+              "capability_receipt": "1ff0b1828018e84a0f516fb09c92d1a102d9331964d4e2b7b253167613ffcf73",
+              "executable": "C:/Users/dandandandana/AppData/Roaming/npm/node_modules/@openai/codex/node_modules/@openai/codex-win32-x64/vendor/x86_64-pc-windows-msvc/bin/codex.exe",
+              "model": "gpt-6-luna",
+              "timeout_ms": 180000,
+              "windows_sandbox": "unelevated"
+            },
+            "id": "a25ed5d3-594b-4443-bb4e-7ea1f32e1b45",
+            "launch": {
+              "launch_status": "started",
+              "pid": 58212
+            },
+            "snapshot_ref": {
+              "digest": "fd1839c364b3ed8e37685ad09a1991f1b26658fc9ccd392c4f1f7d1ab63c7c46",
+              "id": "snapshot-fd1839c364b3ed8e37685ad09a1991f1b26658fc9ccd392c4f1f7d1ab63c7c46",
+              "kind": "snapshot",
+              "schema_revision": 1
+            },
+            "status": "running",
+            "worker_pid": 37280,
+            "workspace_id": "dd889b0165c54936362d1d92d083a456dd2a6e86ba3970c9a3d212423773f18d",
+            "outcome": null
+          }
+        }
+      },
+      {
+        "timestamp": "2026-10-08T01:46:47.153Z",
+        "tool": "cycle_status",
+        "args": {},
+        "outcome": "completed",
+        "plugin_id": "agent-engineering-cycle@engineering-cycle-local",
+        "result": {
+          "ok": true,
+          "binding": {
+            "workspace_id": "dd889b0165c54936362d1d92d083a456dd2a6e86ba3970c9a3d212423773f18d",
+            "cycle_id": "bdf68ad6-657c-4b98-9696-c4523af92dee",
+            "revision": 6,
+            "basis_digest": "d8e41b0dcfa70f4dc10487b7db10dcacd80340d419e269b659a650d06b4af0ef"
+          },
+          "stage": "ready",
+          "lifecycle": "active",
+          "current_complete": false,
+          "blockers": [],
+          "pending_operation": null,
+          "required_check_ids": [
+            "age-boundaries"
+          ],
+          "implementation_notes": {
+            "status": "current",
+            "summary": {
+              "required": 1,
+              "attached": 1,
+              "current": 1,
+              "stale": 0,
+              "missing": 0,
+              "invalid": 0
+            },
+            "entries": [
+              {
+                "source": {
+                  "path": "src/age.mjs",
+                  "symbol": "isAdult",
+                  "sha256": "716bd6f54a62aee5c6b3cdb4a5edb75f51bbb1c9cf0802d0f30a07747d0a1e80"
+                },
+                "documentation": {
+                  "path": "docs/age-notes.md",
+                  "sha256": "45242c7ce137424e53cd57c253afffe8876d54ff986408021109f9495bbf0a2f",
+                  "start_line": 3,
+                  "end_line": 10
+                },
+                "status": "current",
+                "inputs": [
+                  {
+                    "path": "src/age.mjs",
+                    "expected_sha256": "716bd6f54a62aee5c6b3cdb4a5edb75f51bbb1c9cf0802d0f30a07747d0a1e80",
+                    "actual_sha256": "716bd6f54a62aee5c6b3cdb4a5edb75f51bbb1c9cf0802d0f30a07747d0a1e80"
+                  },
+                  {
+                    "path": "docs/age-notes.md",
+                    "expected_sha256": "45242c7ce137424e53cd57c253afffe8876d54ff986408021109f9495bbf0a2f",
+                    "actual_sha256": "45242c7ce137424e53cd57c253afffe8876d54ff986408021109f9495bbf0a2f"
+                  },
+                  {
+                    "path": "check.mjs",
+                    "expected_sha256": "0e837f068eb50989b100cf55aa4ed7c9e9101fb219ac6d9c7ec40ea673a684c4",
+                    "actual_sha256": "0e837f068eb50989b100cf55aa4ed7c9e9101fb219ac6d9c7ec40ea673a684c4"
+                  }
+                ],
+                "content": "## Mechanism\n`isAdult(age)` follows this path: `age` → JavaScript runtime `Number.isInteger(age)` → short-circuited inclusive comparison `age >= 18` → Boolean. If `Number.isInteger(age)` is false, `&&` short-circuits and returns false without evaluating the comparison. Otherwise, `age >= 18` returns a Boolean, so the function always returns a Boolean.\n\n## Invalid values and effects\nStrings, `NaN`, infinities, fractional values, and other non-integers return false. Integer ages below 18 also return false. The function has no state changes or I/O, raises no errors for these invalid values, and uses no external packages.\n\n## Testing and maintenance\nThe configured `age-boundaries` check covers 17, 18, 19, a string, `NaN`, infinity, and a fractional age. Run it after changing `isAdult`. If the age threshold or accepted input type changes, update the check and this note together.",
+                "truncated": false,
+                "symbol_verified": false,
+                "semantic_verified": false
+              }
+            ],
+            "semantic_verified": false,
+            "coverage": "Declared targets only; file identities and selected prose are observed, symbol/call/dataflow meaning is not parsed."
+          },
+          "qa": {
+            "job_id": "a25ed5d3-594b-4443-bb4e-7ea1f32e1b45",
+            "status": "completed",
+            "report_ref": {
+              "digest": "00091e45ca2362b9bcdc01c411b545fe3921d07643395d77eef96319f39131b0",
+              "id": "qa-report-00091e45ca2362b9bcdc01c411b545fe3921d07643395d77eef96319f39131b0",
+              "kind": "qa-report",
+              "schema_revision": 1
+            },
+            "assurance": {
+              "distinct_execution": true,
+              "fresh_session": true,
+              "frozen_input_delivery": true,
+              "permission_observed": true,
+              "terminal_observed": true
+            },
+            "terminal_observed": true,
+            "quiescent": true,
+            "current": true,
+            "passed": true
+          },
+          "evidence_refs": [
+            {
+              "digest": "29abf71e2802bb33fab370bfd69805fe4df6ef8e055abc54754b08defec510d5",
+              "id": "artifact-29abf71e2802bb33fab370bfd69805fe4df6ef8e055abc54754b08defec510d5",
+              "kind": "artifact",
+              "schema_revision": 1
+            },
+            {
+              "digest": "bbfea5b8fa85db716764c3945d7d320f95aee3f19147a9de91d26ffa8c5294dc",
+              "id": "artifact-bbfea5b8fa85db716764c3945d7d320f95aee3f19147a9de91d26ffa8c5294dc",
+              "kind": "artifact",
+              "schema_revision": 1
+            },
+            {
+              "digest": "4618a0ba8cc7648659404cc891fc5a10939efc46d6ef90340c0a60847bfb0b55",
+              "id": "artifact-4618a0ba8cc7648659404cc891fc5a10939efc46d6ef90340c0a60847bfb0b55",
+              "kind": "artifact",
+              "schema_revision": 1
+            },
+            {
+              "digest": "d71aafdeb302b283e95ee7aaa6dc4d11a4ae8cda16e9dc8570bc16e1ef3fdda9",
+              "id": "verification-d71aafdeb302b283e95ee7aaa6dc4d11a4ae8cda16e9dc8570bc16e1ef3fdda9",
+              "kind": "verification",
+              "schema_revision": 1
+            },
+            {
+              "digest": "00091e45ca2362b9bcdc01c411b545fe3921d07643395d77eef96319f39131b0",
+              "id": "qa-report-00091e45ca2362b9bcdc01c411b545fe3921d07643395d77eef96319f39131b0",
+              "kind": "qa-report",
+              "schema_revision": 1
+            }
+          ],
+          "capabilities": {
+            "local_store": true,
+            "tested_platform": "win32 local filesystem / Node 24",
+            "authority": "interactive-operator signed receipts; no MCP approval minting",
+            "qa_driver": true,
+            "qa": {
+              "available": true,
+              "receipt_digest": "1ff0b1828018e84a0f516fb09c92d1a102d9331964d4e2b7b253167613ffcf73",
+              "assurance": {
+                "distinct_execution": true,
+                "fresh_session": true,
+                "frozen_input_delivery": true,
+                "permission_observed": true,
+                "terminal_observed": true
+              },
+              "source": "program-calibration",
+              "human_identity_verified": false
+            },
+            "native_subagent": false,
+            "hook_coverage": "matched writes only",
+            "stop_continuation": false
+          },
+          "next": [
+            "Reconcile approved authority updates, then submit the reported original-goal verdict to finish."
+          ],
+          "coverage_limits": [
+            "Managed entry points only; external edits and unmatched Shell tools are detected, not prevented.",
+            "Semantic verdicts remain reported judgments."
+          ]
+        }
+      },
+      {
+        "timestamp": "2026-10-08T01:46:47.171Z",
+        "tool": "cycle_status",
+        "args": {
+          "evidence_id": "qa-report-00091e45ca2362b9bcdc01c411b545fe3921d07643395d77eef96319f39131b0"
+        },
+        "outcome": "completed",
+        "plugin_id": "agent-engineering-cycle@engineering-cycle-local",
+        "result": {
+          "ok": true,
+          "evidence_id": "qa-report-00091e45ca2362b9bcdc01c411b545fe3921d07643395d77eef96319f39131b0",
+          "digest": "00091e45ca2362b9bcdc01c411b545fe3921d07643395d77eef96319f39131b0",
+          "text": "{\"digest\":\"00091e45ca2362b9bcdc01c411b545fe3921d07643395d77eef96319f39131b0\",\"id\":\"qa-report-00091e45ca2362b9bcdc01c411b545fe3921d07643395d77eef96319f39131b0\",\"kind\":\"qa-report\",\"payload\":{\"job_id\":\"a25ed5d3-594b-4443-bb4e-7ea1f32e1b45\",\"raw_ref\":{\"digest\":\"a1e68f3dee325ea6bf2feccf45fce221c38eccd12c77bebf884a74a0c4b208a7\",\"id\":\"qa-raw-a1e68f3dee325ea6bf2feccf45fce221c38eccd12c77bebf884a74a0c4b208a7\",\"kind\":\"qa-raw\",\"schema_revision\":1},\"report\":{\"acceptance\":[{\"evidence\":\"`src/age.mjs` implements `Number.isInteger(age) && age >= 18`. The frozen `age-boundaries` check completed with exit code 0 and `AC-AGE-PASS`; its assertions cover 17, 18, 19, a string, NaN, infinity, and a fractional age.\",\"id\":\"AC-AGE\",\"status\":\"pass\"},{\"evidence\":\"`docs/age-notes.md` describes the mechanism and short-circuit behavior, invalid values and effects, absence of external packages, tested boundaries, and maintenance guidance.\",\"id\":\"AC-NOTES\",\"status\":\"pass\"}],\"coverage_limits\":[],\"findings\":[],\"verdict\":\"pass\"},\"source\":\"reported\"},\"schema_revision\":1}",
+          "next_offset": null
+        }
+      },
+      {
+        "timestamp": "2026-10-08T01:47:04.528Z",
+        "tool": "cycle_status",
+        "args": {},
+        "outcome": "completed",
+        "plugin_id": "agent-engineering-cycle@engineering-cycle-local",
+        "result": {
+          "ok": true,
+          "binding": {
+            "workspace_id": "dd889b0165c54936362d1d92d083a456dd2a6e86ba3970c9a3d212423773f18d",
+            "cycle_id": "bdf68ad6-657c-4b98-9696-c4523af92dee",
+            "revision": 6,
+            "basis_digest": "d8e41b0dcfa70f4dc10487b7db10dcacd80340d419e269b659a650d06b4af0ef"
+          },
+          "stage": "ready",
+          "lifecycle": "active",
+          "current_complete": false,
+          "blockers": [],
+          "pending_operation": null,
+          "required_check_ids": [
+            "age-boundaries"
+          ],
+          "implementation_notes": {
+            "status": "current",
+            "summary": {
+              "required": 1,
+              "attached": 1,
+              "current": 1,
+              "stale": 0,
+              "missing": 0,
+              "invalid": 0
+            },
+            "entries": [
+              {
+                "source": {
+                  "path": "src/age.mjs",
+                  "symbol": "isAdult",
+                  "sha256": "716bd6f54a62aee5c6b3cdb4a5edb75f51bbb1c9cf0802d0f30a07747d0a1e80"
+                },
+                "documentation": {
+                  "path": "docs/age-notes.md",
+                  "sha256": "45242c7ce137424e53cd57c253afffe8876d54ff986408021109f9495bbf0a2f",
+                  "start_line": 3,
+                  "end_line": 10
+                },
+                "status": "current",
+                "inputs": [
+                  {
+                    "path": "src/age.mjs",
+                    "expected_sha256": "716bd6f54a62aee5c6b3cdb4a5edb75f51bbb1c9cf0802d0f30a07747d0a1e80",
+                    "actual_sha256": "716bd6f54a62aee5c6b3cdb4a5edb75f51bbb1c9cf0802d0f30a07747d0a1e80"
+                  },
+                  {
+                    "path": "docs/age-notes.md",
+                    "expected_sha256": "45242c7ce137424e53cd57c253afffe8876d54ff986408021109f9495bbf0a2f",
+                    "actual_sha256": "45242c7ce137424e53cd57c253afffe8876d54ff986408021109f9495bbf0a2f"
+                  },
+                  {
+                    "path": "check.mjs",
+                    "expected_sha256": "0e837f068eb50989b100cf55aa4ed7c9e9101fb219ac6d9c7ec40ea673a684c4",
+                    "actual_sha256": "0e837f068eb50989b100cf55aa4ed7c9e9101fb219ac6d9c7ec40ea673a684c4"
+                  }
+                ],
+                "content": "## Mechanism\n`isAdult(age)` follows this path: `age` → JavaScript runtime `Number.isInteger(age)` → short-circuited inclusive comparison `age >= 18` → Boolean. If `Number.isInteger(age)` is false, `&&` short-circuits and returns false without evaluating the comparison. Otherwise, `age >= 18` returns a Boolean, so the function always returns a Boolean.\n\n## Invalid values and effects\nStrings, `NaN`, infinities, fractional values, and other non-integers return false. Integer ages below 18 also return false. The function has no state changes or I/O, raises no errors for these invalid values, and uses no external packages.\n\n## Testing and maintenance\nThe configured `age-boundaries` check covers 17, 18, 19, a string, `NaN`, infinity, and a fractional age. Run it after changing `isAdult`. If the age threshold or accepted input type changes, update the check and this note together.",
+                "truncated": false,
+                "symbol_verified": false,
+                "semantic_verified": false
+              }
+            ],
+            "semantic_verified": false,
+            "coverage": "Declared targets only; file identities and selected prose are observed, symbol/call/dataflow meaning is not parsed."
+          },
+          "qa": {
+            "job_id": "a25ed5d3-594b-4443-bb4e-7ea1f32e1b45",
+            "status": "completed",
+            "report_ref": {
+              "digest": "00091e45ca2362b9bcdc01c411b545fe3921d07643395d77eef96319f39131b0",
+              "id": "qa-report-00091e45ca2362b9bcdc01c411b545fe3921d07643395d77eef96319f39131b0",
+              "kind": "qa-report",
+              "schema_revision": 1
+            },
+            "assurance": {
+              "distinct_execution": true,
+              "fresh_session": true,
+              "frozen_input_delivery": true,
+              "permission_observed": true,
+              "terminal_observed": true
+            },
+            "terminal_observed": true,
+            "quiescent": true,
+            "current": true,
+            "passed": true
+          },
+          "evidence_refs": [
+            {
+              "digest": "29abf71e2802bb33fab370bfd69805fe4df6ef8e055abc54754b08defec510d5",
+              "id": "artifact-29abf71e2802bb33fab370bfd69805fe4df6ef8e055abc54754b08defec510d5",
+              "kind": "artifact",
+              "schema_revision": 1
+            },
+            {
+              "digest": "bbfea5b8fa85db716764c3945d7d320f95aee3f19147a9de91d26ffa8c5294dc",
+              "id": "artifact-bbfea5b8fa85db716764c3945d7d320f95aee3f19147a9de91d26ffa8c5294dc",
+              "kind": "artifact",
+              "schema_revision": 1
+            },
+            {
+              "digest": "4618a0ba8cc7648659404cc891fc5a10939efc46d6ef90340c0a60847bfb0b55",
+              "id": "artifact-4618a0ba8cc7648659404cc891fc5a10939efc46d6ef90340c0a60847bfb0b55",
+              "kind": "artifact",
+              "schema_revision": 1
+            },
+            {
+              "digest": "d71aafdeb302b283e95ee7aaa6dc4d11a4ae8cda16e9dc8570bc16e1ef3fdda9",
+              "id": "verification-d71aafdeb302b283e95ee7aaa6dc4d11a4ae8cda16e9dc8570bc16e1ef3fdda9",
+              "kind": "verification",
+              "schema_revision": 1
+            },
+            {
+              "digest": "00091e45ca2362b9bcdc01c411b545fe3921d07643395d77eef96319f39131b0",
+              "id": "qa-report-00091e45ca2362b9bcdc01c411b545fe3921d07643395d77eef96319f39131b0",
+              "kind": "qa-report",
+              "schema_revision": 1
+            }
+          ],
+          "capabilities": {
+            "local_store": true,
+            "tested_platform": "win32 local filesystem / Node 24",
+            "authority": "interactive-operator signed receipts; no MCP approval minting",
+            "qa_driver": true,
+            "qa": {
+              "available": true,
+              "receipt_digest": "1ff0b1828018e84a0f516fb09c92d1a102d9331964d4e2b7b253167613ffcf73",
+              "assurance": {
+                "distinct_execution": true,
+                "fresh_session": true,
+                "frozen_input_delivery": true,
+                "permission_observed": true,
+                "terminal_observed": true
+              },
+              "source": "program-calibration",
+              "human_identity_verified": false
+            },
+            "native_subagent": false,
+            "hook_coverage": "matched writes only",
+            "stop_continuation": false
+          },
+          "next": [
+            "Reconcile approved authority updates, then submit the reported original-goal verdict to finish."
+          ],
+          "coverage_limits": [
+            "Managed entry points only; external edits and unmatched Shell tools are detected, not prevented.",
+            "Semantic verdicts remain reported judgments."
+          ]
+        }
+      },
+      {
+        "timestamp": "2026-10-08T01:47:04.544Z",
+        "tool": "cycle_status",
+        "args": {
+          "evidence_id": "qa-report-00091e45ca2362b9bcdc01c411b545fe3921d07643395d77eef96319f39131b0"
+        },
+        "outcome": "completed",
+        "plugin_id": "agent-engineering-cycle@engineering-cycle-local",
+        "result": {
+          "ok": true,
+          "evidence_id": "qa-report-00091e45ca2362b9bcdc01c411b545fe3921d07643395d77eef96319f39131b0",
+          "digest": "00091e45ca2362b9bcdc01c411b545fe3921d07643395d77eef96319f39131b0",
+          "text": "{\"digest\":\"00091e45ca2362b9bcdc01c411b545fe3921d07643395d77eef96319f39131b0\",\"id\":\"qa-report-00091e45ca2362b9bcdc01c411b545fe3921d07643395d77eef96319f39131b0\",\"kind\":\"qa-report\",\"payload\":{\"job_id\":\"a25ed5d3-594b-4443-bb4e-7ea1f32e1b45\",\"raw_ref\":{\"digest\":\"a1e68f3dee325ea6bf2feccf45fce221c38eccd12c77bebf884a74a0c4b208a7\",\"id\":\"qa-raw-a1e68f3dee325ea6bf2feccf45fce221c38eccd12c77bebf884a74a0c4b208a7\",\"kind\":\"qa-raw\",\"schema_revision\":1},\"report\":{\"acceptance\":[{\"evidence\":\"`src/age.mjs` implements `Number.isInteger(age) && age >= 18`. The frozen `age-boundaries` check completed with exit code 0 and `AC-AGE-PASS`; its assertions cover 17, 18, 19, a string, NaN, infinity, and a fractional age.\",\"id\":\"AC-AGE\",\"status\":\"pass\"},{\"evidence\":\"`docs/age-notes.md` describes the mechanism and short-circuit behavior, invalid values and effects, absence of external packages, tested boundaries, and maintenance guidance.\",\"id\":\"AC-NOTES\",\"status\":\"pass\"}],\"coverage_limits\":[],\"findings\":[],\"verdict\":\"pass\"},\"source\":\"reported\"},\"schema_revision\":1}",
+          "next_offset": null
+        }
+      },
+      {
+        "timestamp": "2026-10-08T01:48:37.331Z",
+        "tool": "cycle_control",
+        "args": {
+          "action": "finish",
+          "binding": {
+            "workspace_id": "dd889b0165c54936362d1d92d083a456dd2a6e86ba3970c9a3d212423773f18d",
+            "cycle_id": "bdf68ad6-657c-4b98-9696-c4523af92dee",
+            "revision": 6,
+            "basis_digest": "d8e41b0dcfa70f4dc10487b7db10dcacd80340d419e269b659a650d06b4af0ef"
+          },
+          "request_id": "final-tui-finish",
+          "semantic_verdict": {
+            "original_goal_covered": true,
+            "unresolved_findings": [],
+            "evidence_refs": [
+              "artifact-29abf71e2802bb33fab370bfd69805fe4df6ef8e055abc54754b08defec510d5",
+              "artifact-bbfea5b8fa85db716764c3945d7d320f95aee3f19147a9de91d26ffa8c5294dc",
+              "artifact-4618a0ba8cc7648659404cc891fc5a10939efc46d6ef90340c0a60847bfb0b55",
+              "verification-d71aafdeb302b283e95ee7aaa6dc4d11a4ae8cda16e9dc8570bc16e1ef3fdda9",
+              "qa-report-00091e45ca2362b9bcdc01c411b545fe3921d07643395d77eef96319f39131b0"
+            ]
+          }
+        },
+        "outcome": "completed",
+        "plugin_id": "agent-engineering-cycle@engineering-cycle-local",
+        "result": {
+          "ok": true,
+          "binding": {
+            "workspace_id": "dd889b0165c54936362d1d92d083a456dd2a6e86ba3970c9a3d212423773f18d",
+            "cycle_id": "bdf68ad6-657c-4b98-9696-c4523af92dee",
+            "revision": 7,
+            "basis_digest": "d8e41b0dcfa70f4dc10487b7db10dcacd80340d419e269b659a650d06b4af0ef"
+          },
+          "stage": "ready",
+          "lifecycle": "completed",
+          "current_complete": true,
+          "blockers": [],
+          "pending_operation": null,
+          "required_check_ids": [
+            "age-boundaries"
+          ],
+          "implementation_notes": {
+            "status": "current",
+            "summary": {
+              "required": 1,
+              "attached": 1,
+              "current": 1,
+              "stale": 0,
+              "missing": 0,
+              "invalid": 0
+            },
+            "entries": [
+              {
+                "source": {
+                  "path": "src/age.mjs",
+                  "symbol": "isAdult",
+                  "sha256": "716bd6f54a62aee5c6b3cdb4a5edb75f51bbb1c9cf0802d0f30a07747d0a1e80"
+                },
+                "documentation": {
+                  "path": "docs/age-notes.md",
+                  "sha256": "45242c7ce137424e53cd57c253afffe8876d54ff986408021109f9495bbf0a2f",
+                  "start_line": 3,
+                  "end_line": 10
+                },
+                "status": "current",
+                "inputs": [
+                  {
+                    "path": "src/age.mjs",
+                    "expected_sha256": "716bd6f54a62aee5c6b3cdb4a5edb75f51bbb1c9cf0802d0f30a07747d0a1e80",
+                    "actual_sha256": "716bd6f54a62aee5c6b3cdb4a5edb75f51bbb1c9cf0802d0f30a07747d0a1e80"
+                  },
+                  {
+                    "path": "docs/age-notes.md",
+                    "expected_sha256": "45242c7ce137424e53cd57c253afffe8876d54ff986408021109f9495bbf0a2f",
+                    "actual_sha256": "45242c7ce137424e53cd57c253afffe8876d54ff986408021109f9495bbf0a2f"
+                  },
+                  {
+                    "path": "check.mjs",
+                    "expected_sha256": "0e837f068eb50989b100cf55aa4ed7c9e9101fb219ac6d9c7ec40ea673a684c4",
+                    "actual_sha256": "0e837f068eb50989b100cf55aa4ed7c9e9101fb219ac6d9c7ec40ea673a684c4"
+                  }
+                ],
+                "content": "## Mechanism\n`isAdult(age)` follows this path: `age` → JavaScript runtime `Number.isInteger(age)` → short-circuited inclusive comparison `age >= 18` → Boolean. If `Number.isInteger(age)` is false, `&&` short-circuits and returns false without evaluating the comparison. Otherwise, `age >= 18` returns a Boolean, so the function always returns a Boolean.\n\n## Invalid values and effects\nStrings, `NaN`, infinities, fractional values, and other non-integers return false. Integer ages below 18 also return false. The function has no state changes or I/O, raises no errors for these invalid values, and uses no external packages.\n\n## Testing and maintenance\nThe configured `age-boundaries` check covers 17, 18, 19, a string, `NaN`, infinity, and a fractional age. Run it after changing `isAdult`. If the age threshold or accepted input type changes, update the check and this note together.",
+                "truncated": false,
+                "symbol_verified": false,
+                "semantic_verified": false
+              }
+            ],
+            "semantic_verified": false,
+            "coverage": "Declared targets only; file identities and selected prose are observed, symbol/call/dataflow meaning is not parsed."
+          },
+          "qa": {
+            "job_id": "a25ed5d3-594b-4443-bb4e-7ea1f32e1b45",
+            "status": "completed",
+            "report_ref": {
+              "digest": "00091e45ca2362b9bcdc01c411b545fe3921d07643395d77eef96319f39131b0",
+              "id": "qa-report-00091e45ca2362b9bcdc01c411b545fe3921d07643395d77eef96319f39131b0",
+              "kind": "qa-report",
+              "schema_revision": 1
+            },
+            "assurance": {
+              "distinct_execution": true,
+              "fresh_session": true,
+              "frozen_input_delivery": true,
+              "permission_observed": true,
+              "terminal_observed": true
+            },
+            "terminal_observed": true,
+            "quiescent": true,
+            "current": true,
+            "passed": true
+          },
+          "evidence_refs": [
+            {
+              "digest": "29abf71e2802bb33fab370bfd69805fe4df6ef8e055abc54754b08defec510d5",
+              "id": "artifact-29abf71e2802bb33fab370bfd69805fe4df6ef8e055abc54754b08defec510d5",
+              "kind": "artifact",
+              "schema_revision": 1
+            },
+            {
+              "digest": "bbfea5b8fa85db716764c3945d7d320f95aee3f19147a9de91d26ffa8c5294dc",
+              "id": "artifact-bbfea5b8fa85db716764c3945d7d320f95aee3f19147a9de91d26ffa8c5294dc",
+              "kind": "artifact",
+              "schema_revision": 1
+            },
+            {
+              "digest": "4618a0ba8cc7648659404cc891fc5a10939efc46d6ef90340c0a60847bfb0b55",
+              "id": "artifact-4618a0ba8cc7648659404cc891fc5a10939efc46d6ef90340c0a60847bfb0b55",
+              "kind": "artifact",
+              "schema_revision": 1
+            },
+            {
+              "digest": "d71aafdeb302b283e95ee7aaa6dc4d11a4ae8cda16e9dc8570bc16e1ef3fdda9",
+              "id": "verification-d71aafdeb302b283e95ee7aaa6dc4d11a4ae8cda16e9dc8570bc16e1ef3fdda9",
+              "kind": "verification",
+              "schema_revision": 1
+            },
+            {
+              "digest": "00091e45ca2362b9bcdc01c411b545fe3921d07643395d77eef96319f39131b0",
+              "id": "qa-report-00091e45ca2362b9bcdc01c411b545fe3921d07643395d77eef96319f39131b0",
+              "kind": "qa-report",
+              "schema_revision": 1
+            },
+            {
+              "id": "completion-6fb68d63b803433e82dccff0f92d1fe4c9b75ed7b0c702dd82a0b4119ac36ce2",
+              "digest": "6fb68d63b803433e82dccff0f92d1fe4c9b75ed7b0c702dd82a0b4119ac36ce2",
+              "kind": "completion",
+              "schema_revision": 1
+            }
+          ],
+          "capabilities": {
+            "local_store": true,
+            "tested_platform": "win32 local filesystem / Node 24",
+            "authority": "interactive-operator signed receipts; no MCP approval minting",
+            "qa_driver": true,
+            "qa": {
+              "available": true,
+              "receipt_digest": "1ff0b1828018e84a0f516fb09c92d1a102d9331964d4e2b7b253167613ffcf73",
+              "assurance": {
+                "distinct_execution": true,
+                "fresh_session": true,
+                "frozen_input_delivery": true,
+                "permission_observed": true,
+                "terminal_observed": true
+              },
+              "source": "program-calibration",
+              "human_identity_verified": false
+            },
+            "native_subagent": false,
+            "hook_coverage": "matched writes only",
+            "stop_continuation": false
+          },
+          "next": [
+            "Keep the historical cycle; begin a new already-authorized goal if needed."
+          ],
+          "coverage_limits": [
+            "Managed entry points only; external edits and unmatched Shell tools are detected, not prevented.",
+            "Semantic verdicts remain reported judgments."
+          ],
+          "operation": {
+            "operation_id": "4d3a919f-c9af-4e79-a54a-c8366580d01b",
+            "request_id": "final-tui-finish",
+            "phase": "settled",
+            "effects_known": true,
+            "outcome_ref": {
+              "id": "outcome-24107075a2d2836cabfa9cd2d6691675bf69371eb438a42e02c963af7b246da0",
+              "digest": "24107075a2d2836cabfa9cd2d6691675bf69371eb438a42e02c963af7b246da0",
+              "kind": "outcome",
+              "schema_revision": 1
+            }
+          },
+          "result": {
+            "completion_ref": {
+              "id": "completion-6fb68d63b803433e82dccff0f92d1fe4c9b75ed7b0c702dd82a0b4119ac36ce2",
+              "digest": "6fb68d63b803433e82dccff0f92d1fe4c9b75ed7b0c702dd82a0b4119ac36ce2",
+              "kind": "completion",
+              "schema_revision": 1
+            },
+            "effects_known": true
+          }
+        }
+      },
+      {
+        "timestamp": "2026-10-08T01:48:37.409Z",
+        "tool": "cycle_status",
+        "args": {},
+        "outcome": "completed",
+        "plugin_id": "agent-engineering-cycle@engineering-cycle-local",
+        "result": {
+          "ok": true,
+          "binding": {
+            "workspace_id": "dd889b0165c54936362d1d92d083a456dd2a6e86ba3970c9a3d212423773f18d",
+            "cycle_id": "bdf68ad6-657c-4b98-9696-c4523af92dee",
+            "revision": 7,
+            "basis_digest": "d8e41b0dcfa70f4dc10487b7db10dcacd80340d419e269b659a650d06b4af0ef"
+          },
+          "stage": "ready",
+          "lifecycle": "completed",
+          "current_complete": true,
+          "blockers": [],
+          "pending_operation": null,
+          "required_check_ids": [
+            "age-boundaries"
+          ],
+          "implementation_notes": {
+            "status": "current",
+            "summary": {
+              "required": 1,
+              "attached": 1,
+              "current": 1,
+              "stale": 0,
+              "missing": 0,
+              "invalid": 0
+            },
+            "entries": [
+              {
+                "source": {
+                  "path": "src/age.mjs",
+                  "symbol": "isAdult",
+                  "sha256": "716bd6f54a62aee5c6b3cdb4a5edb75f51bbb1c9cf0802d0f30a07747d0a1e80"
+                },
+                "documentation": {
+                  "path": "docs/age-notes.md",
+                  "sha256": "45242c7ce137424e53cd57c253afffe8876d54ff986408021109f9495bbf0a2f",
+                  "start_line": 3,
+                  "end_line": 10
+                },
+                "status": "current",
+                "inputs": [
+                  {
+                    "path": "src/age.mjs",
+                    "expected_sha256": "716bd6f54a62aee5c6b3cdb4a5edb75f51bbb1c9cf0802d0f30a07747d0a1e80",
+                    "actual_sha256": "716bd6f54a62aee5c6b3cdb4a5edb75f51bbb1c9cf0802d0f30a07747d0a1e80"
+                  },
+                  {
+                    "path": "docs/age-notes.md",
+                    "expected_sha256": "45242c7ce137424e53cd57c253afffe8876d54ff986408021109f9495bbf0a2f",
+                    "actual_sha256": "45242c7ce137424e53cd57c253afffe8876d54ff986408021109f9495bbf0a2f"
+                  },
+                  {
+                    "path": "check.mjs",
+                    "expected_sha256": "0e837f068eb50989b100cf55aa4ed7c9e9101fb219ac6d9c7ec40ea673a684c4",
+                    "actual_sha256": "0e837f068eb50989b100cf55aa4ed7c9e9101fb219ac6d9c7ec40ea673a684c4"
+                  }
+                ],
+                "content": "## Mechanism\n`isAdult(age)` follows this path: `age` → JavaScript runtime `Number.isInteger(age)` → short-circuited inclusive comparison `age >= 18` → Boolean. If `Number.isInteger(age)` is false, `&&` short-circuits and returns false without evaluating the comparison. Otherwise, `age >= 18` returns a Boolean, so the function always returns a Boolean.\n\n## Invalid values and effects\nStrings, `NaN`, infinities, fractional values, and other non-integers return false. Integer ages below 18 also return false. The function has no state changes or I/O, raises no errors for these invalid values, and uses no external packages.\n\n## Testing and maintenance\nThe configured `age-boundaries` check covers 17, 18, 19, a string, `NaN`, infinity, and a fractional age. Run it after changing `isAdult`. If the age threshold or accepted input type changes, update the check and this note together.",
+                "truncated": false,
+                "symbol_verified": false,
+                "semantic_verified": false
+              }
+            ],
+            "semantic_verified": false,
+            "coverage": "Declared targets only; file identities and selected prose are observed, symbol/call/dataflow meaning is not parsed."
+          },
+          "qa": {
+            "job_id": "a25ed5d3-594b-4443-bb4e-7ea1f32e1b45",
+            "status": "completed",
+            "report_ref": {
+              "digest": "00091e45ca2362b9bcdc01c411b545fe3921d07643395d77eef96319f39131b0",
+              "id": "qa-report-00091e45ca2362b9bcdc01c411b545fe3921d07643395d77eef96319f39131b0",
+              "kind": "qa-report",
+              "schema_revision": 1
+            },
+            "assurance": {
+              "distinct_execution": true,
+              "fresh_session": true,
+              "frozen_input_delivery": true,
+              "permission_observed": true,
+              "terminal_observed": true
+            },
+            "terminal_observed": true,
+            "quiescent": true,
+            "current": true,
+            "passed": true
+          },
+          "evidence_refs": [
+            {
+              "digest": "29abf71e2802bb33fab370bfd69805fe4df6ef8e055abc54754b08defec510d5",
+              "id": "artifact-29abf71e2802bb33fab370bfd69805fe4df6ef8e055abc54754b08defec510d5",
+              "kind": "artifact",
+              "schema_revision": 1
+            },
+            {
+              "digest": "bbfea5b8fa85db716764c3945d7d320f95aee3f19147a9de91d26ffa8c5294dc",
+              "id": "artifact-bbfea5b8fa85db716764c3945d7d320f95aee3f19147a9de91d26ffa8c5294dc",
+              "kind": "artifact",
+              "schema_revision": 1
+            },
+            {
+              "digest": "4618a0ba8cc7648659404cc891fc5a10939efc46d6ef90340c0a60847bfb0b55",
+              "id": "artifact-4618a0ba8cc7648659404cc891fc5a10939efc46d6ef90340c0a60847bfb0b55",
+              "kind": "artifact",
+              "schema_revision": 1
+            },
+            {
+              "digest": "d71aafdeb302b283e95ee7aaa6dc4d11a4ae8cda16e9dc8570bc16e1ef3fdda9",
+              "id": "verification-d71aafdeb302b283e95ee7aaa6dc4d11a4ae8cda16e9dc8570bc16e1ef3fdda9",
+              "kind": "verification",
+              "schema_revision": 1
+            },
+            {
+              "digest": "00091e45ca2362b9bcdc01c411b545fe3921d07643395d77eef96319f39131b0",
+              "id": "qa-report-00091e45ca2362b9bcdc01c411b545fe3921d07643395d77eef96319f39131b0",
+              "kind": "qa-report",
+              "schema_revision": 1
+            },
+            {
+              "digest": "6fb68d63b803433e82dccff0f92d1fe4c9b75ed7b0c702dd82a0b4119ac36ce2",
+              "id": "completion-6fb68d63b803433e82dccff0f92d1fe4c9b75ed7b0c702dd82a0b4119ac36ce2",
+              "kind": "completion",
+              "schema_revision": 1
+            }
+          ],
+          "capabilities": {
+            "local_store": true,
+            "tested_platform": "win32 local filesystem / Node 24",
+            "authority": "interactive-operator signed receipts; no MCP approval minting",
+            "qa_driver": true,
+            "qa": {
+              "available": true,
+              "receipt_digest": "1ff0b1828018e84a0f516fb09c92d1a102d9331964d4e2b7b253167613ffcf73",
+              "assurance": {
+                "distinct_execution": true,
+                "fresh_session": true,
+                "frozen_input_delivery": true,
+                "permission_observed": true,
+                "terminal_observed": true
+              },
+              "source": "program-calibration",
+              "human_identity_verified": false
+            },
+            "native_subagent": false,
+            "hook_coverage": "matched writes only",
+            "stop_continuation": false
+          },
+          "next": [
+            "Keep the historical cycle; begin a new already-authorized goal if needed."
+          ],
+          "coverage_limits": [
+            "Managed entry points only; external edits and unmatched Shell tools are detected, not prevented.",
+            "Semantic verdicts remain reported judgments."
+          ]
+        }
+      }
+    ],
+    "hook_contexts": [
+      {
+        "timestamp": "2026-10-08T01:41:19.455Z",
+        "context": {
+          "binding": {
+            "workspace_id": "dd889b0165c54936362d1d92d083a456dd2a6e86ba3970c9a3d212423773f18d",
+            "cycle_id": "bdf68ad6-657c-4b98-9696-c4523af92dee",
+            "revision": 4,
+            "basis_digest": "d8e41b0dcfa70f4dc10487b7db10dcacd80340d419e269b659a650d06b4af0ef"
+          },
+          "stage": "qa",
+          "lifecycle": "active",
+          "blockers": [
+            {
+              "code": "EVIDENCE_INVALID",
+              "kind": "checks"
+            },
+            {
+              "code": "QA_VERIFICATION_UNAVAILABLE",
+              "kind": "independent_qa"
+            }
+          ],
+          "next": [
+            "Run the configured checks with current binding."
+          ],
+          "implementation_notes": {
+            "required": 1,
+            "attached": 1,
+            "current": 1,
+            "stale": 0,
+            "missing": 0,
+            "invalid": 0
+          },
+          "mode": "runtime",
+          "stop_continuation": "unavailable: target Host ticket/turn correlation has not been accepted"
+        }
+      },
+      {
+        "timestamp": "2026-10-08T01:41:20.596Z",
+        "context": {
+          "binding": {
+            "workspace_id": "dd889b0165c54936362d1d92d083a456dd2a6e86ba3970c9a3d212423773f18d",
+            "cycle_id": "bdf68ad6-657c-4b98-9696-c4523af92dee",
+            "revision": 4,
+            "basis_digest": "d8e41b0dcfa70f4dc10487b7db10dcacd80340d419e269b659a650d06b4af0ef"
+          },
+          "stage": "qa",
+          "lifecycle": "active",
+          "blockers": [
+            {
+              "code": "EVIDENCE_INVALID",
+              "kind": "checks"
+            },
+            {
+              "code": "QA_VERIFICATION_UNAVAILABLE",
+              "kind": "independent_qa"
+            }
+          ],
+          "next": [
+            "Run the configured checks with current binding."
+          ],
+          "implementation_notes": {
+            "required": 1,
+            "attached": 1,
+            "current": 1,
+            "stale": 0,
+            "missing": 0,
+            "invalid": 0
+          },
+          "mode": "runtime",
+          "stop_continuation": "unavailable: target Host ticket/turn correlation has not been accepted"
+        }
+      },
+      {
+        "timestamp": "2026-10-08T01:46:37.311Z",
+        "context": {
+          "binding": {
+            "workspace_id": "dd889b0165c54936362d1d92d083a456dd2a6e86ba3970c9a3d212423773f18d",
+            "cycle_id": "bdf68ad6-657c-4b98-9696-c4523af92dee",
+            "revision": 6,
+            "basis_digest": "d8e41b0dcfa70f4dc10487b7db10dcacd80340d419e269b659a650d06b4af0ef"
+          },
+          "stage": "ready",
+          "lifecycle": "active",
+          "blockers": [],
+          "next": [
+            "Reconcile approved authority updates, then submit the reported original-goal verdict to finish."
+          ],
+          "implementation_notes": {
+            "required": 1,
+            "attached": 1,
+            "current": 1,
+            "stale": 0,
+            "missing": 0,
+            "invalid": 0
+          },
+          "mode": "runtime",
+          "stop_continuation": "unavailable: target Host ticket/turn correlation has not been accepted"
+        }
+      }
+    ],
+    "native_patch_denials": [],
+    "turn_aborts": [],
+    "shell_failures": []
+  },
+  "final_status": {
+    "ok": true,
+    "binding": {
+      "workspace_id": "dd889b0165c54936362d1d92d083a456dd2a6e86ba3970c9a3d212423773f18d",
+      "cycle_id": "bdf68ad6-657c-4b98-9696-c4523af92dee",
+      "revision": 7,
+      "basis_digest": "d8e41b0dcfa70f4dc10487b7db10dcacd80340d419e269b659a650d06b4af0ef"
+    },
+    "stage": "ready",
+    "lifecycle": "completed",
+    "current_complete": true,
+    "blockers": [],
+    "pending_operation": null,
+    "required_check_ids": [
+      "age-boundaries"
+    ],
+    "implementation_notes": {
+      "status": "current",
+      "summary": {
+        "required": 1,
+        "attached": 1,
+        "current": 1,
+        "stale": 0,
+        "missing": 0,
+        "invalid": 0
+      },
+      "entries": [
+        {
+          "source": {
+            "path": "src/age.mjs",
+            "symbol": "isAdult",
+            "sha256": "716bd6f54a62aee5c6b3cdb4a5edb75f51bbb1c9cf0802d0f30a07747d0a1e80"
+          },
+          "documentation": {
+            "path": "docs/age-notes.md",
+            "sha256": "45242c7ce137424e53cd57c253afffe8876d54ff986408021109f9495bbf0a2f",
+            "start_line": 3,
+            "end_line": 10
+          },
+          "status": "current",
+          "inputs": [
+            {
+              "path": "src/age.mjs",
+              "expected_sha256": "716bd6f54a62aee5c6b3cdb4a5edb75f51bbb1c9cf0802d0f30a07747d0a1e80",
+              "actual_sha256": "716bd6f54a62aee5c6b3cdb4a5edb75f51bbb1c9cf0802d0f30a07747d0a1e80"
+            },
+            {
+              "path": "docs/age-notes.md",
+              "expected_sha256": "45242c7ce137424e53cd57c253afffe8876d54ff986408021109f9495bbf0a2f",
+              "actual_sha256": "45242c7ce137424e53cd57c253afffe8876d54ff986408021109f9495bbf0a2f"
+            },
+            {
+              "path": "check.mjs",
+              "expected_sha256": "0e837f068eb50989b100cf55aa4ed7c9e9101fb219ac6d9c7ec40ea673a684c4",
+              "actual_sha256": "0e837f068eb50989b100cf55aa4ed7c9e9101fb219ac6d9c7ec40ea673a684c4"
+            }
+          ],
+          "content": "## Mechanism\n`isAdult(age)` follows this path: `age` → JavaScript runtime `Number.isInteger(age)` → short-circuited inclusive comparison `age >= 18` → Boolean. If `Number.isInteger(age)` is false, `&&` short-circuits and returns false without evaluating the comparison. Otherwise, `age >= 18` returns a Boolean, so the function always returns a Boolean.\n\n## Invalid values and effects\nStrings, `NaN`, infinities, fractional values, and other non-integers return false. Integer ages below 18 also return false. The function has no state changes or I/O, raises no errors for these invalid values, and uses no external packages.\n\n## Testing and maintenance\nThe configured `age-boundaries` check covers 17, 18, 19, a string, `NaN`, infinity, and a fractional age. Run it after changing `isAdult`. If the age threshold or accepted input type changes, update the check and this note together.",
+          "truncated": false,
+          "symbol_verified": false,
+          "semantic_verified": false
+        }
+      ],
+      "semantic_verified": false,
+      "coverage": "Declared targets only; file identities and selected prose are observed, symbol/call/dataflow meaning is not parsed."
+    },
+    "qa": {
+      "job_id": "a25ed5d3-594b-4443-bb4e-7ea1f32e1b45",
+      "status": "completed",
+      "report_ref": {
+        "digest": "00091e45ca2362b9bcdc01c411b545fe3921d07643395d77eef96319f39131b0",
+        "id": "qa-report-00091e45ca2362b9bcdc01c411b545fe3921d07643395d77eef96319f39131b0",
+        "kind": "qa-report",
+        "schema_revision": 1
+      },
+      "assurance": {
+        "distinct_execution": true,
+        "fresh_session": true,
+        "frozen_input_delivery": true,
+        "permission_observed": true,
+        "terminal_observed": true
+      },
+      "terminal_observed": true,
+      "quiescent": true,
+      "current": true,
+      "passed": true
+    },
+    "evidence_refs": [
+      {
+        "digest": "29abf71e2802bb33fab370bfd69805fe4df6ef8e055abc54754b08defec510d5",
+        "id": "artifact-29abf71e2802bb33fab370bfd69805fe4df6ef8e055abc54754b08defec510d5",
+        "kind": "artifact",
+        "schema_revision": 1
+      },
+      {
+        "digest": "bbfea5b8fa85db716764c3945d7d320f95aee3f19147a9de91d26ffa8c5294dc",
+        "id": "artifact-bbfea5b8fa85db716764c3945d7d320f95aee3f19147a9de91d26ffa8c5294dc",
+        "kind": "artifact",
+        "schema_revision": 1
+      },
+      {
+        "digest": "4618a0ba8cc7648659404cc891fc5a10939efc46d6ef90340c0a60847bfb0b55",
+        "id": "artifact-4618a0ba8cc7648659404cc891fc5a10939efc46d6ef90340c0a60847bfb0b55",
+        "kind": "artifact",
+        "schema_revision": 1
+      },
+      {
+        "digest": "d71aafdeb302b283e95ee7aaa6dc4d11a4ae8cda16e9dc8570bc16e1ef3fdda9",
+        "id": "verification-d71aafdeb302b283e95ee7aaa6dc4d11a4ae8cda16e9dc8570bc16e1ef3fdda9",
+        "kind": "verification",
+        "schema_revision": 1
+      },
+      {
+        "digest": "00091e45ca2362b9bcdc01c411b545fe3921d07643395d77eef96319f39131b0",
+        "id": "qa-report-00091e45ca2362b9bcdc01c411b545fe3921d07643395d77eef96319f39131b0",
+        "kind": "qa-report",
+        "schema_revision": 1
+      },
+      {
+        "digest": "6fb68d63b803433e82dccff0f92d1fe4c9b75ed7b0c702dd82a0b4119ac36ce2",
+        "id": "completion-6fb68d63b803433e82dccff0f92d1fe4c9b75ed7b0c702dd82a0b4119ac36ce2",
+        "kind": "completion",
+        "schema_revision": 1
+      }
+    ],
+    "capabilities": {
+      "local_store": true,
+      "tested_platform": "win32 local filesystem / Node 24",
+      "authority": "interactive-operator signed receipts; no MCP approval minting",
+      "qa_driver": true,
+      "qa": {
+        "available": true,
+        "receipt_digest": "1ff0b1828018e84a0f516fb09c92d1a102d9331964d4e2b7b253167613ffcf73",
+        "assurance": {
+          "distinct_execution": true,
+          "fresh_session": true,
+          "frozen_input_delivery": true,
+          "permission_observed": true,
+          "terminal_observed": true
+        },
+        "source": "program-calibration",
+        "human_identity_verified": false
+      },
+      "native_subagent": false,
+      "hook_coverage": "matched writes only",
+      "stop_continuation": false
+    },
+    "next": [
+      "Keep the historical cycle; begin a new already-authorized goal if needed."
+    ],
+    "coverage_limits": [
+      "Managed entry points only; external edits and unmatched Shell tools are detected, not prevented.",
+      "Semantic verdicts remain reported judgments."
+    ]
+  },
+  "exported_evidence": [
+    {
+      "id": "artifact-29abf71e2802bb33fab370bfd69805fe4df6ef8e055abc54754b08defec510d5",
+      "digest": "29abf71e2802bb33fab370bfd69805fe4df6ef8e055abc54754b08defec510d5",
+      "kind": "artifact"
+    },
+    {
+      "id": "artifact-bbfea5b8fa85db716764c3945d7d320f95aee3f19147a9de91d26ffa8c5294dc",
+      "digest": "bbfea5b8fa85db716764c3945d7d320f95aee3f19147a9de91d26ffa8c5294dc",
+      "kind": "artifact"
+    },
+    {
+      "id": "artifact-4618a0ba8cc7648659404cc891fc5a10939efc46d6ef90340c0a60847bfb0b55",
+      "digest": "4618a0ba8cc7648659404cc891fc5a10939efc46d6ef90340c0a60847bfb0b55",
+      "kind": "artifact"
+    },
+    {
+      "id": "verification-d71aafdeb302b283e95ee7aaa6dc4d11a4ae8cda16e9dc8570bc16e1ef3fdda9",
+      "digest": "d71aafdeb302b283e95ee7aaa6dc4d11a4ae8cda16e9dc8570bc16e1ef3fdda9",
+      "kind": "verification"
+    },
+    {
+      "id": "check-e193048185c3c42a9e9ba604c62b0f192872262fac8c30afeb1114f5566f97aa",
+      "digest": "e193048185c3c42a9e9ba604c62b0f192872262fac8c30afeb1114f5566f97aa",
+      "kind": "check"
+    },
+    {
+      "id": "qa-report-00091e45ca2362b9bcdc01c411b545fe3921d07643395d77eef96319f39131b0",
+      "digest": "00091e45ca2362b9bcdc01c411b545fe3921d07643395d77eef96319f39131b0",
+      "kind": "qa-report"
+    },
+    {
+      "id": "qa-raw-a1e68f3dee325ea6bf2feccf45fce221c38eccd12c77bebf884a74a0c4b208a7",
+      "digest": "a1e68f3dee325ea6bf2feccf45fce221c38eccd12c77bebf884a74a0c4b208a7",
+      "kind": "qa-raw"
+    },
+    {
+      "id": "completion-6fb68d63b803433e82dccff0f92d1fe4c9b75ed7b0c702dd82a0b4119ac36ce2",
+      "digest": "6fb68d63b803433e82dccff0f92d1fe4c9b75ed7b0c702dd82a0b4119ac36ce2",
+      "kind": "completion"
+    },
+    {
+      "id": "p0-sandbox-3a131306598967f518bdb964d75212f6dcbc68a45ebc4410411c73a17b046b6d",
+      "digest": "3a131306598967f518bdb964d75212f6dcbc68a45ebc4410411c73a17b046b6d",
+      "kind": "p0-sandbox"
+    },
+    {
+      "id": "p0-live-qa-4958768712196f2a90a1d4ed4291dd2c0d030375933310e825336fe8803ec84a",
+      "digest": "4958768712196f2a90a1d4ed4291dd2c0d030375933310e825336fe8803ec84a",
+      "kind": "p0-live-qa"
+    }
+  ],
+  "installation_history": [
+    "Real home marketplace add and initial portable plugin add succeeded (installed/enabled true).",
+    "Both 0.158.0 and 0.161.0 skip portable hook sources; native distribution generated from identical runtime.",
+    "Official remove/add refresh failed because shared Desktop MCP servers kept the owned cache directory open. Remove left it empty; restored only this owned cache in place, then updated its five owned manifest/driver files. Desktop processes were not stopped.",
+    "Native manifest uses a relative MCP entry/cwd with explicit CYCLE_WORKSPACE forwarding; real TUI registered seven tools and trusted the four plugin hooks through /hooks."
+  ],
+  "limits": [
+    "Windows local filesystem only; no Linux/ARM64/Desktop full-flow acceptance.",
+    "Native Shell still encountered Desktop runtime file locks; MCP source reads and fixed backend checks were used for the accepted flow.",
+    "TUI operator automation is not authenticated human identity.",
+    "Hook guarantee covers this native apply_patch probe and observed runtime contexts; unmatched Shell/external editors and hook timeouts are not covered.",
+    "Automatic Stop continuation remains disabled; QA/cancellation and all AC scenarios are not exhaustively accepted by this fixture."
+  ]
+}
